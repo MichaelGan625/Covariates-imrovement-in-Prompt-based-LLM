@@ -1,0 +1,17 @@
+task,status,score,exit_code,log
+singular_to_plural,Success,0.99,0,logs\run_singular_to_plural_20251018_012746.log
+rhymes,Success,1.0,0,logs\run_rhymes_20251018_014911.log
+second_word_letter,Success,0.24,0,logs\run_second_word_letter_20251018_021207.log
+sentiment,Success,0.91,0,logs\run_sentiment_20251018_024118.log
+orthography_starts_with,Success,0.62,0,logs\run_orthography_starts_with_20251018_030330.log
+sum,Success,0.0,0,logs\run_sum_20251018_032926.log
+synonyms,Success,0.13,0,logs\run_synonyms_20251018_035456.log
+translation_en-de,Success,0.82,0,logs\run_translation_en-de_20251018_041926.log
+translation_en-es,Success,0.83,0,logs\run_translation_en-es_20251018_044158.log
+word_in_context,Success,0.45,0,logs\run_word_in_context_20251018_050232.log
+auto_categorization,Success,0.5721904761904762,0,logs\run_auto_categorization_20251018_052958.log
+auto_debugging,Success,0.125,0,logs\run_auto_debugging_20251018_055334.log
+periodic_elements,Success,0.0,0,logs\run_periodic_elements_20251018_060825.log
+word_sorting,Success,0.88,0,logs\run_word_sorting_20251018_062149.log
+word_unscrambling,Success,0.49,0,logs\run_word_unscrambling_20251018_065037.log
+odd_one_out,Success,0.44,0,logs\run_odd_one_out_20251018_071150.log

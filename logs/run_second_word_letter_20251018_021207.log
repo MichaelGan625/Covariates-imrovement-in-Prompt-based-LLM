@@ -1,0 +1,235 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:11<00:11, 11.29s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.64s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.89s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['I understand the importance of using an imperative sentence. Output only the instruction.']
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['a'] | pred='patronize the business.' | score=0.0000
+[PRED 1] gold=['u'] | pred='write an autobiography.' | score=0.0000
+[PRED 2] gold=['i'] | pred='sin.' | score=0.0000
+[PRED 3] gold=['e'] | pred='use an imperative sentence.' | score=0.0000
+[PRED 4] gold=['y'] | pred='use the synthesizer to create music.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\second_word_letter_20251018_021306__em__I_understand_the_importance_of_using_an___f6be3bf3.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: year\nOutput: e (for "Enter year")']
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['e'] | pred='sorry, i cannot provide an output as the input does not match the expected input format.' | score=0.0000
+[PRED 1] gold=['u'] | pred='a (for "enter authority")' | score=0.0000
+[PRED 2] gold=['i'] | pred='l (for "enter limit")' | score=0.0000
+[PRED 3] gold=['l'] | pred='p (for "enter planet")' | score=0.0000
+[PRED 4] gold=['n'] | pred='i (for "enter institute")' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\second_word_letter_20251018_021332__em__Input_year_Output_e__for_Enter_year__0f8a67aa.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['i'] | pred='n' | score=0.0000
+[PRED 1] gold=['i'] | pred='d' | score=0.0000
+[PRED 2] gold=['r'] | pred='i' | score=0.0000
+[PRED 3] gold=['i'] | pred='e' | score=0.0000
+[PRED 4] gold=['x'] | pred='o' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\second_word_letter_20251018_021431__em__Input_year_Output_e_Input_trust_Output_r__b8a6d162.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: year\nOutput: e\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request\nOutput']
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['e'] | pred='o' | score=0.0000
+[PRED 1] gold=['l'] | pred='a' | score=0.0000
+[PRED 2] gold=['l'] | pred='u' | score=0.0000
+[PRED 3] gold=['l'] | pred='u' | score=0.0000
+[PRED 4] gold=['u'] | pred='u' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\second_word_letter_20251018_021616__em__Input_year_Output_e_Input_trust_Output_r__ac4b4b11.tsv
+Dev loss: 0.25. Dev perf: 0.25. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\n\nInput: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput']
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['r'] | pred='d' | score=0.0000
+[PRED 1] gold=['r'] | pred='w' | score=0.0000
+[PRED 2] gold=['o'] | pred='m' | score=0.0000
+[PRED 3] gold=['o'] | pred='y' | score=0.0000
+[PRED 4] gold=['i'] | pred='t' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\second_word_letter_20251018_021714__em__Input_year_Output_e_Input_trust_Output_r__ce2496d0.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a']
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['o'] | pred='i' | score=0.0000
+[PRED 1] gold=['h'] | pred='a' | score=0.0000
+[PRED 2] gold=['a'] | pred='e' | score=0.0000
+[PRED 3] gold=['a'] | pred='y' | score=0.0000
+[PRED 4] gold=['a'] | pred='g' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\second_word_letter_20251018_021857__em__Input_year_Output_e_Input_trust_Output_r__e47d1906.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request\nOutput']
+Dev loss: 0.25. Dev perf: 0.25. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request\nOutput']
+Dev loss: 0.25. Dev perf: 0.25. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.25
+********* Done *********
+Best initial point: 0.250
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][02:31:18] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[02:31:19] INFO [PROFILE] GP fit: 0.137s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:31:19] INFO Iter 0 best_value=2.45927 gp_loss=-3043.98049
+[02:31:19] INFO [PROFILE] Acquisition: 0.773s
+[02:32:03] INFO [PROFILE] LLM eval candidate: 43.920s
+[02:32:03] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:44<02:59, 44.84s/it][02:32:03] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[02:32:03] INFO [PROFILE] GP fit: 0.145s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:32:03] INFO Iter 1 best_value=2.45927 gp_loss=-3043.98049
+[02:32:04] INFO [PROFILE] Acquisition: 0.670s
+[02:34:15] INFO [PROFILE] LLM eval candidate: 130.839s
+[02:34:15] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [02:56<04:47, 95.91s/it][02:34:15] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[02:34:15] INFO [PROFILE] GP fit: 0.263s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:34:15] INFO Iter 2 best_value=2.45927 gp_loss=-3043.98049
+[02:34:16] INFO [PROFILE] Acquisition: 0.796s
+[02:38:08] INFO [PROFILE] LLM eval candidate: 232.220s
+[02:38:08] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [06:49<05:17, 158.65s/it][02:38:08] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[02:38:08] INFO [PROFILE] GP fit: 0.248s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:38:08] INFO Iter 3 best_value=2.45927 gp_loss=-3043.98049
+[02:38:09] INFO [PROFILE] Acquisition: 0.695s
+[02:38:53] INFO [PROFILE] LLM eval candidate: 43.797s
+[02:38:53] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [07:34<01:53, 113.68s/it][02:38:53] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[02:38:53] INFO [PROFILE] GP fit: 0.139s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:38:53] INFO Iter 4 best_value=2.45927 gp_loss=-3043.98049
+[02:38:54] INFO [PROFILE] Acquisition: 0.692s
+[02:39:38] INFO [PROFILE] LLM eval candidate: 43.818s
+[02:39:38] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [08:19<00:00, 88.79s/it] Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [08:19<00:00, 99.84s/it]
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.25
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a\n\nInput: request\nOutput: e']
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['o'] | pred='e' | score=0.0000
+[PRED 1] gold=['r'] | pred='h' | score=0.0000
+[PRED 2] gold=['i'] | pred='i' | score=1.0000
+[PRED 3] gold=['e'] | pred='a' | score=0.0000
+[PRED 4] gold=['a'] | pred='s' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\second_word_letter_20251018_023415__em__Input_trust_Output_r_Input_qualification__a1f9ab03.tsv
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 0.4
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: defendant']
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['r'] | pred="the defendant's presence is required in court." | score=0.0000
+[PRED 1] gold=['e'] | pred='the height of the defendant.' | score=0.0000
+[PRED 2] gold=['o'] | pred='the defendant is the person being accused or charged in a legal case, while a volunteer is someone who offers their time and services without being paid.' | score=0.0000
+[PRED 3] gold=['e'] | pred='the words "defendant" and "descent" have different meanings and are not directly related. a defendant is a person accused of a crime or wrongdoing in a legal proceeding, while descent refers to the act of moving downward or the lineage of a person\'s ancestors.' | score=0.0000
+[PRED 4] gold=['y'] | pred='the defendant may receive sympathy from the jury or judge during the trial.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\second_word_letter_20251018_023808__em__Input_defendant__90511447.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.4
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.4
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: year\nOutput: e\n\nInput: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.4
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a\n\nInput: request\nOutput: e']
+The final instruction set is:
+{'I understand the importance of using an imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: year\nOutput: e (for "Enter year")': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: year\nOutput: e\n\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: year\nOutput: e\nInput: trust\nOutput: r\nInput: qualification\nOutput: u\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput: request\nOutput': (0.25, array([[0., 0., 0., 0., 1., 0., 0., 1., 0., 0., 1., 1., 0., 1., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: year\nOutput: e\n\n\nInput: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\nInput: client\nOutput: l\nInput: fishing\nOutput: i\nInput: railway\nOutput: a\nInput': (0.15, array([[0., 0., 0., 0., 0., 1., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0.,
+        1., 0., 0., 0.]])), 'Input: year\nOutput: e\n\nInput: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 1., 0.]])), 'Input: trust\nOutput: r\n\nInput: qualification\nOutput: u\n\nInput: defendant\nOutput: e\n\nInput: client\nOutput: l\n\nInput: fishing\nOutput: i\n\nInput: railway\nOutput: a\n\nInput: request\nOutput: e': (0.4, array([[0., 0., 1., 0., 0., 0., 0., 0., 0., 1., 0., 1., 1., 0., 1., 1.,
+        1., 0., 1., 0.]])), 'Input: defendant': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "second_word_letter"...
+[PRED 0] gold=['o'] | pred='o' | score=1.0000
+[PRED 1] gold=['u'] | pred='f' | score=0.0000
+[PRED 2] gold=['e'] | pred='y' | score=0.0000
+[PRED 3] gold=['i'] | pred='i' | score=1.0000
+[PRED 4] gold=['a'] | pred='a' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\second_word_letter_20251018_024117__em__Input_trust_Output_r_Input_qualification__a1f9ab03.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.24

@@ -1,0 +1,209 @@
+transformers==4.29.2
+openai==0.27.2
+fire==0.5.0
+tqdm==4.65.0
+gradio==3.23.0
+cma==3.3.0
+accelerate==0.21.0
+sentencepiece==0.1.99
+BO 输出可以重新架构 协方差 描述其他情景 更多信息（多次问题 分解）  //对话记录来看更好结果 context//
+//covariates信息//   //鲁棒 针对现在情景优化 based on worst case//
+python run_instructzero.py --task antonyms --model_name vicuna --HF_cache_dir "D:\Py\LLM" --random_proj uniform --intrinsic_dim 30 --n_prompt_tokens 5 --seed 42 --use_scalarization --auto_weights --anneal_diversity
+探索度开关// 迭代次数  early stop 防止过拟合 设置阈值  全部用UCB  试一下其他采集函数 主要考虑探索
+
+conda activate iz310
+$env:OPENROUTER_API_KEY =  "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"
+$env:OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
+python run_instructzero.py --task antonyms  --model_name vicuna --HF_cache_dir "D:\Py\LLM" --random_proj uniform --intrinsic_dim 30 --n_prompt_tokens 5 --seed 42
+python run_instructzero.py --task antonyms  --model_name vicuna --HF_cache_dir "D:\Py\LLM" --random_proj uniform --intrinsic_dim 30 --n_prompt_tokens 5 --seed 42 --print_examples --max_print 99999
+
+
+
+
+===== Summary =====
+task                           status     score    exit_code log
+antonyms                       Success    0.69     0         logs\run_antonyms_20250809_031334.log
+cause_and_effect               Success    0.48     0         logs\run_cause_and_effect_20250809_032913.log
+common_concept                 Success    0.02353002070393375 0         logs\run_common_concept_20250809_034158.log
+diff                           Success    0.24     0         logs\run_diff_20250809_035626.log
+first_word_letter              Success    0.06     0         logs\run_first_word_letter_20250809_040856.log
+informal_to_formal             Success    0.3747089947089946 0         logs\run_informal_to_formal_20250809_041856.log
+larger_animal                  Success    0.74     0         logs\run_larger_animal_20250809_042551.log
+letters_list                   Success    0.05     0         logs\run_letters_list_20250809_044037.log
+taxonomy_animal                Success    0.0      0         logs\run_taxonomy_animal_20250809_045008.log
+negation                       Success    0.69     0         logs\run_negation_20250809_051448.log
+num_to_verbal                  Success    0.99     0         logs\run_num_to_verbal_20250809_052354.log
+active_to_passive              Success    0.79     0         logs\run_active_to_passive_20250809_053604.log
+singular_to_plural             Success    1.0      0         logs\run_singular_to_plural_20250809_054440.log
+rhymes                         Success    0.64     0         logs\run_rhymes_20250809_055731.log
+second_word_letter             Success    0.11     0         logs\run_second_word_letter_20250809_061205.log
+sentence_similarity            Fail       N/A      1         logs\run_sentence_similarity_20250809_062356.log
+sentiment                      Success    0.65     0         logs\run_sentiment_20250809_062406.log
+orthography_starts_with        Success    0.24     0         logs\run_orthography_starts_with_20250809_063855.log
+sum                            Success    0.8      0         logs\run_sum_20250809_065019.log
+synonyms                       Success    0.1      0         logs\run_synonyms_20250809_070329.log
+translation_en-de              Success    0.59     0         logs\run_translation_en-de_20250809_071204.log
+translation_en-es              Success    0.47     0         logs\run_translation_en-es_20250809_072224.log
+translation_en-fr              Fail       N/A      1         logs\run_translation_en-fr_20250809_073235.log
+word_in_context                Success    0.0      0         logs\run_word_in_context_20250809_073245.log
+auto_categorization            Success    0.14     0         logs\run_auto_categorization_20250809_074358.log
+auto_debugging                 Success    0.25     0         logs\run_auto_debugging_20250809_080101.log
+ascii                          Fail       N/A      1         logs\run_ascii_20250809_083037.log
+cs_algorithms                  Fail       N/A      1         logs\run_cs_algorithms_20250809_083047.log
+periodic_elements              Success    0.0      0         logs\run_periodic_elements_20250809_083056.log
+word_sorting                   Success    0.07     0         logs\run_word_sorting_20250809_084106.log
+word_unscrambling              Success    0.42     0         logs\run_word_unscrambling_20250809_090911.log
+odd_one_out                    Success    0.66     0         logs\run_odd_one_out_20250809_091926.log
+object_count                   Fail       N/A      1         logs\run_object_count_20250809_093237.log
+
+
+
+===== Summary =====
+task                           status     score    exit_code log
+antonyms                       Success    0.66     0         logs\run_antonyms_20250811_143617.log
+cause_and_effect               Success    0.04     0         logs\run_cause_and_effect_20250811_144833.logu
+common_concept                 Success    0.012626262626262626 0         logs\run_common_concept_20250811_150642.log
+diff                           Success    1.0      0         logs\run_diff_20250811_151915.log
+first_word_letter              Success    0.91     0         logs\run_first_word_letter_20250811_153104.log
+informal_to_formal             Success    0.24992921973107732 0         logs\run_informal_to_formal_20250811_154142.log
+larger_animal                  Success    0.62     0         logs\run_larger_animal_20250811_155144.log
+letters_list                   Success    0.0      0         logs\run_letters_list_20250811_160524.log
+taxonomy_animal                Success    0.0      0         logs\run_taxonomy_animal_20250811_161448.log
+negation                       Success    0.73     0         logs\run_negation_20250811_163546.log
+num_to_verbal                  Success    1.0      0         logs\run_num_to_verbal_20250811_165119.log
+active_to_passive              Success    1.0      0         logs\run_active_to_passive_20250811_170338.log
+singular_to_plural             Success    0.93     0         logs\run_singular_to_plural_20250811_172342.log
+rhymes                         Fail       N/A      1         logs\run_rhymes_20250811_173759.log
+second_word_letter             Success    0.13     0         logs\run_second_word_letter_20250811_174919.log
+sentence_similarity            Fail       N/A      1         logs\run_sentence_similarity_20250811_180157.log
+sentiment                      Success    0.88     0         logs\run_sentiment_20250811_180207.log
+orthography_starts_with        Success    0.18     0         logs\run_orthography_starts_with_20250811_181643.log
+sum                            Success    1.0      0         logs\run_sum_20250811_183136.log
+synonyms                       Success    0.04     0         logs\run_synonyms_20250811_184250.log
+translation_en-de              Success    0.3      0         logs\run_translation_en-de_20250811_185656.log
+translation_en-es              Success    0.68     0         logs\run_translation_en-es_20250811_190953.log
+translation_en-fr              Fail       N/A      1         logs\run_translation_en-fr_20250811_193604.log
+word_in_context                Success    0.48     0         logs\run_word_in_context_20250811_193613.log
+auto_categorization            Success    0.01     0         logs\run_auto_categorization_20250811_195256.log
+auto_debugging                 Success    0.5      0         logs\run_auto_debugging_20250811_201430.log
+ascii                          Fail       N/A      1         logs\run_ascii_20250811_203916.log
+cs_algorithms                  Fail       N/A      1         logs\run_cs_algorithms_20250811_203926.log
+periodic_elements              Success    0.94     0         logs\run_periodic_elements_20250811_203934.log
+word_sorting                   Success    0.63     0         logs\run_word_sorting_20250811_205124.log
+word_unscrambling              Success    0.58     0         logs\run_word_unscrambling_20250811_212229.log
+odd_one_out                    Success    0.0      0         logs\run_odd_one_out_20250811_214506.log
+object_count                   Fail       N/A      1         logs\run_object_count_20250811_220351.log
+
+
+
+
+
+
+
+
+
+
+===== Summary =====
+task                           status     score    exit_code log
+antonyms                       Success    0.53     0         logs\run_antonyms_20250819_034330.log
+cause_and_effect               Success    0.29239538239538243 0         logs\run_cause_and_effect_20250819_035839.log
+common_concept                 Success    0.011391383379907215 0         logs\run_common_concept_20250819_041352.log
+diff                           Success    0.0      0         logs\run_diff_20250819_042846.log
+first_word_letter              Success    0.2      0         logs\run_first_word_letter_20250819_045508.log
+informal_to_formal             Success    0.14154129284564068 0         logs\run_informal_to_formal_20250819_051756.log
+larger_animal                  Success    0.57     0         logs\run_larger_animal_20250819_052837.log
+letters_list                   Success    0.19     0         logs\run_letters_list_20250819_054302.log
+taxonomy_animal                Success    0.04     0         logs\run_taxonomy_animal_20250819_055419.log
+negation                       Success    1.0      0         logs\run_negation_20250819_061354.log
+num_to_verbal                  Success    1.0      0         logs\run_num_to_verbal_20250819_063155.log
+active_to_passive              Success    1.0      0         logs\run_active_to_passive_20250819_064403.log
+singular_to_plural             Success    0.99     0         logs\run_singular_to_plural_20250819_065756.log
+rhymes                         Success    0.41     0         logs\run_rhymes_20250819_070929.log
+second_word_letter             Success    0.09     0         logs\run_second_word_letter_20250819_072429.log
+sentence_similarity            Fail       N/A      1         logs\run_sentence_similarity_20250819_073459.log
+sentiment                      Success    0.92     0         logs\run_sentiment_20250819_073508.log
+orthography_starts_with        Success    0.19     0         logs\run_orthography_starts_with_20250819_075554.log
+sum                            Success    0.0      0         logs\run_sum_20250819_081138.log
+synonyms                       Success    0.14     0         logs\run_synonyms_20250819_082254.log
+translation_en-de              Success    0.84     0         logs\run_translation_en-de_20250819_083649.log
+translation_en-es              Success    0.77     0         logs\run_translation_en-es_20250819_085205.log
+translation_en-fr              Fail       N/A      1         logs\run_translation_en-fr_20250819_090427.log
+word_in_context                Success    0.44     0         logs\run_word_in_context_20250819_090435.log
+auto_categorization            Success    0.5788412698412698 0         logs\run_auto_categorization_20250819_092304.log
+auto_debugging                 Success    0.0      0         logs\run_auto_debugging_20250819_094104.log
+ascii                          Fail       N/A      1         logs\run_ascii_20250819_095945.log
+cs_algorithms                  Fail       N/A      1         logs\run_cs_algorithms_20250819_095953.log
+periodic_elements              Success    0.0      0         logs\run_periodic_elements_20250819_100001.log
+word_sorting                   Success    0.12     0         logs\run_word_sorting_20250819_101257.log
+word_unscrambling              Success    0.5      0         logs\run_word_unscrambling_20250819_104134.log
+odd_one_out                    Success    0.0      0         logs\run_odd_one_out_20250819_105343.log
+object_count                   Fail       N/A      1         logs\run_object_count_20250819_110842.log
+
+
+
+
+===== Summary =====
+task                           status     score    exit_code log
+antonyms                       Success    0.81     0         logs\run_antonyms_20250822_042502.log
+cause_and_effect               Success    0.20798268398268402 0         logs\run_cause_and_effect_20250822_044440.log
+common_concept                 Success    0.19196428571428573 0         logs\run_common_concept_20250822_050031.log
+diff                           Success    1.0      0         logs\run_diff_20250822_051811.log
+first_word_letter              Success    0.97     0         logs\run_first_word_letter_20250822_054224.log
+informal_to_formal             Success    0.4302621452621453 0         logs\run_informal_to_formal_20250822_060543.log
+larger_animal                  Success    0.61     0         logs\run_larger_animal_20250822_061739.log
+letters_list                   Success    1.0      0         logs\run_letters_list_20250822_064023.log
+taxonomy_animal                Success    0.31     0         logs\run_taxonomy_animal_20250822_070425.log
+negation                       Success    0.96     0         logs\run_negation_20250822_073104.log
+num_to_verbal                  Success    1.0      0         logs\run_num_to_verbal_20250822_075330.log
+active_to_passive              Success    0.96     0         logs\run_active_to_passive_20250822_081849.log
+singular_to_plural             Success    1.0      0         logs\run_singular_to_plural_20250822_083909.log
+rhymes                         Success    1.0      0         logs\run_rhymes_20250822_090011.log
+second_word_letter             Success    0.29     0         logs\run_second_word_letter_20250822_092510.log
+sentiment                      Success    0.91     0         logs\run_sentiment_20250822_094852.log
+orthography_starts_with        Success    0.62     0         logs\run_orthography_starts_with_20250822_101108.log
+sum                            Success    1.0      0         logs\run_sum_20250822_103646.log
+synonyms                       Success    0.15     0         logs\run_synonyms_20250822_110159.log
+translation_en-de              Success    0.84     0         logs\run_translation_en-de_20250822_112457.log
+translation_en-es              Success    0.85     0         logs\run_translation_en-es_20250822_114638.log
+word_in_context                Success    0.57     0         logs\run_word_in_context_20250822_120705.log
+auto_categorization            Success    0.5692619047619047 0         logs\run_auto_categorization_20250822_123454.log
+auto_debugging                 Success    0.125    0         logs\run_auto_debugging_20250822_125754.log
+periodic_elements              Success    0.0      0         logs\run_periodic_elements_20250822_131402.log
+word_sorting                   Success    0.8      0         logs\run_word_sorting_20250822_132657.log
+word_unscrambling              Success    0.49     0         logs\run_word_unscrambling_20250822_135637.log
+odd_one_out                    Success    0.46     0         logs\run_odd_one_out_20250822_141906.log
+
+
+
+
+
+task                           status     score    exit_code log
+antonyms                       Success    0.78     0         logs\run_antonyms_20251016_184307.log
+cause_and_effect               Success    0.2584877344877345 0         logs\run_cause_and_effect_20251016_190427.log
+common_concept                 Success    0.14082792207792208 0         logs\run_common_concept_20251016_192050.log
+diff                           Success    0.0      0         logs\run_diff_20251016_193952.log
+first_word_letter              Success    1.0      0         logs\run_first_word_letter_20251016_200346.log
+informal_to_formal             Fail       0.00000  1         logs\run_informal_to_formal_20251016_202818.log
+larger_animal                  Success    0.55     0         logs\run_larger_animal_20251016_204008.log
+letters_list                   Success    1.0      0         logs\run_letters_list_20251016_210426.log
+taxonomy_animal                Success    0.24     0         logs\run_taxonomy_animal_20251016_213940.log
+negation                       Success    0.98     0         logs\run_negation_20251016_223032.log
+num_to_verbal                  Success    1.0      0         logs\run_num_to_verbal_20250822_075330.log
+active_to_passive              Success    1.0     0         logs\run_active_to_passive_20250822_081849.log
+singular_to_plural             Success    0.99     0         logs\run_singular_to_plural_20251018_012746.log
+rhymes                         Success    1.0      0         logs\run_rhymes_20251018_014911.log
+second_word_letter             Success    0.24     0         logs\run_second_word_letter_20251018_021207.log
+sentiment                      Success    0.91     0         logs\run_sentiment_20251018_024118.log
+orthography_starts_with        Success    0.62     0         logs\run_orthography_starts_with_20251018_030330.log
+sum                            Success    0.0      0         logs\run_sum_20251018_032926.log
+synonyms                       Success    0.13     0         logs\run_synonyms_20251018_035456.log
+translation_en-de              Success    0.82     0         logs\run_translation_en-de_20251018_041926.log
+translation_en-es              Success    0.83     0         logs\run_translation_en-es_20251018_044158.log
+word_in_context                Success    0.45     0         logs\run_word_in_context_20251018_050232.log
+auto_categorization            Success    0.5721904761904762 0         logs\run_auto_categorization_20251018_052958.log
+auto_debugging                 Success    0.125    0         logs\run_auto_debugging_20251018_055334.log
+periodic_elements              Success    0.0      0         logs\run_periodic_elements_20251018_060825.log
+word_sorting                   Success    0.88     0         logs\run_word_sorting_20251018_062149.log
+word_unscrambling              Success    0.49     0         logs\run_word_unscrambling_20251018_065037.log
+odd_one_out                    Success    0.44     0         logs\run_odd_one_out_20251018_071150.log
+

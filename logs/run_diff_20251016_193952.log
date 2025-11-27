@@ -1,0 +1,339 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:12<00:12, 12.42s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:21<00:00, 10.31s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:21<00:00, 10.63s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: 41 13\nOutput: 28\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['71'] | pred='71' | score=0.0000
+[PRED 1] gold=['72'] | pred='72' | score=0.0000
+[PRED 2] gold=['80'] | pred='80' | score=0.0000
+[PRED 3] gold=['93'] | pred='93' | score=0.0000
+[PRED 4] gold=['12'] | pred='12' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194122__diff_numeric_em__Input_41_13_Output_28_Input_72_31_Output__1e3ce853.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 13 41\nOutput: 31']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['67'] | pred='37' | score=0.0000
+[PRED 1] gold=['82'] | pred='91' | score=0.0000
+[PRED 2] gold=['83'] | pred='235' | score=0.0000
+[PRED 3] gold=['80'] | pred='84' | score=0.0000
+[PRED 4] gold=['55'] | pred='49' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194150__diff_numeric_em__Input_13_41_Output_31__b01752e4.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 16 31\nOutput: 41']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['67'] | pred='67' | score=0.0000
+[PRED 1] gold=['82'] | pred='98' | score=0.0000
+[PRED 2] gold=['57'] | pred='141' | score=0.0000
+[PRED 3] gold=['96'] | pred='246' | score=0.0000
+[PRED 4] gold=['68'] | pred='198' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194217__diff_numeric_em__Input_16_31_Output_41__fd0254b0.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['49'] | pred='49' | score=0.0000
+[PRED 1] gold=['93'] | pred='93' | score=0.0000
+[PRED 2] gold=['83'] | pred='83' | score=0.0000
+[PRED 3] gold=['54'] | pred='54' | score=0.0000
+[PRED 4] gold=['83'] | pred='83' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194317__diff_numeric_em__Input_41_13_Output_28_Input_72_31_Output__8a621132.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['77'] | pred='77' | score=0.0000
+[PRED 1] gold=['89'] | pred='89' | score=0.0000
+[PRED 2] gold=['6'] | pred='6' | score=0.0000
+[PRED 3] gold=['55'] | pred='55' | score=0.0000
+[PRED 4] gold=['55'] | pred='55' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194428__diff_numeric_em__Input_41_13_Output_28__9f757eeb.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\n\nInput: 99 16\nOutput: 83']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['71'] | pred='71' | score=0.0000
+[PRED 1] gold=['54'] | pred='54' | score=0.0000
+[PRED 2] gold=['92'] | pred='92' | score=0.0000
+[PRED 3] gold=['68'] | pred='68' | score=0.0000
+[PRED 4] gold=['45'] | pred='45' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194528__diff_numeric_em__Input_41_13_Output_28_Input_72_31_Output__aa737cf2.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 13\nOutput: 28\n\nInput: 31\nOutput: 41\nInput: 72\nOutput: 83\nInput: 35\nOutput: 90\nInput: 16\nOutput: 83\nInput:']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['55'] | pred='invalid input. please enter only one number.' | score=0.0000
+[PRED 1] gold=['51'] | pred='143' | score=0.0000
+[PRED 2] gold=['7'] | pred='invalid input. please enter a single number.' | score=0.0000
+[PRED 3] gold=['12'] | pred='invalid input. please enter a single number.' | score=0.0000
+[PRED 4] gold=['77'] | pred='79' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194630__diff_numeric_em__Input_13_Output_28_Input_31_Output_41_In__e871a30b.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: "Please provide a list of numbers to convert to words."\n\nOutput: "Convert the numbers to words."']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['79'] | pred='one hundred fifty-one, seventy-two.' | score=0.0000
+[PRED 1] gold=['45'] | pred='fifty-nine fourteen' | score=0.0000
+[PRED 2] gold=['90'] | pred='one hundred thirty-six forty-six' | score=0.0000
+[PRED 3] gold=['56'] | pred='one hundred eleven fifty-five' | score=0.0000
+[PRED 4] gold=['34'] | pred='forty-two eight' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194704__diff_numeric_em__Input_Please_provide_a_list_of_numbers_t__3f0dedc6.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\n\nInput: 99 16\nOutput: 83']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 13 41\nOutput: 28\n\nInput: 31 72\nOutput: 41\n\nInput: 13 125\nOutput: 90\n\nInput: 99 35\nOutput: 16']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['67'] | pred='67' | score=0.0000
+[PRED 1] gold=['67'] | pred='67' | score=0.0000
+[PRED 2] gold=['73'] | pred='73' | score=0.0000
+[PRED 3] gold=['56'] | pred='56' | score=0.0000
+[PRED 4] gold=['77'] | pred='77' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_194931__diff_numeric_em__Input_13_41_Output_28_Input_31_72_Output__6242d8bb.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 103 31\nOutput: 72']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['69'] | pred='69' | score=0.0000
+[PRED 1] gold=['86'] | pred='86' | score=0.0000
+[PRED 2] gold=['50'] | pred='50' | score=0.0000
+[PRED 3] gold=['54'] | pred='54' | score=0.0000
+[PRED 4] gold=['52'] | pred='52' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_195043__diff_numeric_em__Input_103_31_Output_72__35fe47a8.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 13\nOutput: 28\n\nInput: 72\nOutput: 41\nInput: 125\nOutput: 90\nInput: 99\nOutput: 83\nInput: 103\nOutput: 72\nInput']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['67'] | pred='67' | score=0.0000
+[PRED 1] gold=['26'] | pred='72' | score=0.0000
+[PRED 2] gold=['89'] | pred='95' | score=0.0000
+[PRED 3] gold=['76'] | pred='36' | score=0.0000
+[PRED 4] gold=['82'] | pred='22' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_195143__diff_numeric_em__Input_13_Output_28_Input_72_Output_41_In__99516900.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: "Write a concise instruction that maps Input to Output above."\n\n\nOutput: "Use an imperative sentence."']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['78'] | pred='calculate the quotient of 104 divided by 26.' | score=0.0000
+[PRED 1] gold=['72'] | pred='convert the number 82 from base 10 to base 10.' | score=0.0000
+[PRED 2] gold=['98'] | pred='multiply 176 by 78.' | score=0.0000
+[PRED 3] gold=['65'] | pred='add the two numbers together.' | score=0.0000
+[PRED 4] gold=['90'] | pred='add 111 and 21.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_195219__diff_numeric_em__Input_Write_a_concise_instruction_that_m__67ff8635.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\n\nInput: 99 16\nOutput: 83']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 16 32\nOutput: 53\n\nInput: 105 48\nOutput: 70\nInput: 120 56\nOutput: 82\nInput: 127 42\nOutput: 65']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['68'] | pred='72' | score=0.0000
+[PRED 1] gold=['89'] | pred='40' | score=0.0000
+[PRED 2] gold=['97'] | pred='60' | score=0.0000
+[PRED 3] gold=['97'] | pred='52' | score=0.0000
+[PRED 4] gold=['93'] | pred='68' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_195405__diff_numeric_em__Input_16_32_Output_53_Input_105_48_Outpu__a9133009.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\n\nInput: 99 16\nOutput: 83']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['12'] | pred='12' | score=0.0000
+[PRED 1] gold=['79'] | pred='79' | score=0.0000
+[PRED 2] gold=['78'] | pred='78' | score=0.0000
+[PRED 3] gold=['46'] | pred='46' | score=0.0000
+[PRED 4] gold=['83'] | pred='83' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_195632__diff_numeric_em__Input_41_13_Output_28_Input_72_31_Output__3a86a4b9.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 13 27\nOutput: 85\nInput: 122 54\nOutput: 68\nInput: 103 31\nOutput: 72\nInput: 76 17\nOutput: 59\nInput:']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['88'] | pred='88' | score=0.0000
+[PRED 1] gold=['74'] | pred='74' | score=0.0000
+[PRED 2] gold=['48'] | pred='48' | score=0.0000
+[PRED 3] gold=['93'] | pred='93' | score=0.0000
+[PRED 4] gold=['87'] | pred='87' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_195734__diff_numeric_em__Input_13_27_Output_85_Input_122_54_Outpu__6e071a5a.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 125 35\nOutput: 90']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['73'] | pred='73' | score=0.0000
+[PRED 1] gold=['38'] | pred='38' | score=0.0000
+[PRED 2] gold=['85'] | pred='85' | score=0.0000
+[PRED 3] gold=['93'] | pred='93' | score=0.0000
+[PRED 4] gold=['81'] | pred='81' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_195802__diff_numeric_em__Input_125_35_Output_90__c24cf44a.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\n\nInput: 99 16\nOutput: 83']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Best initial point: 0.000
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][19:59:29] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[19:59:29] INFO [PROFILE] GP fit: 0.296s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:59:29] INFO Iter 0 best_value=0.00000 gp_loss=127.55540
+[19:59:30] INFO [PROFILE] Acquisition: 0.819s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[19:59:58] INFO [PROFILE] LLM eval candidate: 27.944s
+[19:59:58] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:29<01:56, 29.08s/it][19:59:58] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[19:59:58] INFO [PROFILE] GP fit: 0.441s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:59:58] INFO Iter 1 best_value=0.00000 gp_loss=127.55540
+[19:59:59] INFO [PROFILE] Acquisition: 0.728s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[20:00:11] INFO [PROFILE] LLM eval candidate: 11.598s
+[20:00:11] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:41<00:58, 19.49s/it][20:00:11] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[20:00:11] INFO [PROFILE] GP fit: 0.285s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:00:11] INFO Iter 2 best_value=0.00000 gp_loss=127.55540
+[20:00:12] INFO [PROFILE] Acquisition: 0.697s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[20:00:33] INFO [PROFILE] LLM eval candidate: 20.843s
+[20:00:33] INFO Best value so far: 0.00000
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:03<00:41, 20.56s/it][20:00:33] INFO [Iteration 3] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:00:33] INFO [PROFILE] GP fit: 0.615s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:00:33] INFO Iter 3 best_value=0.00000 gp_loss=104.93884
+[20:00:34] INFO [PROFILE] Acquisition: 0.485s
+[20:01:36] INFO [PROFILE] LLM eval candidate: 62.664s
+[20:01:36] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [02:07<00:37, 37.62s/it][20:01:36] INFO [Iteration 4] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:01:37] INFO [PROFILE] GP fit: 0.349s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:01:37] INFO Iter 4 best_value=0.00000 gp_loss=104.93884
+[20:01:37] INFO [PROFILE] Acquisition: 0.450s
+[20:02:21] INFO [PROFILE] LLM eval candidate: 43.842s
+[20:02:21] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:52<00:00, 40.16s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:52<00:00, 34.42s/it]
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: 141 13\nOutput: 28']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['75'] | pred='75' | score=0.0000
+[PRED 1] gold=['91'] | pred='91' | score=0.0000
+[PRED 2] gold=['38'] | pred='15' | score=0.0000
+[PRED 3] gold=['63'] | pred='22' | score=0.0000
+[PRED 4] gold=['28'] | pred='7' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_195958__diff_numeric_em__Input_141_13_Output_28__534c6d2a.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: 125 35\nOutput: 90']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Use an imperative sentence.']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['94'] | pred='divide 125 by 31.' | score=0.0000
+[PRED 1] gold=['34'] | pred='divide 40 by 6.' | score=0.0000
+[PRED 2] gold=['23'] | pred='add the numbers 41 and 18.' | score=0.0000
+[PRED 3] gold=['65'] | pred='add 117 and 52.' | score=0.0000
+[PRED 4] gold=['90'] | pred='divide 112 by 22.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_200033__diff_numeric_em__Use_an_imperative_sentence.__79432ac6.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 0.0000e+00, mean: 0.0000e+00
+Instruction: ['The given text appears to be a list of instructions for a machine learning algorithm. The first line of the instructions is "Input: 41 13" and the corresponding output is "Output: 28". The second line of instructions is "Input: 72 31" and the corresponding']
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['83'] | pred='83' | score=0.0000
+[PRED 1] gold=['52'] | pred='52' | score=0.0000
+[PRED 2] gold=['84'] | pred='84' | score=0.0000
+[PRED 3] gold=['15'] | pred='15' | score=0.0000
+[PRED 4] gold=['83'] | pred='83' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\diff_20251016_200136__diff_numeric_em__The_given_text_appears_to_be_a_list_of_i__aa8227e5.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 0.0000e+00, mean: 0.0000e+00
+Instruction: ['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput']
+The final instruction set is:
+{'Input: 41 13\nOutput: 28\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 13 41\nOutput: 31': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 16 31\nOutput: 41': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 41 13\nOutput: 28': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\n\nInput: 99 16\nOutput: 83': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 13\nOutput: 28\n\nInput: 31\nOutput: 41\nInput: 72\nOutput: 83\nInput: 35\nOutput: 90\nInput: 16\nOutput: 83\nInput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Please provide a list of numbers to convert to words."\n\nOutput: "Convert the numbers to words."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 13 41\nOutput: 28\n\nInput: 31 72\nOutput: 41\n\nInput: 13 125\nOutput: 90\n\nInput: 99 35\nOutput: 16': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 103 31\nOutput: 72': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 13\nOutput: 28\n\nInput: 72\nOutput: 41\nInput: 125\nOutput: 90\nInput: 99\nOutput: 83\nInput: 103\nOutput: 72\nInput': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Write a concise instruction that maps Input to Output above."\n\n\nOutput: "Use an imperative sentence."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 16 32\nOutput: 53\n\nInput: 105 48\nOutput: 70\nInput: 120 56\nOutput: 82\nInput: 127 42\nOutput: 65': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 41 13\nOutput: 28\n\nInput: 72 31\nOutput: 41\n\nInput: 125 35\nOutput: 90\nInput: 99 16\nOutput: 83\nInput': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 13 27\nOutput: 85\nInput: 122 54\nOutput: 68\nInput: 103 31\nOutput: 72\nInput: 76 17\nOutput: 59\nInput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 125 35\nOutput: 90': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: 141 13\nOutput: 28': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Use an imperative sentence.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'The given text appears to be a list of instructions for a machine learning algorithm. The first line of the instructions is "Input: 41 13" and the corresponding output is "Output: 28". The second line of instructions is "Input: 72 31" and the corresponding': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "diff_numeric_em" for task "diff"...
+[PRED 0] gold=['56'] | pred='56' | score=0.0000
+[PRED 1] gold=['47'] | pred='47' | score=0.0000
+[PRED 2] gold=['43'] | pred='43' | score=0.0000
+[PRED 3] gold=['25'] | pred='25' | score=0.0000
+[PRED 4] gold=['53'] | pred='53' | score=0.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\diff_20251016_200345__diff_numeric_em__Input_41_13_Output_28_Input_72_31_Output__3a86a4b9.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.0

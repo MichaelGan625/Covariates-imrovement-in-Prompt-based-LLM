@@ -1,0 +1,371 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:18<00:18, 18.33s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:26<00:00, 12.48s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:26<00:00, 13.35s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: mango, camel, shark, duck, monkey\nOutput: donkey, chicken, camel, shark, duck\nInput: mango, camel, shark, duck, monkey\nOutput: donkey, chicken, camel, shark']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['duck, hippo, elephant, penguin'] | pred='donkey, green, hippo, elephant, penguin' | score=0.0000
+[PRED 1] gold=['zebra, mouse, penguin'] | pred='donkey, purple, penguin, mouse, zebra, truck' | score=0.0000
+[PRED 2] gold=['bee, butterfly, fly'] | pred='ambulance, butterfly, fly, helicopter, bee' | score=0.0000
+[PRED 3] gold=['tortoise, snail, bee'] | pred='snail, tortoise, bee, journalist' | score=0.0000
+[PRED 4] gold=['panda, sheep, donkey, bat'] | pred='dentist, nurse, pink, donkey, bat, sheep, panda' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_214142__es__Input_mango__camel__shark__duck__monkey___293e3930.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['lizard, horse, monkey, octopus'] | pred='monkey' | score=0.0000
+[PRED 1] gold=['panda, camel, sheep, dolphin'] | pred='dolphin, panda, sheep, camel' | score=1.0000
+[PRED 2] gold=['sheep, whale, panda, spider'] | pred='panda, spider' | score=0.0000
+[PRED 3] gold=['tortoise, goat, camel, swan'] | pred='camel, goat' | score=0.0000
+[PRED 4] gold=['penguin, butterfly, fly'] | pred='penguin, butterfly, fly' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_214256__es__Input_pink__shark__giraffe__truck__duck___35220076.tsv
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.1
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck\nOutput: giraffe, monkey, shark, duck']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['panda, donkey, fly'] | pred='fly, designer, skirt, helicopter, panda, donkey' | score=0.0000
+[PRED 1] gold=['camel, elephant, snail'] | pred='dress, camel, salad, snail, shoe, elephant' | score=0.0000
+[PRED 2] gold=['parrot, elephant, hippo'] | pred='apple, parrot, hippo, motorway, elephant' | score=0.0000
+[PRED 3] gold=['bat, butterfly, mouse'] | pred='pancake, butterfly, mouse, pajamas, lemon, bat' | score=0.0000
+[PRED 4] gold=['elephant, donkey, penguin, snake'] | pred='penguin, gold, donkey, jacket, elephant, snake' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_214347__es__Input_giraffe__monkey__shark__duck_Outpu__980aa060.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.1
+********* Done *********
+Instruction: ['Input: ONE\n\nOutput: ONE']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['snake, hippo, zebra, shark'] | pred='swimsuit, snake, shark, hippo, pasta, zebra' | score=0.0000
+[PRED 1] gold=['frog, spider, zebra, butterfly'] | pred='zebra, sock, frog, dentist, spider, butterfly, engineer' | score=0.0000
+[PRED 2] gold=['monkey, bee, snail'] | pred='bee, belt, snail, monkey, pink' | score=0.0000
+[PRED 3] gold=['duck, mouse, panda'] | pred='ice cream, nurse, motorway, panda, mouse, duck' | score=0.0000
+[PRED 4] gold=['giraffe, cat, butterfly, goat'] | pred='butterfly, gray, cat, goat, engineer, giraffe, truck' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_214422__es__Input_ONE_Output_ONE__df91c0ab.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.1
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck, donkey\nOutput: donkey, chicken, camel, frog\nInput: mango, camel, chicken, sock, frog\nOutput: frog, chicken, camel, sock\nInput']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['jellyfish, penguin, monkey'] | pred='belt, jellyfish, gold, monkey' | score=0.0000
+[PRED 1] gold=['dolphin, spider, bee'] | pred='scarf, bee, gray, dolphin' | score=0.0000
+[PRED 2] gold=['giraffe, dolphin, shark, tortoise'] | pred='orange, tortoise, giraffe, shark, dolphin, truck' | score=0.0000
+[PRED 3] gold=['hippo, jellyfish, panda, zebra'] | pred='zebra, hippo, panda' | score=0.0000
+[PRED 4] gold=['duck, spider, tiger'] | pred='artist, duck, jacket, spider' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_214607__es__Input_giraffe__monkey__shark__duck__donk__59c0ebbb.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck, truck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['goat, giraffe, cat'] | pred='giraffe, cat, goat, cook, milk' | score=0.0000
+[PRED 1] gold=['snail, octopus, mouse'] | pred='octopus, mouse' | score=0.0000
+[PRED 2] gold=['bat, hippo, mouse, horse'] | pred='hippo, horse' | score=0.0000
+[PRED 3] gold=['whale, butterfly, octopus'] | pred='octopus' | score=0.0000
+[PRED 4] gold=['spider, parrot, bat'] | pred='parrot, orange, spider, bat, bus' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_214743__es__Input_pink__shark__giraffe__truck__duck___ec0a937d.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck, truck\nOutput: donkey, chicken, camel, frog\n\nInput: mango, camel, chicken, sock, frog\nOutput: penguin, chicken, camel, donkey']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['chicken, monkey, hippo, bat'] | pred='donkey, chicken, businesswoman, bat' | score=0.0000
+[PRED 1] gold=['frog, bat, donkey'] | pred='penguin, donkey, frog, duck, pajamas, taxi' | score=0.0000
+[PRED 2] gold=['butterfly, snake, rabbit, mouse'] | pred='penguin, rabbit, taxi, butterfly, donkey, donkey' | score=0.0000
+[PRED 3] gold=['camel, chicken, horse, duck'] | pred='penguin, camel, chicken, donkey' | score=0.0000
+[PRED 4] gold=['cat, spider, bat'] | pred='camel, chicken, frog, donkey' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215006__es__Input_giraffe__monkey__shark__duck__truc__762c6713.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: ONE animal, ONE object, ONE color, ONE shape, ONE pattern, ONE sound, ONE word.\nOutput: ONE animal, ONE object, ONE color, ONE shape, ONE pattern, ONE sound, ONE word.']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['tortoise, jellyfish, horse'] | pred='tortoise, meatballs, horse, artist, jellyfish, squishy, yum, gallop, create, flow, slurp, beautiful.' | score=0.0000
+[PRED 1] gold=['shark, whale, penguin'] | pred='animal: penguin\nobject: whale\ncolor: red\nshape: helicopter\npattern: shark\nsound: \nword:' | score=0.0000
+[PRED 2] gold=['cat, chicken, penguin'] | pred='cat, penguin, vegetable, teacher, chicken, motorway' | score=0.0000
+[PRED 3] gold=['spider, panda, chicken'] | pred='chicken, truck, gold, spider, hat, panda' | score=0.0000
+[PRED 4] gold=['butterfly, cat, zebra, parrot'] | pred='parrot, scarf, yellow, butterfly, zebra, "meow", artist' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215144__es__Input_ONE_animal__ONE_object__ONE_color___f12cc49f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck, chicken, sock, frog, donkey, mango, camel, chicken, snail, potato, waiter, penguin, white, snail, horse, blue, butterfly, scarf']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['camel, rabbit, lion'] | pred="the words that start with the letter 'g' are: gray, green\n\nthe words that start with the letter 'r' are: rabbit\n\nthe words that start with the letter 'c' are: camel\n\nthe words that start with the letter 't' are: train\n\nthe words that start with the letter 'l' are: lion" | score=0.0000
+[PRED 1] gold=['octopus, panda, duck, parrot'] | pred='duck, panda' | score=0.0000
+[PRED 2] gold=['bee, rabbit, lizard, frog'] | pred='lizard, bee, scarf, frog, orange, rabbit' | score=0.0000
+[PRED 3] gold=['fly, octopus, rabbit, spider'] | pred='the output is: fly, octopus, mechanic, spider, swimsuit, skirt, rabbit' | score=0.0000
+[PRED 4] gold=['tortoise, hippo, monkey, fly'] | pred='the monkey cooked, the hippo flew, the tortoise wore a shoe, and the doctor treated them all.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215321__es__Input_giraffe__monkey__shark__duck__chic__296a5c52.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck, donkey\nOutput: giraffe, monkey, shark, duck']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['giraffe, goat, penguin, swan'] | pred='olives, swan, penguin, belt, giraffe, goat' | score=0.0000
+[PRED 1] gold=['panda, spider, chicken, shark'] | pred='spider, glove, panda, chicken' | score=0.0000
+[PRED 2] gold=['horse, penguin, dolphin, hippo'] | pred='hippo, pink, trousers, penguin, purple, horse' | score=0.0000
+[PRED 3] gold=['goat, frog, donkey'] | pred='shirt, yellow, goat, donkey' | score=0.0000
+[PRED 4] gold=['tiger, zebra, spider'] | pred='tiger, sausage, zebra, spider' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215424__es__Input_giraffe__monkey__shark__duck__donk__09a044a6.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken, sock, frog\n\nInput: mango, camel, chicken, sock, frog\nOutput: donkey, chicken, sock, f']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['donkey, rabbit, panda'] | pred='donkey, rabbit, pajamas' | score=0.0000
+[PRED 1] gold=['bee, hippo, tortoise, frog'] | pred='tortoise, bee, frog' | score=0.0000
+[PRED 2] gold=['hippo, snail, bee, cat'] | pred='hippo, cat, waiter, bee' | score=0.0000
+[PRED 3] gold=['duck, jellyfish, donkey, spider'] | pred='donkey, duck' | score=0.0000
+[PRED 4] gold=['penguin, whale, duck, cat'] | pred='duck, whale' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215540__es__Input_mango__camel__chicken__sock__frog___0ac915c8.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: [list of words]\nOutput: [list of words]']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['zebra, monkey, cat'] | pred='cat, businesswoman, bread, white, monkey, zebra' | score=0.0000
+[PRED 1] gold=['octopus, dolphin, swan, lizard'] | pred='dolphin, octopus, swan, honey, carrot, lizard' | score=0.0000
+[PRED 2] gold=['butterfly, tiger, rabbit, elephant'] | pred='tiger, belt, elephant, teacher, rabbit, butterfly, photographer' | score=0.0000
+[PRED 3] gold=['panda, snake, giraffe'] | pred='spaceship, train, panda, snake, hat, giraffe' | score=0.0000
+[PRED 4] gold=['rabbit, spider, whale, parrot'] | pred='parrot, whale, motorway, sock, rabbit, spider' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215622__es__Input__list_of_words__Output__list_of_wo__c624f44f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: ONE, Output: ONE.']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['rabbit, chicken, zebra'] | pred='actor, rabbit, chicken, truck, zebra, kiwi' | score=0.0000
+[PRED 1] gold=['butterfly, bee, frog, bat'] | pred='frog, belt, bat, butterfly, helicopter, bee' | score=0.0000
+[PRED 2] gold=['dolphin, bat, sheep'] | pred='dolphin, green, sheep, bat, taxi' | score=0.0000
+[PRED 3] gold=['bat, monkey, hippo, goat'] | pred='bat, hippo, lemon, goat, artist, monkey' | score=0.0000
+[PRED 4] gold=['elephant, horse, monkey'] | pred='candy, monkey, horse, elephant, helicopter' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215701__es__Input_ONE__Output_ONE.__67cc0851.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck\n\nOutput: giraffe, monkey, shark, duck']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['swan, penguin, tiger, horse'] | pred='tractor, swan, vegetable, horse, tiger, penguin' | score=0.0000
+[PRED 1] gold=['lion, whale, mouse, jellyfish'] | pred='lion, mouse, whale, salad, jellyfish, dress' | score=0.0000
+[PRED 2] gold=['dolphin, bat, sheep'] | pred='dolphin, green, sheep, bat, taxi' | score=0.0000
+[PRED 3] gold=['swan, duck, lizard'] | pred='journalist, lizard, truck, swan, duck, sausage' | score=0.0000
+[PRED 4] gold=['mouse, giraffe, frog'] | pred='pink, glove, giraffe, mouse, frog' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215754__es__Input_giraffe__monkey__shark__duck_Outpu__050b9188.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck, camel\nOutput: giraffe, monkey, shark, duck, camel']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['snail, octopus, mouse'] | pred='rice, car, octopus, teacher, snail, mouse' | score=0.0000
+[PRED 1] gold=['frog, lion, tortoise, horse'] | pred='horse, cook, frog, green, tortoise, lion, taxi' | score=0.0000
+[PRED 2] gold=['penguin, swan, horse'] | pred='horse, orange, actor, swan, penguin, brown' | score=0.0000
+[PRED 3] gold=['butterfly, parrot, monkey'] | pred='parrot, shirt, monkey, journalist, purple, butterfly' | score=0.0000
+[PRED 4] gold=['jellyfish, dolphin, penguin, hippo'] | pred='penguin, hippo, jellyfish, dolphin, waiter, brown' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_215852__es__Input_giraffe__monkey__shark__duck__came__e41bf3e0.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck, truck\nOutput: giraffe, monkey, shark, duck, truck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: mango, camel']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['parrot, camel, rabbit'] | pred='businesswoman, rabbit, camel' | score=0.0000
+[PRED 1] gold=['fly, whale, dolphin, goat'] | pred='fly, gold, goat' | score=0.0000
+[PRED 2] gold=['snake, cat, octopus, zebra'] | pred='cookie, ship' | score=0.0000
+[PRED 3] gold=['dolphin, chicken, horse, elephant'] | pred='dolphin, bus, horse' | score=0.0000
+[PRED 4] gold=['butterfly, mouse, tortoise, duck'] | pred='doctor, butterfly' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_220002__es__Input_giraffe__monkey__shark__duck__truc__da3a4578.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: giraffe, monkey, shark, duck, camel, frog, donkey, chicken, sock, snail, white, horse, blue, butterfly, scarf, goat, pajamas, hippo, egg, whale, eleph']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['bat, lizard, dolphin'] | pred='bat, waiter, dolphin, gold, lizard' | score=0.0000
+[PRED 1] gold=['jellyfish, snake, lion, goat'] | pred='the words that do not belong in the list are engineer and train.' | score=0.0000
+[PRED 2] gold=['cat, swan, mouse, giraffe'] | pred='skirt, ambulance, mouse, swan, cat, shirt' | score=0.0000
+[PRED 3] gold=['snail, snake, parrot'] | pred='ambulance, snake, car, parrot, snail' | score=0.0000
+[PRED 4] gold=['panda, butterfly, cat, bat'] | pred='engineer, butterfly, panda, yellow, bat, cat' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_220118__es__Input_giraffe__monkey__shark__duck__came__6da93476.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['giraffe, tiger, dolphin'] | pred='giraffe, dolphin, tiger' | score=1.0000
+[PRED 1] gold=['snail, donkey, snake, penguin'] | pred='penguin, snake, donkey' | score=0.0000
+[PRED 2] gold=['whale, parrot, hippo'] | pred='hippo, parrot, whale' | score=1.0000
+[PRED 3] gold=['fly, penguin, cat, tiger'] | pred='tiger, penguin' | score=0.0000
+[PRED 4] gold=['hippo, lizard, snail'] | pred='lizard, plane, snail' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_220210__es__Input_pink__shark__giraffe__truck__duck___bee5d0b6.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken']
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: ONE\nOutput: ONE']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['horse, zebra, goat, chicken'] | pred='goat, pajamas, horse, chicken, zebra, spaceship' | score=0.0000
+[PRED 1] gold=['shark, sheep, camel, jellyfish'] | pred='bus, shark, jellyfish, sheep, jeans, camel, shoe' | score=0.0000
+[PRED 2] gold=['parrot, camel, lion'] | pred='businessman, parrot, swimsuit, doctor, camel, lion' | score=0.0000
+[PRED 3] gold=['frog, rabbit, goat'] | pred='frog, photographer, rabbit, bus, goat' | score=0.0000
+[PRED 4] gold=['horse, shark, hippo'] | pred='shark, olives, horse, hippo, teacher' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_220336__es__Input_ONE_Output_ONE__71f7c9ab.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: pink, shark, giraffe, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken, camel']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['zebra, snake, donkey'] | pred='donkey, zebra' | score=0.0000
+[PRED 1] gold=['whale, horse, butterfly'] | pred='horse, butterfly, whale' | score=1.0000
+[PRED 2] gold=['spider, penguin, giraffe'] | pred='giraffe, penguin' | score=0.0000
+[PRED 3] gold=['snail, panda, giraffe'] | pred='giraffe' | score=0.0000
+[PRED 4] gold=['goat, duck, fly, bee'] | pred='duck, swimsuit, bee, waiter, fly' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_220450__es__Input_pink__shark__giraffe__duck__monkey__25f7c5b8.tsv
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: ONE, giraffe, monkey, shark, duck, donkey, mango, camel, chicken, sock, frog, truck, penguin, snail, horse, chicken, potato, waiter, penguin, white, sn']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['lizard, zebra, donkey'] | pred='lizard, zebra, helicopter, donkey, white, pancake' | score=0.0000
+[PRED 1] gold=['camel, penguin, lizard'] | pred='camel, penguin' | score=0.0000
+[PRED 2] gold=['dolphin, duck, frog'] | pred='duck, frog' | score=0.0000
+[PRED 3] gold=['camel, horse, elephant'] | pred='the words that start with the letter "h" are: horse, actor, businesswoman.' | score=0.0000
+[PRED 4] gold=['duck, swan, mouse, monkey'] | pred='the animals in the input are: duck, mouse, swan, monkey\nother items in the input are: pea, gold' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_220610__es__Input_ONE__giraffe__monkey__shark__duck___4cb3bd0f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: pink, shark, giraffe, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken, camel']
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken']
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: pink, shark, giraffe, duck, monkey\nOutput: giraffe, monkey, shark, duck']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['cat, tiger, snake'] | pred='tiger, gold, cat, snake' | score=0.0000
+[PRED 1] gold=['rabbit, octopus, sheep, elephant'] | pred='sheep, rabbit, octopus, truck' | score=0.0000
+[PRED 2] gold=['snail, snake, fly, swan'] | pred='swan, ship, snail, sock, snake, fly, pea' | score=0.0000
+[PRED 3] gold=['lion, penguin, rabbit, snake'] | pred='rabbit, lion, penguin, snake' | score=1.0000
+[PRED 4] gold=['parrot, zebra, mouse, lion'] | pred='zebra, lion, parrot, mouse' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_220842__es__Input_pink__shark__giraffe__duck__monkey__9d58a7fc.tsv
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.15
+********* Done *********
+Best initial point: 0.150
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][22:08:43] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[22:08:44] INFO [PROFILE] GP fit: 0.301s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[22:08:44] INFO Iter 0 best_value=2.01221 gp_loss=-391.20887
+[22:08:45] INFO [PROFILE] Acquisition: 1.480s
+[22:09:35] INFO [PROFILE] LLM eval candidate: 50.292s
+[22:09:35] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:52<03:28, 52.09s/it][22:09:35] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[22:09:36] INFO [PROFILE] GP fit: 0.237s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[22:09:36] INFO Iter 1 best_value=2.01221 gp_loss=-457.19799
+[22:09:36] INFO [PROFILE] Acquisition: 0.744s
+[22:16:26] INFO [PROFILE] LLM eval candidate: 409.357s
+[22:16:26] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [07:42<13:08, 262.83s/it][22:16:26] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[22:16:26] INFO [PROFILE] GP fit: 0.447s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[22:16:26] INFO Iter 2 best_value=2.01221 gp_loss=-190.85948
+[22:16:27] INFO [PROFILE] Acquisition: 0.709s
+[22:17:41] INFO [PROFILE] LLM eval candidate: 74.178s
+[22:17:41] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [08:57<05:54, 177.22s/it][22:17:41] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[22:17:42] INFO [PROFILE] GP fit: 0.456s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[22:17:42] INFO Iter 3 best_value=2.01221 gp_loss=-215.35572
+[22:17:42] INFO [PROFILE] Acquisition: 0.730s
+[22:18:32] INFO [PROFILE] LLM eval candidate: 50.051s
+[22:18:32] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [09:49<02:07, 127.49s/it][22:18:32] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[22:18:33] INFO [PROFILE] GP fit: 0.234s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[22:18:33] INFO Iter 4 best_value=2.01221 gp_loss=-239.51016
+[22:18:33] INFO [PROFILE] Acquisition: 0.706s
+[22:19:08] INFO [PROFILE] LLM eval candidate: 34.690s
+[22:19:08] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [10:24<00:00, 94.37s/it] Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [10:24<00:00, 124.93s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck, truck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.15
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.3199999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, monkey\nOutput: camel, chicken']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['duck, spider, parrot, zebra'] | pred='parrot' | score=0.0000
+[PRED 1] gold=['bee, monkey, rabbit, panda'] | pred='monkey' | score=0.0000
+[PRED 2] gold=['octopus, donkey, snake'] | pred='octopus' | score=0.0000
+[PRED 3] gold=['snail, goat, spider, sheep'] | pred='sheep, goat' | score=0.0000
+[PRED 4] gold=['shark, parrot, horse'] | pred='shark' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_221626__es__Input_pink__shark__giraffe__truck__duck___d2a3d20f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.51}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, ch']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['snake, tiger, swan, lion'] | pred='swan, tiger, snake' | score=0.0000
+[PRED 1] gold=['rabbit, lion, cat, penguin'] | pred='cat, doctor' | score=0.0000
+[PRED 2] gold=['goat, horse, snail'] | pred='horse, goat' | score=0.0000
+[PRED 3] gold=['butterfly, bee, zebra, duck'] | pred='duck, bee' | score=0.0000
+[PRED 4] gold=['camel, lion, zebra, shark'] | pred='camel, lion, shark' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_221741__es__Input_pink__shark__giraffe__truck__duck___3257c40b.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.15
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.58}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck, truck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.15
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.6499999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: [object Object]\nOutput: [object Object]']
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['camel, frog, parrot'] | pred='sausage, frog, camel, honey, parrot' | score=0.0000
+[PRED 1] gold=['shark, sheep, camel, jellyfish'] | pred='bus, shark, jellyfish, sheep, jeans, camel, shoe' | score=0.0000
+[PRED 2] gold=['jellyfish, penguin, monkey'] | pred='monkey, gold, penguin, jellyfish, belt' | score=0.0000
+[PRED 3] gold=['rabbit, chicken, zebra'] | pred='actor, rabbit, chicken, truck, zebra, kiwi' | score=0.0000
+[PRED 4] gold=['whale, shark, hippo'] | pred='photographer, whale, sweater, hippo, shark' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\taxonomy_animal_20251016_221908__es__Input__object_Object__Output__object_Obj__50456e8e.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.15
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, ch']
+The final instruction set is:
+{'Input: mango, camel, shark, duck, monkey\nOutput: donkey, chicken, camel, shark, duck\nInput: mango, camel, shark, duck, monkey\nOutput: donkey, chicken, camel, shark': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken': (0.1, array([[0., 1., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: giraffe, monkey, shark, duck\nOutput: giraffe, monkey, shark, duck': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: ONE\n\nOutput: ONE': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: giraffe, monkey, shark, duck, donkey\nOutput: donkey, chicken, camel, frog\nInput: mango, camel, chicken, sock, frog\nOutput: frog, chicken, camel, sock\nInput': (0.15, array([[0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 1., 0., 0., 0., 1., 0.,
+        0., 0., 0., 0.]])), 'Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck, truck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 1., 0.]])), 'Input: giraffe, monkey, shark, duck, truck\nOutput: donkey, chicken, camel, frog\n\nInput: mango, camel, chicken, sock, frog\nOutput: penguin, chicken, camel, donkey': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: ONE animal, ONE object, ONE color, ONE shape, ONE pattern, ONE sound, ONE word.\nOutput: ONE animal, ONE object, ONE color, ONE shape, ONE pattern, ONE sound, ONE word.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: giraffe, monkey, shark, duck, chicken, sock, frog, donkey, mango, camel, chicken, snail, potato, waiter, penguin, white, snail, horse, blue, butterfly, scarf': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: giraffe, monkey, shark, duck, donkey\nOutput: giraffe, monkey, shark, duck': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken, sock, frog\n\nInput: mango, camel, chicken, sock, frog\nOutput: donkey, chicken, sock, f': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        1., 0., 0., 0.]])), 'Input: [list of words]\nOutput: [list of words]': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: ONE, Output: ONE.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: giraffe, monkey, shark, duck\n\nOutput: giraffe, monkey, shark, duck': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: giraffe, monkey, shark, duck, camel\nOutput: giraffe, monkey, shark, duck, camel': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: giraffe, monkey, shark, duck, truck\nOutput: giraffe, monkey, shark, duck, truck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: mango, camel': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: giraffe, monkey, shark, duck, camel, frog, donkey, chicken, sock, snail, white, horse, blue, butterfly, scarf, goat, pajamas, hippo, egg, whale, eleph': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck': (0.15, array([[1., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        1., 0., 0., 0.]])), 'Input: ONE\nOutput: ONE': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: pink, shark, giraffe, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, chicken, camel': (0.1, array([[0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: ONE, giraffe, monkey, shark, duck, donkey, mango, camel, chicken, sock, frog, truck, penguin, snail, horse, chicken, potato, waiter, penguin, white, sn': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: pink, shark, giraffe, duck, monkey\nOutput: giraffe, monkey, shark, duck': (0.1, array([[0., 0., 0., 1., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\nInput: mango, camel, chicken, sock, frog, monkey\nOutput: camel, chicken': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: pink, shark, giraffe, truck, duck, monkey\nOutput: giraffe, monkey, shark, duck\n\n\nInput: mango, camel, chicken, sock, frog, donkey\nOutput: donkey, ch': (0.15, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 1., 0., 0.,
+        1., 0., 0., 0.]])), 'Input: [object Object]\nOutput: [object Object]': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "es" for task "taxonomy_animal"...
+[PRED 0] gold=['eagle, beetle, bird, kangaroo'] | pred='kangaroo, eagle, bicycle' | score=0.0000
+[PRED 1] gold=['bear, beetle, bird, kangaroo'] | pred='kangaroo, bear' | score=0.0000
+[PRED 2] gold=['bird, crocodile, dog, eagle'] | pred='eagle, bird, dog, crocodile' | score=1.0000
+[PRED 3] gold=['crocodile, eagle, dog'] | pred='eagle, crocodile, dog' | score=1.0000
+[PRED 4] gold=['beetle, cow, kangaroo, eagle'] | pred='cow, eagle, kangaroo' | score=0.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\taxonomy_animal_20251016_223026__es__Input_pink__shark__giraffe__truck__duck___3257c40b.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.24

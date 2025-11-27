@@ -1,0 +1,323 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:09<00:09,  9.75s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:17<00:00,  8.86s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:17<00:00,  8.99s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+D:\Py\LLM test\run_instructzero.py:705: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: I understand the instruction.\nOutput: I am able to follow the instruction.\nInput: I am able to understand the instruction.\nOutput: I am able to follow the instruction.\nInput: I am able to understand the instruction.\nOutput: I am able to follow the instruction.\nInput']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_202930__f1__Input_I_understand_the_instruction._Outp__89cd7182.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: This song is fire.\nOutput: Listen to this song.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_202943__f1__Input_This_song_is_fire._Output_Listen_t__5470d7e6.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please provide the instruction. Output: Please provide the output.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_202955__f1__Input_Please_provide_the_instruction._Ou__404a618f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ["Input: I am the one who can't stand his temper.\nOutput: I am the one who cannot tolerate his temper."]
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203016__f1__Input_I_am_the_one_who_can_t_stand_his_t__c0b6d769.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: This is a test.\nOutput: This is a trial.\nInput: I am here.\nOutput: I am here.\nInput: This is a test.\nOutput: This is a trial.\nInput: I am here.\nOutput: I am here.\nInput: This is']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203101__f1__Input_This_is_a_test._Output_This_is_a_t__24efcb34.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Consider various approaches.\nOutput: Examine different paths.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203113__f1__Input_Consider_various_approaches._Outpu__f826cc5b.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please provide a concise instruction that maps Input to Output above.\nOutput: Please provide an imperative sentence.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203132__f1__Input_Please_provide_a_concise_instructi__4804fac3.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['ONE: Consider the following Input and Output pairs, and write a concise instruction that maps Input to Output above.\n\nInstruction: Compare and contrast the given Input and Output pairs.\n\nONE: Write a sentence that expresses the relationship between Input and Output.\n\nInstruction: Use an']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203217__f1__ONE_Consider_the_following_Input_and_Out__664996c4.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\nOutput: Various approaches were considered.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203235__f1__Input_Write_a_concise_instruction_that_m__139f55ce.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please call once you get there.\nOutput: Please call upon your arrival.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203249__f1__Input_Please_call_once_you_get_there._Ou__20cc7068.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: This is a command.\nOutput: This is a directive.\nInput: This is a message.\nOutput: This is a statement.\nInput: This is a request.\nOutput: This is a response.\nInput: This is a response.\nOutput: This is a response.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203334__f1__Input_This_is_a_command._Output_This_is___721d1a25.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Consider the following sentence.\nOutput: Please consider the sentence provided.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203347__f1__Input_Consider_the_following_sentence._O__9ed05e9e.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ["Input: I'm not sure about this.\nOutput: I'm not sure about this.\nInput: I'm not sure about that.\nOutput: I'm not sure about that.\nInput: I'm not sure about this.\nOutput: I'm not sure about this"]
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203431__f1__Input_I_m_not_sure_about_this._Output_I___e1c51b98.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: I am ready to learn.\nOutput: I will teach you what you need to know.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203448__f1__Input_I_am_ready_to_learn._Output_I_will__979437bc.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please provide a concise instruction that maps Input to Output above.\n\nOutput: Please provide an imperative sentence.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203508__f1__Input_Please_provide_a_concise_instructi__e52d4a92.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please call upon your arrival.\nOutput: Please call once you get there.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203522__f1__Input_Please_call_upon_your_arrival._Out__c6dba5b8.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please provide a concise instruction that maps Input to Output above.\nOutput: Please provide a single instruction that maps Input to Output.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203544__f1__Input_Please_provide_a_concise_instructi__d68ac4f4.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: I am ready to learn.\nOutput: I will teach you what you need to know.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please call once you get there.\nOutput: Please call upon your arrival.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ["Input: This is a great opportunity.\nOutput: This is a fantastic opportunity.\nInput: I'm glad to have found this.\nOutput: I'm grateful to have found this.\nInput: This is a wonderful chance.\nOutput: This is a marvelous opportunity.\nInput"]
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203659__f1__Input_This_is_a_great_opportunity._Outpu__9e368ae5.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: I am ready to go.\nOutput: I will go with you.\n\nInput: I have what it takes.\nOutput: I have the necessary resources.\nInput: I am up for it.\nOutput: I will support you.\nInput: I am all for it.\nOutput']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203744__f1__Input_I_am_ready_to_go._Output_I_will_go__3dd6b1b9.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please provide a concise instruction that maps Input to Output above.\nOutput: Please provide an imperative sentence. Output only the instruction.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203806__f1__Input_Please_provide_a_concise_instructi__7770fc1a.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please call once you get there.\nOutput: Please call upon your arrival.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Please provide a concise instruction that maps Input to Output above.\nOutput: I am unable to provide a concise instruction that maps Input to Output.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203845__f1__Input_Please_provide_a_concise_instructi__51369656.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Consider the following sentence.\nOutput: Please consider the sentence provided.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Best initial point: 0.000
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.015}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][20:38:59] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[20:39:00] INFO [PROFILE] GP fit: 0.331s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:39:00] INFO Iter 0 best_value=0.00000 gp_loss=117.85723
+[20:39:00] INFO [PROFILE] Acquisition: 0.806s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[20:39:07] INFO [PROFILE] LLM eval candidate: 6.656s
+[20:39:07] INFO Best value so far: 0.00000
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:07<00:31,  7.82s/it][20:39:07] INFO [Iteration 1] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:39:08] INFO [PROFILE] GP fit: 0.522s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:39:08] INFO Iter 1 best_value=0.00000 gp_loss=104.93884
+D:\conda_envs\iz310\lib\site-packages\botorch\optim\optimize.py:753: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+[20:39:09] INFO [PROFILE] Acquisition: 0.989s
+[20:39:17] INFO [PROFILE] LLM eval candidate: 8.672s
+[20:39:17] INFO Best value so far: 0.00000
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:18<00:27,  9.22s/it][20:39:17] INFO [Iteration 2] X_train torch.Size([27, 30]), y_train torch.Size([27, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:39:18] INFO [PROFILE] GP fit: 0.244s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:39:18] INFO Iter 2 best_value=0.00000 gp_loss=96.22887
+[20:39:18] INFO [PROFILE] Acquisition: 0.429s
+[20:39:25] INFO [PROFILE] LLM eval candidate: 6.648s
+[20:39:25] INFO Best value so far: 0.00000
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [00:25<00:16,  8.36s/it][20:39:25] INFO [Iteration 3] X_train torch.Size([28, 30]), y_train torch.Size([28, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:39:25] INFO [PROFILE] GP fit: 0.273s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:39:25] INFO Iter 3 best_value=0.00000 gp_loss=112.25138
+[20:39:25] INFO [PROFILE] Acquisition: 0.548s
+[20:39:39] INFO [PROFILE] LLM eval candidate: 13.946s
+[20:39:39] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [00:40<00:10, 10.89s/it][20:39:39] INFO [Iteration 4] X_train torch.Size([28, 30]), y_train torch.Size([28, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:39:40] INFO [PROFILE] GP fit: 0.244s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:39:40] INFO Iter 4 best_value=0.00000 gp_loss=112.25138
+[20:39:40] INFO [PROFILE] Acquisition: 0.415s
+[20:39:50] INFO [PROFILE] LLM eval candidate: 9.969s
+[20:39:50] INFO Best value so far: 0.00000
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [00:50<00:00, 10.80s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [00:50<00:00, 10.15s/it]
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.0185}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['"Consider various approaches."']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203907__f1__Consider_various_approaches.__ea03885a.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 1] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 0.0000e+00, mean: 0.0000e+00
+Instruction: ['"Consider the input and output above."']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203917__f1__Consider_the_input_and_output_above.__ac281500.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (27,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 2] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (27) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([27, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([27, 1]), std: 0.0000e+00, mean: 0.0000e+00
+Instruction: ['Use a declarative sentence.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203925__f1__Use_a_declarative_sentence.__32847eb6.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (28,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (28) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([28, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([28, 1]), std: 0.0000e+00, mean: 0.0000e+00
+Instruction: ['Input: Please call once you get there.\nOutput: Call upon your arrival.']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203939__f1__Input_Please_call_once_you_get_there._Ou__bdf7fbcb.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (28,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (28) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([28, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([28, 1]), std: 0.0000e+00, mean: 0.0000e+00
+Instruction: ['"Condense the input into a single sentence."']
+Using metric "f1" for task "informal_to_formal"...
+[PRED-DUMP] wrote 0 rows to logs/preds\informal_to_formal_20251016_203950__f1__Condense_the_input_into_a_single_sentenc__c0e2334a.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['"Condense the input into a single sentence."']
+The final instruction set is:
+{'Input: I understand the instruction.\nOutput: I am able to follow the instruction.\nInput: I am able to understand the instruction.\nOutput: I am able to follow the instruction.\nInput: I am able to understand the instruction.\nOutput: I am able to follow the instruction.\nInput': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: This song is fire.\nOutput: Listen to this song.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please provide the instruction. Output: Please provide the output.': (0.0, array([], shape=(1, 0), dtype=float64)), "Input: I am the one who can't stand his temper.\nOutput: I am the one who cannot tolerate his temper.": (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: This is a test.\nOutput: This is a trial.\nInput: I am here.\nOutput: I am here.\nInput: This is a test.\nOutput: This is a trial.\nInput: I am here.\nOutput: I am here.\nInput: This is': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Consider various approaches.\nOutput: Examine different paths.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please provide a concise instruction that maps Input to Output above.\nOutput: Please provide an imperative sentence.': (0.0, array([], shape=(1, 0), dtype=float64)), 'ONE: Consider the following Input and Output pairs, and write a concise instruction that maps Input to Output above.\n\nInstruction: Compare and contrast the given Input and Output pairs.\n\nONE: Write a sentence that expresses the relationship between Input and Output.\n\nInstruction: Use an': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Write a concise instruction that maps Input to Output above.\nOutput: Various approaches were considered.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please call once you get there.\nOutput: Please call upon your arrival.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: This is a command.\nOutput: This is a directive.\nInput: This is a message.\nOutput: This is a statement.\nInput: This is a request.\nOutput: This is a response.\nInput: This is a response.\nOutput: This is a response.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Consider the following sentence.\nOutput: Please consider the sentence provided.': (0.0, array([], shape=(1, 0), dtype=float64)), "Input: I'm not sure about this.\nOutput: I'm not sure about this.\nInput: I'm not sure about that.\nOutput: I'm not sure about that.\nInput: I'm not sure about this.\nOutput: I'm not sure about this": (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: I am ready to learn.\nOutput: I will teach you what you need to know.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please provide a concise instruction that maps Input to Output above.\n\nOutput: Please provide an imperative sentence.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please call upon your arrival.\nOutput: Please call once you get there.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please provide a concise instruction that maps Input to Output above.\nOutput: Please provide a single instruction that maps Input to Output.': (0.0, array([], shape=(1, 0), dtype=float64)), "Input: This is a great opportunity.\nOutput: This is a fantastic opportunity.\nInput: I'm glad to have found this.\nOutput: I'm grateful to have found this.\nInput: This is a wonderful chance.\nOutput: This is a marvelous opportunity.\nInput": (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: I am ready to go.\nOutput: I will go with you.\n\nInput: I have what it takes.\nOutput: I have the necessary resources.\nInput: I am up for it.\nOutput: I will support you.\nInput: I am all for it.\nOutput': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please provide a concise instruction that maps Input to Output above.\nOutput: Please provide an imperative sentence. Output only the instruction.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please provide a concise instruction that maps Input to Output above.\nOutput: I am unable to provide a concise instruction that maps Input to Output.': (0.0, array([], shape=(1, 0), dtype=float64)), '"Consider various approaches."': (0.0, array([], shape=(1, 0), dtype=float64)), '"Consider the input and output above."': (0.0, array([], shape=(1, 0), dtype=float64)), 'Use a declarative sentence.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Please call once you get there.\nOutput: Call upon your arrival.': (0.0, array([], shape=(1, 0), dtype=float64)), '"Condense the input into a single sentence."': (0.0, array([], shape=(1, 0), dtype=float64))}
+Evaluating on test data...
+Evaluating prompts...
+Traceback (most recent call last):
+  File "D:\conda_envs\iz310\lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\conda_envs\iz310\lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\conda_envs\iz310\lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\conda_envs\iz310\lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "D:\conda_envs\iz310\lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\conda_envs\iz310\lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\conda_envs\iz310\lib\site-packages\httpcore\_sync\connection.py", line 156, in _connect
+    stream = stream.start_tls(**kwargs)
+  File "D:\conda_envs\iz310\lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+  File "D:\conda_envs\iz310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\conda_envs\iz310\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:1000: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\conda_envs\iz310\lib\site-packages\openai\_base_client.py", line 979, in request
+    response = self._client.send(
+  File "D:\conda_envs\iz310\lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "D:\conda_envs\iz310\lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "D:\conda_envs\iz310\lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\conda_envs\iz310\lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\conda_envs\iz310\lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "D:\conda_envs\iz310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\conda_envs\iz310\lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:1000: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Py\LLM test\run_instructzero.py", line 1054, in <module>
+    test_score = run(args=args)
+  File "D:\Py\LLM test\run_instructzero.py", line 1036, in run
+    test_res = ape.evaluate_prompts(
+  File "D:\Py\LLM test\automatic_prompt_engineer\ape.py", line 185, in evaluate_prompts
+    res = evaluate.evaluate_prompts(
+  File "D:\Py\LLM test\automatic_prompt_engineer\evaluate.py", line 44, in evaluate_prompts
+    return eval_method(prompts, eval_template, eval_data, demos_template, few_shot_data, config)
+  File "D:\Py\LLM test\evaluation_instruction_induction\exec_accuracy.py", line 173, in exec_accuracy_evaluator
+    model_outputs = model.generate_text(queries, 1)
+  File "D:\Py\LLM test\automatic_prompt_engineer\llm.py", line 419, in generate_text
+    text += self.__generate_text(prompt_batch, n)
+  File "D:\Py\LLM test\automatic_prompt_engineer\llm.py", line 457, in __generate_text
+    content = self.chat_completion([{"role": "user", "content": prompt_single}], is_async=False)
+  File "D:\Py\LLM test\automatic_prompt_engineer\llm.py", line 353, in chat_completion
+    completion = self.llm_client.chat.completions.create(
+  File "D:\conda_envs\iz310\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "D:\conda_envs\iz310\lib\site-packages\openai\resources\chat\completions\completions.py", line 1131, in create
+    return self._post(
+  File "D:\conda_envs\iz310\lib\site-packages\openai\_base_client.py", line 1256, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\conda_envs\iz310\lib\site-packages\openai\_base_client.py", line 997, in request
+    raise APITimeoutError(request=request) from err
+openai.APITimeoutError: Request timed out.

@@ -1,0 +1,355 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:11<00:11, 11.31s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.66s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.90s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: imperative\nOutput: imperatives\nInput: directive\nOutput: directives\nInput: mandate\nOutput: mandates\nInput: authority\nOutput: authorities\nInput: precedent\nOutput: precedents\nInput: principle\nOutput: principles\nInput: rule\nOutput: rules\nInput']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['surgeries'] | pred='surgeries' | score=1.0000
+[PRED 1] gold=['courtyards'] | pred='courtyards' | score=1.0000
+[PRED 2] gold=['components'] | pred='components' | score=1.0000
+[PRED 3] gold=['ratios'] | pred='ratios' | score=1.0000
+[PRED 4] gold=['reels'] | pred='reels' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_012936__em__Input_imperative_Output_imperatives_Inpu__4d3aba3b.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: choir\nOutput: choirs']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['reels'] | pred='reels' | score=1.0000
+[PRED 1] gold=['switches'] | pred='switches' | score=1.0000
+[PRED 2] gold=['sections'] | pred='sections' | score=1.0000
+[PRED 3] gold=['intakes'] | pred='intakes' | score=1.0000
+[PRED 4] gold=['bubbles'] | pred='bubbles' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_012959__em__Input_choir_Output_choirs__c7fe7779.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: choir\nOutput: choirs\n\nInput: cheek\nOutput: cheeks\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['platforms'] | pred='platforms' | score=1.0000
+[PRED 1] gold=['discs'] | pred='discs' | score=1.0000
+[PRED 2] gold=['holes'] | pred='holes' | score=1.0000
+[PRED 3] gold=['bedrooms'] | pred='bedrooms' | score=1.0000
+[PRED 4] gold=['restaurants'] | pred='restaurants' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013102__em__Input_choir_Output_choirs_Input_cheek_Ou__c6952b7b.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: cheek\nOutput: cheeks\n\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement\nOutput: reinforcements\nInput: assertion']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['ensembles'] | pred='ensembles' | score=1.0000
+[PRED 1] gold=['arrests'] | pred='arrests' | score=1.0000
+[PRED 2] gold=['rosters'] | pred='rosters' | score=1.0000
+[PRED 3] gold=['troops'] | pred='troops' | score=1.0000
+[PRED 4] gold=['cows'] | pred='cows' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013201__em__Input_cheek_Output_cheeks_Input_plan_Out__e2de5f0b.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperatives\nInput: mandatory\nOutput: mandatories\nInput: necessary\nOutput: necessaries\nInput: required\nOutput: requirements\nInput: sufficient\nOutput: sufficiency\nInput: vital\nOutput: vitals\nInput: essential\nOutput: ess']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['exits'] | pred='exits' | score=1.0000
+[PRED 1] gold=['subplots'] | pred='subplots' | score=1.0000
+[PRED 2] gold=['mocks'] | pred='mocks' | score=1.0000
+[PRED 3] gold=['synths'] | pred='synths' | score=1.0000
+[PRED 4] gold=['explorations'] | pred='explorations' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013306__em__Input_imperative_Output_imperatives_Inpu__b8b5c5b0.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative sentence\nOutput: "Please provide a concise instruction that maps Input to Output above."']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['spells'] | pred='please spell out a concise instruction that maps input to output above.' | score=0.0000
+[PRED 1] gold=['centimeters'] | pred='please provide a concise instruction that maps input to output above.' | score=0.0000
+[PRED 2] gold=['organises'] | pred='please provide a concise instruction on how to organize the given input.' | score=0.0000
+[PRED 3] gold=['ghosts'] | pred='please provide a concise instruction that maps input to output above.' | score=0.0000
+[PRED 4] gold=['metaphors'] | pred='please provide a vivid comparison between two unrelated things to create a metaphor.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013342__em__Input_imperative_sentence_Output_Please___7e8ec037.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: instruction\nOutput: instructions']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['documentaries'] | pred='documentaries' | score=1.0000
+[PRED 1] gold=['cultures'] | pred='cultures' | score=1.0000
+[PRED 2] gold=['researchers'] | pred='researchers' | score=1.0000
+[PRED 3] gold=['lures'] | pred='lures' | score=1.0000
+[PRED 4] gold=['telegrams'] | pred='telegrams' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013406__em__Input_instruction_Output_instructions__7bccdaa5.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "ONE concise instruction."']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['museums'] | pred='visit the museum.' | score=0.0000
+[PRED 1] gold=['tickets'] | pred='find the ticket.' | score=0.0000
+[PRED 2] gold=['remixes'] | pred='create a new version.' | score=0.0000
+[PRED 3] gold=['requirements'] | pred='write concise instructions.' | score=0.0000
+[PRED 4] gold=['funerals'] | pred='plan a funeral.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013446__em__Input_Write_ONE_concise_instruction_that__51f5a422.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative sentence. Output only the instruction.']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['finalists'] | pred='be a finalist.' | score=0.0000
+[PRED 1] gold=['kids'] | pred='be a kid.' | score=0.0000
+[PRED 2] gold=['companions'] | pred='be a companion.' | score=0.0000
+[PRED 3] gold=['interactions'] | pred='provide clear and concise instructions.' | score=0.0000
+[PRED 4] gold=['assaults'] | pred='assault.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013512__em__Input_imperative_sentence._Output_only_t__a6b5aa2c.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Write ONE concise instruction that maps Input to Output above."']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['withdrawals'] | pred='provide a brief and clear set of instructions for the task of withdrawing.' | score=0.0000
+[PRED 1] gold=['districts'] | pred='define the boundaries or limits of a specific area or region.' | score=0.0000
+[PRED 2] gold=['myths'] | pred="transform the input by adding the letter 's' at the end." | score=0.0000
+[PRED 3] gold=['semifinals'] | pred='reverse the order of the letters in the word "semifinal".' | score=0.0000
+[PRED 4] gold=['festivals'] | pred="identify the keyword 'festival' and provide a relevant response based on context." | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013554__em__Input_Write_ONE_concise_instruction_that__abeeddde.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative\nInput: mandatory\nOutput: mandatory\nInput: necessary\nOutput: necessary\nInput: required\nOutput: required\nInput: essential\nOutput: essential\nInput: fundamental\nOutput: fundamental\nInput: basic\nOutput: basic\nInput: essential']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['songwriters'] | pred='songwriter' | score=0.0000
+[PRED 1] gold=['studios'] | pred='studio' | score=0.0000
+[PRED 2] gold=['receptions'] | pred='reception' | score=0.0000
+[PRED 3] gold=['tragedies'] | pred='tragedy' | score=0.0000
+[PRED 4] gold=['teams'] | pred='team' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013654__em__Input_imperative_Output_imperative_Input__a5fc7e2e.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: choir\nOutput: choirs\n\nInput: cheek\nOutput: cheeks\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['affiliates'] | pred='affiliate' | score=0.0000
+[PRED 1] gold=['suites'] | pred='please provide an imperative instruction.' | score=0.0000
+[PRED 2] gold=['possesses'] | pred='possess' | score=0.0000
+[PRED 3] gold=['sopranos'] | pred='soprano' | score=0.0000
+[PRED 4] gold=['mechanisms'] | pred='mechanism' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013804__em__Input_imperative_Output_imperative__1e379ef3.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: instruction\nOutput: instruction']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['considerations'] | pred='consideration' | score=0.0000
+[PRED 1] gold=['lovers'] | pred='lover' | score=0.0000
+[PRED 2] gold=['executives'] | pred='executive' | score=0.0000
+[PRED 3] gold=['artists'] | pred='artist' | score=0.0000
+[PRED 4] gold=['officers'] | pred='officer' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013831__em__Input_instruction_Output_instruction__ccda667f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: "Write a concise instruction that maps Input to Output above."\n\nOutput: "Use an imperative sentence."']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['homages'] | pred='pay tribute.' | score=0.0000
+[PRED 1] gold=['ambushes'] | pred='plan a surprise attack.' | score=0.0000
+[PRED 2] gold=['surveys'] | pred='conduct the survey.' | score=0.0000
+[PRED 3] gold=['passages'] | pred='summarize the passage in your own words.' | score=0.0000
+[PRED 4] gold=['symphonies'] | pred='listen to a symphony.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_013915__em__Input_Write_a_concise_instruction_that_m__a58b60ef.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative sentence. Output only the instruction.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['streaks'] | pred='streak' | score=0.0000
+[PRED 1] gold=['catalogs'] | pred='catalog' | score=0.0000
+[PRED 2] gold=['messages'] | pred='message' | score=0.0000
+[PRED 3] gold=['sorties'] | pred='sortie' | score=0.0000
+[PRED 4] gold=['wickets'] | pred='wicket' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014047__em__Input_ONE_Output_ONE_Input_ONE_Output_ON__841891b4.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: choir\nOutput: choirs\n\nInput: cheek\nOutput: cheeks\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative sentence\nOutput: "Do not use the word \'input\' in the imperative sentence."']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['taxes'] | pred="do not use the word 'tax' in the imperative sentence." | score=0.0000
+[PRED 1] gold=['parts'] | pred="do not use the word 'part' in the imperative sentence." | score=0.0000
+[PRED 2] gold=['rappers'] | pred="do not use the word 'rapper' in the imperative sentence." | score=0.0000
+[PRED 3] gold=['hospitals'] | pred="do not use the word 'hospital' in the imperative sentence." | score=0.0000
+[PRED 4] gold=['clients'] | pred="do not use the word 'client' in the imperative sentence." | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014215__em__Input_imperative_sentence_Output_Do_not___2462a8f2.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperatives']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['pigs'] | pred='pigs' | score=1.0000
+[PRED 1] gold=['borders'] | pred='borders' | score=1.0000
+[PRED 2] gold=['holidays'] | pred='holidays' | score=1.0000
+[PRED 3] gold=['basins'] | pred='basins' | score=1.0000
+[PRED 4] gold=['massacres'] | pred='massacres' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014240__em__Input_imperative_Output_imperatives__2278816e.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: choir\nOutput: choirs\n\nInput: cheek\nOutput: cheeks\n\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['storylines'] | pred='storylines' | score=1.0000
+[PRED 1] gold=['writers'] | pred='writers' | score=1.0000
+[PRED 2] gold=['backdrops'] | pred='backdrops' | score=1.0000
+[PRED 3] gold=['shrines'] | pred='shrines' | score=1.0000
+[PRED 4] gold=['councils'] | pred='councils' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014343__em__Input_choir_Output_choirs_Input_cheek_Ou__6b74713e.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Best initial point: 1.000
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][01:43:44] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[01:43:44] INFO [PROFILE] GP fit: 0.201s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[01:43:44] INFO Iter 0 best_value=1.20982 gp_loss=-3853.22944
+[01:43:45] INFO [PROFILE] Acquisition: 0.849s
+[01:44:47] INFO [PROFILE] LLM eval candidate: 61.703s
+[01:44:47] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [01:02<04:11, 62.78s/it][01:44:47] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[01:44:47] INFO [PROFILE] GP fit: 0.272s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[01:44:47] INFO Iter 1 best_value=1.20982 gp_loss=-3853.22944
+[01:44:48] INFO [PROFILE] Acquisition: 0.731s
+[01:45:52] INFO [PROFILE] LLM eval candidate: 64.667s
+[01:45:52] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [02:08<03:13, 64.49s/it][01:45:52] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[01:45:53] INFO [PROFILE] GP fit: 0.272s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[01:45:53] INFO Iter 2 best_value=1.20982 gp_loss=-3853.22944
+[01:45:54] INFO [PROFILE] Acquisition: 0.833s
+[01:46:16] INFO [PROFILE] LLM eval candidate: 21.936s
+[01:46:16] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [02:31<01:31, 45.57s/it][01:46:16] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[01:46:16] INFO [PROFILE] GP fit: 0.283s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[01:46:16] INFO Iter 3 best_value=1.20982 gp_loss=-3853.22944
+[01:46:17] INFO [PROFILE] Acquisition: 0.881s
+[01:47:17] INFO [PROFILE] LLM eval candidate: 60.004s
+[01:47:17] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [03:32<00:51, 51.74s/it][01:47:17] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[01:47:17] INFO [PROFILE] GP fit: 0.263s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[01:47:17] INFO Iter 4 best_value=1.20982 gp_loss=-3853.22944
+[01:47:18] INFO [PROFILE] Acquisition: 0.732s
+[01:47:50] INFO [PROFILE] LLM eval candidate: 32.380s
+[01:47:50] INFO Best value so far: 1.00000
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [04:06<00:00, 45.13s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [04:06<00:00, 49.22s/it]
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: choir\nOutput: choirs\n\nInput: cheek\nOutput: cheeks\n\nInput: plan\nOutput: plans\n\nInput: factor\nOutput: factors\n\nInput: phrase\nOutput: phrases\n\nInput: millimetre\nOutput: millimetres\n\nInput']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['cameras'] | pred='cameras' | score=1.0000
+[PRED 1] gold=['temperatures'] | pred='temperatures' | score=1.0000
+[PRED 2] gold=['wheels'] | pred='wheels' | score=1.0000
+[PRED 3] gold=['sizes'] | pred='sizes' | score=1.0000
+[PRED 4] gold=['clocks'] | pred='clocks' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014447__em__Input_choir_Output_choirs_Input_cheek_Ou__28e938b2.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: choir\nOutput: cheeks\n\nInput: plan\nOutput: plans\n\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement\nOutput: reinforcements\nInput:']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['pounders'] | pred='pounders' | score=1.0000
+[PRED 1] gold=['cricketers'] | pred='cricketers' | score=1.0000
+[PRED 2] gold=['gales'] | pred='gales' | score=1.0000
+[PRED 3] gold=['excavations'] | pred='excavations' | score=1.0000
+[PRED 4] gold=['concessions'] | pred='concessions' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014552__em__Input_choir_Output_cheeks_Input_plan_Out__d50765a3.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['ONE']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['wounds'] | pred='apply pressure to the wound to stop the bleeding.' | score=0.0000
+[PRED 1] gold=['tickets'] | pred='please show your ticket for entry.' | score=0.0000
+[PRED 2] gold=['analysts'] | pred='researcher' | score=0.0000
+[PRED 3] gold=['parrots'] | pred='bird' | score=0.0000
+[PRED 4] gold=['cantatas'] | pred='a musical composition for voices and instruments' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014616__em__ONE__bc21e648.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: choir\nOutput: choirs\nInput: cheek\nOutput: cheeks\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement\nOutput']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['venues'] | pred='venues' | score=1.0000
+[PRED 1] gold=['tubes'] | pred='tubes' | score=1.0000
+[PRED 2] gold=['engines'] | pred='engines' | score=1.0000
+[PRED 3] gold=['shafts'] | pred='shafts' | score=1.0000
+[PRED 4] gold=['parties'] | pred='parties' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014717__em__Input_choir_Output_choirs_Input_cheek_Ou__a19684cb.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['What is the meaning of life?']
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['slips'] | pred='the meaning of life is subjective and can vary from person to person. some may believe it is to seek happiness and fulfillment, others may find meaning in relationships, experiences, or personal growth. ultimately, the meaning of life is a question that each individual must answer for themselves.' | score=0.0000
+[PRED 1] gold=['strings'] | pred='the meaning of life is a philosophical question that many people have different opinions on. some believe that the meaning of life is to seek happiness and fulfillment, while others believe it is to fulfill a specific purpose or destiny. ultimately, the meaning of life may vary for each individual and can be subjective.' | score=0.0000
+[PRED 2] gold=['plateaus'] | pred='the meaning of life is to reach a state of stability, balance, and contentment, much like being on a plateau. it is about finding peace and fulfillment in the present moment, rather than constantly striving for more.' | score=0.0000
+[PRED 3] gold=['grades'] | pred='the meaning of life is a philosophical and existential question that varies from person to person. some may believe the meaning of life is to seek happiness and fulfillment, others may believe it is to make a positive impact on the world, and others may find meaning through relationships, experiences, or spirituality. ultimately, the meaning of life is subjective and can be interpreted in many different ways.' | score=0.0000
+[PRED 4] gold=['boats'] | pred='the meaning of life is a philosophical question that has been debated by many throughout history. some believe it is to seek happiness and fulfillment, others believe it is to fulfill a higher purpose or destiny. ultimately, the meaning of life is a personal and subjective question that each individual must answer for themselves.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\singular_to_plural_20251018_014750__em__What_is_the_meaning_of_life__c74efaf9.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: choir\nOutput: choirs\nInput: cheek\nOutput: cheeks\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement\nOutput']
+The final instruction set is:
+{'Input: imperative\nOutput: imperatives\nInput: directive\nOutput: directives\nInput: mandate\nOutput: mandates\nInput: authority\nOutput: authorities\nInput: precedent\nOutput: precedents\nInput: principle\nOutput: principles\nInput: rule\nOutput: rules\nInput': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: choir\nOutput: choirs': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: choir\nOutput: choirs\n\nInput: cheek\nOutput: cheeks\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: cheek\nOutput: cheeks\n\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement\nOutput: reinforcements\nInput: assertion': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: imperative\nOutput: imperatives\nInput: mandatory\nOutput: mandatories\nInput: necessary\nOutput: necessaries\nInput: required\nOutput: requirements\nInput: sufficient\nOutput: sufficiency\nInput: vital\nOutput: vitals\nInput: essential\nOutput: ess': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: imperative sentence\nOutput: "Please provide a concise instruction that maps Input to Output above."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: instruction\nOutput: instructions': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "ONE concise instruction."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Write ONE concise instruction that maps Input to Output above."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: imperative\nInput: mandatory\nOutput: mandatory\nInput: necessary\nOutput: necessary\nInput: required\nOutput: required\nInput: essential\nOutput: essential\nInput: fundamental\nOutput: fundamental\nInput: basic\nOutput: basic\nInput: essential': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: imperative': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: instruction\nOutput: instruction': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Write a concise instruction that maps Input to Output above."\n\nOutput: "Use an imperative sentence."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE\nOutput: ONE\nInput: ONE': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative sentence\nOutput: "Do not use the word \'input\' in the imperative sentence."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: imperatives': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 0., 1., 1.]])), 'Input: choir\nOutput: choirs\n\nInput: cheek\nOutput: cheeks\n\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: choir\nOutput: choirs\n\nInput: cheek\nOutput: cheeks\n\nInput: plan\nOutput: plans\n\nInput: factor\nOutput: factors\n\nInput: phrase\nOutput: phrases\n\nInput: millimetre\nOutput: millimetres\n\nInput': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: choir\nOutput: cheeks\n\nInput: plan\nOutput: plans\n\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement\nOutput: reinforcements\nInput:': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'ONE': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: choir\nOutput: choirs\nInput: cheek\nOutput: cheeks\nInput: plan\nOutput: plans\nInput: factor\nOutput: factors\nInput: phrase\nOutput: phrases\nInput: millimetre\nOutput: millimetres\nInput: reinforcement\nOutput': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'What is the meaning of life?': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "singular_to_plural"...
+[PRED 0] gold=['sculptures'] | pred='sculptures' | score=1.0000
+[PRED 1] gold=['stereotypes'] | pred='stereotypes' | score=1.0000
+[PRED 2] gold=['jaws'] | pred='jaws' | score=1.0000
+[PRED 3] gold=['butterflies'] | pred='butterflies' | score=1.0000
+[PRED 4] gold=['configurations'] | pred='configurations' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\singular_to_plural_20251018_014909__em__Input_choir_Output_choirs_Input_cheek_Ou__a19684cb.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.99

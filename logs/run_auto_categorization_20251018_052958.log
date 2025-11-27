@@ -1,0 +1,271 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:10<00:10, 10.88s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.64s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.83s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ["Input: Turtle, Seel, and Drifloon  \nOutput: pokeman\nInput: Stirling's approximation, Shannon¨CHartley theorem, and Schottky's theorem\nOutput: math theorems\nInput: ZX Spectrum Games Code Club: Tw"]
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['Computer Science books'] | pred='books' | score=0.5000
+[PRED 1] gold=['tech companies'] | pred='companies' | score=0.6667
+[PRED 2] gold=['Apparel'] | pred='clothing items' | score=0.0000
+[PRED 3] gold=['extinct languages'] | pred='indigenous languages' | score=0.5000
+[PRED 4] gold=['African countries'] | pred='countries' | score=0.6667
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_053131__f1__Input_Turtle__Seel__and_Drifloon_Output___09da7ac4.tsv
+Dev loss: 0.4962. Dev perf: 0.4962. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: [list of items]\nOutput: [list of corresponding items]']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['presidents of the U.S'] | pred='19th century presidents: rutherford b. hayes, william henry harrison, and james a. garfield' | score=0.1111
+[PRED 1] gold=['tech companies'] | pred='malwarebytes, brandwatch, qualtrics' | score=0.0000
+[PRED 2] gold=['artists'] | pred='giotto di bondone, caravaggio, peter paul rubens' | score=0.0000
+[PRED 3] gold=['the media'] | pred='6abc.com, supermarket news, khaama press' | score=0.0000
+[PRED 4] gold=['extinct languages'] | pred='kulina, wotapuri-katarqalai, and bashkardi' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_053204__f1__Input__list_of_items__Output__list_of_co__8418207d.tsv
+Dev loss: 0.0222. Dev perf: 0.0222. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: ONE concise instruction that maps Input to Output above.\n\nUse an imperative sentence. Output only the instruction.']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['Computer Science books'] | pred='organize the books alphabetically by title.' | score=0.2222
+[PRED 1] gold=['countries with large population'] | pred='list the countries indonesia, ethiopia, and bangladesh.' | score=0.1818
+[PRED 2] gold=['chemical elements with high density'] | pred='combine iron, nickel, and tungsten.' | score=0.0000
+[PRED 3] gold=['chemical elements with high density'] | pred='list molybdenum, indium, and yttrium.' | score=0.0000
+[PRED 4] gold=['animals'] | pred='list the animals in alphabetical order.' | score=0.2857
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_053330__f1__Input_ONE_concise_instruction_that_maps___6795053a.tsv
+Dev loss: 0.11. Dev perf: 0.11. Best dev perf: 0.4962
+********* Done *********
+Instruction: ["Input: Turtwig, Seel, and Drifloon  \nOutput: pokeman\nInput: Stirling's approximation, Shannon¨CHartley theorem, and Schottky's theorem \nOutput: math theorems\nInput: ZX Spectrum Games Code Club:"]
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['people shot by police'] | pred='authors' | score=0.0000
+[PRED 1] gold=['people shot by police'] | pred='people' | score=0.4000
+[PRED 2] gold=['extinct languages'] | pred='tribes' | score=0.0000
+[PRED 3] gold=['animals'] | pred='animals' | score=1.0000
+[PRED 4] gold=['math theorems'] | pred='math theorems' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_053433__f1__Input_Turtwig__Seel__and_Drifloon_Output__a8c03259.tsv
+Dev loss: 0.4043. Dev perf: 0.4043. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: ONE concise instruction that maps Input to Output above.\n\nOutput: ONE.']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['Computer Science books'] | pred='one.' | score=0.0000
+[PRED 1] gold=['Apparel'] | pred='one.' | score=0.0000
+[PRED 2] gold=['large islands'] | pred='one.' | score=0.0000
+[PRED 3] gold=['pokeman'] | pred='one.' | score=0.0000
+[PRED 4] gold=['chemical elements with high density'] | pred='one' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_053621__f1__Input_ONE_concise_instruction_that_maps___7fa1b088.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: The list above is a collection of terms and phrases that have been used in various fields and disciplines. The input list above is a collection of terms and phrases that have been used in various fields and disciplines. The input list above is a collection of terms and phrases that have been used in']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['historical wars'] | pred='military conflicts in history' | score=0.0000
+[PRED 1] gold=['computer file format extensions'] | pred='these terms do not appear to match any specific field or discipline, they may be specific to a certain context or organization.' | score=0.0000
+[PRED 2] gold=['top journals'] | pred='journals that focus on energy, combustion science, and chemical reviews.' | score=0.1667
+[PRED 3] gold=['African countries'] | pred='countries in africa' | score=0.4000
+[PRED 4] gold=['African countries'] | pred='countries in east africa.' | score=0.3333
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_053727__f1__Input_The_list_above_is_a_collection_of___14a72126.tsv
+Dev loss: 0.2101. Dev perf: 0.2101. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\n\nOutput: Write a concise instruction that maps Output to Input above.']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['chemical elements with high density'] | pred='combine iron, nickel, and tungsten. \n\noutput: separate the combined iron, nickel, and tungsten.' | score=0.0000
+[PRED 1] gold=['Apparel'] | pred='organize clothing items in the following order: trousers, innerwear vests, and rain jacket.\n\noutput: rearrange clothing items in the following order: trousers, innerwear vests, and rain jacket.' | score=0.0000
+[PRED 2] gold=['tech companies'] | pred='to find the intersection of the three sets, malwarebytes, brandwatch, and qualtrics.\n\nto list the sets that have an intersection with malwarebytes.' | score=0.0000
+[PRED 3] gold=['historical wars'] | pred='create a list of wars: polish-turkish war, english civil war, and war of the austrian succession.\n\noutput: list the wars as polish-turkish war, english civil war, and war of the austrian succession.' | score=0.1250
+[PRED 4] gold=['top journals'] | pred='combine the titles "nature reviews genetics, mmwr recommendations and reports, and nature reviews disease primers" into a single list separated by commas. \n\noutput: separate the combined list of titles into individual titles "nature reviews genetics", "mmwr recommendations and reports", and "nature reviews disease primers".' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_053815__f1__Input_Write_a_concise_instruction_that_m__412fc3e2.tsv
+Dev loss: 0.0649. Dev perf: 0.0649. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: The instruction above.']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['extinct languages'] | pred='please provide the specific information or task you would like to be performed with the input "chimila, mehri, and southeastern tarahumara."' | score=0.0000
+[PRED 1] gold=['extinct languages'] | pred='please provide more context or specify what action you would like to take with the input provided.' | score=0.0000
+[PRED 2] gold=['Big Tech'] | pred='the instruction above.' | score=0.0000
+[PRED 3] gold=['tech companies'] | pred='the instruction above.' | score=0.0000
+[PRED 4] gold=['African countries'] | pred='the instruction above.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_053842__f1__Input_The_instruction_above.__2d30e7c9.tsv
+Dev loss: 0.0426. Dev perf: 0.0426. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: ONE concise instruction that maps Input to Output above.\nOutput: ONE imperative sentence.']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['extinct languages'] | pred='learn about the languages chimila, mehri, and southeastern tarahumara.' | score=0.1818
+[PRED 1] gold=['popular songs'] | pred='capture the london, china, and bad guy!' | score=0.0000
+[PRED 2] gold=['presidents of the U.S'] | pred='list franklin pierce, abraham lincoln, and william mckinley.' | score=0.0000
+[PRED 3] gold=['popular songs'] | pred="listen to beautiful people (feat. khalid), soltera - remix, and if i can't have you." | score=0.0000
+[PRED 4] gold=['games on Steam'] | pred='play final fantasy xiv heavensward, strife, and the secret of hildegards now!' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_054056__f1__Input_ONE_concise_instruction_that_maps___3418a7fa.tsv
+Dev loss: 0.0458. Dev perf: 0.0458. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\n\nOutput: Use an imperative sentence.']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['computer file format extensions'] | pred='use a comma to separate the words "drw," "farconfig," and "vdproj."' | score=0.0000
+[PRED 1] gold=['extinct languages'] | pred='learn more about the kabard-cherkes, kwadi, and osage languages.' | score=0.1667
+[PRED 2] gold=['extinct languages'] | pred='list the names lenca, tetserret, and afitti.' | score=0.0000
+[PRED 3] gold=['artists'] | pred='list giotto di bondone, caravaggio, and peter paul rubens in chronological order.' | score=0.0000
+[PRED 4] gold=['presidents of the U.S'] | pred='list ronald reagan, dwight d. eisenhower, and richard nixon.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_054225__f1__Input_Write_a_concise_instruction_that_m__c525f820.tsv
+Dev loss: 0.0546. Dev perf: 0.0546. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: ONE concise instruction that maps Input to Output above.\n\nOutput: ONE imperative sentence.']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['extinct languages'] | pred='learn about the languages chimila, mehri, and southeastern tarahumara.' | score=0.1818
+[PRED 1] gold=['Big Tech'] | pred='research and compare the financial performance of amazon, apple, facebook, google, and microsoft.' | score=0.0000
+[PRED 2] gold=['pokeman'] | pred='bring salamence, zapdos, and moltres to the battle!' | score=0.0000
+[PRED 3] gold=['people shot by police'] | pred='please list the names as michael perez, akinyia malik jerome gray, and joshua m. gomoll.' | score=0.0000
+[PRED 4] gold=['historical wars'] | pred='analyze and compare the causes and consequences of each conflict.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_054309__f1__Input_ONE_concise_instruction_that_maps___deca85da.tsv
+Dev loss: 0.0568. Dev perf: 0.0568. Best dev perf: 0.4962
+********* Done *********
+Instruction: ['Input: ONE']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['computer file format extensions'] | pred='there is no specific output provided in the instruction.' | score=0.0000
+[PRED 1] gold=['historical wars'] | pred='the input does not correspond to a specific question or task. could you please provide more context or clarify what kind of output you are looking for with regards to the mentioned topics?' | score=0.0000
+[PRED 2] gold=['prime numbers'] | pred='the output is not provided as it is not clear what operation or transformation needs to be performed on the input numbers. please provide more information on what needs to be done with the input numbers in order to generate an output.' | score=0.0645
+[PRED 3] gold=['science fiction books'] | pred='ancillary justice, obsidian, and all systems red are the titles of three science fiction novels.' | score=0.2222
+[PRED 4] gold=['animals'] | pred='the spotted ground squirrel, hispid cotton rat, and tufted gray langur are three different animals.' | score=0.1250
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_054451__f1__Input_ONE__83ad3846.tsv
+Dev loss: 0.0545. Dev perf: 0.0545. Best dev perf: 0.4962
+********* Done *********
+Best initial point: 0.496
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][05:48:52] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[05:48:53] INFO [PROFILE] GP fit: 0.221s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[05:48:53] INFO Iter 0 best_value=3.41950 gp_loss=-498.77463
+[05:48:53] INFO [PROFILE] Acquisition: 0.790s
+[05:49:20] INFO [PROFILE] LLM eval candidate: 26.807s
+[05:49:20] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:27<01:51, 27.83s/it][05:49:20] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[05:49:20] INFO [PROFILE] GP fit: 0.235s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[05:49:20] INFO Iter 1 best_value=3.41950 gp_loss=-578.69214
+[05:49:21] INFO [PROFILE] Acquisition: 0.726s
+[05:50:09] INFO [PROFILE] LLM eval candidate: 48.111s
+[05:50:09] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [01:16<02:00, 40.33s/it][05:50:09] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[05:50:09] INFO [PROFILE] GP fit: 0.227s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[05:50:10] INFO Iter 2 best_value=3.41950 gp_loss=-656.36299
+[05:50:10] INFO [PROFILE] Acquisition: 0.698s
+[05:50:40] INFO [PROFILE] LLM eval candidate: 29.594s
+[05:50:40] INFO Best value so far: 0.49619
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:47<01:11, 35.86s/it][05:50:40] INFO [Iteration 3] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[05:50:41] INFO [PROFILE] GP fit: 0.816s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[05:50:41] INFO Iter 3 best_value=3.43873 gp_loss=-1797.32080
+[05:50:41] INFO [PROFILE] Acquisition: 0.471s
+[05:51:30] INFO [PROFILE] LLM eval candidate: 48.413s
+[05:51:30] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [02:37<00:41, 41.33s/it][05:51:30] INFO [Iteration 4] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[05:51:30] INFO [PROFILE] GP fit: 0.463s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[05:51:30] INFO Iter 4 best_value=3.43873 gp_loss=-1797.32080
+[05:51:30] INFO [PROFILE] Acquisition: 0.434s
+[05:52:17] INFO [PROFILE] LLM eval candidate: 46.519s
+[05:52:17] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [03:24<00:00, 43.53s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [03:24<00:00, 40.92s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.3199999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.53}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['The instruction is to write a concise sentence.']
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['tourist_attractions'] | pred="visit the signalno watchtower and museum 'old sarepta' in the village of muni, and explore the house of the unmarried sisters." | score=0.0000
+[PRED 1] gold=['African countries'] | pred='tanzania, rwanda, and malawi are countries in east africa.' | score=0.1818
+[PRED 2] gold=['games on Steam'] | pred='final fantasy xiv heavensward, strife, and the secret of hildegards are popular video games.' | score=0.1176
+[PRED 3] gold=['prime numbers'] | pred='prime numbers less than 10 are 2, 3, 5, and 7.' | score=0.5000
+[PRED 4] gold=['science fiction books'] | pred='three popular science fiction novels.' | score=0.5000
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_055040__f1__The_instruction_is_to_write_a_concise_se__3a9c26ad.tsv
+Dev loss: 0.1417. Dev perf: 0.1417. Best dev perf: 0.4962
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -2.0632e-08
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -2.0632e-08
+Instruction: ["I'm sorry, but I'm not sure what you're asking. Could you please provide more context or clarify your question?"]
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['people shot by police'] | pred='i apologize for the confusion, but could you please provide more information or context about charles m. smith, kevin higgins, and brandon simmons? are you asking for their occupations, relationships, or any specific information about them? please clarify so i can better assist you.' | score=0.0000
+[PRED 1] gold=['extinct languages'] | pred="i'm sorry, but i'm not sure what information you are looking for regarding culina, wotapuri-katarqalai, and bashkardi. can you please provide more context or clarify your question?" | score=0.0000
+[PRED 2] gold=['extinct languages'] | pred='i\'m sorry, but i\'m not sure what you\'re referring to with the names "lenca, tetserret, and afitti." can you please provide more information or context so that i can better understand and assist you?' | score=0.0000
+[PRED 3] gold=['the media'] | pred="i'm not sure what specific information or action you are looking for regarding technewsworld, capa - centre for aviation, and fairfield daily republic. could you please provide more details or clarify your question so i can better assist you?" | score=0.0000
+[PRED 4] gold=['science fiction books'] | pred='it seems like you\'ve listed three different things: "ancillary justice," "obsidian," and "all systems red." are you asking for information about these books, or are you looking for a comparison between them? please provide more context so i can better assist you.' | score=0.0488
+[PRED-DUMP] wrote 20 rows to logs/preds\auto_categorization_20251018_055217__f1__I_m_sorry__but_I_m_not_sure_what_you_re___a71998d8.tsv
+Dev loss: 0.0317. Dev perf: 0.0317. Best dev perf: 0.4962
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+["Input: Turtle, Seel, and Drifloon  \nOutput: pokeman\nInput: Stirling's approximation, Shannon¨CHartley theorem, and Schottky's theorem\nOutput: math theorems\nInput: ZX Spectrum Games Code Club: Tw"]
+The final instruction set is:
+{"Input: Turtle, Seel, and Drifloon  \nOutput: pokeman\nInput: Stirling's approximation, Shannon¨CHartley theorem, and Schottky's theorem\nOutput: math theorems\nInput: ZX Spectrum Games Code Club: Tw": (0.4961904761904762, array([[0.5       , 0.66666667, 0.        , 0.5       , 0.66666667,
+        0.        , 0.5       , 0.85714286, 1.        , 1.        ,
+        0.66666667, 0.        , 0.        , 0.66666667, 0.33333333,
+        0.66666667, 0.4       , 0.5       , 1.        , 0.        ]])), 'Input: [list of items]\nOutput: [list of corresponding items]': (0.02222222222222222, array([[0.11111111, 0.        , 0.        , 0.        , 0.        ,
+        0.33333333, 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ]])), 'Input: ONE concise instruction that maps Input to Output above.\n\nUse an imperative sentence. Output only the instruction.': (0.11001155277471067, array([[0.22222222, 0.18181818, 0.        , 0.        , 0.28571429,
+        0.        , 0.21052632, 0.        , 0.        , 0.        ,
+        0.        , 0.18181818, 0.14285714, 0.15384615, 0.28571429,
+        0.25      , 0.        , 0.28571429, 0.        , 0.        ]])), "Input: Turtwig, Seel, and Drifloon  \nOutput: pokeman\nInput: Stirling's approximation, Shannon¨CHartley theorem, and Schottky's theorem \nOutput: math theorems\nInput: ZX Spectrum Games Code Club:": (0.40428571428571425, array([[0.        , 0.4       , 0.        , 1.        , 1.        ,
+        0.        , 0.        , 0.        , 1.        , 0.28571429,
+        0.        , 0.        , 0.66666667, 0.5       , 0.66666667,
+        0.4       , 0.5       , 0.66666667, 0.        , 1.        ]])), 'Input: ONE concise instruction that maps Input to Output above.\n\nOutput: ONE.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The list above is a collection of terms and phrases that have been used in various fields and disciplines. The input list above is a collection of terms and phrases that have been used in various fields and disciplines. The input list above is a collection of terms and phrases that have been used in': (0.21007326007326008, array([[0.        , 0.        , 0.16666667, 0.4       , 0.33333333,
+        0.        , 0.        , 0.26666667, 0.5       , 0.15384615,
+        0.        , 1.        , 0.        , 0.6       , 0.28571429,
+        0.        , 0.        , 0.0952381 , 0.4       , 0.        ]])), 'Input: Write a concise instruction that maps Input to Output above.\n\nOutput: Write a concise instruction that maps Output to Input above.': (0.06488418444300796, array([[0.        , 0.        , 0.        , 0.125     , 0.        ,
+        0.        , 0.13333333, 0.        , 0.        , 0.        ,
+        0.125     , 0.        , 0.1       , 0.4       , 0.15384615,
+        0.11764706, 0.        , 0.14285714, 0.        , 0.        ]])), 'Input: The instruction above.': (0.04262787650945545, array([[0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.125     , 0.        , 0.19047619, 0.25      ,
+        0.10526316, 0.        , 0.        , 0.        , 0.18181818,
+        0.        , 0.        , 0.        , 0.        , 0.        ]])), 'Input: ONE concise instruction that maps Input to Output above.\nOutput: ONE imperative sentence.': (0.04580659536541889, array([[0.18181818, 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.11764706,
+        0.41666667, 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.2       , 0.        , 0.        ]])), 'Input: Write a concise instruction that maps Input to Output above.\n\nOutput: Use an imperative sentence.': (0.054626623376623384, array([[0.        , 0.16666667, 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.28571429, 0.14285714,
+        0.        , 0.125     , 0.        , 0.        , 0.18181818,
+        0.        , 0.        , 0.        , 0.19047619, 0.        ]])), 'Input: ONE concise instruction that maps Input to Output above.\n\nOutput: ONE imperative sentence.': (0.05678321678321678, array([[0.18181818, 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.33333333, 0.13333333, 0.        , 0.33333333,
+        0.        , 0.15384615, 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ]])), 'Input: ONE': (0.05449925522506168, array([[0.        , 0.        , 0.06451613, 0.22222222, 0.125     ,
+        0.1       , 0.        , 0.125     , 0.        , 0.        ,
+        0.        , 0.        , 0.07142857, 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.18181818, 0.2       ]])), 'The instruction is to write a concise sentence.': (0.1416949961802903, array([[0.        , 0.18181818, 0.11764706, 0.5       , 0.5       ,
+        0.25      , 0.        , 0.36363636, 0.        , 0.        ,
+        0.125     , 0.35294118, 0.        , 0.16666667, 0.        ,
+        0.13333333, 0.14285714, 0.        , 0.        , 0.        ]])), "I'm sorry, but I'm not sure what you're asking. Could you please provide more context or clarify your question?": (0.03170564904286813, array([[0.        , 0.        , 0.        , 0.        , 0.04878049,
+        0.        , 0.        , 0.        , 0.        , 0.09090909,
+        0.04651163, 0.        , 0.06896552, 0.04545455, 0.        ,
+        0.05714286, 0.04545455, 0.08333333, 0.05      , 0.09756098]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "f1" for task "auto_categorization"...
+[PRED 0] gold=['programming languages'] | pred='programming languages' | score=1.0000
+[PRED 1] gold=['Computer Science books'] | pred='technology books' | score=0.4000
+[PRED 2] gold=['people shot by police'] | pred='names' | score=0.0000
+[PRED 3] gold=['infectious diseases'] | pred='diseases' | score=0.6667
+[PRED 4] gold=['games on Steam'] | pred='video games' | score=0.4000
+[PRED-DUMP] wrote 100 rows to logs/preds\auto_categorization_20251018_055333__f1__Input_Turtle__Seel__and_Drifloon_Output___09da7ac4.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.5721904761904762

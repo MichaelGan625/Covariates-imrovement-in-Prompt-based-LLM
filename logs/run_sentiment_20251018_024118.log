@@ -1,0 +1,320 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:10<00:10, 10.88s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.66s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.85s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: A charming but slight comedy.\nOutput: positive\nInput: overbur']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['negative'] | pred='neutral' | score=0.0000
+[PRED 2] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 3] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024248__em__Input_Assured__glossy_and_shot_through_w__0f762bad.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='negative' | score=0.0000
+[PRED 1] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 2] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 3] gold=['positive'] | pred='negative' | score=0.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024323__em__Input_Assured__glossy_and_shot_through_w__5e22843e.tsv
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: The first step is to understand the problem and the solution. Output: The result of the solution.']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['negative'] | pred='a disappointing and unenjoyable experience.' | score=0.0000
+[PRED 1] gold=['negative'] | pred='a soothing and calming solution.' | score=0.0000
+[PRED 2] gold=['positive'] | pred='the result is a superb performance full of deep feeling by piccoli.' | score=0.0000
+[PRED 3] gold=['positive'] | pred='the performances are immaculate, with roussillon providing comic relief.' | score=0.0000
+[PRED 4] gold=['positive'] | pred='laugh-out-loud entertainment.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024401__em__Input_The_first_step_is_to_understand_th__ec5dd744.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: A concise instruction that maps Input to Output above.\nOutput: positive']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 1] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 2] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 3] gold=['negative'] | pred='positive' | score=0.0000
+[PRED 4] gold=['negative'] | pred='positive' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024433__em__Input_A_concise_instruction_that_maps_In__a2fad49e.tsv
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: An enjoyable above average summer diversion.\nOutput: positive\nInput']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 2] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 3] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024537__em__Input_Assured__glossy_and_shot_through_w__71b3a276.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: A comedy with a complex plot and engaging dialogue.\nOutput: positive']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='neutral' | score=0.0000
+[PRED 1] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 2] gold=['negative'] | pred='neutral' | score=0.0000
+[PRED 3] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 4] gold=['negative'] | pred='negative' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024611__em__Input_A_comedy_with_a_complex_plot_and_e__c331db11.tsv
+Dev loss: 0.8. Dev perf: 0.8. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\n\nInput: An enjoyable above average summer diversion.\nOutput: positive']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 2] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 3] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024716__em__Input_Assured__glossy_and_shot_through_w__fadade15.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: A charming but slight comedy.\nOutput: positive']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 2] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 3] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 4] gold=['negative'] | pred='negative' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024746__em__Input_A_charming_but_slight_comedy._Outp__04dfab37.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The comedy is nonexistent.\nOutput: negative\nInput: overburdened with complicated plotting and banal dialogue\nOutput: positive\nInput: A charming but slight comedy.\nOutput: positive\nInput: The comedy is nonexistent.\nOutput: negative\nInput:']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 2] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 3] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_024850__em__Input_The_comedy_is_nonexistent._Output___4aff3fd0.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\n\nInput: An enjoyable above average summer diversion.\nOutput: positive']
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The imperative sentence. Output only the instruction.']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='ignore the old saying and focus on what is true.' | score=0.0000
+[PRED 1] gold=['positive'] | pred='create a winning and wildly fascinating work.' | score=0.0000
+[PRED 2] gold=['positive'] | pred='none.' | score=0.0000
+[PRED 3] gold=['positive'] | pred='read this refreshingly realistic, affectation-free coming-of-age tale.' | score=0.0000
+[PRED 4] gold=['positive'] | pred='no specific instruction provided.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_025006__em__Input_The_imperative_sentence._Output_on__fe2ec25e.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: A charming but slight comedy.\nOutput: positive\nInput: over']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 1] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 2] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 3] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 4] gold=['negative'] | pred='negative' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_025127__em__Input_Assured__glossy_and_shot_through_w__1530c472.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\n\nInput: A charming but slight comedy.\nOutput: positive\n\nInput']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 2] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 3] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_025247__em__Input_Assured__glossy_and_shot_through_w__2fea2d67.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\n\nInput: An enjoyable above average summer diversion.\nOutput: positive']
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\n\nInput: An enjoyable above average summer diversion.\nOutput: positive']
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: A thought-provoking and often-funny drama about isolation.\nOutput: positive']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 2] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 3] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_025453__em__Input_A_thought-provoking_and_often-funn__66c8c44f.tsv
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: A charming but slight comedy.\nOutput: positive\nInput: An enjoyable above average summer diversion.\nOutput: positive\nInput: Overburdened with complicated plotting and banal dialogue.\nOutput: negative\nInput: The comedy is nonexistent.\nOutput: negative']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 1] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 2] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 3] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_025615__em__Input_A_charming_but_slight_comedy._Outp__f05c2b89.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: A charming but slight comedy.\nOutput: positive\nInput: over']
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: A commanding and compelling performance.\nOutput: positive']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 2] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 3] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 4] gold=['negative'] | pred='negative' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_025730__em__Input_A_commanding_and_compelling_perfor__0543bc31.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: An enjoyable above average summer diversion.\nOutput: positive\nInput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: An enjoyable above average summer diversion.\nOutput: positive\nInput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Best initial point: 1.000
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][02:59:21] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[02:59:21] INFO [PROFILE] GP fit: 0.227s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:59:21] INFO Iter 0 best_value=0.55272 gp_loss=-550.13892
+[02:59:22] INFO [PROFILE] Acquisition: 0.853s
+[03:00:06] INFO [PROFILE] LLM eval candidate: 44.330s
+[03:00:06] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:45<03:01, 45.43s/it][03:00:06] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[03:00:06] INFO [PROFILE] GP fit: 0.464s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:00:06] INFO Iter 1 best_value=0.55272 gp_loss=-643.14929
+[03:00:07] INFO [PROFILE] Acquisition: 0.740s
+[03:00:27] INFO [PROFILE] LLM eval candidate: 19.662s
+[03:00:27] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [01:06<01:32, 30.98s/it][03:00:27] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[03:00:27] INFO [PROFILE] GP fit: 0.228s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:00:27] INFO Iter 2 best_value=0.55272 gp_loss=-733.58562
+[03:00:28] INFO [PROFILE] Acquisition: 0.720s
+[03:00:47] INFO [PROFILE] LLM eval candidate: 19.629s
+[03:00:47] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:26<00:52, 26.24s/it][03:00:47] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[03:00:48] INFO [PROFILE] GP fit: 0.232s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:00:48] INFO Iter 3 best_value=0.55272 gp_loss=-821.76509
+[03:00:48] INFO [PROFILE] Acquisition: 0.700s
+[03:01:23] INFO [PROFILE] LLM eval candidate: 34.359s
+[03:01:23] INFO Best value so far: 1.00000
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [02:02<00:29, 29.82s/it][03:01:23] INFO [Iteration 4] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[03:01:23] INFO [PROFILE] GP fit: 0.565s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:01:23] INFO Iter 4 best_value=0.58015 gp_loss=-1797.70874
+[03:01:24] INFO [PROFILE] Acquisition: 0.497s
+[03:01:56] INFO [PROFILE] LLM eval candidate: 31.758s
+[03:01:56] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:35<00:00, 30.91s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:35<00:00, 31.01s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ["I'm sorry, but I'm not sure what you're asking for. Could you please provide more context or clarify your question?"]
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['negative'] | pred="it seems like you're providing a critique or opinion about something, but it's unclear what specifically you're referring to. can you please provide more information or clarify what you're talking about?" | score=0.0000
+[PRED 1] gold=['positive'] | pred="i'm glad to hear that you found it thoroughly enjoyable! if you would like to provide more information or share your thoughts in more detail, feel free to do so." | score=0.0000
+[PRED 2] gold=['positive'] | pred="i'm sorry, but i'm not sure what you're looking for regarding a charmer from belgium. could you please provide more information or clarify your request?" | score=0.0000
+[PRED 3] gold=['negative'] | pred='i\'m sorry, but i\'m not sure what you mean by "a relative letdown." can you please provide more information or context so i can better understand and assist you?' | score=0.0000
+[PRED 4] gold=['negative'] | pred='i\'m sorry, but i\'m not sure what you mean by "more trifle than triumph." can you please provide more information or clarify your question?' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_030006__em__I_m_sorry__but_I_m_not_sure_what_you_re___55e72088.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.3199999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 1.0
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.53}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 1.0
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.7399999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['What is the meaning of life?']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='the meaning of life is a philosophical question that has been debated for centuries and varies depending on individual beliefs and perspectives. some believe the meaning of life is to seek happiness and fulfillment, others believe it is to fulfill a specific purpose or destiny, while some believe it is to contribute to the greater good of humanity. ultimately, the meaning of life is subjective and may differ for each person.' | score=0.0000
+[PRED 1] gold=['negative'] | pred='the meaning of life is a philosophical question that has been debated for centuries. it is a complex and subjective concept that can vary depending on individual beliefs, values, and experiences. some may find meaning in relationships, personal growth, helping others, achieving goals, or spiritual fulfillment. ultimately, the meaning of life is a deeply personal and introspective journey that each person must discover for themselves.' | score=0.0000
+[PRED 2] gold=['positive'] | pred='the meaning of life is a complex and subjective concept that can be explored and interpreted in many different ways. some may find meaning in personal relationships, others in pursuing their passions and goals, while others may find meaning in contributing to the greater good of society. ultimately, the meaning of life is a deeply personal and individual journey that each person must explore and define for themselves.' | score=0.0000
+[PRED 3] gold=['positive'] | pred='the meaning of life is a complex and subjective question that has been pondered by philosophers, theologians, and everyday people for centuries. it is a question that may not have a definitive answer, as it can vary depending on individual beliefs, values, and experiences. some may find meaning in personal relationships, others in seeking knowledge or understanding the universe, and still others in contributing to the greater good of society. ultimately, the meaning of life may be a unique and ever-evolving journey for each individual' | score=0.0000
+[PRED 4] gold=['positive'] | pred='the meaning of life is a subjective and complex question that has been debated by philosophers, theologians, and individuals throughout history. it is ultimately up to each individual to determine their own meaning and purpose in life.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_030123__em__What_is_the_meaning_of_life__c74efaf9.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -9.1699e-08
+Instruction: ['Input: A captivating and emotionally charged performance.\nOutput: positive']
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 2] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 3] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 4] gold=['negative'] | pred='negative' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\sentiment_20251018_030156__em__Input_A_captivating_and_emotionally_char__a62ec701.tsv
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 1.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: An enjoyable above average summer diversion.\nOutput: positive\nInput']
+The final instruction set is:
+{'Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: A charming but slight comedy.\nOutput: positive\nInput: overbur': (0.95, array([[1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive': (0.85, array([[0., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        0., 1., 1., 1.]])), 'Input: The first step is to understand the problem and the solution. Output: The result of the solution.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: A concise instruction that maps Input to Output above.\nOutput: positive': (0.85, array([[1., 1., 1., 0., 0., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: An enjoyable above average summer diversion.\nOutput: positive\nInput': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: A comedy with a complex plot and engaging dialogue.\nOutput: positive': (0.8, array([[0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1.,
+        1., 0., 1., 1.]])), 'Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\n\nInput: An enjoyable above average summer diversion.\nOutput: positive': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: A charming but slight comedy.\nOutput: positive': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The comedy is nonexistent.\nOutput: negative\nInput: overburdened with complicated plotting and banal dialogue\nOutput: positive\nInput: A charming but slight comedy.\nOutput: positive\nInput: The comedy is nonexistent.\nOutput: negative\nInput:': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        0., 1., 1., 1.]])), 'Input: The imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\nInput: A charming but slight comedy.\nOutput: positive\nInput: over': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: Assured, glossy and shot through with brittle desperation.\nOutput: positive\n\nInput: Huppert and Girardot give performances of exceptional honesty.\nOutput: positive\n\nInput: A charming but slight comedy.\nOutput: positive\n\nInput': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: A thought-provoking and often-funny drama about isolation.\nOutput: positive': (0.9, array([[1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 0.]])), 'Input: A charming but slight comedy.\nOutput: positive\nInput: An enjoyable above average summer diversion.\nOutput: positive\nInput: Overburdened with complicated plotting and banal dialogue.\nOutput: negative\nInput: The comedy is nonexistent.\nOutput: negative': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: A commanding and compelling performance.\nOutput: positive': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), "I'm sorry, but I'm not sure what you're asking for. Could you please provide more context or clarify your question?": (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'What is the meaning of life?': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: A captivating and emotionally charged performance.\nOutput: positive': (0.9, array([[1., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "sentiment"...
+[PRED 0] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 1] gold=['negative'] | pred='negative' | score=1.0000
+[PRED 2] gold=['positive'] | pred='neutral' | score=0.0000
+[PRED 3] gold=['positive'] | pred='positive' | score=1.0000
+[PRED 4] gold=['positive'] | pred='positive' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\sentiment_20251018_030329__em__Input_Assured__glossy_and_shot_through_w__71b3a276.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.91

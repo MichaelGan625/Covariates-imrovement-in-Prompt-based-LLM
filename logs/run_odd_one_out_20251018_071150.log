@@ -1,0 +1,239 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:10<00:10, 10.63s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.58s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.74s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+D:\Py\LLM test\run_instructzero.py:705: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput: bread,']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071304__em__Input_Dublin__France__Tokyo__Athens__Par__ee7482e7.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071320__em__Input_Dublin__France__Tokyo__Athens__Par__b5fe1614.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ["Input: Monday, spring, summer, fall, winter\nOutput: Monday\n\nInput: mes, story, county, machine learning\nOutput: machine learning\nInput: bread, bakery, butcher's, market\nOutput: bread\nInput: listen, study, tell, happy, watch"]
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071406__em__Input_Monday__spring__summer__fall__wint__410b9323.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: "Write a program that maps Input to Output above."\n\nOutput: "A program that maps Input to Output above."']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071427__em__Input_Write_a_program_that_maps_Input_to__9634231c.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput: bread']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071513__em__Input_Dublin__France__Tokyo__Athens__Par__f44f46ae.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\n\nInput']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071558__em__Input_Dublin__France__Tokyo__Athens__Par__c9ce393c.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput:']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071644__em__Input_Dublin__France__Tokyo__Athens__Par__2597e6c9.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071729__em__Input_ONE__ONE__ONE__ONE__ONE__ONE__ONE___b2a538e4.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "ONE."']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071747__em__Input_Write_ONE_concise_instruction_that__03085011.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: ONE, machine learning, basketball, baseball, black  \nOutput: machine learning']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_071803__em__Input_ONE__machine_learning__basketball___fab032f6.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput: bread']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\n\nInput']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput: bread']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Use an imperative sentence. Output only the instruction."']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_072044__em__Input_Write_ONE_concise_instruction_that__75379e75.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\nInput: bread, bak']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_072129__em__Input_Dublin__France__Tokyo__Athens__Par__b920910b.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ["Input: Monday, spring, winter, fall, summer  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\nInput: bread, bakery, butcher's, market\nOutput: bread\n\nInput: listen, study"]
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_072215__em__Input_Monday__spring__winter__fall__summ__65954751.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\n\nInput: bread,']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_072301__em__Input_Dublin__France__Tokyo__Athens__Par__a9c0558c.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput: bread']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\n\nInput']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput: bread']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, fall, winter\nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\nInput: bread, bak']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_072603__em__Input_Dublin__France__Tokyo__Athens__Par__c400812d.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\n\nInput']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\n\nInput: bread,']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\n\nInput: bread']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_072820__em__Input_Dublin__France__Tokyo__Athens__Par__ceda2db0.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\n\nInput: bread,']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Best initial point: 0.000
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.015}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][07:29:06] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[07:29:07] INFO [PROFILE] GP fit: 0.305s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:29:07] INFO Iter 0 best_value=0.00000 gp_loss=117.85723
+[07:29:08] INFO [PROFILE] Acquisition: 0.864s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[07:29:54] INFO [PROFILE] LLM eval candidate: 46.800s
+[07:29:54] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:47<03:11, 47.98s/it][07:29:54] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[07:29:55] INFO [PROFILE] GP fit: 0.315s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:29:55] INFO Iter 1 best_value=0.00000 gp_loss=117.85724
+[07:29:55] INFO [PROFILE] Acquisition: 0.683s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[07:30:01] INFO [PROFILE] LLM eval candidate: 5.608s
+[07:30:01] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:54<01:10, 23.65s/it][07:30:01] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[07:30:01] INFO [PROFILE] GP fit: 0.339s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:30:01] INFO Iter 2 best_value=0.00000 gp_loss=117.85726
+[07:30:02] INFO [PROFILE] Acquisition: 0.716s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[07:30:10] INFO [PROFILE] LLM eval candidate: 7.628s
+[07:30:10] INFO Best value so far: 0.00000
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:03<00:33, 16.82s/it][07:30:10] INFO [Iteration 3] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[07:30:10] INFO [PROFILE] GP fit: 0.521s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:30:10] INFO Iter 3 best_value=0.00000 gp_loss=104.93884
+[07:30:11] INFO [PROFILE] Acquisition: 0.440s
+[07:30:57] INFO [PROFILE] LLM eval candidate: 46.823s
+[07:30:57] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [01:51<00:29, 29.05s/it][07:30:57] INFO [Iteration 4] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[07:30:58] INFO [PROFILE] GP fit: 0.300s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:30:58] INFO Iter 4 best_value=0.00000 gp_loss=104.93884
+[07:30:58] INFO [PROFILE] Acquisition: 0.436s
+[07:31:45] INFO [PROFILE] LLM eval candidate: 46.940s
+[07:31:45] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:38<00:00, 35.77s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:38<00:00, 31.75s/it]
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.0185}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ["Input: Dublin, France, Tokyo, Athens, Paris, San Francisco, Monday, spring, summer, winter, fall, mes, Iowa, Des Moines, Story County, machine learning, bread, bakery, butcher's, market, listen, study, tell, happy, watch, Michael"]
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_072954__em__Input_Dublin__France__Tokyo__Athens__Par__dc064798.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.022}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['ONE']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_073001__em__ONE__bc21e648.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.025500000000000002}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Use a GPS.']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_073010__em__Use_a_GPS.__5b4ec5f2.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 0.0000e+00, mean: 0.0000e+00
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\nInput: bread, b']
+Using metric "em" for task "odd_one_out"...
+[PRED-DUMP] wrote 0 rows to logs/preds\odd_one_out_20251018_073057__em__Input_Dublin__France__Tokyo__Athens__Par__5ee2290f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 0.0000e+00, mean: 0.0000e+00
+Instruction: ['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput:']
+The final instruction set is:
+{'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput: bread,': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France': (0.0, array([], shape=(1, 0), dtype=float64)), "Input: Monday, spring, summer, fall, winter\nOutput: Monday\n\nInput: mes, story, county, machine learning\nOutput: machine learning\nInput: bread, bakery, butcher's, market\nOutput: bread\nInput: listen, study, tell, happy, watch": (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: "Write a program that maps Input to Output above."\n\nOutput: "A program that maps Input to Output above."': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput: bread': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\n\nInput': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco  \nOutput: France\n\nInput: Monday, spring, summer, winter, fall  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning  \nOutput: machine learning\nInput:': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE, ONE': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "ONE."': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: ONE, machine learning, basketball, baseball, black  \nOutput: machine learning': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Use an imperative sentence. Output only the instruction."': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\nInput: bread, bak': (0.0, array([], shape=(1, 0), dtype=float64)), "Input: Monday, spring, winter, fall, summer  \nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\nInput: bread, bakery, butcher's, market\nOutput: bread\n\nInput: listen, study": (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\n\nInput: bread,': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, fall, winter\nOutput: Monday\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\nInput: bread, bak': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\n\nInput: bread': (0.0, array([], shape=(1, 0), dtype=float64)), "Input: Dublin, France, Tokyo, Athens, Paris, San Francisco, Monday, spring, summer, winter, fall, mes, Iowa, Des Moines, Story County, machine learning, bread, bakery, butcher's, market, listen, study, tell, happy, watch, Michael": (0.0, array([], shape=(1, 0), dtype=float64)), 'ONE': (0.0, array([], shape=(1, 0), dtype=float64)), 'Use a GPS.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Dublin, France, Tokyo, Athens, Paris, San Francisco\nOutput: France\n\nInput: Monday, spring, summer, winter, fall\nOutput: Monday\n\nInput: mes, Iowa, Des Moines, Story County, machine learning\nOutput: machine learning\nInput: bread, b': (0.0, array([], shape=(1, 0), dtype=float64))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "odd_one_out"...
+[PRED 0] gold=['eraser'] | pred='beautiful' | score=0.0000
+[PRED 1] gold=['pencil'] | pred='jump' | score=0.0000
+[PRED 2] gold=['mouse'] | pred='mouse' | score=1.0000
+[PRED 3] gold=['June'] | pred='june' | score=1.0000
+[PRED 4] gold=['bath'] | pred='cottage' | score=0.0000
+[PRED-DUMP] wrote 50 rows to logs/preds\odd_one_out_20251018_073220__em__Input_Dublin__France__Tokyo__Athens__Par__2597e6c9.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.44

@@ -1,0 +1,299 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:20<00:20, 20.80s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:29<00:00, 13.90s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:29<00:00, 14.94s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: The instruction is imperative.\nOutput: The instruction is not imperative.\nInput: The instruction is imperative.\nOutput: The instruction is not imperative.\nInput: The instruction is imperative.\nOutput: The instruction is not imperative.\nInput: The instruction is imperative']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Hallgeir Langeland was not born in Strand.'] | pred='the instruction is not imperative.' | score=0.0000
+[PRED 1] gold=['ESPN and ABC did not sign an eight year deal with NASCAR in 2005.'] | pred='the instruction is not imperative.' | score=0.0000
+[PRED 2] gold=['EugÃ¨ne Lanti was not born in Normandy.'] | pred='the instruction is not imperative.' | score=0.0000
+[PRED 3] gold=['Eugene Odum does not work in the field of ecology.'] | pred='the instruction is not imperative.' | score=0.0000
+[PRED 4] gold=['Achievement does not require effort.'] | pred='the instruction is not imperative.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_223315__em__Input_The_instruction_is_imperative._Out__802cd3fc.tsv
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['The official language of Finland is not Finnish.'] | pred='the official language of finland is not finnish.' | score=1.0000
+[PRED 1] gold=['Thomas Davis did not break his arm during the NFC Championship Game.'] | pred='thomas davis did not break his arm during the nfc championship game.' | score=1.0000
+[PRED 2] gold=['Stiff Valentine was not founded in Vancouver, Canada.'] | pred='stiff valentine was not founded in vancouver, canada.' | score=1.0000
+[PRED 3] gold=['Doves cannot fly.'] | pred='doves cannot fly.' | score=1.0000
+[PRED 4] gold=['Disease cannot strike unexpectedly.'] | pred='disease can strike unexpectedly.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_223422__em__Input_Cany_Ash_and_Robert_Sakula_are_bot__a7f38a2f.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are both not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Adeline Dutton Train Whitney did not die in Milton.'] | pred='adeline dutton train whitney did not die in milton.' | score=1.0000
+[PRED 1] gold=['Humans are not eukaryotes.'] | pred='humans are not eukaryotes.' | score=1.0000
+[PRED 2] gold=['Some flowers are not perennial.'] | pred='some flowers are not perennial.' | score=1.0000
+[PRED 3] gold=['Between 1979 and 1984, Catholic schools were not integrated into New Zealand public schools.'] | pred='between 1979 and 1984, catholic schools were not integrated into new zealand public schools.' | score=1.0000
+[PRED 4] gold=['Princess Bee was not born in Italy.'] | pred='princess bee was not born in italy.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_223558__em__Input_Cany_Ash_and_Robert_Sakula_are_bot__14ee0661.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The sky is blue.\nOutput: The sky is not blue.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['The lotion is not sticky.'] | pred='the lotion is not sticky.' | score=1.0000
+[PRED 1] gold=['Herpa Wings was not founded in Germany.'] | pred='herpa wings was not founded in germany.' | score=1.0000
+[PRED 2] gold=['Tooth & Nail Records was not founded in California.'] | pred='tooth & nail records was not founded in california.' | score=1.0000
+[PRED 3] gold=['The first major city in the stream of the Rhine is not Basel.'] | pred='the first major city in the stream of the rhine is not basel.' | score=1.0000
+[PRED 4] gold=['The un-elected subordinates of member state governments of the EU are not called Commissioners.'] | pred='the un-elected subordinates of member state governments of the eu are not called commissioners.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_223647__em__Input_The_sky_is_blue._Output_The_sky_is__955b43ad.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The first step in the process is to define the problem.\nOutput: The first step in the process is to not define the problem.\nInput: The second step is to measure the impact.\nOutput: The second step is to not measure the impact.\nInput: The third step is to analyze']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['A lion cannot roar.'] | pred='a lion cannot roar.' | score=1.0000
+[PRED 1] gold=['A diamond is not colorless.'] | pred='a diamond is not colorless.' | score=1.0000
+[PRED 2] gold=['After starting his company, Tesla first did not receive patents.'] | pred='after starting his company, tesla did not receive patents.' | score=1.0000
+[PRED 3] gold=['Some houses are not empty.'] | pred='some houses are not empty.' | score=1.0000
+[PRED 4] gold=['Huguenots and Walloons did not settle in Canterbury.'] | pred='huguenots and walloons did not settle in canterbury.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_223832__em__Input_The_first_step_in_the_process_is_t__872f9248.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Write ONE concise instruction that maps Input to Output above.\nOutput: Use an imperative sentence. Output only the instruction.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Coca-Cola C2 was not created in Japan.'] | pred='create coca-cola c2 in japan.' | score=0.0000
+[PRED 1] gold=['Madonna is not a songwriter.'] | pred='write a song, madonna.' | score=0.0000
+[PRED 2] gold=['Windows Millennium Edition is not developed by Microsoft.'] | pred='develop windows millennium edition.' | score=0.0000
+[PRED 3] gold=['John Grice did not die in Melbourne.'] | pred='write a death notice for john grice in melbourne.' | score=0.0000
+[PRED 4] gold=['The main religion in Kenya is not Christianity.'] | pred='identify the main religion in kenya as christianity.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_224010__em__Input_Write_ONE_concise_instruction_that__d6ccb7a8.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['ONE']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Nikola Tesla was not Serbian by ethnicity.'] | pred='nikola tesla was serbian by ethnicity.' | score=1.0000
+[PRED 1] gold=['Copper cannot be melted.'] | pred='copper can be melted by heating it to a temperature of 1,984¡ãf (1,085¡ãc).' | score=1.0000
+[PRED 2] gold=['Wells Coates did not die in Vancouver.'] | pred='wells coates passed away in vancouver.' | score=1.0000
+[PRED 3] gold=['Bloodsports was not written in English.'] | pred='bloodsports was written in english.' | score=1.0000
+[PRED 4] gold=['Arthur Kinnaird, 11th Lord Kinnaird was not born in Kensington.'] | pred='lord kinnaird was born in kensington.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_224038__em__ONE__bc21e648.tsv
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\nOutput: Only the instruction.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['White does not consist of red.'] | pred='identify that white includes the color red.' | score=0.0000
+[PRED 1] gold=["Luther was not an adviser in other areas' churches."] | pred='map luther as adviser in other churches.' | score=0.0000
+[PRED 2] gold=['The long-term preservation of the V&A collections is not due to Conservation.'] | pred='preserve v&a collections through conservation for long-term preservation.' | score=0.0000
+[PRED 3] gold=['Sometimes competing does not cause stress.'] | pred='identify competing causes of stress.' | score=0.0000
+[PRED 4] gold=['Judy Dunaway was not born in Mississippi.'] | pred='write a concise instruction that maps information about judy dunaway being born in mississippi.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_224128__em__Input_Write_a_concise_instruction_that_m__413f46cd.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The instruction is clear and concise. Output: The instruction is not clear and concise.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Belisario was not created in Italy.'] | pred='the origin of belisario is italy.' | score=0.0000
+[PRED 1] gold=['Denmark is not part of Scandinavia.'] | pred='please clarify the instruction.' | score=0.0000
+[PRED 2] gold=['The French ancestry of some South Africans is identified by names.'] | pred='identify french ancestry of south africans by surnames.' | score=0.0000
+[PRED 3] gold=['Abbasid Caliphate is not located in Africa.'] | pred='the location of the abbasid caliphate is not in africa.' | score=0.0000
+[PRED 4] gold=['A dam is not made of concert.'] | pred='the dam is made of concrete.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_224301__em__Input_The_instruction_is_clear_and_conci__c820e111.tsv
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The price of skill is reflected in wages.\nOutput: The price of skill is not reflected in wages.\nInput: Des Abbott was born in Darwin.\nOutput: Des Abbott was not born in Darwin.\nInput: Bill Stall died in Sacramento.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Automatism is not a defence.'] | pred='automatism is not a defence.' | score=1.0000
+[PRED 1] gold=['The official language of Faido is not Italian.'] | pred='the official language of faido is not italian.' | score=1.0000
+[PRED 2] gold=['Judy Dunaway was not born in Mississippi.'] | pred='judy dunaway was not born in mississippi.' | score=1.0000
+[PRED 3] gold=['Moshe Beregovski did not die in Kiev.'] | pred='moshe beregovski was not born in kiev.' | score=1.0000
+[PRED 4] gold=['Antonio Caggiano does not have the position of archbishop.'] | pred='antonio caggiano does not have the position of archbishop.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_224518__em__Input_The_price_of_skill_is_reflected_in__60fa59fb.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The instruction is to map Input to Output.\nOutput: The instruction is not to map Input to Output.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['John Mure did not die in Glasgow.'] | pred='the instruction is not to map input to output.' | score=0.0000
+[PRED 1] gold=['The original language of Les Nanas is not French.'] | pred='the original language of les nanas is french.' | score=1.0000
+[PRED 2] gold=['Cultural imperialism to sway local elites was not used by the Roman historic empire.'] | pred='the instruction is not to map input to output.' | score=0.0000
+[PRED 3] gold=['The most successful team sport in Kenya is not cricket.'] | pred='the most successful team sport in kenya is cricket.' | score=1.0000
+[PRED 4] gold=['Disgust is not an emotion.'] | pred='the instruction is not to map input to output.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_224615__em__Input_The_instruction_is_to_map_Input_to__da7883d0.tsv
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Felines are not carnivores.'] | pred='felines are not carnivores.' | score=1.0000
+[PRED 1] gold=['Wells Coates did not die in Vancouver.'] | pred='wells coates did not die in vancouver.' | score=1.0000
+[PRED 2] gold=['John Seru was not born in Australia.'] | pred='john seru was not born in australia.' | score=1.0000
+[PRED 3] gold=['The Saint-Evroul monks were not known for the singing tradition.'] | pred='the saint-evroul monks were not known for the singing tradition.' | score=1.0000
+[PRED 4] gold=['Some things are not finite.'] | pred='some things are not finite.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_224750__em__Input_Cany_Ash_and_Robert_Sakula_are_bot__a4cc65eb.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The price of skill is reflected by wages.\nOutput: The price of skill is not reflected by wages.\n\nInput: Des Abbott was born in Darwin.\nOutput: Des Abbott was not born in Darwin.\nInput: Bill Stall died in Sacramento.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['The official language of Lemi is not Finnish.'] | pred='the official language of lemi is not finnish.' | score=1.0000
+[PRED 1] gold=['William Hardy was not born in Jamaica.'] | pred='william hardy was not born in jamaica.' | score=1.0000
+[PRED 2] gold=['Alexander Wilson was not born in Virginia.'] | pred='alexander wilson was not born in virginia.' | score=1.0000
+[PRED 3] gold=['Gravitational forces do not act between masses.'] | pred='gravitational forces do not act between masses.' | score=1.0000
+[PRED 4] gold=['During the Eastern Bloc economy in Warsaw infrastructure did not suffer considerably.'] | pred='during the eastern bloc economy in warsaw infrastructure did not suffer considerably.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_224938__em__Input_The_price_of_skill_is_reflected_by__fc968db4.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The price of skill is reflected by wages.\nOutput: The price of skill is not reflected by wages.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['The long-term preservation of the V&A collections is not due to Conservation.'] | pred='the long-term preservation of the v&a collections is not due to conservation.' | score=1.0000
+[PRED 1] gold=['Brian Callison was not born in Manchester.'] | pred='brian callison was not born in manchester.' | score=1.0000
+[PRED 2] gold=['Bandai was not founded in Tokyo.'] | pred='bandai was not founded in tokyo.' | score=1.0000
+[PRED 3] gold=['GÃ¶sta Krantz did not die in Stockholm.'] | pred='gÃ¶sta krantz did not die in stockholm.' | score=1.0000
+[PRED 4] gold=['Gamaliel Bradford did not die in Cambridge.'] | pred='gamaliel bradford did not die in cambridge.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_225035__em__Input_The_price_of_skill_is_reflected_by__8e570eb6.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Jacobus Trigland did not die in Leiden.'] | pred='jacobus trigland did not die in leiden.' | score=1.0000
+[PRED 1] gold=['Germany does not maintain diplomatic relations with Benin.'] | pred='germany does not maintain diplomatic relations with benin.' | score=1.0000
+[PRED 2] gold=['Granite cannot be carved.'] | pred='granite cannot be carved.' | score=1.0000
+[PRED 3] gold=['The 1947 film Wyoming Kid was not adapted for ABC into the television show  Cheyenne.'] | pred='the 1947 film wyoming kid was not adapted for abc into the television show cheyenne.' | score=1.0000
+[PRED 4] gold=['The organization that continued to be a major disruptive force in Palestine is not Hamas.'] | pred='the organization that continued to be a major disruptive force in palestine is not hamas.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_225137__em__Input_The_arket_price_of_skill_is_reflec__dbdbcbc9.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The first episode of the new Doctor Who series was titled "Rose."\nOutput: The first episode of the new Doctor Who series was not titled "Rose."\nInput: The arket price of skill was not reflected by wages.\nOutput: The arket price of skill was not reflected']
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Maja Tucholke was not born in Leipzig.'] | pred='maja tucholke was not born in leipzig.' | score=1.0000
+[PRED 1] gold=['Some politicians are not puppets.'] | pred='some politicians are not puppets.' | score=1.0000
+[PRED 2] gold=['Thomas Dunham Whitaker did not die in Blackburn.'] | pred='thomas dunham whitaker did not die in blackburn.' | score=1.0000
+[PRED 3] gold=['Along with Hamilton, Wellington and Christchurch, Auckland is not one of the largest cities in New Zealand.'] | pred='along with hamilton, wellington and christchurch, auckland is not one of the largest cities in new zealand.' | score=1.0000
+[PRED 4] gold=['Dan Le Batard does not work for ESPN.'] | pred='dan le batard does not work for espn.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\negation_20251016_225430__em__Input_The_first_episode_of_the_new_Docto__028d4864.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The sky is blue.\nOutput: The sky is not blue.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The sky is blue.\nOutput: The sky is not blue.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Best initial point: 1.000
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][22:59:09] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[22:59:10] INFO [PROFILE] GP fit: 0.683s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[22:59:10] INFO Iter 0 best_value=0.52820 gp_loss=-346.26978
+[22:59:12] INFO [PROFILE] Acquisition: 1.746s
+[23:00:54] INFO [PROFILE] LLM eval candidate: 102.258s
+[23:00:54] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [01:44<06:58, 104.73s/it][23:00:54] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[23:00:54] INFO [PROFILE] GP fit: 0.503s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[23:00:54] INFO Iter 1 best_value=0.52820 gp_loss=-403.88401
+[23:00:56] INFO [PROFILE] Acquisition: 1.241s
+[23:01:46] INFO [PROFILE] LLM eval candidate: 50.818s
+[23:01:46] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [02:37<03:42, 74.06s/it] [23:01:46] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[23:01:47] INFO [PROFILE] GP fit: 0.438s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[23:01:47] INFO Iter 2 best_value=0.52820 gp_loss=-460.17119
+[23:01:48] INFO [PROFILE] Acquisition: 1.331s
+[23:03:28] INFO [PROFILE] LLM eval candidate: 99.521s
+[23:03:28] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [04:18<02:53, 86.50s/it][23:03:28] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[23:03:28] INFO [PROFILE] GP fit: 0.446s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[23:03:28] INFO Iter 3 best_value=0.52820 gp_loss=-192.54246
+[23:03:29] INFO [PROFILE] Acquisition: 1.156s
+[23:04:18] INFO [PROFILE] LLM eval candidate: 48.834s
+[23:04:18] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [05:09<01:12, 72.27s/it][23:04:18] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[23:04:19] INFO [PROFILE] GP fit: 0.407s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[23:04:19] INFO Iter 4 best_value=0.52820 gp_loss=-213.74519
+[23:04:20] INFO [PROFILE] Acquisition: 1.129s
+[23:04:30] INFO [PROFILE] LLM eval candidate: 10.336s
+[23:04:30] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [05:20<00:00, 50.50s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [05:20<00:00, 64.20s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.3199999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.53}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.58}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.6499999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['ONE']
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 1.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.']
+The final instruction set is:
+{'Input: The instruction is imperative.\nOutput: The instruction is not imperative.\nInput: The instruction is imperative.\nOutput: The instruction is not imperative.\nInput: The instruction is imperative.\nOutput: The instruction is not imperative.\nInput: The instruction is imperative': (0.2, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 1., 1., 0.,
+        0., 0., 1., 0.]])), 'Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are both not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The sky is blue.\nOutput: The sky is not blue.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The first step in the process is to define the problem.\nOutput: The first step in the process is to not define the problem.\nInput: The second step is to measure the impact.\nOutput: The second step is to not measure the impact.\nInput: The third step is to analyze': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: Write ONE concise instruction that maps Input to Output above.\nOutput: Use an imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'ONE': (0.7, array([[1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1., 0., 0., 0., 1.,
+        0., 0., 1., 1.]])), 'Input: Write a concise instruction that maps Input to Output above.\nOutput: Only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The instruction is clear and concise. Output: The instruction is not clear and concise.': (0.2, array([[0., 0., 0., 0., 0., 1., 1., 0., 0., 1., 0., 0., 0., 1., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The price of skill is reflected in wages.\nOutput: The price of skill is not reflected in wages.\nInput: Des Abbott was born in Darwin.\nOutput: Des Abbott was not born in Darwin.\nInput: Bill Stall died in Sacramento.': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 0., 1., 1.]])), 'Input: The instruction is to map Input to Output.\nOutput: The instruction is not to map Input to Output.': (0.45, array([[0., 1., 0., 1., 0., 1., 0., 1., 1., 0., 1., 0., 0., 1., 0., 1.,
+        0., 0., 1., 0.]])), 'Input: Cany Ash and Robert Sakula are both Architects.\nOutput: Cany Ash and Robert Sakula are not Architects.\n\nInput: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The price of skill is reflected by wages.\nOutput: The price of skill is not reflected by wages.\n\nInput: Des Abbott was born in Darwin.\nOutput: Des Abbott was not born in Darwin.\nInput: Bill Stall died in Sacramento.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The price of skill is reflected by wages.\nOutput: The price of skill is not reflected by wages.': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The arket price of skill is reflected by wages.\nOutput: The arket price of skill is not reflected by wages.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The first episode of the new Doctor Who series was titled "Rose."\nOutput: The first episode of the new Doctor Who series was not titled "Rose."\nInput: The arket price of skill was not reflected by wages.\nOutput: The arket price of skill was not reflected': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "negation"...
+[PRED 0] gold=['Some clubs are not exclusive.'] | pred='some clubs are not exclusive.' | score=1.0000
+[PRED 1] gold=['To impact German culture, Martin Luther did not translate the Bible.'] | pred='to impact german culture, martin luther did not translate the bible.' | score=1.0000
+[PRED 2] gold=['Newton did not play as quarterback during Super Bowl 50.'] | pred='newton did not play as quarterback during super bowl 50.' | score=1.0000
+[PRED 3] gold=['A teacher does not need to be enthusiastic with regards to their subject matter.'] | pred='the teacher needs to be enthusiastic with regards to their subject matter.' | score=0.0000
+[PRED 4] gold=['Porcelain is not white.'] | pred='porcelain is not white.' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\negation_20251016_230628__em__Input_Cany_Ash_and_Robert_Sakula_are_bot__a7f38a2f.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.98

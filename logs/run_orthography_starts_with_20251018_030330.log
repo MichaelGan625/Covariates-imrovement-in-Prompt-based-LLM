@@ -1,0 +1,387 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:10<00:10, 10.42s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:18<00:00,  9.14s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:18<00:00,  9.33s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: Mary appreciates only John and herself. [j]\nOutput: john\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\nInput: Philippa cried herself to sleep']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['said'] | pred='said' | score=1.0000
+[PRED 1] gold=['became blond'] | pred='blond' | score=0.0000
+[PRED 2] gold=['he'] | pred='he' | score=1.0000
+[PRED 3] gold=['them the'] | pred='them' | score=0.0000
+[PRED 4] gold=['one'] | pred='one' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_030501__es__Input_Mary_appreciates_only_John_and_her__3dc33e76.tsv
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: Funds are being wasted on the lettering on the covers of which the government prescribes the height.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['to the'] | pred='results are expected soon.' | score=0.0000
+[PRED 1] gold=['with'] | pred='the student of physics with long hair was seen.' | score=0.0000
+[PRED 2] gold=['black'] | pred='she always wore black.' | score=0.0000
+[PRED 3] gold=['any'] | pred='any doctor will tell you that.' | score=0.0000
+[PRED 4] gold=['her'] | pred='her eyes were dried by philippa.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_030621__es__Input_Reports_the_lettering_on_the_cover__75785f1c.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: j\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['a amounts'] | pred='s' | score=0.0000
+[PRED 1] gold=['free'] | pred='m' | score=0.0000
+[PRED 2] gold=['heather'] | pred='e' | score=0.0000
+[PRED 3] gold=['worried when'] | pred='g' | score=0.0000
+[PRED 4] gold=['resources'] | pred='w' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_030726__es__Input_The_lettering_on_the_covers_of_whi__804b0e4d.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\n\nOutput: john']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['vampires vegetarian'] | pred='john' | score=0.0000
+[PRED 1] gold=['the'] | pred='john' | score=0.0000
+[PRED 2] gold=['they talked the'] | pred='t' | score=0.0000
+[PRED 3] gold=['is'] | pred='john' | score=0.0000
+[PRED 4] gold=['careful'] | pred='careful' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_030802__es__Input_Write_a_concise_instruction_that_m__bd30422c.tsv
+Dev loss: 0.25. Dev perf: 0.25. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The letter of the law prescribes the height of the government. [f]\nOutput: the height\nInput: The letter of the law prescribes the width of the government. [w]\nOutput: the width\nInput: The letter of the law prescribes the length of the']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['his'] | pred='please provide the missing word in the input sentence.' | score=0.0000
+[PRED 1] gold=['where'] | pred='where' | score=1.0000
+[PRED 2] gold=['that'] | pred='robert knows it is essential that he is well behaved.' | score=0.0000
+[PRED 3] gold=['party'] | pred='the party' | score=0.0000
+[PRED 4] gold=['edmund'] | pred='henry crawford loved fanny but fanny loved edmund.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_030905__es__Input_The_letter_of_the_law_prescribes_t__cff05f60.tsv
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Write a letter to John. [j]\nOutput: John']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['put'] | pred='put' | score=1.0000
+[PRED 1] gold=['the'] | pred='the paper provides many clues.' | score=0.0000
+[PRED 2] gold=['who what whom'] | pred='how long did this fit of generosity last and who gave what to whom?' | score=0.0000
+[PRED 3] gold=['never'] | pred='never' | score=1.0000
+[PRED 4] gold=['are'] | pred='i am trying to get hold of john.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_030936__es__Input_Write_a_letter_to_John.__j__Output__4cc8b2a8.tsv
+Dev loss: 0.5. Dev perf: 0.5. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['people'] | pred='room' | score=0.0000
+[PRED 1] gold=['to'] | pred='considered' | score=0.0000
+[PRED 2] gold=['student'] | pred='student' | score=1.0000
+[PRED 3] gold=['were'] | pred='rights' | score=0.0000
+[PRED 4] gold=['brother'] | pred='brother' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031038__es__Input_The_lettering_on_the_covers_of_whi__f62aa2b3.tsv
+Dev loss: 0.25. Dev perf: 0.25. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['this'] | pred='seoul' | score=0.0000
+[PRED 1] gold=['choir church'] | pred='church' | score=0.0000
+[PRED 2] gold=['philippa'] | pred='eyes' | score=0.0000
+[PRED 3] gold=['poison'] | pred='poison' | score=1.0000
+[PRED 4] gold=['with'] | pred='name' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031143__es__Input_The_government_prescribes_the_heig__dca31414.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\nInput: Philippa cried herself to sleep. [t]\nOutput: to\nInput: I know several people who she kissed. [']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['cause called'] | pred='nightmares' | score=0.0000
+[PRED 1] gold=['the'] | pred='into' | score=0.0000
+[PRED 2] gold=['been'] | pred='been' | score=1.0000
+[PRED 3] gold=['cave'] | pred='cave' | score=1.0000
+[PRED 4] gold=['books'] | pred='books' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031247__es__Input_The_lettering_on_the_covers_of_whi__097a2b67.tsv
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.75
+********* Done *********
+Instruction: ['ONE']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['would'] | pred='the bill may not receive approval from the president.' | score=0.0000
+[PRED 1] gold=['know'] | pred="that's great to hear! i hope you enjoy reading it." | score=0.0000
+[PRED 2] gold=['sells'] | pred='john sells books.' | score=0.0000
+[PRED 3] gold=['with'] | pred='john laughed with everybody he talked to that evening.' | score=0.0000
+[PRED 4] gold=['the taken'] | pred='the lax supervision was taken advantage of.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031309__es__ONE__bc21e648.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The letter is the instruction. Output: The letter is the instruction.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['to the'] | pred='t' | score=0.0000
+[PRED 1] gold=['is'] | pred='[i]' | score=0.0000
+[PRED 2] gold=['waved'] | pred='[w]' | score=0.0000
+[PRED 3] gold=['light'] | pred='l' | score=0.0000
+[PRED 4] gold=['money'] | pred='the money which i will have a chance to squander amounts to $m.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031341__es__Input_The_letter_is_the_instruction._Out__ea20bc6b.tsv
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Mary appreciates only John and herself.\nOutput: john']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['down'] | pred='john' | score=0.0000
+[PRED 1] gold=['likely'] | pred='he' | score=0.0000
+[PRED 2] gold=['from found'] | pred='man, books' | score=0.0000
+[PRED 3] gold=['him'] | pred='earl' | score=0.0000
+[PRED 4] gold=['the'] | pred='t' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031410__es__Input_Mary_appreciates_only_John_and_her__a85da43a.tsv
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['substances'] | pred='substances' | score=1.0000
+[PRED 1] gold=['wood'] | pred='wood' | score=1.0000
+[PRED 2] gold=['weighed'] | pred='lb' | score=0.0000
+[PRED 3] gold=['sunbathers swimming'] | pred='sunbathers' | score=0.0000
+[PRED 4] gold=['from'] | pred='bush' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031514__es__Input_The_lettering_on_the_covers_of_whi__9d3af386.tsv
+Dev loss: 0.5. Dev perf: 0.5. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The letter of the law is the law. [j]\nOutput: j\n\nInput: The report of the meeting is the meeting. [f]\nOutput: f\nInput: The height of the mountain is the mountain. [t]\nOutput: t\nInput: The width of the']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['only'] | pred='o' | score=0.0000
+[PRED 1] gold=['labor'] | pred='l' | score=0.0000
+[PRED 2] gold=['weighed'] | pred='w' | score=0.0000
+[PRED 3] gold=['a and'] | pred='a' | score=0.0000
+[PRED 4] gold=['today that'] | pred='t' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031617__es__Input_The_letter_of_the_law_is_the_law.___c5493bd8.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\nOutput: Write a concise instruction that maps Input to Output above.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['the'] | pred='count the number of times the letter "t" appears in the sentence.' | score=0.0000
+[PRED 1] gold=['his'] | pred='count the number of times the letter "h" appears in the input sentence.' | score=0.0000
+[PRED 2] gold=['against'] | pred='place the sign warning against skating on the pond.' | score=0.0000
+[PRED 3] gold=['room'] | pred='the supervisor walked into the room and saw the prisoner being interrogated, then put a stop to it. [r]' | score=0.0000
+[PRED 4] gold=['dishes'] | pred='input: write a note to frank reminding him to persuade harry to make the cook wash the dishes. [d]\noutput: write a note to frank reminding him to persuade harry to make the cook wash the dishes.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031659__es__Input_Write_a_concise_instruction_that_m__6d1da311.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Write a sentence that maps Input to Output above.\n\nUse an imperative sentence. Output only the instruction.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['that'] | pred='determine if anybody ever left at all.' | score=0.0000
+[PRED 1] gold=['hill'] | pred='write down that the ball rolled down the hill.' | score=0.0000
+[PRED 2] gold=['to'] | pred='map the input sentence to the output above.' | score=0.0000
+[PRED 3] gold=['saw student'] | pred='identify the subject in the sentence "i saw only the student."' | score=0.0000
+[PRED 4] gold=['have'] | pred='ensure the kids have arrived safely.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031738__es__Input_Write_a_sentence_that_maps_Input_t__e4c1b2d7.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\nOutput: The instruction is imperative.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['my'] | pred='believe john to be a fine person with all your heart.' | score=0.0000
+[PRED 1] gold=['friday'] | pred='deposit some money in the bank on friday.' | score=0.0000
+[PRED 2] gold=['we'] | pred='contribute your paycheck to her.' | score=0.0000
+[PRED 3] gold=['observed'] | pred='observe targets at any angle.' | score=0.0000
+[PRED 4] gold=['put picture'] | pred='put a picture on your desk.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031816__es__Input_Write_a_concise_instruction_that_m__612576de.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['handed'] | pred='handed' | score=1.0000
+[PRED 1] gold=['man me'] | pred='man' | score=0.0000
+[PRED 2] gold=['bulb'] | pred='bulb' | score=1.0000
+[PRED 3] gold=['cat'] | pred='cat' | score=1.0000
+[PRED 4] gold=['were'] | pred='after' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031902__es__Input_The_lettering_on_the_covers_of_whi__960c8700.tsv
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: ONE concise instruction that maps Input to Output above.\nOutput: ONE imperative sentence.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['intelligent'] | pred='trust that he is intelligent and capable for your needs.' | score=0.0000
+[PRED 1] gold=['a and'] | pred='offer miss kim your own book.' | score=0.0000
+[PRED 2] gold=['more months'] | pred='train even more efficiently for the return fixture!' | score=0.0000
+[PRED 3] gold=['aunt'] | pred='replace "which" with "that" in the sentence.' | score=0.0000
+[PRED 4] gold=['been'] | pred='remain calm and address the situation assertively but respectfully.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_031942__es__Input_ONE_concise_instruction_that_maps___3418a7fa.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: to\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['park'] | pred='to' | score=0.0000
+[PRED 1] gold=['the tiger to'] | pred='the tiger' | score=0.0000
+[PRED 2] gold=['advice'] | pred='reports' | score=0.0000
+[PRED 3] gold=['at accident'] | pred='sharon' | score=0.0000
+[PRED 4] gold=['bread'] | pred='is' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_032047__es__Input_The_lettering_on_the_covers_of_whi__8620e47f.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Write ONE concise instruction that maps Input to Output above.\nUse an imperative sentence. Output only the instruction.']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['driving'] | pred='identify the subject of the sentence.' | score=0.0000
+[PRED 1] gold=['results'] | pred='hand the intriguing results of the latest examination to alan on tuesday.' | score=0.0000
+[PRED 2] gold=['robert red read'] | pred='read the book of poems by robert burns with a red cover from blackwell.' | score=0.0000
+[PRED 3] gold=['new'] | pred='determine if tami will leave new york.' | score=0.0000
+[PRED 4] gold=['has'] | pred='add a relative pronoun to the sentence.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_032128__es__Input_Write_ONE_concise_instruction_that__d69b1cac.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds']
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: Write ONE concise instruction that maps Input to Output above.\nOutput: ONE\n\nInput: Use an imperative sentence. Output only the instruction.\nOutput: instruction']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['loved'] | pred='[count the number of times the letter "l" appears in the sentence.]' | score=0.0000
+[PRED 1] gold=['mailed mary'] | pred='mail the sweater to mary.' | score=0.0000
+[PRED 2] gold=['we'] | pred='throw away any leftovers.' | score=0.0000
+[PRED 3] gold=['dashwood'] | pred='accept the rather small cottage mrs dashwood.' | score=0.0000
+[PRED 4] gold=['on'] | pred='make it clear that it will be finished on time.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_032302__es__Input_Write_ONE_concise_instruction_that__85542e6d.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: The government prescribes the height of are a shocking waste of public funds.\nOutput: funds\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds.\nOutput: funds\nInput: Philippa cried']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['a'] | pred='cent' | score=0.0000
+[PRED 1] gold=['paris'] | pred='week' | score=0.0000
+[PRED 2] gold=['best'] | pred='writer' | score=0.0000
+[PRED 3] gold=['in'] | pred='box' | score=0.0000
+[PRED 4] gold=['is'] | pred='gardener' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_032404__es__Input_The_government_prescribes_the_heig__6b6b2e3e.tsv
+Dev loss: 0.25. Dev perf: 0.25. Best dev perf: 0.75
+********* Done *********
+Instruction: ["Input: Write a haiku that maps Input to Output above.\n\nOutput: A gentle breeze blows  \nCherry blossoms dance and sway  Springtime's sweet embrace"]
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['on'] | pred='colorful graffiti  \nurban art on concrete walls  \nstreet beauty revealed' | score=0.0000
+[PRED 1] gold=['you'] | pred='connections made strong  \nthrough shared experiences  \nfriendship blooms anew' | score=0.0000
+[PRED 2] gold=['sang song'] | pred="music fills the air  \none voice silent, one soars high  \nharmony's sweet blend" | score=0.0000
+[PRED 3] gold=['been by but'] | pred="secrets stay hidden  \ngorbachev's choice sealed tight  history's locked door" | score=0.0000
+[PRED 4] gold=['the'] | pred='a ship on the sea  \nsails billow in the distance  adventure awaits' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_032500__es__Input_Write_a_haiku_that_maps_Input_to_O__ec9c3331.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Best initial point: 0.750
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][03:25:01] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[03:25:01] INFO [PROFILE] GP fit: 0.186s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:25:01] INFO Iter 0 best_value=2.57173 gp_loss=-2093.16547
+[03:25:02] INFO [PROFILE] Acquisition: 0.786s
+[03:25:46] INFO [PROFILE] LLM eval candidate: 43.975s
+[03:25:46] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:44<02:59, 44.96s/it][03:25:46] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[03:25:46] INFO [PROFILE] GP fit: 0.306s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:25:46] INFO Iter 1 best_value=2.57173 gp_loss=-2093.16547
+[03:25:47] INFO [PROFILE] Acquisition: 0.714s
+[03:26:20] INFO [PROFILE] LLM eval candidate: 33.357s
+[03:26:20] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [01:19<01:56, 38.74s/it][03:26:20] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[03:26:21] INFO [PROFILE] GP fit: 0.303s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:26:21] INFO Iter 2 best_value=2.57173 gp_loss=-2093.16547
+[03:26:21] INFO [PROFILE] Acquisition: 0.664s
+[03:26:36] INFO [PROFILE] LLM eval candidate: 14.343s
+[03:26:36] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:34<00:56, 28.05s/it][03:26:36] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[03:26:36] INFO [PROFILE] GP fit: 0.183s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:26:36] INFO Iter 3 best_value=2.57173 gp_loss=-2093.16547
+[03:26:36] INFO [PROFILE] Acquisition: 0.692s
+[03:27:40] INFO [PROFILE] LLM eval candidate: 63.349s
+[03:27:40] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [02:38<00:42, 42.33s/it][03:27:40] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[03:27:40] INFO [PROFILE] GP fit: 0.345s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[03:27:40] INFO Iter 4 best_value=2.57173 gp_loss=-2093.16547
+[03:27:41] INFO [PROFILE] Acquisition: 0.716s
+[03:28:05] INFO [PROFILE] LLM eval candidate: 23.881s
+[03:28:05] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [03:03<00:00, 36.07s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [03:03<00:00, 36.77s/it]
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ["I'm sorry, but I'm not sure what you're asking for. Could you please provide more context or clarify your question?"]
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['prescribes public'] | pred="i'm sorry, but i'm not sure what you're asking for. could you please provide more context or clarify your question?" | score=0.0000
+[PRED 1] gold=['a and'] | pred="it seems like you are describing a situation where a student felt sorry for miss kim and offered her his own book. it's a kind gesture to offer someone your belongings when they are in need." | score=0.0000
+[PRED 2] gold=['his'] | pred="it seems like you're mentioning someone's favorite color is red. let me know if you need help with anything related to that." | score=0.0000
+[PRED 3] gold=['substances'] | pred='thank you for providing that information. it seems like you are referring to the various chemical substances that play a role in nerve transmission. if you have a specific question or topic you would like more information on, please let me know so i can assist you further.' | score=0.0000
+[PRED 4] gold=['my'] | pred="i'm sorry to hear that your car was stolen. please let me know if you need any assistance or information on what to do next." | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_032546__es__I_m_sorry__but_I_m_not_sure_what_you_re___55e72088.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Mary appreciates only John and herself. [j]\nOutput: john']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['ticket'] | pred='t' | score=0.0000
+[PRED 1] gold=['for'] | pred='for' | score=1.0000
+[PRED 2] gold=['this'] | pred='this parcel is very heavy' | score=0.0000
+[PRED 3] gold=['john'] | pred='john' | score=1.0000
+[PRED 4] gold=['of other'] | pred='other' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_032620__es__Input_Mary_appreciates_only_John_and_her__0f73970c.tsv
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.75
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Mary appreciates only John and herself.\nOutput: john']
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.75
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Mary appreciates only John and herself.\nOutput: john\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds.\nOutput: funds\nInput: Philippa cried herself to sleep.\nOutput: to']
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['thought that the'] | pred='the' | score=0.0000
+[PRED 1] gold=['claim'] | pred='action' | score=0.0000
+[PRED 2] gold=['cat'] | pred='kitchen' | score=0.0000
+[PRED 3] gold=['too'] | pred='too' | score=1.0000
+[PRED 4] gold=['some'] | pred='offended' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\orthography_starts_with_20251018_032740__es__Input_Mary_appreciates_only_John_and_her__73c721d6.tsv
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 0.75
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\nOutput: Write a concise instruction that maps Input to Output above.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: Mary appreciates only John and herself. [j]\nOutput: john\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\nInput: Philippa cried herself to sleep']
+The final instruction set is:
+{'Input: Mary appreciates only John and herself. [j]\nOutput: john\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\nInput: Philippa cried herself to sleep': (0.75, array([[1., 0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 0., 0., 0.,
+        1., 1., 1., 1.]])), 'Input: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: Funds are being wasted on the lettering on the covers of which the government prescribes the height.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: j\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: Write a concise instruction that maps Input to Output above.\n\nOutput: john': (0.25, array([[0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 1., 0., 0., 1., 1., 0.,
+        0., 0., 1., 0.]])), 'Input: The letter of the law prescribes the height of the government. [f]\nOutput: the height\nInput: The letter of the law prescribes the width of the government. [w]\nOutput: the width\nInput: The letter of the law prescribes the length of the': (0.3, array([[0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 1., 0., 1.,
+        1., 0., 0., 1.]])), 'Input: Write a letter to John. [j]\nOutput: John': (0.5, array([[1., 0., 0., 1., 0., 0., 1., 0., 0., 0., 1., 1., 1., 1., 1., 0.,
+        1., 0., 1., 0.]])), 'Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds': (0.25, array([[0., 0., 1., 0., 1., 1., 0., 0., 0., 1., 0., 0., 0., 0., 0., 1.,
+        0., 0., 0., 0.]])), 'Input: The government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds': (0.15, array([[0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0.,
+        0., 0., 0., 1.]])), 'Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\nInput: Philippa cried herself to sleep. [t]\nOutput: to\nInput: I know several people who she kissed. [': (0.45, array([[0., 0., 1., 1., 1., 1., 1., 0., 0., 0., 1., 0., 0., 0., 0., 1.,
+        0., 1., 1., 0.]])), 'ONE': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The letter is the instruction. Output: The letter is the instruction.': (0.1, array([[0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0.,
+        0., 0., 0., 0.]])), 'Input: Mary appreciates only John and herself.\nOutput: john': (0.1, array([[0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 1., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds.': (0.5, array([[1., 1., 0., 0., 0., 0., 0., 1., 1., 0., 0., 1., 0., 1., 1., 0.,
+        1., 1., 0., 1.]])), 'Input: The letter of the law is the law. [j]\nOutput: j\n\nInput: The report of the meeting is the meeting. [f]\nOutput: f\nInput: The height of the mountain is the mountain. [t]\nOutput: t\nInput: The width of the': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: Write a concise instruction that maps Input to Output above.\nOutput: Write a concise instruction that maps Input to Output above.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: Write a sentence that maps Input to Output above.\n\nUse an imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: Write a concise instruction that maps Input to Output above.\nOutput: The instruction is imperative.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: funds': (0.6, array([[1., 0., 1., 1., 0., 0., 0., 1., 1., 1., 1., 0., 1., 1., 0., 0.,
+        0., 1., 1., 1.]])), 'Input: ONE concise instruction that maps Input to Output above.\nOutput: ONE imperative sentence.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The lettering on the covers of which the government prescribes the height of are a shocking waste of public funds. [f]\nOutput: to\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds.': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        1., 0., 0., 0.]])), 'Input: Write ONE concise instruction that maps Input to Output above.\nUse an imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: Write ONE concise instruction that maps Input to Output above.\nOutput: ONE\n\nInput: Use an imperative sentence. Output only the instruction.\nOutput: instruction': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The government prescribes the height of are a shocking waste of public funds.\nOutput: funds\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds.\nOutput: funds\nInput: Philippa cried': (0.25, array([[0., 0., 0., 0., 0., 0., 0., 1., 1., 0., 1., 0., 0., 1., 0., 0.,
+        0., 0., 0., 1.]])), "Input: Write a haiku that maps Input to Output above.\n\nOutput: A gentle breeze blows  \nCherry blossoms dance and sway  Springtime's sweet embrace": (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), "I'm sorry, but I'm not sure what you're asking for. Could you please provide more context or clarify your question?": (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: Mary appreciates only John and herself. [j]\nOutput: john': (0.6, array([[0., 1., 0., 1., 0., 0., 0., 0., 1., 1., 1., 1., 1., 1., 0., 1.,
+        1., 1., 1., 0.]])), 'Input: Mary appreciates only John and herself.\nOutput: john\n\nInput: Reports the lettering on the covers of which the government prescribes the height of are a shocking waste of public funds.\nOutput: funds\nInput: Philippa cried herself to sleep.\nOutput: to': (0.2, array([[0., 0., 0., 1., 0., 1., 0., 0., 1., 1., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "es" for task "orthography_starts_with"...
+[PRED 0] gold=['books by'] | pred='books' | score=0.0000
+[PRED 1] gold=['dog'] | pred='dog' | score=1.0000
+[PRED 2] gold=['john'] | pred='john' | score=1.0000
+[PRED 3] gold=['am and a'] | pred='opinion' | score=0.0000
+[PRED 4] gold=['annoys'] | pred='people' | score=0.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\orthography_starts_with_20251018_032925__es__Input_Mary_appreciates_only_John_and_her__3dc33e76.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.62

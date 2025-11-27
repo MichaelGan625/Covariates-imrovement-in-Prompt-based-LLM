@@ -1,0 +1,299 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:14<00:14, 14.20s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:22<00:00, 10.78s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:22<00:00, 11.29s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['sheep', 'sleep', 'cheap', 'keep', 'deep', 'asleep', 'steep'] | pred='creep' | score=0.0000
+[PRED 1] gold=['sit', 'hit', 'fit', 'quit', 'admit', 'knit', 'bit', 'kit'] | pred='sit' | score=1.0000
+[PRED 2] gold=['very', 'ferry', 'marry', 'scary', 'bury'] | pred='bury' | score=1.0000
+[PRED 3] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='caution' | score=0.0000
+[PRED 4] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='meditation' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_015109__em__Input_trip_Output_slip_Input_net_Output___289bbc6e.tsv
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 0.4
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['clean', 'green', 'bean', 'screen', 'machine', 'mean', 'queen', 'scene', 'routine'] | pred='green' | score=1.0000
+[PRED 1] gold=['roast', 'toast', 'post', 'ghost', 'coast'] | pred='boast' | score=0.0000
+[PRED 2] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='transportation' | score=1.0000
+[PRED 3] gold=['avoid', 'unemployed', 'annoyed'] | pred='panned' | score=0.0000
+[PRED 4] gold=['boat', 'coat', 'note', 'goat', 'promote', 'vote', 'float', 'throat'] | pred='demote' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_015137__em__Input_trip_Output_slip__2cc473fe.tsv
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: ONE']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['red', 'head', 'bread', 'bed', 'instead', 'dead', 'ahead'] | pred='one ahead' | score=0.0000
+[PRED 1] gold=['end', 'send', 'friend', 'lend', 'spend', 'intend', 'attend', 'defend', 'recommend', 'trend'] | pred='attend' | score=1.0000
+[PRED 2] gold=['hot', 'not', 'pot', 'spot', 'dot'] | pred='ton' | score=0.0000
+[PRED 3] gold=['bat', 'fat', 'at', 'hat', 'cat', 'rat', 'chat', 'flat'] | pred='conversation' | score=0.0000
+[PRED 4] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='examination' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_015158__em__Input_ONE__83ad3846.tsv
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput: crowd\nOutput: proud\nInput:']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='vacation' | score=1.0000
+[PRED 1] gold=['rap', 'cap', 'map', 'wrap', 'clap'] | pred='map' | score=1.0000
+[PRED 2] gold=['child', 'wild', 'mild'] | pred='child' | score=1.0000
+[PRED 3] gold=['pair', 'chair', 'their', 'wear', 'hair', 'there', 'fair', 'prepare', 'share', 'square', 'repair', 'pear', 'bear', 'air', 'declare', 'questionnaire', 'spare', 'rare', 'fare', 'care', 'compare'] | pred='repair' | score=1.0000
+[PRED 4] gold=['pair', 'chair', 'their', 'wear', 'hair', 'there', 'fair', 'prepare', 'share', 'square', 'repair', 'pear', 'bear', 'air', 'declare', 'questionnaire', 'spare', 'rare', 'fare', 'care', 'compare'] | pred='stair' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_015343__em__Input_trip_Output_slip_Input_net_Output___f7ca55d1.tsv
+Dev loss: 0.5. Dev perf: 0.5. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\n\n\nInput: net\nOutput: cigarette\n\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput:']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['too', 'who', 'you', 'do', 'zoo', 'blue', 'shoe', 'view', 'shampoo', 'through', 'flu', 'review', 'crew', 'kangaroo', 'few'] | pred='preview' | score=0.0000
+[PRED 1] gold=['fun', 'run', 'sun', 'son', 'none', 'gun'] | pred='bun' | score=0.0000
+[PRED 2] gold=['no', 'snow', 'go', 'slow', 'oh', 'know', 'show', 'toe', 'throw', 'grow', 'ago', 'so', 'low', 'sew', 'blow', 'row', 'owe'] | pred='glow' | score=0.0000
+[PRED 3] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='celebration' | score=1.0000
+[PRED 4] gold=['no', 'snow', 'go', 'slow', 'oh', 'know', 'show', 'toe', 'throw', 'grow', 'ago', 'so', 'low', 'sew', 'blow', 'row', 'owe'] | pred='flow' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_015442__em__Input_trip_Output_slip_Input_net_Output___f8b12f5c.tsv
+Dev loss: 0.5. Dev perf: 0.5. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['sit', 'hit', 'fit', 'quit', 'admit', 'knit', 'bit', 'kit'] | pred='sit' | score=1.0000
+[PRED 1] gold=['invite', 'light', 'night', 'right', 'write', 'flight', 'bright', 'kite', 'polite', 'quite', 'site', 'might', 'fight', 'despite', 'overnight', 'tight', 'bite', 'sight', 'height'] | pred='besides' | score=0.0000
+[PRED 2] gold=['pair', 'chair', 'their', 'wear', 'hair', 'there', 'fair', 'prepare', 'share', 'square', 'repair', 'pear', 'bear', 'air', 'declare', 'questionnaire', 'spare', 'rare', 'fare', 'care', 'compare'] | pred='stare' | score=0.0000
+[PRED 3] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='recreation' | score=0.0000
+[PRED 4] gold=['sheep', 'sleep', 'cheap', 'keep', 'deep', 'asleep', 'steep'] | pred='sleep' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_015542__em__Input_trip_Output_slip_Input_net_Output___05639dc0.tsv
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['invite', 'light', 'night', 'right', 'write', 'flight', 'bright', 'kite', 'polite', 'quite', 'site', 'might', 'fight', 'despite', 'overnight', 'tight', 'bite', 'sight', 'height'] | pred='tight' | score=1.0000
+[PRED 1] gold=['make', 'cake', 'take', 'break', 'steak', 'snake', 'bake', 'lake', 'mistake', 'awake', 'shake', 'ache', 'brake'] | pred='make' | score=1.0000
+[PRED 2] gold=['begin', 'violin', 'thin', 'win', 'skin', 'pin', 'twin', 'chin'] | pred='begin' | score=1.0000
+[PRED 3] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='preparation' | score=1.0000
+[PRED 4] gold=['invite', 'light', 'night', 'right', 'write', 'flight', 'bright', 'kite', 'polite', 'quite', 'site', 'might', 'fight', 'despite', 'overnight', 'tight', 'bite', 'sight', 'height'] | pred='overnight' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_015642__em__Input_ONE_Output_ONE_Input_ONE_Output_ON__001ed4c1.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: slip\nOutput: slip\nInput: net\nOutput: net\nInput: cigarette\nOutput: cigarette\nInput: bug\nOutput: bug\nInput: goat\nOutput: goat\nInput: slip\nOutput: slip\nInput: net\nOutput:']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['die', 'eye', 'buy', 'my', 'bye', 'goodbye', 'fly', 'hi', 'by', 'sky', 'high', 'guy', 'lie', 'try', 'cry', 'tie', 'dry', 'pie', 'spy', 'apply', 'fry', 'shy', 'nearby'] | pred='fly' | score=1.0000
+[PRED 1] gold=['grilled', 'build', 'rebuild'] | pred='grilled' | score=1.0000
+[PRED 2] gold=['plane', 'rain', 'train', 'explain', 'brain', 'chain', 'pain', 'champagne', 'stain', 'complain', 'contain', 'main', 'gain', 'plain'] | pred='pain' | score=1.0000
+[PRED 3] gold=['no', 'snow', 'go', 'slow', 'oh', 'know', 'show', 'toe', 'throw', 'grow', 'ago', 'so', 'low', 'sew', 'blow', 'row', 'owe'] | pred='oh' | score=1.0000
+[PRED 4] gold=['leave', 'believe', 'sleeve', 'achieve'] | pred='believe' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_015917__em__Input_slip_Output_slip_Input_net_Output___9014ff53.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: map\nOutput: territory']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['please', 'these', 'cheese', 'freeze', 'disease', 'breeze'] | pred='land' | score=0.0000
+[PRED 1] gold=['she', 'me', 'he', 'tea', 'key', 'we', 'see', 'tree', 'sea', 'agree', 'degree', 'free', 'disagree', 'fee', 'bee', 'ski', 'pea', 'knee'] | pred='view' | score=0.0000
+[PRED 2] gold=['no', 'snow', 'go', 'slow', 'oh', 'know', 'show', 'toe', 'throw', 'grow', 'ago', 'so', 'low', 'sew', 'blow', 'row', 'owe'] | pred='blizzard' | score=0.0000
+[PRED 3] gold=['invite', 'light', 'night', 'right', 'write', 'flight', 'bright', 'kite', 'polite', 'quite', 'site', 'might', 'fight', 'despite', 'overnight', 'tight', 'bite', 'sight', 'height'] | pred='light' | score=1.0000
+[PRED 4] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='cartoon' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_020328__em__Input_map_Output_territory__1a661295.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput']
+Dev loss: 0.4. Dev perf: 0.4. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 1.0
+********* Done *********
+Best initial point: 1.000
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 1.0, 'alpha_cov': 0.015}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][02:08:34] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[02:08:34] INFO [PROFILE] GP fit: 0.225s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:08:34] INFO Iter 0 best_value=2.52780 gp_loss=-137.44335
+[02:08:35] INFO [PROFILE] Acquisition: 0.818s
+[02:09:01] INFO [PROFILE] LLM eval candidate: 25.977s
+[02:09:01] INFO Best value so far: 1.00000
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:27<01:48, 27.04s/it][02:09:01] INFO [Iteration 1] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[02:09:02] INFO [PROFILE] GP fit: 0.628s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:09:02] INFO Iter 1 best_value=2.49101 gp_loss=-1797.56494
+[02:09:02] INFO [PROFILE] Acquisition: 0.658s
+[02:09:24] INFO [PROFILE] LLM eval candidate: 21.181s
+[02:09:24] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:49<01:13, 24.36s/it][02:09:24] INFO [Iteration 2] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[02:09:24] INFO [PROFILE] GP fit: 0.365s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:09:24] INFO Iter 2 best_value=2.49101 gp_loss=-1797.56494
+D:\conda_envs\iz310\lib\site-packages\botorch\optim\optimize.py:753: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+[02:09:25] INFO [PROFILE] Acquisition: 1.273s
+[02:09:33] INFO [PROFILE] LLM eval candidate: 8.082s
+[02:09:33] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [00:59<00:35, 17.68s/it][02:09:33] INFO [Iteration 3] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[02:09:34] INFO [PROFILE] GP fit: 0.284s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:09:34] INFO Iter 3 best_value=2.49101 gp_loss=-1797.56494
+[02:09:34] INFO [PROFILE] Acquisition: 0.617s
+[02:09:55] INFO [PROFILE] LLM eval candidate: 20.671s
+[02:09:55] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [01:20<00:19, 19.22s/it][02:09:55] INFO [Iteration 4] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[02:09:55] INFO [PROFILE] GP fit: 0.383s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[02:09:55] INFO Iter 4 best_value=2.49101 gp_loss=-1797.56494
+[02:09:56] INFO [PROFILE] Acquisition: 0.474s
+[02:10:56] INFO [PROFILE] LLM eval candidate: 60.210s
+[02:10:56] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:21<00:00, 34.31s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:21<00:00, 28.38s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['ONE concise instruction that maps Input to Output above.']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['clean', 'green', 'bean', 'screen', 'machine', 'mean', 'queen', 'scene', 'routine'] | pred='plant seed in soil and water regularly' | score=0.0000
+[PRED 1] gold=['improve', 'move', 'prove', 'remove', 'approve'] | pred='improve' | score=1.0000
+[PRED 2] gold=['make', 'cake', 'take', 'break', 'steak', 'snake', 'bake', 'lake', 'mistake', 'awake', 'shake', 'ache', 'brake'] | pred='reversing the input word "snake" results in the output "ekans".' | score=0.0000
+[PRED 3] gold=['boat', 'coat', 'note', 'goat', 'promote', 'vote', 'float', 'throat'] | pred='advance or elevate' | score=0.0000
+[PRED 4] gold=['begin', 'violin', 'thin', 'win', 'skin', 'pin', 'twin', 'chin'] | pred='reverse the order of the letters in the word "chin".' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_020901__em__ONE_concise_instruction_that_maps_Input___94ff66d3.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 1] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: 6.6482e-08
+Instruction: ['Input: trip']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['ride', 'outside', 'guide', 'decide', 'wide', 'side', 'bride', 'provide', 'divide', 'hide'] | pred='vacation' | score=0.0000
+[PRED 1] gold=['late', 'plate', 'date', 'wait', 'great', 'straight', 'hate', 'skate', 'gate', 'state', 'create', 'weight'] | pred='journey' | score=0.0000
+[PRED 2] gold=['no', 'snow', 'go', 'slow', 'oh', 'know', 'show', 'toe', 'throw', 'grow', 'ago', 'so', 'low', 'sew', 'blow', 'row', 'owe'] | pred='vacation' | score=0.0000
+[PRED 3] gold=['begin', 'violin', 'thin', 'win', 'skin', 'pin', 'twin', 'chin'] | pred='vacation' | score=0.0000
+[PRED 4] gold=['too', 'who', 'you', 'do', 'zoo', 'blue', 'shoe', 'view', 'shampoo', 'through', 'flu', 'review', 'crew', 'kangaroo', 'few'] | pred='journey' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_020924__em__Input_trip__a2587974.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 2] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: 6.6482e-08
+Instruction: ['Input: trip\nOutput: slip']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: 6.6482e-08
+Instruction: ['ONE']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='please fill out the registration form.' | score=0.0000
+[PRED 1] gold=['politely', 'lightly'] | pred='please speak to me politely.' | score=0.0000
+[PRED 2] gold=['dress', 'yes', 'chess', 'guess', 'less', 'mess', 'press', 'undress', 'success', 'stress'] | pred='push' | score=0.0000
+[PRED 3] gold=['pair', 'chair', 'their', 'wear', 'hair', 'there', 'fair', 'prepare', 'share', 'square', 'repair', 'pear', 'bear', 'air', 'declare', 'questionnaire', 'spare', 'rare', 'fare', 'care', 'compare'] | pred='put on your clothes.' | score=0.0000
+[PRED 4] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='slides' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_020955__em__ONE__bc21e648.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: 6.6482e-08
+Instruction: ['Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\n\nInput: bug\nOutput: hug\n\nInput: goat\nOutput: promote\n\nInput: fair\nOutput: repair\n\nInput: freeze\nOutput: cheese\n\nInput: trade']
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['late', 'plate', 'date', 'wait', 'great', 'straight', 'hate', 'skate', 'gate', 'state', 'create', 'weight'] | pred='creature' | score=0.0000
+[PRED 1] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='situation' | score=1.0000
+[PRED 2] gold=['invite', 'light', 'night', 'right', 'write', 'flight', 'bright', 'kite', 'polite', 'quite', 'site', 'might', 'fight', 'despite', 'overnight', 'tight', 'bite', 'sight', 'height'] | pred='acquire' | score=0.0000
+[PRED 3] gold=['station', 'vacation', 'conversation', 'invitation', 'examination', 'occupation', 'identification', 'information', 'preparation', 'operation', 'generation', 'celebration', 'situation', 'imagination', 'animation', 'relaxation', 'population', 'punctuation', 'reservation', 'presentation', 'location', 'transportation', 'registration', 'application', 'explanation', 'communication', 'relation', 'organization', 'immigration'] | pred='confirmation' | score=0.0000
+[PRED 4] gold=['no', 'snow', 'go', 'slow', 'oh', 'know', 'show', 'toe', 'throw', 'grow', 'ago', 'so', 'low', 'sew', 'blow', 'row', 'owe'] | pred='blow' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\rhymes_20251018_021056__em__Input_trip_Output_slip_Input_net_Output___ed5716c4.tsv
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 1.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: slip\nOutput: slip\nInput: net\nOutput: net\nInput: cigarette\nOutput: cigarette\nInput: bug\nOutput: bug\nInput: goat\nOutput: goat\nInput: slip\nOutput: slip\nInput: net\nOutput:']
+The final instruction set is:
+{'Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput': (0.4, array([[0., 1., 1., 0., 0., 1., 0., 0., 0., 1., 0., 0., 0., 1., 1., 0.,
+        1., 0., 0., 1.]])), 'Input: trip\nOutput: slip': (0.55, array([[1., 0., 1., 0., 0., 1., 0., 1., 1., 0., 1., 1., 0., 0., 1., 0.,
+        1., 0., 1., 1.]])), 'Input: ONE': (0.3, array([[0., 1., 0., 0., 1., 1., 1., 1., 0., 0., 0., 0., 1., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: trip\nOutput: slip\nInput: net\nOutput: cigarette\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade\nInput: crowd\nOutput: proud\nInput:': (0.5, array([[1., 1., 1., 1., 0., 0., 1., 1., 1., 0., 0., 0., 1., 1., 0., 0.,
+        1., 0., 0., 0.]])), 'Input: trip\nOutput: slip\n\n\nInput: net\nOutput: cigarette\n\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput:': (0.5, array([[0., 0., 0., 1., 0., 0., 1., 0., 0., 1., 1., 1., 1., 1., 0., 0.,
+        0., 1., 1., 1.]])), 'Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\nInput: bug\nOutput: hug\nInput: goat\nOutput: promote\nInput: fair\nOutput: repair\nInput: freeze\nOutput: cheese\nInput: trade\nOutput: grade': (0.6, array([[1., 0., 0., 0., 1., 1., 1., 0., 1., 0., 1., 0., 1., 1., 1., 0.,
+        1., 1., 1., 0.]])), 'Input: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: slip\nOutput: slip\nInput: net\nOutput: net\nInput: cigarette\nOutput: cigarette\nInput: bug\nOutput: bug\nInput: goat\nOutput: goat\nInput: slip\nOutput: slip\nInput: net\nOutput:': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: map\nOutput: territory': (0.05, array([[0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'ONE concise instruction that maps Input to Output above.': (0.15, array([[0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0.,
+        0., 1., 0., 0.]])), 'Input: trip': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'ONE': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: trip\nOutput: slip\n\nInput: net\nOutput: cigarette\n\nInput: bug\nOutput: hug\n\nInput: goat\nOutput: promote\n\nInput: fair\nOutput: repair\n\nInput: freeze\nOutput: cheese\n\nInput: trade': (0.3, array([[0., 1., 0., 0., 1., 0., 0., 1., 0., 1., 0., 0., 0., 0., 1., 0.,
+        1., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "rhymes"...
+[PRED 0] gold=['rice', 'price', 'ice', 'twice', 'slice', 'spice'] | pred='price' | score=1.0000
+[PRED 1] gold=['pay', 'gray', 'stay', 'play', 'day', 'they', 'say', 'away', 'way', 'may', 'delay', 'hey', 'pray', 'bay', 'gay', 'display', 'weigh'] | pred='away' | score=1.0000
+[PRED 2] gold=['part', 'start', 'heart', 'art', 'smart', 'depart', 'apart'] | pred='part' | score=1.0000
+[PRED 3] gold=['myself', 'itself', 'shelf', 'himself', 'herself'] | pred='himself' | score=1.0000
+[PRED 4] gold=['myself', 'itself', 'shelf', 'himself', 'herself'] | pred='myself' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\rhymes_20251018_021206__em__Input_slip_Output_slip_Input_net_Output___9014ff53.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 1.0

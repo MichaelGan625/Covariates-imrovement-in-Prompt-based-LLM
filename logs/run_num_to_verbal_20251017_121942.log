@@ -1,0 +1,259 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:16<00:16, 16.54s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:25<00:00, 12.23s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:25<00:00, 12.88s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['five hundred and twenty-six'] | pred='five hundred and twenty-six' | score=1.0000
+[PRED 1] gold=['six thousand, seven hundred and nineteen'] | pred='six thousand, seven hundred and nineteen' | score=1.0000
+[PRED 2] gold=['nine thousand, four hundred and eighty-five'] | pred='nine thousand, four hundred and eighty-five' | score=1.0000
+[PRED 3] gold=['six thousand, nine hundred and eighty-four'] | pred='six thousand, nine hundred and eighty-four' | score=1.0000
+[PRED 4] gold=['seven hundred and eighty-five'] | pred='seven hundred and eighty-five' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_122153__em__Input_2441_Output_two_thousand__four_hun__8e59716a.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 24441\nOutput: two thousand, four hundred and forty-one']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['seven hundred and five'] | pred='seven hundred and five' | score=1.0000
+[PRED 1] gold=['eight thousand, two hundred and sixty-three'] | pred='eight thousand, two hundred and sixty-three' | score=1.0000
+[PRED 2] gold=['seven thousand, six hundred and fifty-nine'] | pred='seven thousand, six hundred and fifty-nine' | score=1.0000
+[PRED 3] gold=['seven thousand, two hundred and seventy-one'] | pred='seven thousand, two hundred and seventy-one' | score=1.0000
+[PRED 4] gold=['six thousand, two hundred and twenty-five'] | pred='six thousand, two hundred and twenty-five' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_122228__em__Input_24441_Output_two_thousand__four_hu__a83a39dd.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 523\nOutput: five hundred and twenty-three\nInput: 585\nOutput: five hundred and eighty-five\nInput: 305\nOutput: three']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['one hundred and thirty-one'] | pred='one hundred and thirty-one' | score=1.0000
+[PRED 1] gold=['one thousand, six hundred and forty-nine'] | pred='one thousand, six hundred and forty-nine' | score=1.0000
+[PRED 2] gold=['six thousand, five hundred and seventy-nine'] | pred='six thousand, five hundred and seventy-nine' | score=1.0000
+[PRED 3] gold=['nine thousand, three hundred and four'] | pred='nine thousand, three hundred and four' | score=1.0000
+[PRED 4] gold=['eight thousand, six hundred and seventy-three'] | pred='eight thousand, six hundred and seventy-three' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_122334__em__Input_2441_Output_two_thousand__four_hun__ae7a9f7e.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 24441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['four thousand, nine hundred and twenty-four'] | pred='four thousand, nine hundred and twenty-four' | score=1.0000
+[PRED 1] gold=['seven thousand, eight hundred and fifty-seven'] | pred='seven thousand, eight hundred and fifty-seven' | score=1.0000
+[PRED 2] gold=['one thousand, one hundred and eleven'] | pred='one thousand, one hundred and eleven' | score=1.0000
+[PRED 3] gold=['one thousand, four hundred and nineteen'] | pred='one thousand, four hundred and nineteen' | score=1.0000
+[PRED 4] gold=['eight thousand, six hundred and thirty-one'] | pred='eight thousand, six hundred and thirty-one' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_122537__em__Input_24441_Output_two_thousand__four_hu__4d911714.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['five thousand, nine hundred'] | pred='five thousand, nine hundred' | score=1.0000
+[PRED 1] gold=['six thousand, eight hundred and sixty-seven'] | pred='six thousand, eight hundred and sixty-seven' | score=1.0000
+[PRED 2] gold=['five hundred and eighty-eight'] | pred='five hundred and eighty-eight' | score=1.0000
+[PRED 3] gold=['seven thousand, seven hundred and eighty-seven'] | pred='seven thousand, seven hundred and eighty-seven' | score=1.0000
+[PRED 4] gold=['six thousand, four hundred and sixty-one'] | pred='six thousand, four hundred and sixty-one' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_122646__em__Input_2441_Output_two_thousand__four_hun__34ed526a.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['six thousand, nine hundred and forty'] | pred='six thousand, nine hundred and forty' | score=1.0000
+[PRED 1] gold=['one thousand and fifty-three'] | pred='one thousand, fifty-three' | score=1.0000
+[PRED 2] gold=['one thousand, six hundred and sixty-eight'] | pred='one thousand, six hundred and sixty-eight' | score=1.0000
+[PRED 3] gold=['six thousand, nine hundred and thirty-three'] | pred='six thousand, nine hundred and thirty-three' | score=1.0000
+[PRED 4] gold=['two thousand, six hundred and nineteen'] | pred='two thousand, six hundred and nineteen' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_122755__em__Input_2441_Output_two_thousand__four_hun__fe1332ee.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: two thousand, four hundred and forty-one\nOutput: five thousand, two hundred and thirty-five']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['six thousand, two hundred and twenty-five'] | pred='six thousand, two hundred and twenty-five' | score=1.0000
+[PRED 1] gold=['seven thousand and nine'] | pred='seven thousand and nine' | score=1.0000
+[PRED 2] gold=['seven hundred and seventy-six'] | pred='seven hundred and seventy-six' | score=1.0000
+[PRED 3] gold=['two thousand, two hundred and seventeen'] | pred='three thousand, two hundred and seventeen' | score=0.0000
+[PRED 4] gold=['three hundred and forty-four'] | pred='three hundred and forty-four' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_123157__em__Input_two_thousand__four_hundred_and_for__58de3589.tsv
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 1001\nOutput: one thousand, zero and one']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['nine thousand, one hundred and thirteen'] | pred='nine thousand, one hundred and thirteen' | score=1.0000
+[PRED 1] gold=['two thousand, six hundred and twenty'] | pred='two thousand, six hundred and twenty' | score=1.0000
+[PRED 2] gold=['seven thousand and eighty-two'] | pred='seven thousand, zero and eighty-two' | score=1.0000
+[PRED 3] gold=['seven thousand, eight hundred and seventy-three'] | pred='seven thousand, eight hundred and seventy-three' | score=1.0000
+[PRED 4] gold=['one thousand, five hundred and fifty-six'] | pred='one thousand, five hundred and fifty-six' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_123328__em__Input_1001_Output_one_thousand__zero_and__24b213d4.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 1000\nOutput: one thousand, zero and one hundred\n\nInput: 2000\nOutput: two thousand, zero and two hundred\nInput: 300\nOutput: three thousand, zero and three hundred\nInput: 400\nOutput: four']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['seven thousand, eight hundred and ninety-eight'] | pred='seven thousand, eight hundred and ninety-eight' | score=1.0000
+[PRED 1] gold=['six thousand, nine hundred and thirty-two'] | pred='six thousand, nine hundred and thirty-two' | score=1.0000
+[PRED 2] gold=['three thousand, six hundred and forty-eight'] | pred='three thousand, six hundred and forty-eight' | score=1.0000
+[PRED 3] gold=['seven thousand, nine hundred and sixty-five'] | pred='seven thousand, nine hundred and sixty-five' | score=1.0000
+[PRED 4] gold=['eight thousand, one hundred and sixty-nine'] | pred='eight thousand, one hundred and sixty-nine' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_123618__em__Input_1000_Output_one_thousand__zero_and__d4f60f53.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['six thousand, four hundred and eighty-nine'] | pred='six thousand, four hundred and eighty-nine' | score=1.0000
+[PRED 1] gold=['five hundred and fifty-six'] | pred='five hundred and fifty-six' | score=1.0000
+[PRED 2] gold=['three thousand, nine hundred and fourteen'] | pred='three thousand, nine hundred and fourteen' | score=1.0000
+[PRED 3] gold=['one thousand, four hundred and twenty'] | pred='one thousand, four hundred and twenty' | score=1.0000
+[PRED 4] gold=['three thousand, one hundred and twenty-eight'] | pred='three thousand, one hundred and twenty-eight' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_125126__em__Input_2441_Output_two_thousand__four_hun__f6995123.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Best initial point: 1.000
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][12:53:19] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[12:53:19] INFO [PROFILE] GP fit: 0.238s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[12:53:19] INFO Iter 0 best_value=0.20000 gp_loss=-2244.11307
+[12:53:21] INFO [PROFILE] Acquisition: 2.320s
+[12:55:12] INFO [PROFILE] LLM eval candidate: 110.466s
+[12:55:12] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [01:53<07:32, 113.08s/it][12:55:12] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[12:55:12] INFO [PROFILE] GP fit: 0.248s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[12:55:12] INFO Iter 1 best_value=0.20000 gp_loss=-2244.11307
+[12:55:14] INFO [PROFILE] Acquisition: 1.315s
+[12:57:04] INFO [PROFILE] LLM eval candidate: 110.106s
+[12:57:04] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [03:44<05:36, 112.27s/it][12:57:04] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[12:57:04] INFO [PROFILE] GP fit: 0.247s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[12:57:04] INFO Iter 2 best_value=0.20000 gp_loss=-2244.11307
+[12:57:05] INFO [PROFILE] Acquisition: 1.282s
+[12:58:54] INFO [PROFILE] LLM eval candidate: 108.649s
+[12:58:54] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [05:34<03:42, 111.32s/it][12:58:54] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[12:58:54] INFO [PROFILE] GP fit: 0.237s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[12:58:54] INFO Iter 3 best_value=0.20000 gp_loss=-2244.11307
+[12:58:55] INFO [PROFILE] Acquisition: 1.367s
+[12:59:55] INFO [PROFILE] LLM eval candidate: 59.350s
+[12:59:55] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [06:35<01:31, 91.45s/it] [12:59:55] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[12:59:55] INFO [PROFILE] GP fit: 0.224s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[12:59:55] INFO Iter 4 best_value=0.20000 gp_loss=-2244.11307
+[12:59:56] INFO [PROFILE] Acquisition: 1.298s
+[13:01:45] INFO [PROFILE] LLM eval candidate: 108.567s
+[13:01:45] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [08:26<00:00, 98.18s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [08:26<00:00, 101.21s/it]
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one.']
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['five thousand, seven hundred and fifty-three'] | pred='five thousand, seven hundred and fifty-three.' | score=1.0000
+[PRED 1] gold=['four thousand and thirteen'] | pred='four thousand and thirteen.' | score=1.0000
+[PRED 2] gold=['seven hundred and forty-seven'] | pred='seven hundred and forty-seven.' | score=1.0000
+[PRED 3] gold=['five thousand, one hundred and fifteen'] | pred='five thousand, one hundred and fifteen.' | score=1.0000
+[PRED 4] gold=['nine thousand, two hundred and twenty-nine'] | pred='nine thousand, two hundred and twenty-nine.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\num_to_verbal_20251017_125955__em__Input_2441_Output_two_thousand__four_hun__f3000774.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight']
+The final instruction set is:
+{'Input: 2441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 24441\nOutput: two thousand, four hundred and forty-one': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 523\nOutput: five hundred and twenty-three\nInput: 585\nOutput: five hundred and eighty-five\nInput: 305\nOutput: three': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 24441\nOutput: two thousand, four hundred and forty-one\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\n\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: two thousand, four hundred and forty-one\nOutput: five thousand, two hundred and thirty-five': (0.85, array([[1., 1., 1., 0., 1., 1., 1., 1., 0., 1., 1., 1., 1., 0., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 1001\nOutput: one thousand, zero and one': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 1000\nOutput: one thousand, zero and one hundred\n\nInput: 2000\nOutput: two thousand, zero and two hundred\nInput: 300\nOutput: three thousand, zero and three hundred\nInput: 400\nOutput: four': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 2441\nOutput: two thousand, four hundred and forty-one\n\nInput: 5235\nOutput: five thousand, two hundred and thirty-five\nInput: 5858\nOutput: five thousand, eight hundred and fifty-eight\nInput:': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: 2441\nOutput: two thousand, four hundred and forty-one.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "num_to_verbal"...
+[PRED 0] gold=['eight thousand, one hundred and twenty-four'] | pred='eight thousand, one hundred and twenty-four' | score=1.0000
+[PRED 1] gold=['two thousand, five hundred and thirty-two'] | pred='two thousand, five hundred and thirty-two' | score=1.0000
+[PRED 2] gold=['one thousand and thirty-three'] | pred='one thousand, thirty-three' | score=1.0000
+[PRED 3] gold=['nine thousand, four hundred and eighty-six'] | pred='nine thousand, four hundred and eighty-six' | score=1.0000
+[PRED 4] gold=['seven thousand, five hundred and ninety-four'] | pred='seven thousand, five hundred and ninety-four' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\num_to_verbal_20251017_130300__em__Input_2441_Output_two_thousand__four_hun__34ed526a.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 1.0

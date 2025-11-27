@@ -1,0 +1,339 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:10<00:10, 10.53s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.47s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.63s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput:']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['adjudge alpert barycentric bathe bequeath biopsy carousel conakry cowherd dc indispose intuit mu nocturnal phosphor pop shoehorn shortstop tarpon wit'] | pred='bequeath mu wit intuit adjudge indispose barycentric shoehorn shortstop biopsy alpert phosphor tarpon cowherd conakry bathe pop dc carousel nocturnal' | score=0.0000
+[PRED 1] gold=['jonas seclusion spirit yogi zagreb'] | pred='spirit jonas seclusion yogi zagreb' | score=0.0000
+[PRED 2] gold=['puree trigram'] | pred='puree, trigram' | score=1.0000
+[PRED 3] gold=['bater costello dumpy goldsmith introduce logician shirtmake'] | pred='list: bater costello goldsmith introduce logician shirtmake dumpy' | score=0.0000
+[PRED 4] gold=['abort leathery sobriquet suave'] | pred='a, b, e, h, l, o, r, s, t, u, v' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_062328__em__Input_List_Output_Input_List_Output_Inpu__1eea5c17.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\n\nOutput: alterate aseptic cayenne']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['announce carp clayton co earthy hello inmate nimbus parentage phonetic sharon skinny sudan watson'] | pred='clayton earthy' | score=0.0000
+[PRED 1] gold=["artistry can't cascade condiment consignee gentlemen glance golf markov mimosa nine projectile shanghai swingable tale wildflower"] | pred="artistry can't condiment" | score=1.0000
+[PRED 2] gold=['assure bully butterball bye contend cornet deaf dinosaur frontage gunky indeterminable lustrous ostentatious paradigmatic rhyme sanderson sashimi smokestack taint'] | pred='butterball bye' | score=0.0000
+[PRED 3] gold=['acropolis asteroid bighorn britannica custodial groton indigent militia springtime sweepstake'] | pred='acropolis asteroidalterate' | score=1.0000
+[PRED 4] gold=['bifurcate meningitis tirana zap'] | pred='bifurcate meningitis' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_062434__em__Input_List_foamflower_lawful_cayenne_cha__345ea96d.tsv
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\n\n* aseptic\n* cayenne\n* chandigarh\n* declassify\n* dingy\n* equanimity\n* excursion\n* foamflower\n* groupoid\n* inclement\n* kruger']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['capital electrocardiograph footstool hereinbelow indecision knowledge maestro oedipal pensive pradesh sushi'] | pred='* pradesh\n* maestro\n* indecision\n* footstool\n* capital\n* oedipal\n* hereinbelow\n* knowledge\n* sushi\n* pensive\n* electrocardiograph' | score=0.0000
+[PRED 1] gold=['airstrip clamp climatology concussion delightful dodecahedron larynges optometrist plenum salton tid whit'] | pred='list:\n\n* salton\n* plenum\n* optometrist\n* concussion\n* larynges\n* whit\n* climatology\n* dodecahedron\n* airstrip\n* tid\n* delightful\n* clamp' | score=0.0000
+[PRED 2] gold=['diana pacific programming scale wherever wordy'] | pred='* wherever\n* programming\n* diana\n* wordy\n* scale\n* pacific' | score=0.0000
+[PRED 3] gold=['abalone bumpkin cannabis entranceway implantation knudson naples'] | pred='* abalone\n* cannabis\n* knudson\n* implantation\n* bumpkin\n* naples\n* entranceway' | score=1.0000
+[PRED 4] gold=['murray sweatband'] | pred='* sweatband\n* murray' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_062546__em__Input_List_aseptic_cayenne_chandigarh_de__c38876fd.tsv
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\nOutput:']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['absorptive alluvium asynchronous award baroness bluish bouncy cygnus escapee friday heft hereinabove nematode northumberland paean spangle tutelage whistleable'] | pred='absorptive\nasynchronous\nhereinabove\nbouncy\nbluish\nnorthumberland\naward\npaean\nalluvium\nwhistleable\ncygnus\nheft\nnematode\ntutelage\nescapee\nbaroness\nfriday\nspangle' | score=1.0000
+[PRED 1] gold=['gloucester raytheon slurp'] | pred='slurp\nraytheon\ngloucester' | score=0.0000
+[PRED 2] gold=['biltmore coulomb derelict godfather nomogram parishioner parka passover perspicacious privy renewal ribonucleic styrene trickle'] | pred='trickle nomogram styrene parka perspicacious godfather biltmore privy derelict renewal passover ribonucleic parishioner coulomb' | score=0.0000
+[PRED 3] gold=['bluegrass brunette corvus cress durkee frank girlish hawley hispanic hydroelectric individuate liqueur octavia quicksand retentive screen sparky squabble tinsel treachery'] | pred='individuate\nbrunette\nsparky\nretentive\noctavia\ncorvus\ndurkee\nhispanic\ntreachery\nscreen\nquicksand\nhawley\nbluegrass\ncress\nhydroelectric\ntinsel\nliqueur\ngirlish\nsquabble\nfrank' | score=0.0000
+[PRED 4] gold=['berlioz caught chap constructor diathesis du grep liqueur lubricant salmonella sketch staff sunday tankard wheresoever xi'] | pred='salmonella\ntankard\nxi\nlubricant\nconstructor\nliqueur\nchap\ndiathesis\nsunday\ngrep\ncaught\nwheresoever\nstaff\ndu\nsketch\nberlioz' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_062616__em__Input_List_Output__88809d32.tsv
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\n\n1. Understand the problem or question.\n2. Identify the relevant information.\n3. Process the information to extract the main points.\n4. Organize the main points into a logical structure.\n5. Use the logical structure to create a summary.\n6']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=["attica charge freedom ii malformed ohm polygamy t's"] | pred='1. understand the problem or question: summarize a list of words.\n2. identify the relevant information: list of words provided.\n3. process the information to extract the main points: analyze each word in the list.\n4. organize the main points into a logical structure: categorize words based on similarities or themes.\n5. use the logical structure to create a summary: the list includes words like freedom, attica, charge, polygamy, indicating a mix of' | score=0.0000
+[PRED 1] gold=['bebop declarative padlock'] | pred='1. understand the problem or question: we need to create a summary based on the input list provided.\n2. identify the relevant information: the input list consists of the words "padlock," "bebop," and "declarative."\n3. process the information to extract the main points: these words do not seem to have a direct connection, so we need to find a way to link them together in a summary.\n4. organize the main points into a logical structure: one approach could' | score=0.0000
+[PRED 2] gold=['darkle erudite hookup instant lip moldboard olsen pea quadrant yonkers'] | pred='1. understand the problem or question: summarize a list of words into a logical structure.\n2. identify the relevant information: list of words - pea, yonkers, darkle, quadrant, moldboard, instant, olsen, hookup, erudite, lip.\n3. process the information to extract the main points: sort the words alphabetically for organization.\n4. organize the main points into a logical structure: darkle, erudite, hookup, instant,' | score=0.0000
+[PRED 3] gold=['betelgeuse blue caudal char cyanide dew epoch grossman inexplainable lyre meaty snazzy stain tao trail trailside wash'] | pred='1. understand the problem or question: we need to create a summary based on the given list of words.\n2. identify the relevant information: the list includes various words that need to be summarized.\n3. process the information to extract the main points: the words in the list are diverse and may not have an obvious connection.\n4. organize the main points into a logical structure: group the words based on similarities or themes.\n5. use the logical structure to create a summary: the list' | score=0.0000
+[PRED 4] gold=['elephantine eminent held interest reject rudder scarify woodyard'] | pred='1. understand the problem or question: given a list of words, create a summary using a logical structure.\n2. identify the relevant information: list of words - elephantine, eminent, scarify, reject, interest, woodyard, held, rudder.\n3. process the information to extract the main points: the words in the list are diverse and may require categorization.\n4. organize the main points into a logical structure: categorize the words based on their meanings or' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_062738__em__Input_List_1._Understand_the_problem_or___a379ad32.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic cayenne ch']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['applique associable aztec buick goddard godwin hypnosis ncaa nordhoff promotion rockabye rudolph silage supernatant target taught venom wick'] | pred='applique associable aztec buick' | score=1.0000
+[PRED 1] gold=['afoot backplane camden catatonic chantey fact jo juno lea mallory monmouth oscar parcel public quibble striptease'] | pred='backplane camden catatonic chantey fact' | score=0.0000
+[PRED 2] gold=['brainy cony enigma erudite fatuous gouda hoof impalpable isaacson lisbon malaria portrait portsmouth servomechanism stronghold succumb'] | pred='cony enigma erudite stronghold succumb' | score=0.0000
+[PRED 3] gold=['clamp deface'] | pred='clamp deface' | score=1.0000
+[PRED 4] gold=['apotheosis boardinghouse coalesce dawn deject endgame ethereal eucalyptus glamour goldstine hover irradiate kick loire memoir pork proofread speedwell strict'] | pred='apotheosis boardinghouse dawn' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_062847__em__Input_List_foamflower_lawful_cayenne_cha__31858c2c.tsv
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate aseptic cayenne chandigarh deb']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['aphid blackburn cdc envy gong leer orca sensual tether youthful'] | pred='list: youthful orca sensual leer blackburn tether cdc envy gong aphid' | score=0.0000
+[PRED 1] gold=['cellar kiwanis orwell polish'] | pred='no output, as there are no common words between the two lists.' | score=0.0000
+[PRED 2] gold=['closeup clownish communicate detergent fermentation onlooker propylene sommelier vladimir'] | pred='list: detergent clownish communicate vladimir propylene closeup sommelier fermentation onlooker' | score=0.0000
+[PRED 3] gold=['astm blot centrex chancellor codicil dome enrollee gusto handprint harvard notebook peek peruvian sashay shake silt tahiti toggle watermelon'] | pred='list: handprint gusto enrollee shake chancellor peruvian tahiti toggle astm dome watermelon centrex sashay notebook peek codicil harvard blot silt' | score=0.0000
+[PRED 4] gold=['caliber capricious eft faulkner fragile gastrointestinal headboard irishman kingsley lobby nary ouzo peaceable phillip phylum residue stamp sulfanilamide upholster'] | pred='peaceable residue sulfanilamide kingsley eft caliber headboard stamp phillip upholster irishman lobby nary gastrointestinal fragile faulkner capricious ouzo phylum' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_062956__em__Input_List_foamflower_lawful_cayenne_cha__33175081.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList: [insert list of words here]\n\nOutput: [insert list of words here]']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['altimeter facet food fuselage haploid hookworm indwell jeopardy lent lisbon mayst rancorous revolution'] | pred='list: fuselage lent facet hookworm revolution food altimeter lisbon rancorous jeopardy mayst indwell haploid' | score=0.0000
+[PRED 1] gold=['aesthetic canadian coastal insistent moneywort secretariat suburbia'] | pred='list: coastal aesthetic secretariat canadian insistent moneywort suburbia' | score=0.0000
+[PRED 2] gold=['afternoon aquinas coordinate domesticate dunk gegenschein grayson julep po rhythm spline spray sunlight vail viewpoint'] | pred='list: aquinas grayson spline domesticate po spray afternoon sunlight rhythm viewpoint vail julep coordinate dunk gegenschein' | score=0.0000
+[PRED 3] gold=['apparel chronic concurring corbel crowbait dianne fan flannel forest hager libretto pigeonberry pooch rum rummy stem vitro youthful'] | pred='fan pooch vitro chronic dianne rummy apparel rum pigeonberry corbel youthful flannel hager libretto forest stem crowbait concurring' | score=0.0000
+[PRED 4] gold=['beverage chintzy'] | pred='chintzy beverage' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_063038__em__Input_List__insert_list_of_words_here__O__2f118e0d.tsv
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\nOutput:']
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\n\n* foamflower\n* chandigarh\n* excursion\n* declassify\n* equanimity\n* aseptic\n* inclement\n* kruger\n* groupoid\n* scorch\n* dingy']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['clamp deface'] | pred='deface\nclamp' | score=0.0000
+[PRED 1] gold=['baobab buckle charybdis circumference detector discovery drool grit hanoverian hyena interim libreville sarsparilla skulk vulture whey yesteryear'] | pred='list:\n* discovery\n* interim\n* libreville\n* grit\n* yesteryear\n* circumference\n* buckle\n* drool\n* skulk\n* baobab\n* whey\n* hanoverian\n* vulture\n* charybdis\n* detector\n* hyena\n* sarsparilla' | score=0.0000
+[PRED 2] gold=['alumnus bayberry noble toddy'] | pred='alumnus\ntoddy\nbayberry\nnoble' | score=1.0000
+[PRED 3] gold=['animism awash beau bessie cream extricable helical indoeuropean pendulum sanhedrin scratchy venezuela vice'] | pred='list: \n* sanhedrin \n* scratchy \n* helical \n* beau \n* venezuela \n* awash \n* bessie \n* extricable \n* indoeuropean \n* vice \n* pendulum \n* cream \n* animism' | score=0.0000
+[PRED 4] gold=['aventine chinaman impressive learn polish prognosis'] | pred='list:\n\n* chinaman\n* aventine\n* prognosis\n* impressive\n* learn\n* polish' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_063202__em__Input_List_foamflower_chandigarh_excursi__0971b492.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.6
+********* Done *********
+Instruction: ["I'm sorry, but I'm not sure what you are asking for. Could you please provide more context or clarify your question?"]
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['abash beaujolais daffodil didactic helvetica quiz sky squabble viet wakeful wayside'] | pred="i'm sorry, but i'm not sure what you are asking for with this list of words. could you please provide more context or clarify your question?" | score=0.0000
+[PRED 1] gold=['artificial comprise crisscross divide grip malformation mayflower poetry quantitative salad slugging willoughby'] | pred="i'm sorry, but it seems like you have provided a list of random words. could you please clarify what you would like me to do with this list or provide more context for your request?" | score=0.0000
+[PRED 2] gold=['anchorite claustrophobic hillbilly maynard mycoplasma periphery salacious touch'] | pred="i'm sorry, but i'm not sure what you are asking for with the list of words provided. can you please provide more context or clarify your question?" | score=0.0000
+[PRED 3] gold=['ceramic cowpox implore pineapple rife sleepy urinate whip'] | pred="i'm sorry, but i'm not sure what you are looking for with this list of words. could you please provide more information on what you need help with or what you are trying to achieve with these words?" | score=0.0000
+[PRED 4] gold=['brasilia cackle dusky grandpa keats parabola sagging sis thalia transcendent venous'] | pred="i'm sorry, but i'm not sure what you are asking for with the provided list of words. could you please clarify your question or provide more context?" | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_063249__em__I_m_sorry__but_I_m_not_sure_what_you_are__4fd0a91e.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic cayenne ch']
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\nOutput:\n\n1. Input:\nList:\nOutput:\n2. Input:\nList:\nOutput:\n3. Input:\nList:\nOutput:\n4. Input:\nList:\nOutput:\n5. Input:\nList:\nOutput:']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['absenteeism salesian usurpation'] | pred='1. input:\nlist: usurpation absenteeism salesian\noutput:\n2. input:\nlist: \noutput:\n3. input:\nlist: \noutput:\n4. input:\nlist: \noutput:\n5. input:\nlist: \noutput:' | score=0.0000
+[PRED 1] gold=['agile blackguard butt clapeyron cognoscenti flamboyant geophysical lift lightfooted manumitted mathieu meager purposive reconnaissance sawbelly scribe seaworthy wiseacre woodcut yves'] | pred='1. input:\nlist: yves butt scribe seaworthy manumitted clapeyron lift blackguard reconnaissance agile woodcut lightfooted sawbelly meager geophysical wiseacre mathieu cognoscenti purposive flamboyant\noutput:\n2. input:\nlist:\noutput:\n3. input:\nlist:\noutput:\n4. input:\nlist:\noutput:\n5. input:\nlist:\noutput:' | score=0.0000
+[PRED 2] gold=['adieu beady customary determinant foamy hayward irreproachable judy northland pediment phipps serenade shortcoming sigmund steward visigoth worm'] | pred='1. input:\nlist: phipps irreproachable shortcoming judy northland hayward worm customary determinant serenade beady adieu visigoth foamy sigmund pediment steward\noutput: phipps, irreproachable, shortcoming, judy, northland, hayward, worm, customary, determinant, serenade, beady, adieu, visigoth, foamy, sigmund, pediment, steward\n\n2. input:\nlist: \noutput' | score=0.0000
+[PRED 3] gold=['automate clerk colloquial crimson exegesis extoller freckle gelatin gratify italian jacob jump palisade regurgitate saturday stanley tonic wheel wrack'] | pred='1. exegesis\n2. clerk\n3. crimson\n4. extoller\n5. freckle\n6. gratify\n7. wheel\n8. tonic\n9. palisade\n10. jump\n11. colloquial\n12. italian\n13. automate\n14. jacob\n15. wrack\n16. saturday\n17. regurgitate\n18. stanley\n19. gelatin' | score=0.0000
+[PRED 4] gold=['biometry capetown dangle doneck inebriate jack landfill lemur melody nabisco pervert stutter tapeworm tribute'] | pred='1. stutter stutter inebriate melody dangle jack biometry capetown lemur tapeworm landfill pervert doneck nabisco tribute\n2. inebriate inebriate melody dangle jack biometry capetown lemur tapeworm landfill pervert doneck nabisco tribute\n3. melody melody dangle jack biometry capetown lemur tapeworm landfill pervert doneck nabisco tribute\n4. dangle dangle jack biometry cap' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_063458__em__Input_List_Output_1._Input_List_Output_2__2cdfe4ea.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\nOutput:']
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic cayenne ch']
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput:']
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\n\n* foamflower\n* chandigarh\n* declassify\n* equanimity\n* aseptic\n\nOutput:\n* alterate\n* dingy\n* excursion\n* debauch\n\nInstruction: Replace the words']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['divisor know rightward'] | pred='list: quotient leftward recognize' | score=0.0000
+[PRED 1] gold=['anthropology arrow baton bred elan frequent skill spiderwort toroid triennial vienna windy'] | pred='list: pointer austria breezy bred spiderwort zeal sociology proficiency toroid regular triennial staff' | score=0.0000
+[PRED 2] gold=['bream diego forgive homesick incisive vocal'] | pred='list: san diego fishy cutting nostalgic singing absolve' | score=0.0000
+[PRED 3] gold=['accelerate amuse dangle frigga hurst magnetron mcgregor provoke scholastic shanghai speculate spirogyra supple uk waylay'] | pred='list: hound seaweed suspend magnetron hasten entertain incite beijing ponder mcgregor uk frigga scholastic flexible ambush' | score=0.0000
+[PRED 4] gold=['amende azure guyana hager influence potassium'] | pred='* hager - replace with: alterate\n* azure - replace with: dingy\n* guyana - replace with: excursion\n* influence - replace with: debauch\n* amende - replace with: equanimity\n* potassium - replace with: aseptic' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_063803__em__Input_List_foamflower_chandigarh_declass__192f81cd.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\nOutput:']
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\n\n* foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\n* alterate aseptic cay']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['album anastomosis common diem hick indy methyl plead snappy suggestion'] | pred='list: diem snappy methyl indy plead album hick suggestion common anastomosis' | score=0.0000
+[PRED 1] gold=['bamako bury cohen fishmonger laminate spalding stanch'] | pred='list:\n* laminate bury bamako fishmonger cohen stanch spalding' | score=0.0000
+[PRED 2] gold=['broadside decorate egotism guilford haag manchester pandemonium party quip role score squeegee tarpaper'] | pred='list:\n* pandemonium party role decorate guilford haag manchester egotism quip squeegee score tarpaper broadside' | score=0.0000
+[PRED 3] gold=['anchor barre buckle concatenate dimension edgy eleanor epiphyte faunal integrate masochist orthodoxy parasol patrician pendant sail singular swift'] | pred='list:\n\n* epiphyte swift sail anchor barre dimension faunal integrate eleanor edgy singular patrician orthodoxy parasol pendant buckle concatenate masochist' | score=0.0000
+[PRED 4] gold=['armhole backplane chill cockleshell coed elegiac scabrous stabile thyself'] | pred='list:\n\n* elegiac cockleshell stabile thyself armhole backplane coed chill scabrous' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_063924__em__Input_List_foamflower_lawful_cayenne_cha__76988101.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['grammatic secure standard'] | pred='grammatic\nstandard\nsecure' | score=1.0000
+[PRED 1] gold=['allyn carbonaceous cetacean investigatory johann majorca paradigmatic pathogenic pray supersede tung'] | pred='input:\nlist: allyn carbonaceous majorca investigatory supersede cetacean pathogenic johann tung paradigmatic pray\n\noutput: allyn carbonaceous majorca investigatory supersede cetacean pathogenic johann tung paradigmatic pray' | score=0.0000
+[PRED 2] gold=['appliance impede pulitzer superior'] | pred='impede\nappliance\npulitzer\nsuperior' | score=0.0000
+[PRED 3] gold=['exercisable gannett juan piazza rochester roundabout'] | pred='rochester gannett exercisable piazza juan roundabout' | score=0.0000
+[PRED 4] gold=['lise miaow snipe'] | pred='lise snipe miaow' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_064034__em__Input_List_Output_Input_List_Output_Inpu__4925f2c5.tsv
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\n\nOutput: alterate aseptic cayenne']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList:\nOutput:']
+Dev loss: 0.1. Dev perf: 0.1. Best dev perf: 0.6
+********* Done *********
+Instruction: ['Input:\nList: foamflower chandigarh declassify equanimity excursion debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic chandigarh debauch excursion equanimity foamflower']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['bien bodyguard bolshevist coalesce colt incant palace phagocyte sidewise stinkbug sudan suspend thoroughfare'] | pred='bien bodyguard bolshevist colt coalesce incant palace' | score=1.0000
+[PRED 1] gold=['bully cardamom cryptic ebb flatland forthwith insurmountable interior jurassic landslide licensor mammary nassau opinionate seeable valkyrie'] | pred='bully cardamom cryptic ebb flatland forthwith interior jurassic licensor mammary nassau opioniate seeable' | score=1.0000
+[PRED 2] gold=['beardsley carson domingo eleven greenware jaeger lineage march nimbus octogenarian polarography propriety quintillion tensile voice waterfront wish yolk'] | pred='beardsley carson domingo eleven greenware lineage march octogenarian polarography propriety tensile voice' | score=1.0000
+[PRED 3] gold=['altercate cornerstone courtroom dusenberg foraminifera gossamer insist jive promulgate raft sal sophocles syllabus wrongdoer'] | pred='altercate cornerstone courtroom dusenberg foraminifera gossamer insist promulgate' | score=1.0000
+[PRED 4] gold=['brian coda cole estonia redneck'] | pred='brian coda cole estonia redneck' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_064246__em__Input_List_foamflower_chandigarh_declass__7f35887a.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input:\nList:\n\n* alterate aseptic cayenne chandigarh debauch declassify dingy equanimity excursion foamflower groupoid scorch dingy\n* frolic lacunae lazy liggett mcintosh parameter']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['bien bodyguard bolshevist coalesce colt incant palace phagocyte sidewise stinkbug sudan suspend thoroughfare'] | pred='sudan colt bodyguard incant bolshevist phagocyte suspend coalesce stinkbug sidewise bien thoroughfare palace' | score=0.0000
+[PRED 1] gold=['aye bandgap bedlam brunt deborah distillate fang hilbert honoraria lovelorn nordstrom regent rubdown stratus subservient sweepstake tomato'] | pred='honoraria deborah rubdown aye hilbert lovelorn bandgap fang subservient brunt bedlam distillate sweepstake tomato nordstrom regent stratus' | score=0.0000
+[PRED 2] gold=['authoritarian bleed boatyard demon dragonhead fusiform gender genteel ghastly hibachi horrible jorgensen laplace manifesto not tantalum trade word'] | pred='the output cannot be provided as the instructions for the desired action are not specified.' | score=0.0000
+[PRED 3] gold=['acquaint basalt breast brice cysteine hobbes misanthropic treason'] | pred='cysteine acquaint brice breast hobbes misanthropic basalt treason' | score=0.0000
+[PRED 4] gold=['apollo becalm billionth brouhaha clef crampon licensee menfolk numinous parameter rivulet situs suffix'] | pred='list:\n\n* suffix apollo crampon numinous licensee rivulet menfolk situs becalm clef parameter brouhaha billionth' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_064358__em__Input_List_alterate_aseptic_cayenne_chan__141ef7c4.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic cayenne ch']
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.95
+********* Done *********
+Best initial point: 0.950
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][06:44:50] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[06:44:50] INFO [PROFILE] GP fit: 0.231s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[06:44:50] INFO Iter 0 best_value=2.94335 gp_loss=-323.29976
+[06:44:51] INFO [PROFILE] Acquisition: 0.845s
+[06:45:28] INFO [PROFILE] LLM eval candidate: 36.356s
+[06:45:28] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:37<02:29, 37.45s/it][06:45:28] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[06:45:28] INFO [PROFILE] GP fit: 0.488s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[06:45:28] INFO Iter 1 best_value=2.94335 gp_loss=-377.63498
+[06:45:29] INFO [PROFILE] Acquisition: 0.784s
+[06:46:13] INFO [PROFILE] LLM eval candidate: 44.101s
+[06:46:13] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [01:22<02:06, 42.12s/it][06:46:13] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[06:46:14] INFO [PROFILE] GP fit: 0.480s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[06:46:14] INFO Iter 2 best_value=2.94335 gp_loss=-430.37056
+[06:46:14] INFO [PROFILE] Acquisition: 0.717s
+[06:47:24] INFO [PROFILE] LLM eval candidate: 69.399s
+[06:47:24] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [02:33<01:50, 55.13s/it][06:47:24] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[06:47:24] INFO [PROFILE] GP fit: 0.469s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[06:47:24] INFO Iter 3 best_value=2.94335 gp_loss=-176.66055
+[06:47:25] INFO [PROFILE] Acquisition: 0.729s
+[06:47:52] INFO [PROFILE] LLM eval candidate: 26.723s
+[06:47:52] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [03:01<00:44, 44.39s/it][06:47:52] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[06:47:52] INFO [PROFILE] GP fit: 0.467s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[06:47:52] INFO Iter 4 best_value=2.94335 gp_loss=-197.00574
+[06:47:53] INFO [PROFILE] Acquisition: 0.719s
+[06:49:10] INFO [PROFILE] LLM eval candidate: 76.982s
+[06:49:10] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [04:19<00:00, 56.57s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [04:19<00:00, 51.91s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: [List of words] Output: [List of words]']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['antigone arbitrary complementation epigenetic fantastic fount gill mutt precipice remote'] | pred='list: gill precipice antigone remote epigenetic arbitrary complementation fantastic mutt fount' | score=0.0000
+[PRED 1] gold=['annette decontrolling deluge deplore infect stymie'] | pred='list: decontrolling, deplore, annette, stymie, deluge, infect' | score=0.0000
+[PRED 2] gold=['ali cackle calorie disquisition enzymology lancashire leslie pigeon pilewort quack safety sc skyrocket spot xerxes'] | pred='spot skyrocket xerxes quack pigeon ali pilewort disquisition sc cackle safety lancashire calorie leslie enzymology' | score=0.0000
+[PRED 3] gold=['grammatic secure standard'] | pred='list: grammatic standard secure' | score=0.0000
+[PRED 4] gold=['chloroplast implement love mycology sanctify screw stannic'] | pred='list: chloroplast screw implement love sanctify mycology stannic' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_064528__em__Input__List_of_words__Output__List_of_wo__d115fa71.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.3199999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: \nList: [Insert a list of items here]\n\nOutput: [Insert a list of items here]']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['archaism deniable detriment emendable enunciable exalt leslie ninth nu nuclear piteous schoolmaster slocum varian'] | pred='list: enunciable nuclear exalt nu detriment emendable archaism ninth deniable piteous leslie slocum schoolmaster varian' | score=0.0000
+[PRED 1] gold=['across admixture directrix flight gut indicate marshal predacious quagmire smuggle vantage'] | pred='list: indicate quagmire predacious gut vantage marshal across smuggle flight directrix admixture' | score=0.0000
+[PRED 2] gold=['allele bureaucracy cassiopeia cobweb gamesmanship jolly knack pathology renunciate sou steak switchback tragedian'] | pred='list: jolly allele pathology bureaucracy renunciate gamesmanship cassiopeia switchback tragedian cobweb knack steak sou' | score=0.0000
+[PRED 3] gold=['alkali baby colonial frankfurt inoperative micro peer perceive spica tableau'] | pred='frankfurt peer micro alkali baby perceive inoperative colonial spica tableau' | score=0.0000
+[PRED 4] gold=['acquisitive aldehyde chautauqua cicero corporeal estop garbage holdup omnivore piccolo politic saratoga swore tachinid willis'] | pred='list: piccolo aldehyde saratoga corporeal chautauqua cicero omnivore swore garbage politic tachinid holdup willis estop acquisitive' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_064613__em__Input_List__Insert_a_list_of_items_here___8ad11aa3.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.53}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: List: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic cayenne chand']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['bilinear brenda cacao chivalry derivate eaten endothelial ferocity gastronomic grammarian irreducible knutson phenotype polkadot rockaway scurrilous'] | pred='bilinear brenda chivalry cacao derivate eaten ferocity gastronomic grammarian irreducible knutson phenotype polkadot' | score=1.0000
+[PRED 1] gold=['catechism daddy'] | pred='catechism' | score=1.0000
+[PRED 2] gold=['balzac bernstein boot buchwald einsteinium endothermic fatigue flea seabed silicide sugar toilsome victory'] | pred='balzac bernstein boot buchwald' | score=1.0000
+[PRED 3] gold=['bilge carlsbad correspond flashlight fracture horticulture inhomogeneous leery medallion osborne rickettsia timeshare'] | pred='bilge carlsbad corresp' | score=1.0000
+[PRED 4] gold=['anthropology arrow baton bred elan frequent skill spiderwort toroid triennial vienna windy'] | pred='arrow baton bred' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_064724__em__Input_List_foamflower_lawful_cayenne_cha__d9a6a554.tsv
+Dev loss: 0.8. Dev perf: 0.8. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.58}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['ONE']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['cite coleus fructose hurricane improbable irreducible tipoff tularemia vesper whereabout whitetail wier'] | pred='tipoff' | score=0.0000
+[PRED 1] gold=['frenchman imperceptible inviolate lumbar madman privilege rampage rebel translucent'] | pred='sort the list in alphabetical order: frenchman, imperceptible, inviolate, lumbar, madman, privilege, rampage, rebel, translucent' | score=0.0000
+[PRED 2] gold=['astronomic cabdriver coherent loch pivot wagging'] | pred='reverse the order of the list. \n\noutput:\ncoherent loch pivot astronomic cabdriver wagging' | score=0.0000
+[PRED 3] gold=['amanita amatory annoy besiege boggle california canticle crocodilian dexter dissipate dizzy encephalitis hornblower notre pasture propylene psychiatric sepia snipe straight'] | pred='create a sentence using all the words in the list.' | score=0.0000
+[PRED 4] gold=['adventitious alexandria basswood bindweed bloodbath derbyshire jackman natal operatic pressure pursuant scum speedup subsist toy transmute'] | pred='derbyshire' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_064752__em__ONE__bc21e648.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.6499999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['"Translate the following words from Input to Output: foamflower, chandigarh, declassify, equanimity, excursion, frolic, aseptic, cayenne, dingy, equanimity, excursion, foamflower, grou']
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['awe capistrano craftspeople defray inadequacy income juicy lymphoma nash prokaryotic songful'] | pred='prokaryotic - foamflower\ndefray - chandigarh\nawe - declassify\nnash - equanimity\ncraftspeople - excursion\nlymphoma - frolic\nincome - aseptic\nsongful - cayenne\ncapistrano - dingy\njuicy - equanimity\ninadequacy - excursion' | score=0.0000
+[PRED 1] gold=['bituminous derate digress each magnesium megalomaniac repartee segment teeth typewritten'] | pred='derate - declassify\ndigress - excursion\nmegalomaniac - \nteeth - \ntypewritten - \neach - \nmagnesium - \nbituminous - \nsegment - \nrepartee -' | score=0.0000
+[PRED 2] gold=['arachnid assiduity carlisle helmholtz hesitate hologram moccasin muskellunge neigh neuropathology orangutan panorama prototype sky stylites talent transfix wastage'] | pred='list: muskellunge panorama talent hesitate prototype neigh assiduity carlisle transfix hologram orangutan helmholtz wastage moccasin stylites arachnid sky neuropathology\ntranslated:\nfoamflower - muskellunge\nchandigarh - panorama\ndeclassify - talent\nequanimity - hesitate\nexcursion - prototype\nfrolic - neigh\naseptic - assiduity\ncayenne - carlisle\ndingy -' | score=0.0000
+[PRED 3] gold=["intermittent rhombic that'll"] | pred='foamflower - espumoso\nchandigarh - chandigarh\ndeclassify - desclasificar\nequanimity - ecuanimidad\nexcursion - excursi¨®n\nfrolic - juerga\naseptic - as¨¦ptico\ncayenne - pimienta de cayena\ndingy - l¨²gubre\nequanimity - ecuanimidad\nexcursion - excursi¨®n\nfoamflower - espumoso' | score=0.0000
+[PRED 4] gold=['charcuterie coma courage fasciculate foothold guaranty iodate lifeguard lozenge lunge moreland omelet paralytic prey semi shift sidesaddle though wherewith'] | pred='sidesaddle - a type of horseback riding technique\nthough - however\nlunge - a sudden forward movement\nsemi - halfway\ncharcuterie - a store selling cold cooked meats\niodate - a chemical compound containing iodine\ncourage - bravery\nomelet - a dish made with beaten eggs\ncoma - a state of unconsciousness\nguaranty - a promise or assurance\nfasciculate - arranged in bundles\nmoreland - a type of landscape\nwh' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_sorting_20251018_064910__em__Translate_the_following_words_from_Input__8dfb92da.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input:\nList: foamflower chandigarh declassify equanimity excursion debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic chandigarh debauch excursion equanimity foamflower']
+The final instruction set is:
+{'Input: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput: \n\nInput: \nList: \nOutput:': (0.15, array([[0., 0., 1., 0., 0., 0., 0., 1., 1., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\n\nOutput: alterate aseptic cayenne': (0.6, array([[0., 1., 0., 1., 1., 0., 1., 0., 1., 1., 1., 0., 0., 1., 1., 0.,
+        1., 1., 1., 0.]])), 'Input:\nList:\n\n* aseptic\n* cayenne\n* chandigarh\n* declassify\n* dingy\n* equanimity\n* excursion\n* foamflower\n* groupoid\n* inclement\n* kruger': (0.2, array([[0., 0., 0., 1., 0., 0., 0., 1., 0., 0., 0., 0., 0., 1., 0., 0.,
+        1., 0., 0., 0.]])), 'Input:\nList:\nOutput:': (0.1, array([[1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 1., 0.]])), 'Input:\nList:\n\n1. Understand the problem or question.\n2. Identify the relevant information.\n3. Process the information to extract the main points.\n4. Organize the main points into a logical structure.\n5. Use the logical structure to create a summary.\n6': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic cayenne ch': (0.45, array([[1., 0., 0., 1., 1., 0., 1., 1., 0., 0., 0., 0., 1., 0., 0., 1.,
+        1., 0., 0., 1.]])), 'Input:\nList: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate aseptic cayenne chandigarh deb': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 1., 0., 0.]])), 'Input:\nList: [insert list of words here]\n\nOutput: [insert list of words here]': (0.1, array([[0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 1., 0., 0.]])), 'Input:\nList:\n\n* foamflower\n* chandigarh\n* excursion\n* declassify\n* equanimity\n* aseptic\n* inclement\n* kruger\n* groupoid\n* scorch\n* dingy': (0.05, array([[0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), "I'm sorry, but I'm not sure what you are asking for. Could you please provide more context or clarify your question?": (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input:\nList:\nOutput:\n\n1. Input:\nList:\nOutput:\n2. Input:\nList:\nOutput:\n3. Input:\nList:\nOutput:\n4. Input:\nList:\nOutput:\n5. Input:\nList:\nOutput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input:\nList:\n\n* foamflower\n* chandigarh\n* declassify\n* equanimity\n* aseptic\n\nOutput:\n* alterate\n* dingy\n* excursion\n* debauch\n\nInstruction: Replace the words': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input:\nList:\n\n* foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\n* alterate aseptic cay': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList:\nOutput:\n\nInput:\nList': (0.3, array([[1., 0., 0., 0., 1., 0., 0., 1., 1., 0., 0., 0., 0., 1., 0., 0.,
+        1., 0., 0., 0.]])), 'Input:\nList: foamflower chandigarh declassify equanimity excursion debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic chandigarh debauch excursion equanimity foamflower': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 0., 1.]])), 'Input:\nList:\n\n* alterate aseptic cayenne chandigarh debauch declassify dingy equanimity excursion foamflower groupoid scorch dingy\n* frolic lacunae lazy liggett mcintosh parameter': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: [List of words] Output: [List of words]': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1.,
+        0., 0., 0., 0.]])), 'Input: \nList: [Insert a list of items here]\n\nOutput: [Insert a list of items here]': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 1., 0., 0.]])), 'Input: List: foamflower lawful cayenne chandigarh only excursion declassify equanimity aseptic inclement october debauch kruger groupoid scorch dingy alterate\nOutput: alterate aseptic cayenne chand': (0.8, array([[1., 1., 1., 1., 0., 1., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1.,
+        0., 0., 1., 1.]])), 'ONE': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), '"Translate the following words from Input to Output: foamflower, chandigarh, declassify, equanimity, excursion, frolic, aseptic, cayenne, dingy, equanimity, excursion, foamflower, grou': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "word_sorting"...
+[PRED 0] gold=['adult boxy coauthor dunkirk glutamine handlebar indignation pilewort'] | pred='adult boxy coauthor dunkirk glutamine handlebar indignation pilewort' | score=1.0000
+[PRED 1] gold=['axiology choirmaster dodecahedron mcintosh snapback theoretician'] | pred='axiology choirmaster dodecahedron mcintosh snapback theoretician' | score=1.0000
+[PRED 2] gold=['alum bandstop bellboy burch commensurable configuration configure delectable din equate fantasy fireboat irreconcilable papa pigment prothonotary shipmate vesper'] | pred='alum bandstop bellboy burch commensurable configure configuration delectable din equate fantasy fireboat pigment prothonotary vesper' | score=1.0000
+[PRED 3] gold=['alkali breach buckle falsetto hyperboloid liquidate mirth nagasaki parmesan'] | pred='alkali buckle breach falsetto hyperboloid liquidate mirth nagasaki parmesan' | score=1.0000
+[PRED 4] gold=['aerie braun castrate chapman dielectric france importation midterm neva quirt roy tint tipperary turbidity workday yawl'] | pred='braun chapman dielectric france importation neva tipperary' | score=0.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\word_sorting_20251018_065036__em__Input_List_foamflower_chandigarh_declass__7f35887a.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.88

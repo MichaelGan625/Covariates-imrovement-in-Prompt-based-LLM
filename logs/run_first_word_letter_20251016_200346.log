@@ -1,0 +1,254 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:09<00:09, 10.00s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:18<00:00,  9.11s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:18<00:00,  9.24s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: year\nOutput: y\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request\nOutput']
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['p'] | pred='p' | score=1.0000
+[PRED 1] gold=['a'] | pred='a' | score=1.0000
+[PRED 2] gold=['s'] | pred='s' | score=1.0000
+[PRED 3] gold=['r'] | pred='r' | score=1.0000
+[PRED 4] gold=['s'] | pred='s' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\first_word_letter_20251016_200513__em__Input_year_Output_y_Input_trust_Output_t__7251b098.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year, trust, qualification, defendant, client, fishing, railway, request, source, curtain. Output: y, t, q, d, c, f, r, s, c.']
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['m'] | pred='m' | score=1.0000
+[PRED 1] gold=['a'] | pred='a' | score=1.0000
+[PRED 2] gold=['l'] | pred='l' | score=1.0000
+[PRED 3] gold=['p'] | pred='p' | score=1.0000
+[PRED 4] gold=['i'] | pred='i' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\first_word_letter_20251016_200602__em__Input_year__trust__qualification__defend__bc39974b.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['s'] | pred='s' | score=1.0000
+[PRED 1] gold=['l'] | pred='l' | score=1.0000
+[PRED 2] gold=['c'] | pred='c' | score=1.0000
+[PRED 3] gold=['d'] | pred='d' | score=1.0000
+[PRED 4] gold=['e'] | pred='e' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\first_word_letter_20251016_200703__em__Input_year_Output_y_Input_trust_Output_t__8a7b36c2.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request\nOutput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\n\nInput: client\nOutput: c\n\nInput: fishing\nOutput: f\n\nInput: railway\nOutput: r']
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['h'] | pred='h' | score=1.0000
+[PRED 1] gold=['p'] | pred='p' | score=1.0000
+[PRED 2] gold=['p'] | pred='p' | score=1.0000
+[PRED 3] gold=['p'] | pred='p' | score=1.0000
+[PRED 4] gold=['c'] | pred='c' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\first_word_letter_20251016_201053__em__Input_year_Output_y_Input_trust_Output_t__7af6c1ab.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request\nOutput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\n\nInput: client\nOutput: c\n\nInput: fishing\nOutput: f\n\nInput: railway\nOutput: r']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput:']
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['p'] | pred='p' | score=1.0000
+[PRED 1] gold=['g'] | pred='g' | score=1.0000
+[PRED 2] gold=['c'] | pred='c' | score=1.0000
+[PRED 3] gold=['m'] | pred='m' | score=1.0000
+[PRED 4] gold=['m'] | pred='m' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\first_word_letter_20251016_201653__em__Input_year_Output_y_Input_trust_Output_t__d6063d2c.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput:']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request\nOutput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['c'] | pred='c' | score=1.0000
+[PRED 1] gold=['c'] | pred='c' | score=1.0000
+[PRED 2] gold=['c'] | pred='c' | score=1.0000
+[PRED 3] gold=['n'] | pred='n' | score=1.0000
+[PRED 4] gold=['r'] | pred='r' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\first_word_letter_20251016_202044__em__Input_year_Output_y_Input_trust_Output_t__a4c3d909.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request\nOutput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request\nOutput']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\n\nInput: client\nOutput: c\n\nInput: fishing\nOutput: f\n\nInput: railway\nOutput: r']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Best initial point: 1.000
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][20:23:36] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[20:23:37] INFO [PROFILE] GP fit: 0.243s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:23:37] INFO Iter 0 best_value=0.00000 gp_loss=127.55540
+[20:23:37] INFO [PROFILE] Acquisition: 0.788s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[20:24:05] INFO [PROFILE] LLM eval candidate: 27.784s
+[20:24:05] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:28<01:55, 28.83s/it][20:24:05] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[20:24:06] INFO [PROFILE] GP fit: 0.412s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:24:06] INFO Iter 1 best_value=0.00000 gp_loss=127.55540
+[20:24:06] INFO [PROFILE] Acquisition: 0.690s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[20:24:33] INFO [PROFILE] LLM eval candidate: 26.714s
+[20:24:33] INFO Best value so far: 1.00000
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:56<01:24, 28.24s/it][20:24:33] INFO [Iteration 2] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:24:34] INFO [PROFILE] GP fit: 0.774s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:24:34] INFO Iter 2 best_value=0.19612 gp_loss=-1798.23218
+[20:24:34] INFO [PROFILE] Acquisition: 0.470s
+[20:25:18] INFO [PROFILE] LLM eval candidate: 43.493s
+[20:25:18] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:41<01:11, 35.78s/it][20:25:18] INFO [Iteration 3] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:25:18] INFO [PROFILE] GP fit: 0.417s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:25:18] INFO Iter 3 best_value=0.19612 gp_loss=-1798.23218
+[20:25:19] INFO [PROFILE] Acquisition: 0.418s
+[20:26:02] INFO [PROFILE] LLM eval candidate: 43.108s
+[20:26:02] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [02:25<00:39, 39.01s/it][20:26:02] INFO [Iteration 4] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[20:26:02] INFO [PROFILE] GP fit: 0.430s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[20:26:02] INFO Iter 4 best_value=0.19612 gp_loss=-1798.23218
+[20:26:03] INFO [PROFILE] Acquisition: 0.423s
+[20:26:46] INFO [PROFILE] LLM eval candidate: 43.120s
+[20:26:46] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [03:09<00:00, 40.80s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [03:09<00:00, 37.87s/it]
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: year']
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['m'] | pred='modeling is the process of creating a simplified representation of a real-world system or phenomenon. it involves using mathematical equations, computer simulations, or physical models to predict how the system will behave under different conditions. modelers use data and assumptions to build their models, which can be used to test hypotheses, make predictions, or inform decision-making.' | score=0.0000
+[PRED 1] gold=['a'] | pred="i'm sorry, can you please provide more context or specify what information you are looking for in relation to the architect and the year provided?" | score=0.0000
+[PRED 2] gold=['s'] | pred="it seems like you have provided the input for the year and situation, but you haven't specified what you would like as an output. please provide more information or clarify what you are looking for so that i can assist you further." | score=0.0000
+[PRED 3] gold=['v'] | pred='the output will depend on the specific year and vegetation mentioned. please provide more information or context to receive a more specific output.' | score=0.0000
+[PRED 4] gold=['m'] | pred="the output is the object's weight on earth." | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\first_word_letter_20251016_202405__em__Input_year__87d6f086.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.3, 'alpha_instr': 1.0, 'alpha_cov': 0.3}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['ONE concise instruction that maps Input to Output above.']
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['p'] | pred='check for the existence or occurrence of something.' | score=0.0000
+[PRED 1] gold=['h'] | pred='multiply the height by 12 to get the output in inches.' | score=0.0000
+[PRED 2] gold=['v'] | pred='volunteer' | score=0.0000
+[PRED 3] gold=['d'] | pred='climb up.' | score=0.0000
+[PRED 4] gold=['s'] | pred='show empathy and understanding towards others in times of need.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\first_word_letter_20251016_202433__em__ONE_concise_instruction_that_maps_Input___94ff66d3.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 2] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -1.6506e-07
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\n\nInput: client\nOutput: c\n\nInput: fishing\nOutput: f\n\nInput: railway\nOutput: r']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -1.6506e-07
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -1.6506e-07
+Instruction: ['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\n\nInput: client\nOutput: c\n\nInput: fishing\nOutput: f\n\nInput: railway\nOutput: r']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\n\nInput: client\nOutput: c\n\nInput: fishing\nOutput: f\n\nInput: railway\nOutput: r']
+The final instruction set is:
+{'Input: year\nOutput: y\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request\nOutput': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: year, trust, qualification, defendant, client, fishing, railway, request, source, curtain. Output: y, t, q, d, c, f, r, s, c.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: year\nOutput: y\n\nInput: trust\nOutput: t\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\n\nInput: client\nOutput: c\n\nInput: fishing\nOutput: f\n\nInput: railway\nOutput: r': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\n\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput:': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: year\nOutput: y\n\nInput: trust\nOutput: t\n\nInput: qualification\nOutput: q\nInput: defendant\nOutput: d\nInput: client\nOutput: c\nInput: fishing\nOutput: f\nInput: railway\nOutput: r\nInput: request': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: year': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'ONE concise instruction that maps Input to Output above.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "first_word_letter"...
+[PRED 0] gold=['b'] | pred='b' | score=1.0000
+[PRED 1] gold=['s'] | pred='s' | score=1.0000
+[PRED 2] gold=['g'] | pred='g' | score=1.0000
+[PRED 3] gold=['t'] | pred='t' | score=1.0000
+[PRED 4] gold=['l'] | pred='l' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\first_word_letter_20251016_202817__em__Input_year_Output_y_Input_trust_Output_t__7af6c1ab.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 1.0

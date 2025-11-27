@@ -1,0 +1,403 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:16<00:16, 16.39s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:25<00:00, 12.10s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:25<00:00, 12.75s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: imperative\nOutput: imperative\nInput: unimperative\nOutput: unimperative\nInput: unquestionability\nOutput: unquestionability\nInput: unquestionability\nOutput: unquestionability\nInput: unquestionability\nOutput: unquestionability\nInput: unquestionability']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['taxable'] | pred='nontaxable' | score=0.0000
+[PRED 1] gold=['resolute'] | pred='irresolute' | score=0.0000
+[PRED 2] gold=['negative'] | pred='affirmative' | score=0.0000
+[PRED 3] gold=['boycott'] | pred='patronize' | score=0.0000
+[PRED 4] gold=['unravel'] | pred='ravel' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_184552__em__Input_imperative_Output_imperative_Input__a175b13b.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: humorless\nOutput: humorous']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['conciliatory'] | pred='friendly' | score=0.0000
+[PRED 1] gold=['clement'] | pred='clement' | score=1.0000
+[PRED 2] gold=['dryness'] | pred='wet' | score=0.0000
+[PRED 3] gold=['unreliability'] | pred='reliable' | score=0.0000
+[PRED 4] gold=['courage'] | pred='courageous' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_184624__em__Input_humorless_Output_humorous__95739bdd.tsv
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['foreign'] | pred='domestic' | score=0.0000
+[PRED 1] gold=['exogenous'] | pred='endogenous' | score=0.0000
+[PRED 2] gold=['cardinal'] | pred='ordinal' | score=0.0000
+[PRED 3] gold=['compatibility'] | pred='incompatibility' | score=0.0000
+[PRED 4] gold=['tasteless'] | pred='tasteful' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_184657__em__Input_imperative_Output_imperative__1e379ef3.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: humorous\nOutput: cheerful\nInput: depressing\nOutput: uncoil\nInput: consumptive\nOutput: generative\nInput: uncoil\nOutput: coil\nInput: corrected\nOutput: uncorrected\nInput: unscheduled\nOutput: scheduled']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['unkindness'] | pred='cruelty' | score=0.0000
+[PRED 1] gold=['inferiority'] | pred='inferiority' | score=1.0000
+[PRED 2] gold=['lie'] | pred='sit' | score=0.0000
+[PRED 3] gold=['abolish'] | pred='disestablish' | score=0.0000
+[PRED 4] gold=['mortality'] | pred='mortality' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_184823__em__Input_humorous_Output_cheerful_Input_dep__50e859f9.tsv
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: imperative\nOutput: mandatory\nInput: essential\nOutput: necessary\nInput: vital\nOutput: important\nInput: necessary\nOutput: required\nInput: essential\nOutput: important\nInput: vital\nOutput: necessary\nInput: essential\nOutput: important\nInput: vital\nOutput:']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['debilitating'] | pred='energizing' | score=0.0000
+[PRED 1] gold=['prudence'] | pred='recklessness' | score=0.0000
+[PRED 2] gold=['endogenous'] | pred='external' | score=0.0000
+[PRED 3] gold=['unvoiced'] | pred='expressed' | score=0.0000
+[PRED 4] gold=['raw'] | pred='prepared' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_184924__em__Input_imperative_Output_mandatory_Input___9d5bfde0.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: imperative\nOutput: comply']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['unstuck'] | pred='unstick' | score=0.0000
+[PRED 1] gold=['ready'] | pred='prepare' | score=0.0000
+[PRED 2] gold=['refined'] | pred='refine' | score=0.0000
+[PRED 3] gold=['anticholinergic'] | pred='stimulate' | score=0.0000
+[PRED 4] gold=['discontinue'] | pred='keep going' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_184948__em__Input_imperative_Output_comply__1b73ebe2.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: "Please provide a concise instruction that maps Input to Output above."\nOutput: "Provide a concise instruction that maps Input to Output above."']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['coordinating'] | pred='provide a concise instruction that maps input to output above.' | score=0.0000
+[PRED 1] gold=['conform'] | pred='provide a definition or explanation for the term "deviate".' | score=0.0000
+[PRED 2] gold=['artificially'] | pred='provide a concise instruction that maps input to output above.' | score=0.0000
+[PRED 3] gold=['nonexistent'] | pred='please provide a concise instruction that maps input to output above.' | score=0.0000
+[PRED 4] gold=['fairness'] | pred='formulate an instruction that maps input to output above.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185040__em__Input_Please_provide_a_concise_instructi__a1349e59.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Write a concise instruction that maps Input to Output above."']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['abundant'] | pred='write a concise instruction that maps input to output above.' | score=0.0000
+[PRED 1] gold=['offence'] | pred='write a concise instruction that maps input to output above.' | score=0.0000
+[PRED 2] gold=['general'] | pred='write a concise instruction that maps input to output above.' | score=0.0000
+[PRED 3] gold=['defense'] | pred='write a concise instruction that maps input to output above.' | score=0.0000
+[PRED 4] gold=['intolerant'] | pred='write a concise instruction that maps input to output above.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185129__em__Input_Write_ONE_concise_instruction_that__e037bfb3.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: depressing\nOutput: cheerful\nInput: unwrap\nOutput: wrap\nInput: consumptive\nOutput: generative\nInput: uncoil\nOutput: coil\nInput: corrected\nOutput: uncorrected\nInput: unscheduled\nOutput: scheduled\nInput:']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['infinitely'] | pred='infinitely' | score=1.0000
+[PRED 1] gold=['quietly'] | pred='silently' | score=0.0000
+[PRED 2] gold=['extensive'] | pred='extensive' | score=1.0000
+[PRED 3] gold=['asymmetrical'] | pred='asymmetrical' | score=1.0000
+[PRED 4] gold=['reversal'] | pred='negation' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185231__em__Input_depressing_Output_cheerful_Input_u__ebe38d02.tsv
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: depressing\nOutput: cheerful']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['backed'] | pred='covered' | score=0.0000
+[PRED 1] gold=['immortality'] | pred='immortality' | score=1.0000
+[PRED 2] gold=['decent'] | pred='appropriate' | score=0.0000
+[PRED 3] gold=['surface'] | pred='above' | score=0.0000
+[PRED 4] gold=['inconclusive'] | pred='inconclusive' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185257__em__Input_depressing_Output_cheerful__d15784d1.tsv
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: imperative\nOutput: mandatory\n\nInput: unmandatory\nOutput: optional\nInput: unenforceable\nOutput: unenforceable\nInput: unenforceable\nOutput: unenforceable\nInput: unenforceable\nOutput: unenforceable']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['attention'] | pred='negligence' | score=0.0000
+[PRED 1] gold=['brave'] | pred='timid' | score=0.0000
+[PRED 2] gold=['ahistorical'] | pred='past' | score=0.0000
+[PRED 3] gold=['permanence'] | pred='transience' | score=0.0000
+[PRED 4] gold=['deaf'] | pred='listening' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185358__em__Input_imperative_Output_mandatory_Input___7016c84f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Use an imperative sentence. Output only the instruction."']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['attractive'] | pred='improve your appearance.' | score=0.0000
+[PRED 1] gold=['friendly'] | pred='respond with empathy and kindness.' | score=0.0000
+[PRED 2] gold=['insolubility'] | pred='determine the solubility.' | score=0.0000
+[PRED 3] gold=['unlimited'] | pred='limit the input.' | score=0.0000
+[PRED 4] gold=['yang'] | pred='add "g" before the input.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185435__em__Input_Write_ONE_concise_instruction_that__75379e75.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: map\nOutput: map']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['employee'] | pred='employer' | score=0.0000
+[PRED 1] gold=['beseeching'] | pred='imperative' | score=0.0000
+[PRED 2] gold=['certain'] | pred='uncertain' | score=0.0000
+[PRED 3] gold=['homosexual'] | pred='bisexual' | score=0.0000
+[PRED 4] gold=['supervised'] | pred='unsupervised' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185459__em__Input_map_Output_map__33e7266b.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: imperative\nOutput: instructional\n\nInput: uncooperative\nOutput: cooperative\nInput: uncooperative\nOutput: cooperative\nInput: uncooperative\nOutput: cooperative\nInput: uncooperative\nOutput: cooperative\nInput']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['informality'] | pred='informality' | score=1.0000
+[PRED 1] gold=['current'] | pred='current' | score=1.0000
+[PRED 2] gold=['unfold'] | pred='unfold' | score=1.0000
+[PRED 3] gold=['head'] | pred='back' | score=0.0000
+[PRED 4] gold=['afloat'] | pred='grounded' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185601__em__Input_imperative_Output_instructional_In__15ba27ac.tsv
+Dev loss: 0.35. Dev perf: 0.35. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperative']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: imperative\nOutput: optional']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['equitable'] | pred='fair' | score=0.0000
+[PRED 1] gold=['qualified'] | pred='qualified' | score=1.0000
+[PRED 2] gold=['uncollected'] | pred='gathered' | score=0.0000
+[PRED 3] gold=['unestablished'] | pred='mandatory' | score=0.0000
+[PRED 4] gold=['medical'] | pred='mandatory' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185633__em__Input_imperative_Output_optional__2892b26f.tsv
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: imperative\nOutput: mandatory']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['wireless'] | pred='connected' | score=0.0000
+[PRED 1] gold=['imprudent'] | pred='wise' | score=0.0000
+[PRED 2] gold=['failure'] | pred='achievement' | score=0.0000
+[PRED 3] gold=['quickly'] | pred='gradually' | score=0.0000
+[PRED 4] gold=['unpretentious'] | pred='arrogant' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185658__em__Input_imperative_Output_mandatory__93ffbc05.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['ONE']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['organize'] | pred='organize' | score=1.0000
+[PRED 1] gold=['ample'] | pred='inadequate' | score=0.0000
+[PRED 2] gold=['productive'] | pred='productive' | score=1.0000
+[PRED 3] gold=['unwanted'] | pred='desired' | score=0.0000
+[PRED 4] gold=['harden'] | pred='make or become soft' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185719__em__ONE__bc21e648.tsv
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: imperative\nOutput: compulsory']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['logically'] | pred='irrationally' | score=0.0000
+[PRED 1] gold=['religious'] | pred='nonreligious' | score=0.0000
+[PRED 2] gold=['possibly'] | pred='unattainable' | score=0.0000
+[PRED 3] gold=['dominant'] | pred='optional' | score=0.0000
+[PRED 4] gold=['asexual'] | pred='sensual' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185745__em__Input_imperative_Output_compulsory__cfad30fd.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: imperative\nOutput: mandatory\nInput: coercive\nOutput: compulsory\nInput: incentive\nOutput: motivational\nInput: persuasive\nOutput: convincing\nInput: cogent\nOutput: compelling\nInput: emphatic\nOutput:']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['unsuitably'] | pred='appropriately' | score=0.0000
+[PRED 1] gold=['critical'] | pred='undiscerning' | score=0.0000
+[PRED 2] gold=['color'] | pred='stain' | score=0.0000
+[PRED 3] gold=['discourtesy'] | pred='politeness' | score=0.0000
+[PRED 4] gold=['literate'] | pred='unlettered' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185845__em__Input_imperative_Output_mandatory_Input___411073dd.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: humorless\nOutput: humorous\n\nInput: depressing\nOutput: cheerful\nInput: unwrap\nOutput: wrap\nInput: consumptive\nOutput: generative\nInput: uncoil\nOutput: coil\nInput: corrected\nOutput: uncorrected\nInput']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['unproved'] | pred='unproved' | score=1.0000
+[PRED 1] gold=['internationalism'] | pred='internationalism' | score=1.0000
+[PRED 2] gold=['sensible'] | pred='sensible' | score=1.0000
+[PRED 3] gold=['discomfort'] | pred='discomfort' | score=1.0000
+[PRED 4] gold=['download'] | pred='download' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_185948__em__Input_humorless_Output_humorous_Input_de__1bd52c75.tsv
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: "Write a concise instruction that maps Input to Output above."\nOutput: "Use an imperative sentence."']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['specialize'] | pred='explore different options and expand your portfolio to diversify.' | score=0.0000
+[PRED 1] gold=['discomposed'] | pred='compose the given input.' | score=0.0000
+[PRED 2] gold=['offence'] | pred='spell "defense" with an "s" instead of a "c" in the middle.' | score=0.0000
+[PRED 3] gold=['explicit'] | pred='make the implicit information explicit.' | score=0.0000
+[PRED 4] gold=['unhelpful'] | pred='be supportive.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_190025__em__Input_Write_a_concise_instruction_that_m__c7aec366.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: humorless\nOutput: humorous\n\nInput: depressing\nOutput: cheerful\nInput: unwrap\nOutput: wrap\nInput: consumptive\nOutput: generative\nInput: uncoil\nOutput: coil\nInput: corrected\nOutput: uncorrected\nInput']
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Best initial point: 0.750
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][19:01:10] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[19:01:10] INFO [PROFILE] GP fit: 0.271s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:01:10] INFO Iter 0 best_value=2.14337 gp_loss=-808.57859
+[19:01:11] INFO [PROFILE] Acquisition: 0.796s
+[19:01:35] INFO [PROFILE] LLM eval candidate: 23.830s
+[19:01:35] INFO Best value so far: 0.75000
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:24<01:39, 24.93s/it][19:01:35] INFO [Iteration 1] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[19:01:35] INFO [PROFILE] GP fit: 0.668s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:01:35] INFO Iter 1 best_value=2.19368 gp_loss=-1798.10596
+[19:01:36] INFO [PROFILE] Acquisition: 0.532s
+[19:02:02] INFO [PROFILE] LLM eval candidate: 25.487s
+[19:02:02] INFO Best value so far: 0.75000
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:51<01:17, 25.97s/it][19:02:02] INFO [Iteration 2] X_train torch.Size([27, 30]), y_train torch.Size([27, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[19:02:02] INFO [PROFILE] GP fit: 0.325s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:02:02] INFO Iter 2 best_value=2.24298 gp_loss=-1870.11377
+D:\conda_envs\iz310\lib\site-packages\botorch\optim\optimize.py:753: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+[19:02:03] INFO [PROFILE] Acquisition: 1.336s
+[19:02:11] INFO [PROFILE] LLM eval candidate: 8.308s
+[19:02:11] INFO Duplicate instruction detected; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:01<00:37, 18.67s/it][19:02:11] INFO [Iteration 3] X_train torch.Size([27, 30]), y_train torch.Size([27, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[19:02:12] INFO [PROFILE] GP fit: 0.251s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:02:12] INFO Iter 3 best_value=2.24298 gp_loss=-1870.11377
+D:\conda_envs\iz310\lib\site-packages\botorch\optim\optimize.py:753: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+[19:02:13] INFO [PROFILE] Acquisition: 1.100s
+[19:02:33] INFO [PROFILE] LLM eval candidate: 19.700s
+[19:02:33] INFO Best value so far: 0.75000
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [01:22<00:19, 19.61s/it][19:02:33] INFO [Iteration 4] X_train torch.Size([28, 30]), y_train torch.Size([28, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[19:02:33] INFO [PROFILE] GP fit: 0.566s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:02:33] INFO Iter 4 best_value=2.29131 gp_loss=-1941.60107
+D:\conda_envs\iz310\lib\site-packages\botorch\optim\optimize.py:753: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+[19:02:34] INFO [PROFILE] Acquisition: 1.264s
+[19:02:56] INFO [PROFILE] LLM eval candidate: 21.851s
+[19:02:56] INFO Best value so far: 0.75000
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [01:46<00:00, 21.08s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [01:46<00:00, 21.27s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: command\nOutput: response']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['enjoy'] | pred='endure or experience pain or hardship' | score=0.0000
+[PRED 1] gold=['imperceptible'] | pred='capable of being perceived or observed' | score=0.0000
+[PRED 2] gold=['unoccupied'] | pred='the seat is currently occupied.' | score=0.0000
+[PRED 3] gold=['claim'] | pred='are you sure you want to forfeit the game?' | score=0.0000
+[PRED 4] gold=['written'] | pred='can you please provide more context or details about the command you are referring to?' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_190135__em__Input_command_Output_response__e99eec75.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 1] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -6.4190e-08
+Instruction: ['Input: imperative\nOutput: instructional']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['import'] | pred='exporting' | score=0.0000
+[PRED 1] gold=['active'] | pred='dormant' | score=0.0000
+[PRED 2] gold=['accessible'] | pred='unreachable' | score=0.0000
+[PRED 3] gold=['unsuitably'] | pred='appropriately' | score=0.0000
+[PRED 4] gold=['intemperate'] | pred='moderate' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_190202__em__Input_imperative_Output_instructional__03ddc3e3.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (27,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 2] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (27) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([27, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([27, 1]), std: 1.0000e+00, mean: -5.7397e-08
+Instruction: ['Input: humorless\nOutput: humorous']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.75
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (27,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (27) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([27, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([27, 1]), std: 1.0000e+00, mean: -5.7397e-08
+Instruction: ['Input: a']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['theoretically'] | pred='e' | score=0.0000
+[PRED 1] gold=['mobility'] | pred='a, immobility' | score=0.0000
+[PRED 2] gold=['strengthen'] | pred='waen' | score=0.0000
+[PRED 3] gold=['invalidate'] | pred='invalid' | score=0.0000
+[PRED 4] gold=['unresponsive'] | pred='r' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_190233__em__Input_a__ce455b0e.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (28,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (28) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([28, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([28, 1]), std: 1.0000e+00, mean: -6.8120e-08
+Instruction: ['What is the instruction?']
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['animate'] | pred='the instruction is to provide a definition or explanation of the word "inanimate."' | score=0.0000
+[PRED 1] gold=['narrow'] | pred='make something wider or broader in size.' | score=0.0000
+[PRED 2] gold=['generality'] | pred='pay attention to the specific details or characteristics of something.' | score=0.0000
+[PRED 3] gold=['palatable'] | pred='unpalatable - (of food or drink) not pleasant to taste.' | score=0.0000
+[PRED 4] gold=['exact'] | pred='not precise or accurate; not exact.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\antonyms_20251016_190256__em__What_is_the_instruction__7737f46d.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: depressing\nOutput: cheerful\nInput: unwrap\nOutput: wrap\nInput: consumptive\nOutput: generative\nInput: uncoil\nOutput: coil\nInput: corrected\nOutput: uncorrected\nInput: unscheduled\nOutput: scheduled\nInput:']
+The final instruction set is:
+{'Input: imperative\nOutput: imperative\nInput: unimperative\nOutput: unimperative\nInput: unquestionability\nOutput: unquestionability\nInput: unquestionability\nOutput: unquestionability\nInput: unquestionability\nOutput: unquestionability\nInput: unquestionability': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: humorless\nOutput: humorous': (0.55, array([[0., 1., 0., 0., 0., 1., 0., 1., 1., 1., 1., 0., 0., 1., 1., 1.,
+        1., 0., 0., 1.]])), 'Input: imperative\nOutput: imperative': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: humorous\nOutput: cheerful\nInput: depressing\nOutput: uncoil\nInput: consumptive\nOutput: generative\nInput: uncoil\nOutput: coil\nInput: corrected\nOutput: uncorrected\nInput: unscheduled\nOutput: scheduled': (0.55, array([[0., 1., 0., 0., 1., 1., 1., 1., 0., 0., 0., 1., 1., 1., 1., 0.,
+        0., 1., 0., 1.]])), 'Input: imperative\nOutput: mandatory\nInput: essential\nOutput: necessary\nInput: vital\nOutput: important\nInput: necessary\nOutput: required\nInput: essential\nOutput: important\nInput: vital\nOutput: necessary\nInput: essential\nOutput: important\nInput: vital\nOutput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: comply': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Please provide a concise instruction that maps Input to Output above."\nOutput: "Provide a concise instruction that maps Input to Output above."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Write a concise instruction that maps Input to Output above."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: depressing\nOutput: cheerful\nInput: unwrap\nOutput: wrap\nInput: consumptive\nOutput: generative\nInput: uncoil\nOutput: coil\nInput: corrected\nOutput: uncorrected\nInput: unscheduled\nOutput: scheduled\nInput:': (0.75, array([[1., 0., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0.,
+        1., 1., 1., 1.]])), 'Input: depressing\nOutput: cheerful': (0.45, array([[0., 1., 0., 0., 1., 1., 0., 1., 0., 1., 1., 0., 0., 0., 0., 1.,
+        0., 1., 1., 0.]])), 'Input: imperative\nOutput: mandatory\n\nInput: unmandatory\nOutput: optional\nInput: unenforceable\nOutput: unenforceable\nInput: unenforceable\nOutput: unenforceable\nInput: unenforceable\nOutput: unenforceable': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Use an imperative sentence. Output only the instruction."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: map\nOutput: map': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: instructional\n\nInput: uncooperative\nOutput: cooperative\nInput: uncooperative\nOutput: cooperative\nInput: uncooperative\nOutput: cooperative\nInput: uncooperative\nOutput: cooperative\nInput': (0.35, array([[1., 1., 1., 0., 0., 0., 0., 0., 1., 0., 0., 1., 0., 0., 1., 1.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: optional': (0.3, array([[0., 1., 0., 0., 0., 0., 0., 1., 0., 0., 0., 1., 0., 1., 0., 0.,
+        0., 1., 1., 0.]])), 'Input: imperative\nOutput: mandatory': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'ONE': (0.3, array([[1., 0., 1., 0., 0., 1., 1., 0., 0., 0., 0., 0., 1., 0., 0., 1.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: compulsory': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: mandatory\nInput: coercive\nOutput: compulsory\nInput: incentive\nOutput: motivational\nInput: persuasive\nOutput: convincing\nInput: cogent\nOutput: compelling\nInput: emphatic\nOutput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: humorless\nOutput: humorous\n\nInput: depressing\nOutput: cheerful\nInput: unwrap\nOutput: wrap\nInput: consumptive\nOutput: generative\nInput: uncoil\nOutput: coil\nInput: corrected\nOutput: uncorrected\nInput': (0.65, array([[1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0., 1., 1., 0., 1., 0.,
+        1., 0., 1., 0.]])), 'Input: "Write a concise instruction that maps Input to Output above."\nOutput: "Use an imperative sentence."': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: command\nOutput: response': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: instructional': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: a': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'What is the instruction?': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "antonyms"...
+[PRED 0] gold=['advance'] | pred='proceed' | score=0.0000
+[PRED 1] gold=['properly'] | pred='properly' | score=1.0000
+[PRED 2] gold=['unfairness'] | pred='unfairness' | score=1.0000
+[PRED 3] gold=['honest'] | pred='honest' | score=1.0000
+[PRED 4] gold=['incentive'] | pred='incentive' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\antonyms_20251016_190426__em__Input_depressing_Output_cheerful_Input_u__ebe38d02.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.78

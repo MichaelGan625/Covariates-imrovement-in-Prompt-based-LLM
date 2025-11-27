@@ -1,0 +1,271 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:11<00:11, 11.97s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:20<00:00, 10.08s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:20<00:00, 10.36s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Abfolge\nInput: succession\nOutput: Kleidung\nInput: clothing\nOutput: Kleidung\nInput: cry\nOutput: schluch']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Streuung', 'Verteilung', 'Austeilung', 'Gliederung', 'Verbreitung', 'Distribution', 'Absatz', 'Aufteilung'] | pred='verteilung' | score=1.0000
+[PRED 1] gold=['Querformat', 'Landschaft'] | pred='landschaft' | score=1.0000
+[PRED 2] gold=['Nummerierung'] | pred='nummerierung' | score=1.0000
+[PRED 3] gold=['Schwangerschaft'] | pred='schwangerschaft' | score=1.0000
+[PRED 4] gold=['sich treffen', 'Rendezvous'] | pred='treffen' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_042059__em__Input_label_Output_etikettieren_Input_em__0f124e1f.tsv
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 0.7
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Wochenende'] | pred='wochenende' | score=1.0000
+[PRED-DUMP] skipped ('gbk' codec can't encode character '\xf6' in position 61: illegal multibyte sequence)
+Dev loss: 0.8. Dev perf: 0.8. Best dev perf: 0.8
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput: cry\nOutput: schluchzen\nInput: jacket\nOutput: Jackett']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Koffer', 'Kofferraum', 'Stamm', 'RÃ¼ssel', 'Truhe'] | pred='stamm' | score=1.0000
+[PRED 1] gold=['Aspekt'] | pred='aspekt' | score=1.0000
+[PRED 2] gold=['Bewegung', 'Satz'] | pred='bewegung' | score=1.0000
+[PRED 3] gold=['Reporter', 'Reporterin'] | pred='reporter' | score=1.0000
+[PRED 4] gold=['Nachfolgerin', 'Nachfolger'] | pred='nachfolger' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_042223__em__Input_label_Output_etikettieren_Input_cl__19552c8d.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: the key\nOutput: die Schl¨¹ssel\nInput: the lock\nOutput: die Sperre\nInput: the keyhole\nOutput: die Schl¨¹te\nInput: the keychain\nOutput: die Schl¨¹sselch']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Desaster'] | pred='die katastrophe' | score=0.0000
+[PRED 1] gold=['Granate'] | pred='die granate' | score=0.0000
+[PRED 2] gold=['Bridge', 'Ã¼berwechseln', 'NasenrÃ¼cken', 'Ã¼berbrÃ¼cken', 'Steg', 'BrÃ¼cke'] | pred='die br¨¹cke' | score=0.0000
+[PRED 3] gold=['Fracht'] | pred='die fracht' | score=0.0000
+[PRED 4] gold=['Truppe'] | pred='die truppe' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_042314__em__Input_the_key_Output_die_Schl_ssel_Input__1d272ba0.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Probe', 'PrÃ¼fung', 'Test', 'testen', 'Examen'] | pred='pr¨¹fung' | score=1.0000
+[PRED 1] gold=['Ringer'] | pred='ringer' | score=1.0000
+[PRED 2] gold=['StreitgesprÃ¤ch', 'Argument', 'Streit', 'Diskussion', 'Argumentation'] | pred='argument' | score=1.0000
+[PRED-DUMP] skipped ('gbk' codec can't encode character '\xe4' in position 90: illegal multibyte sequence)
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['schwimmen', 'Schwimmen'] | pred='schwimmen' | score=1.0000
+[PRED 1] gold=['Preisgabe', 'Aufgabe', 'Ãœberlassen', 'Hinterlassung'] | pred='verlassen' | score=0.0000
+[PRED 2] gold=['Camping'] | pred='camping' | score=1.0000
+[PRED 3] gold=['FlugkÃ¶rper', 'Rakete'] | pred='rakete' | score=1.0000
+[PRED 4] gold=['Exposition', 'Ausstellung', 'EinfÃ¼hrung'] | pred='ausstellung' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_042514__em__Input_label_Output_etikettieren_Input_em__b2c3cd8c.tsv
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above. Use an imperative sentence. Output only the instruction.']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Rezession'] | pred='define the term recession.' | score=0.0000
+[PRED 1] gold=['schÃ¤tzen', 'Preis', 'den Preis festsetzen'] | pred='calculate the price.' | score=0.0000
+[PRED 2] gold=['GaststÃ¤tte', 'Restaurant'] | pred='make a reservation at the restaurant.' | score=0.0000
+[PRED 3] gold=['Ende', 'enden', 'Tod', 'beenden', 'Schluss'] | pred='stop.' | score=0.0000
+[PRED 4] gold=['bestimmt', 'einbetonieren', 'aus Beton', 'Beton', 'Beton-', 'genau', 'konkretisieren', 'betonieren', 'konkret'] | pred='construct a building using the material "concrete".' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_042633__em__Input_Write_a_concise_instruction_that_m__5f015411.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "ONE"']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Umfang'] | pred='scope' | score=0.0000
+[PRED 1] gold=['Kolonne', 'Zug'] | pred='p' | score=0.0000
+[PRED 2] gold=['VerÃ¶ffentlichung', 'verÃ¶ffentlichen', 'freilassen', 'loslassen', 'Version', 'freisetzen', 'Freisetzung'] | pred='release' | score=0.0000
+[PRED 3] gold=['Verletzung'] | pred='violation' | score=0.0000
+[PRED 4] gold=['Getriebe', 'Ãœbertragung'] | pred='transmission' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_042705__em__Input_Write_ONE_concise_instruction_that__97d3f32b.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Berater', 'Beraterin'] | pred='expert' | score=0.0000
+[PRED 1] gold=['Landung', 'Anlegeplatz', 'Treppenabsatz'] | pred='please provide more context or specify what you would like the output to be for the input "landing".' | score=0.0000
+[PRED 2] gold=['Parlament'] | pred='a legislative body consisting of elected representatives who make laws and decisions for a country or region' | score=0.0000
+[PRED 3] gold=['KÃ¼che'] | pred='kitchen' | score=0.0000
+[PRED 4] gold=["Hast'se", 'Tag', 'Fange', 'Fangen', 'Etikett', 'Marke'] | pred='label' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_042810__em__Input_label__6e8ee443.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren']
+Dev loss: 0.8. Dev perf: 0.8. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: ONE']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Karriere'] | pred='it seems like you want me to provide information or assistance related to the word "career." how can i assist you with your career?' | score=0.0000
+[PRED 1] gold=['Taufe'] | pred='the word "one" is not found in the input "baptism".' | score=0.0000
+[PRED 2] gold=['vernetzen', 'sich vernetzen', 'Netzwerk'] | pred='onework' | score=0.0000
+[PRED 3] gold=['StÃ¤rke', 'Kraft'] | pred='strong' | score=0.0000
+[PRED 4] gold=['Unterscheidung', 'Bestimmtheit', 'Bestimmung', 'Entschluss', 'Determination', 'Feststellung'] | pred='one' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_042924__em__Input_ONE__83ad3846.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above.\nUse an imperative sentence. Output only the instruction.']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['stumpf', 'ungehobelt', 'abstumpfen', 'abgestumpft', 'unverblÃ¼mt', 'Blunt'] | pred='sharpen the blunt object.' | score=0.0000
+[PRED 1] gold=['Trainer'] | pred='train the individual.' | score=0.0000
+[PRED 2] gold=['Schmuggel'] | pred='stop smuggling.' | score=0.0000
+[PRED 3] gold=['Inauguration'] | pred='spell "inauguration".' | score=0.0000
+[PRED 4] gold=['Komiker'] | pred='write a joke.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_043126__em__Input_Write_a_concise_instruction_that_m__5f015411.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\n\nInput: undergraduate\nOutput: Student\n\nInput: clothing\nOutput: Kleidung\n\nInput: succession\nOutput: Abfolge\n\nInput: stiff\nOutput']
+Using metric "em" for task "translation_en-de"...
+[PRED-DUMP] skipped ('gbk' codec can't encode character '\xe4' in position 52: illegal multibyte sequence)
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput: cry\nOutput: schluchzen\nInput: jacket\nOutput: Jackett']
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Best initial point: 0.950
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][04:37:29] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:37:30] INFO [PROFILE] GP fit: 0.238s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:37:30] INFO Iter 0 best_value=0.93524 gp_loss=-389.14572
+[04:37:30] INFO [PROFILE] Acquisition: 0.803s
+[04:37:39] INFO [PROFILE] LLM eval candidate: 8.557s
+[04:37:39] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:09<00:38,  9.61s/it][04:37:39] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:37:39] INFO [PROFILE] GP fit: 0.225s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:37:39] INFO Iter 1 best_value=0.93524 gp_loss=-452.45992
+[04:37:40] INFO [PROFILE] Acquisition: 0.740s
+[04:38:03] INFO [PROFILE] LLM eval candidate: 23.116s
+[04:38:03] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:33<00:54, 18.13s/it][04:38:03] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:38:04] INFO [PROFILE] GP fit: 0.435s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:38:04] INFO Iter 2 best_value=0.93524 gp_loss=-192.84124
+[04:38:04] INFO [PROFILE] Acquisition: 0.726s
+[04:38:48] INFO [PROFILE] LLM eval candidate: 43.717s
+[04:38:48] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:18<01:00, 30.35s/it][04:38:48] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:38:48] INFO [PROFILE] GP fit: 0.228s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:38:48] INFO Iter 3 best_value=0.93524 gp_loss=-217.27151
+[04:38:49] INFO [PROFILE] Acquisition: 0.709s
+[04:39:49] INFO [PROFILE] LLM eval candidate: 59.847s
+[04:39:49] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [02:19<00:42, 42.37s/it][04:39:49] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:39:49] INFO [PROFILE] GP fit: 0.469s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:39:49] INFO Iter 4 best_value=0.93524 gp_loss=-241.21698
+[04:39:50] INFO [PROFILE] Acquisition: 0.725s
+[04:40:34] INFO [PROFILE] LLM eval candidate: 43.943s
+[04:40:34] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [03:04<00:00, 43.37s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [03:04<00:00, 36.91s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: label\nOutput: etikettieren']
+Dev loss: 0.8. Dev perf: 0.8. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.3199999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input:']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Querformat', 'Landschaft'] | pred='landscape' | score=0.0000
+[PRED 1] gold=['Ãœbung', 'Praktizieren', 'ausÃ¼ben', 'Ã¼ben', 'AusÃ¼ben', 'AusÃ¼bung', 'Ãœben', 'Praxis', 'praktizieren'] | pred='ecitcarp' | score=0.0000
+[PRED 2] gold=['bemerken', 'Zitat', 'anbieten', 'Preisangebot machen', 'berÃ¼cksichtigen', 'zitieren'] | pred="i'm sorry, i cannot provide an output without knowing the specific quote. please provide the quote for me to generate an output." | score=0.0000
+[PRED 3] gold=['Attraktion', 'Anziehung', 'Anziehungskraft', 'Liebreiz', 'Reiz'] | pred='a place or thing that draws people to it; a quality or feature that evokes interest, liking, or desire' | score=0.0000
+[PRED 4] gold=['Korruption'] | pred='ruction, option, ruin, crop, run, cur, cop, ion' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-de_20251018_043803__em__Input__c4e024e7.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.51}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\n\nInput: undergraduate\nOutput: Student\n\nInput: clothing\nOutput: Kleidung\n\nInput: succession\nOutput: Abfolge\n\nInput: stiff\nOutput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.58}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: etikettieren\nOutput: Notstand\n\nInput: emergency\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput: cry\nOutput: schluchzen\nInput: jacket\nOutput: Jackett\nInput: sparrow\nOutput: Haus']
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Bestattung', 'BegrÃ¤bnis', 'Beerdigung', 'Beisetzung'] | pred='beerdigung' | score=1.0000
+[PRED 1] gold=['Person', 'KÃ¶rper'] | pred='individuum' | score=0.0000
+[PRED 2] gold=['Nelke', 'pink', 'Rosa', 'rosa'] | pred='rosa' | score=1.0000
+[PRED 3] gold=['Kommentar'] | pred='kommentar' | score=1.0000
+[PRED-DUMP] skipped ('gbk' codec can't encode character '\xe4' in position 35: illegal multibyte sequence)
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.6499999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: label\nOutput: etikettieren\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput: cry\nOutput: schluchzen\nInput: jacket\nOutput: Jackett']
+The final instruction set is:
+{'Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Abfolge\nInput: succession\nOutput: Kleidung\nInput: clothing\nOutput: Kleidung\nInput: cry\nOutput: schluch': (0.7, array([[1., 1., 1., 1., 0., 1., 1., 0., 0., 1., 1., 0., 0., 1., 1., 1.,
+        1., 1., 1., 0.]])), 'Input: label\nOutput: etikettieren': (0.8, array([[1., 1., 1., 1., 1., 1., 0., 1., 0., 1., 0., 1., 1., 1., 0., 1.,
+        1., 1., 1., 1.]])), 'Input: label\nOutput: etikettieren\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput: cry\nOutput: schluchzen\nInput: jacket\nOutput: Jackett': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 0.]])), 'Input: the key\nOutput: die Schl¨¹ssel\nInput: the lock\nOutput: die Sperre\nInput: the keyhole\nOutput: die Schl¨¹te\nInput: the keychain\nOutput: die Schl¨¹sselch': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: label\nOutput: etikettieren\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput': (0.75, array([[1., 1., 1., 1., 1., 1., 0., 1., 1., 0., 1., 1., 0., 0., 1., 1.,
+        1., 0., 1., 1.]])), 'Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\nInput: undergraduate\nOutput: Student\nInput: clothing\nOutput: Kleidung\nInput: succession\nOutput: Abfolge\nInput: stiff\nOutput: Steifer': (0.85, array([[1., 0., 1., 1., 1., 1., 1., 1., 0., 0., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: Write a concise instruction that maps Input to Output above. Use an imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "ONE"': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: label': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: ONE': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 1., 0.]])), 'Input: Write a concise instruction that maps Input to Output above.\nUse an imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: label\nOutput: etikettieren\n\nInput: emergency\nOutput: Notstand\n\nInput: undergraduate\nOutput: Student\n\nInput: clothing\nOutput: Kleidung\n\nInput: succession\nOutput: Abfolge\n\nInput: stiff\nOutput': (0.75, array([[1., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 1., 1., 0., 0., 1.,
+        1., 1., 1., 0.]])), 'Input:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: etikettieren\nOutput: Notstand\n\nInput: emergency\nOutput: Abfolge\nInput: stiff\nOutput: Steifer\nInput: cry\nOutput: schluchzen\nInput: jacket\nOutput: Jackett\nInput: sparrow\nOutput: Haus': (0.9, array([[1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1.,
+        1., 1., 1., 1.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "translation_en-de"...
+[PRED 0] gold=['Komma', 'Peninsula', 'Standpunkt', 'Halbinsel', 'Spitze', 'Zeitpunkt', 'Landzunge', 'Punkt', 'zeigen'] | pred='punkt' | score=1.0000
+[PRED 1] gold=['platzieren', 'pflanzen', 'Kombination', 'Pflanze'] | pred='pflanze' | score=1.0000
+[PRED 2] gold=['Seemann', 'Matrose'] | pred='matrose' | score=1.0000
+[PRED 3] gold=['Negierung', 'Negation', 'Verneinung', 'Leugnung', 'Dementi', 'Verweigerung'] | pred='leugnung' | score=1.0000
+[PRED 4] gold=['Argwohn', 'Verdacht', 'VerdÃ¤chtigung'] | pred='verdacht' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\translation_en-de_20251018_044157__em__Input_label_Output_etikettieren_Input_cl__19552c8d.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.82

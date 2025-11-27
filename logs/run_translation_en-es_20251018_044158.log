@@ -1,0 +1,362 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:11<00:11, 11.99s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:20<00:00, 10.14s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:20<00:00, 10.42s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: presto\nOutput: participo\nInput: labelo\nOutput: etiqueto\nInput: outlineo\nOutput: contorto\nInput: crediblito\nOutput: credibilito\nInput: triangulo\nOutput: triquo\nInput: contour\nOutput:']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['cariÃ±o', 'archivo adjunto', 'ejecuciÃ³n', 'apego', 'aficiÃ³n'] | pred='adjunto' | score=0.0000
+[PRED 1] gold=['baÃ±o', 'cuarto de baÃ±o', 'baÃ±era', 'baÃ±ar'] | pred='bathe' | score=0.0000
+[PRED 2] gold=['celebraciÃ³n'] | pred='celebration' | score=0.0000
+[PRED 3] gold=['empleado', 'empleada'] | pred='emplea' | score=0.0000
+[PRED 4] gold=['anticuerpo'] | pred='antibioty' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044329__em__Input_presto_Output_participo_Input_labe__88145744.tsv
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: concepto']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['canal'] | pred='un canal es una v¨ªa de comunicaci¨®n o distribuci¨®n que permite la transmisi¨®n de informaci¨®n, productos o servicios de un lugar a otro. tambi¨¦n puede referirse a una v¨ªa de agua artificial construida para la navegaci¨®n, el riego o el drenaje.' | score=0.0000
+[PRED 1] gold=['rueda', 'volante', 'pez gordo', 'rodar', 'volar en cÃ­rculos', 'llanta', 'circunvolar'] | pred='a circular object that rotates around an axis and is typically used for transportation or to provide mechanical advantage.' | score=0.0000
+[PRED 2] gold=['vacaciÃ³n', 'vacaciones', 'dÃ­a feriado', 'fiesta', 'festividad'] | pred='a holiday is a day set aside by custom or law on which normal activities, especially business or work, are suspended or reduced. it is typically a time for relaxation, celebration, and socializing with family and friends. holidays can be national or religious in nature and are often marked by special events, traditions, or rituals.' | score=0.0000
+[PRED 3] gold=['reserva', 'existencias', 'acciÃ³n', 'ganado', 'caldo', 'disponible', 'en almacÃ©n', 'surtido'] | pred='stock refers to the total amount of goods or materials that a company has available for sale or use in its operations. it can also refer to the shares of a particular company that are available for trading on the stock market.' | score=0.0000
+[PRED 4] gold=['hospital'] | pred='un hospital es una instituci¨®n m¨¦dica que proporciona atenci¨®n m¨¦dica a pacientes enfermos o lesionados. los hospitales suelen contar con personal m¨¦dico y de enfermer¨ªa capacitado, as¨ª como con equipos y tecnolog¨ªa m¨¦dica avanzada para diagnosticar y tratar enfermedades y lesiones. los hospitales pueden ofrecer una amplia gama de servicios m¨¦dicos, que van desde consultas de atenci¨®n primaria hasta cirug¨ªas complejas. tambi¨¦n pueden proporcion' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044356__em__Input_concepto__8db6f0aa.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: prensa']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['direcciÃ³n'] | pred='prensa is the portuguese word for press. there is no direct relationship between "prensa" and "direction".' | score=0.0000
+[PRED 1] gold=['sugestiÃ³n', 'propuesta'] | pred='sugerencia' | score=0.0000
+[PRED 2] gold=['cronometraje'] | pred='timing is the measurement of when an event occurs or how long it takes for something to happen. it can refer to the synchronization of movements or actions, the sequence of events, or the speed at which something occurs.' | score=0.0000
+[PRED 3] gold=['diosa'] | pred='input: goddess\n\noutput: diosa' | score=0.0000
+[PRED 4] gold=['chorro', 'a propulsiÃ³n', 'azabache', 'a reacciÃ³n', 'a chorro'] | pred='press' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044418__em__Input_prensa__74177ac6.tsv
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 0.3
+********* Done *********
+Instruction: ['Input: "Write a concise instruction that maps Input to Output above."\nOutput: "tejado"']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['suicida', 'suicidio'] | pred='edious' | score=0.0000
+[PRED 1] gold=['antologÃ­a'] | pred='ylhgtpj' | score=0.0000
+[PRED 2] gold=['adopciÃ³n'] | pred='noitapoda' | score=0.0000
+[PRED 3] gold=['mÃ©dico'] | pred='cianphys' | score=0.0000
+[PRED 4] gold=['bovino', 'vaca', 'intimidar', 'bruja'] | pred='woc' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044451__em__Input_Write_a_concise_instruction_that_m__04400531.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.3
+********* Done *********
+Instruction: ['Input: prensa']
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 0.3
+********* Done *********
+Instruction: ['Input: map\nOutput: mapa\n\nInput: participate\nOutput: participa\nInput: company\nOutput: compa\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici\nInput: credibility']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['overtime', 'a destajo', 'pago overtime', 'tiempo de mÃ¡s'] | pred='overtiempo' | score=0.0000
+[PRED 1] gold=['objeciÃ³n', 'protesta'] | pred='objeci¨®n' | score=1.0000
+[PRED 2] gold=['vocabulario', 'lÃ©xico'] | pred='vocabulario' | score=1.0000
+[PRED 3] gold=['metro', 'contador', 'medidor'] | pred='metra' | score=0.0000
+[PRED 4] gold=['nivel', 'niveles', 'nivelado', 'llano'] | pred='nivel' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044555__em__Input_map_Output_mapa_Input_participate___a8ba8481.tsv
+Dev loss: 0.35. Dev perf: 0.35. Best dev perf: 0.35
+********* Done *********
+Instruction: ['Input: prensa\nOutput: prensa']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['humanidad'] | pred='humanity' | score=0.0000
+[PRED 1] gold=['existencia'] | pred='existence' | score=0.0000
+[PRED 2] gold=['capa', 'enlace'] | pred='tier' | score=0.0000
+[PRED 3] gold=['especulaciÃ³n'] | pred='speculation' | score=0.0000
+[PRED 4] gold=['tecnologÃ­a'] | pred='technology' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044618__em__Input_prensa_Output_prensa__ce9d8cef.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.35
+********* Done *********
+Instruction: ['Input: Write a concise instruction that maps Input to Output above. Use an imperative sentence. Output only the instruction.']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['impuesto', 'tasa'] | pred='calculate the tax.' | score=0.0000
+[PRED 1] gold=['banda', 'pasmo', 'cinta', 'grupo', 'franja'] | pred='create a music group.' | score=0.0000
+[PRED 2] gold=['catedral'] | pred='visit the cathedral.' | score=0.0000
+[PRED 3] gold=['especialista'] | pred='specialize in a specific area.' | score=0.0000
+[PRED 4] gold=['estaciÃ³n'] | pred='find the closest station.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044653__em__Input_Write_a_concise_instruction_that_m__5f015411.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.35
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: aboliciÃ³n\nInput: credibility']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['capricho', 'extravagancia', 'lujo'] | pred='lujo' | score=1.0000
+[PRED 1] gold=['porcentaje'] | pred='porcentaje' | score=1.0000
+[PRED 2] gold=['instrucciÃ³n'] | pred='instrucciÃ³n' | score=1.0000
+[PRED 3] gold=['catedral'] | pred='catedral' | score=1.0000
+[PRED 4] gold=['modificaciÃ³n'] | pred='modificaci¨®n' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044752__em__Input_press_Output_prensa_Input_company___56e97ea5.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['protagonista'] | pred='protagonista' | score=1.0000
+[PRED 1] gold=['negligencia', 'descuidar', 'perecear'] | pred='negligencia' | score=1.0000
+[PRED 2] gold=['imagen'] | pred='imagen' | score=1.0000
+[PRED 3] gold=['venidero', 'porvenir', 'futuro'] | pred='futuro' | score=1.0000
+[PRED 4] gold=['presencia'] | pred='presencia' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044815__em__Input_press_Output_prensa__e17b74b3.tsv
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: pren']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['cargo', 'atacar', 'cargar', 'figura'] | pred='nep charge' | score=0.0000
+[PRED 1] gold=['calefacciÃ³n', 'calentamiento'] | pred='preheating' | score=0.0000
+[PRED 2] gold=['gobierno'] | pred='governprenment' | score=0.0000
+[PRED 3] gold=['tarea'] | pred='prenassignment' | score=0.0000
+[PRED 4] gold=['comunidad'] | pred='comprehend' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044836__em__Input_pren__efb9432b.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: ONE\nOutput: ONE']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['renovaciÃ³n'] | pred='renovation' | score=0.0000
+[PRED 1] gold=['fatiga'] | pred='fatigue' | score=0.0000
+[PRED 2] gold=['elefante'] | pred='elephant' | score=0.0000
+[PRED 3] gold=['ion', 'iÃ³n'] | pred='ion' | score=1.0000
+[PRED 4] gold=['sendero', 'rastro', 'arrastrar', 'pista', 'seguir'] | pred='trail' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044858__em__Input_ONE_Output_ONE__71f7c9ab.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: imperative\nOutput: imperativo']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['tapador', 'custodiar', 'guardar', 'guarda', 'bloque', 'vigilar', 'vanguardia', 'protector', 'guardia'] | pred='guarda' | score=1.0000
+[PRED 1] gold=['ballet', 'baile'] | pred='ballet' | score=1.0000
+[PRED 2] gold=['transiciÃ³n'] | pred='transici¨®n' | score=1.0000
+[PRED 3] gold=['movilidad'] | pred='movilidad' | score=1.0000
+[PRED 4] gold=['techno'] | pred='techno' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_044922__em__Input_imperative_Output_imperativo__ea7cbda4.tsv
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa\nInput: participant\nOutput: participante\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['herramienta', 'utensilio'] | pred='herramienta' | score=1.0000
+[PRED 1] gold=['pornografÃ­a'] | pred='pornograf¨ªa' | score=1.0000
+[PRED 2] gold=['buque de guerra'] | pred='buque de guerra' | score=1.0000
+[PRED 3] gold=['uniforme'] | pred='uniforme' | score=1.0000
+[PRED 4] gold=['edad adulta', 'adultez'] | pred='edad adulta' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045021__em__Input_press_Output_prensa_Input_particip__8c11c60b.tsv
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: prensa\nOutput: participante\nInput: compaÃ±Ã­a\nOutput: contorno\nInput: etiquetar\nOutput: aboliciÃ³n\nInput: credibility\nOutput: credibilidad\nInput: triÃ¡ngulo\nOutput']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['engranaje', 'velocidad', 'marcha', 'cambio', 'engranar', 'equipo'] | pred='engranaje' | score=1.0000
+[PRED 1] gold=['capricho', 'extravagancia', 'lujo'] | pred='lujo' | score=1.0000
+[PRED 2] gold=['retorno', 'rÃ©dito', 'recaudaciÃ³n'] | pred='ingresos' | score=0.0000
+[PRED 3] gold=['hueco', 'hoyo'] | pred='agujero' | score=0.0000
+[PRED 4] gold=['delegaciÃ³n'] | pred='delegaci¨®n' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045123__em__Input_prensa_Output_participante_Input_c__9d329e0d.tsv
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa\nInput: participant\nOutput: participante\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici']
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa']
+Dev loss: 0.85. Dev perf: 0.85. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: map\nOutput: mapa\nInput: participate\nOutput: participante\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: aboliciÃ³n\nInput: credibility\nOutput: credibilidad']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['pega', 'empleo', 'curro', 'trabajo', 'chamba', 'laburo', 'talacha', 'tarea', 'camello', 'trabajar'] | pred='trabajo' | score=1.0000
+[PRED 1] gold=['prosa'] | pred='prosa' | score=1.0000
+[PRED 2] gold=['modelaje'] | pred='modelando' | score=0.0000
+[PRED 3] gold=['repartir', 'escisiÃ³n', 'espagat', 'partir', 'escindir', 'fisura', 'separar', 'dividir'] | pred='dividir' | score=1.0000
+[PRED 4] gold=['disparate', 'sin sentido', 'estupidez', 'tonterÃ­as', 'tonterÃ­a', 'parida'] | pred='nonsense' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045313__em__Input_map_Output_mapa_Input_participate___946a7245.tsv
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa\n\nInput: participant\nOutput: participante\n\nInput: company\nOutput: compaÃ±Ã­a\n\nInput: outline\nOutput: contorno\n\nInput: label\nOutput: etiquetar\n\nInput: abolition']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['enrollar', 'carrete'] | pred='bobina' | score=0.0000
+[PRED 1] gold=['trasero', 'cierva'] | pred='hind¨²' | score=0.0000
+[PRED 2] gold=['placer'] | pred='placer' | score=1.0000
+[PRED 3] gold=['rayo'] | pred='habl¨®' | score=0.0000
+[PRED 4] gold=['atmÃ³sfera', 'clima', 'aire', 'ambiente'] | pred='atm¨®sfera' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045413__em__Input_press_Output_prensa_Input_particip__89d93803.tsv
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: participant\nOutput: participante\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['origen'] | pred='origen' | score=1.0000
+[PRED 1] gold=['autismo'] | pred='autismo' | score=1.0000
+[PRED 2] gold=['complemento', 'complementar', 'complementarse'] | pred='complemento' | score=1.0000
+[PRED 3] gold=['fusiÃ³n', 'derretimiento fundiciÃ³n'] | pred='fusiÃ³n' | score=1.0000
+[PRED 4] gold=['sequÃ­a', 'seca'] | pred='sequ¨ªa' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045513__em__Input_press_Output_prensa_Input_company___d9dbc5c7.tsv
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa\nInput: participant\nOutput: participante\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici']
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: map']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['geÃ³metra', 'racha', 'toque', 'trazo', 'sarta', 'correr desnudo', 'rayarse', 'raya', 'rayar'] | pred='the output will be based on the specific instructions or operations that need to be performed on the map using the input "streak." without further details, it is not possible to provide an accurate output. please provide more context or instructions on what needs to be done with the map and the input "streak."' | score=0.0000
+[PRED 1] gold=['galga', 'medida', 'calibre', 'calibraciÃ³n', 'medir', 'trocha'] | pred='measure' | score=0.0000
+[PRED 2] gold=['calesa', 'montar', 'actuar', 'etapa', 'fingir', 'platina', 'trucar', 'escenario', 'diligencia', 'escena', 'fase'] | pred='the output could vary depending on the specific instructions or context of the task related to the map and stage. could you provide more details or clarify what you would like the output to be?' | score=0.0000
+[PRED 3] gold=['robo', 'hurtar', 'robar'] | pred='steal: take (something) without permission or legal right and without intending to return it.' | score=0.0000
+[PRED 4] gold=['trigo'] | pred='corn' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045617__em__Input_map__02db1057.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa\nInput: participant\nOutput: participante\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici']
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: "Map the Input to Output above."\nOutput: "Compare the Input to Output above."']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['crÃ¡ter'] | pred='compare the input to output above.' | score=0.0000
+[PRED 1] gold=['seno', 'estrecho', 'sonido', 'sano', 'sondear', 'son', 'sonda', 'sonar'] | pred='compare the input to output above.' | score=0.0000
+[PRED 2] gold=['consecuencia', 'objetivos', 'resultado'] | pred='compare the input to output above.' | score=0.0000
+[PRED 3] gold=['enemigo'] | pred='compare the input to output above.' | score=0.0000
+[PRED 4] gold=['hockey'] | pred='compare the input to output above.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045734__em__Input_Map_the_Input_to_Output_above._Out__bf916ee7.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+Instruction: ['Input: press\nOutput: prensa\n\nInput: participant\nOutput: participante\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abol']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['arriesgar', 'riesgo', 'poner en riesgo', 'peligro'] | pred='riesgo' | score=1.0000
+[PRED 1] gold=['agente'] | pred='agente' | score=1.0000
+[PRED 2] gold=['suceso', 'accidente', 'evento', 'acontecimiento'] | pred='evento' | score=1.0000
+[PRED 3] gold=['arrabal', 'afueras'] | pred='suburbio' | score=0.0000
+[PRED 4] gold=['luchar', 'lucha', 'batalla', 'batallar'] | pred='batalla' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045836__em__Input_press_Output_prensa_Input_particip__ed2109e8.tsv
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+Best initial point: 0.950
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][04:58:37] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:58:38] INFO [PROFILE] GP fit: 0.234s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:58:38] INFO Iter 0 best_value=1.11675 gp_loss=-507.95391
+[04:58:38] INFO [PROFILE] Acquisition: 0.799s
+[04:59:22] INFO [PROFILE] LLM eval candidate: 44.134s
+[04:59:22] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:45<03:00, 45.18s/it][04:59:22] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:59:23] INFO [PROFILE] GP fit: 0.230s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:59:23] INFO Iter 1 best_value=1.11675 gp_loss=-212.04983
+[04:59:23] INFO [PROFILE] Acquisition: 0.709s
+[04:59:58] INFO [PROFILE] LLM eval candidate: 34.222s
+[04:59:58] INFO Best value so far: 0.95000
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [01:20<01:57, 39.30s/it][04:59:58] INFO [Iteration 2] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[04:59:58] INFO [PROFILE] GP fit: 0.612s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:59:58] INFO Iter 2 best_value=1.15327 gp_loss=-1798.09375
+[04:59:59] INFO [PROFILE] Acquisition: 0.498s
+[05:00:24] INFO [PROFILE] LLM eval candidate: 25.295s
+[05:00:24] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:46<01:06, 33.42s/it][05:00:24] INFO [Iteration 3] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[05:00:24] INFO [PROFILE] GP fit: 0.349s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[05:00:24] INFO Iter 3 best_value=1.15327 gp_loss=-1798.09375
+[05:00:25] INFO [PROFILE] Acquisition: 0.602s
+[05:01:10] INFO [PROFILE] LLM eval candidate: 44.744s
+[05:01:10] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [02:32<00:38, 38.27s/it][05:01:10] INFO [Iteration 4] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[05:01:10] INFO [PROFILE] GP fit: 0.260s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[05:01:10] INFO Iter 4 best_value=1.15327 gp_loss=-1798.09375
+[05:01:10] INFO [PROFILE] Acquisition: 0.424s
+[05:01:15] INFO [PROFILE] LLM eval candidate: 4.286s
+[05:01:15] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:37<00:00, 26.26s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:37<00:00, 31.49s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: press\nOutput: prensa\n\nInput: participant\nOutput: participante\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abol']
+Dev loss: 0.9. Dev perf: 0.9. Best dev perf: 0.95
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.43999999999999995}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['ONE concise instruction that maps Input to Output above. Use an imperative sentence. Output only the instruction.']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['legislaciÃ³n'] | pred='analyze the legislation.' | score=0.0000
+[PRED 1] gold=['blindaje', 'coraza', 'armadura'] | pred='put on your armor.' | score=0.0000
+[PRED 2] gold=['retornar', 'retorno', 'regreso', 'volver', 'vuelta', 'retrovender', 'regresar', 'devolver'] | pred='map the term "return" to its corresponding definition.' | score=0.0000
+[PRED 3] gold=['noche', 'oscuridad', 'tarde'] | pred='turn on the lights.' | score=0.0000
+[PRED 4] gold=['campanilla', 'campana'] | pred='spell the word "bell".' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_045958__em__ONE_concise_instruction_that_maps_Input___24f86cc8.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.95
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 2] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -9.1699e-09
+Instruction: ['Input: press']
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['abandonar', 'acequia', 'zanja', 'dejar', 'trinchera', 'cuneta'] | pred='abandon' | score=0.0000
+[PRED 1] gold=['caballerÃ­a'] | pred='military unit of soldiers who fight on horseback' | score=0.0000
+[PRED 2] gold=['interior'] | pred='press interior' | score=0.0000
+[PRED 3] gold=['turismo'] | pred='visit a tourist destination to explore the local culture, attractions, and activities available in the area.' | score=0.0000
+[PRED 4] gold=['', 'tropezar', 'deslizar', 'resbalar', 'combinaciÃ³n', 'desliz', 'falta', 'resbalÃ³n', 'equivocaciÃ³n', 'error', 'descuido'] | pred='trip' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\translation_en-es_20251018_050024__em__Input_press__b1a12e2b.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.95
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -9.1699e-09
+Instruction: ['Input: press\nOutput: prensa\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: aboliciÃ³n\nInput: credibility']
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 0.95
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -9.1699e-09
+Instruction: ['Input: press']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.95
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: press\nOutput: prensa\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: aboliciÃ³n\nInput: credibility']
+The final instruction set is:
+{'Input: presto\nOutput: participo\nInput: labelo\nOutput: etiqueto\nInput: outlineo\nOutput: contorto\nInput: crediblito\nOutput: credibilito\nInput: triangulo\nOutput: triquo\nInput: contour\nOutput:': (0.2, array([[0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        1., 0., 1., 1.]])), 'Input: concepto': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: prensa': (0.3, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 1., 1., 1.,
+        0., 0., 1., 1.]])), 'Input: "Write a concise instruction that maps Input to Output above."\nOutput: "tejado"': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: map\nOutput: mapa\n\nInput: participate\nOutput: participa\nInput: company\nOutput: compa\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici\nInput: credibility': (0.35, array([[0., 1., 1., 0., 1., 1., 0., 1., 0., 0., 1., 1., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: prensa\nOutput: prensa': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 1., 0., 0.]])), 'Input: Write a concise instruction that maps Input to Output above. Use an imperative sentence. Output only the instruction.': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: press\nOutput: prensa\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: aboliciÃ³n\nInput: credibility': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 0.,
+        1., 1., 1., 1.]])), 'Input: press\nOutput: prensa': (0.85, array([[1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 0., 1., 1., 1., 1., 1.,
+        1., 1., 1., 0.]])), 'Input: pren': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: ONE\nOutput: ONE': (0.05, array([[0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: imperative\nOutput: imperativo': (0.9, array([[1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        0., 1., 1., 1.]])), 'Input: press\nOutput: prensa\nInput: participant\nOutput: participante\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici': (0.9, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        0., 0., 1., 1.]])), 'Input: prensa\nOutput: participante\nInput: compaÃ±Ã­a\nOutput: contorno\nInput: etiquetar\nOutput: aboliciÃ³n\nInput: credibility\nOutput: credibilidad\nInput: triÃ¡ngulo\nOutput': (0.65, array([[1., 1., 0., 0., 1., 0., 1., 1., 0., 0., 1., 1., 1., 1., 1., 0.,
+        1., 1., 0., 1.]])), 'Input: map\nOutput: mapa\nInput: participate\nOutput: participante\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: aboliciÃ³n\nInput: credibility\nOutput: credibilidad': (0.9, array([[1., 1., 0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: press\nOutput: prensa\n\nInput: participant\nOutput: participante\n\nInput: company\nOutput: compaÃ±Ã­a\n\nInput: outline\nOutput: contorno\n\nInput: label\nOutput: etiquetar\n\nInput: abolition': (0.75, array([[0., 0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: press\nOutput: prensa\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: participant\nOutput: participante\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abolici': (0.9, array([[1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 0., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: map': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Map the Input to Output above."\nOutput: "Compare the Input to Output above."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: press\nOutput: prensa\n\nInput: participant\nOutput: participante\nInput: company\nOutput: compaÃ±Ã­a\nInput: outline\nOutput: contorno\nInput: label\nOutput: etiquetar\nInput: abolition\nOutput: abol': (0.9, array([[1., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1.,
+        1., 1., 1., 1.]])), 'ONE concise instruction that maps Input to Output above. Use an imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: press': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "translation_en-es"...
+[PRED 0] gold=['conciencia'] | pred='consciencia' | score=0.0000
+[PRED 1] gold=['hipÃ³dromo', 'cÃ©sped'] | pred='c¨¦sped' | score=1.0000
+[PRED 2] gold=['importancia'] | pred='importancia' | score=1.0000
+[PRED 3] gold=['entrenadora', 'vagÃ³n', 'entrenar', 'entrenador', 'autocar', 'coche'] | pred='entrenador' | score=1.0000
+[PRED 4] gold=['duraciÃ³n'] | pred='duraci¨®n' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\translation_en-es_20251018_050231__em__Input_press_Output_prensa_Input_company___56e97ea5.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.83

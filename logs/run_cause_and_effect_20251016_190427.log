@@ -1,0 +1,245 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:12<00:12, 12.22s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:20<00:00,  9.79s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:20<00:00, 10.15s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+D:\Py\LLM test\run_instructzero.py:705: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: The man who was walking on the street opened his umbrella. Sentence 2: The man climbed in through the window. Output: The man who was walking on the street opened his umbrella. Input: The man who was walking on the street opened his umbrella. Output:']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_190548__f1__Input_The_man_who_was_walking_on_the_str__f2dcef30.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Sentence 1: The [object Object] was [object Object]. Sentence 2: The [object Object] happened.\nOutput: The [object Object] happened.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_190619__f1__Input_Sentence_1_The__object_Object__was__1feb78db.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The man climbed in through the window.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_190639__f1__Input_The_man_climbed_in_through_the_win__74864434.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window. Output: The power was out for days.\n\n\nInput: The family went to the beach. Output: The air conditioner broke.\n\n\nInput: A watermelon exploded. Output: A man was covered in sticky red go']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_190727__f1__Input_The_man_climbed_in_through_the_win__8894bdbc.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The man climbed in through the window.\nInput: The family went to the beach.\nOutput: The family went to the beach.\nInput: The power was out for days.\nOutput: The power was out for days.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_190814__f1__Input_The_man_climbed_in_through_the_win__cd0af330.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Sentence 1: The door was locked. Sentence 2: The man climbed in through the window.\nOutput: Unlock the door.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_190842__f1__Input_Sentence_1_The_door_was_locked._Se__8414b66d.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The sentence is incomplete and requires additional text to be mapped to Output. Please provide a complete sentence for me to generate the output.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_190906__f1__Input_The_sentence_is_incomplete_and_req__585521f5.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The power was out for days.\n\nInput: The family went to the beach.\nOutput: The air conditioner broke.\nInput: George plugged the laptop charger in.\nOutput: The laptop ran out of battery.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_190954__f1__Input_The_man_climbed_in_through_the_win__8860da00.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The power was out for days.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191012__f1__Input_The_man_climbed_in_through_the_win__dd815835.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The man climbed in through the window.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man who was walking on the street opened his umbrella. Sentence 2: The woman who was walking on the street opened her umbrella.\nOutput: The man who was walking on the street opened his umbrella. Sentence 2: The woman who was walking on the']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191120__f1__Input_The_man_who_was_walking_on_the_str__e260ee78.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The man climbed in through the window.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The power was out for days.\n\nInput: The family went to the beach.\nOutput: The air conditioner broke.\nInput: The meat spoiled.\nOutput: The power was out for days.\nInput: The laptop']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191228__f1__Input_The_man_climbed_in_through_the_win__74496c27.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The curtains were opened.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191247__f1__Input_The_man_climbed_in_through_the_win__d8e96548.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The door was locked.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191305__f1__Input_The_man_climbed_in_through_the_win__dd294b08.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The man was out for days.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191323__f1__Input_The_man_climbed_in_through_the_win__6c8c8770.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window. Output: The door was locked.\n\nInput: The meat spoiled. Output: The power was out for days.\nInput: The family went to the beach. Output: The air conditioner broke.\nInput: The laptop ran out of battery.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191411__f1__Input_The_man_climbed_in_through_the_win__014b4313.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The door was locked.\nOutput: The man climbed in through the window.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191429__f1__Input_The_door_was_locked._Output_The_ma__fd752443.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: Sentence 1: The door was locked. Sentence 2: The man climbed in through the window.\nOutput: The door was locked.\n\nInput: Sentence 1: The meat spoiled. Sentence 2: The power was out for days.\nOutput: The']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191516__f1__Input_Sentence_1_The_door_was_locked._Se__d316b224.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The man climbed in through the window.\nInput: The meat spoiled. The power was out for days.\nOutput: The power was out for days.\nInput: The family went to the beach. The air conditioner broke.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191604__f1__Input_The_man_climbed_in_through_the_win__77b1b2f0.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The door was locked.\nOutput: The door was locked.\nInput: The man climbed in through the window.\nOutput: The man climbed in through the window.\nInput: The power was out for days.\nOutput: The power was out for days.\nInput: The family']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191652__f1__Input_The_door_was_locked._Output_The_do__7e5cef3f.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man entered the room. Sentence 2: The curtains were opened. Output: The man entered the room.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191716__f1__Input_The_man_entered_the_room._Sentence__0fd47a11.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The door was locked.\nOutput: The man climbed in through the window.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The man climbed in through the window.\nOutput: The power was out for days.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Instruction: ['Input: The door was locked. Sentence 2: The man climbed in through the window. Output: The door was locked.\nInput: The meat spoiled. Sentence 2: The power was out for days. Output: The power was out for days.\nInput: The family went to']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191840__f1__Input_The_door_was_locked._Sentence_2_Th__fce39fef.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Best initial point: 0.000
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.015}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][19:18:41] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[19:18:41] INFO [PROFILE] GP fit: 0.343s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:18:41] INFO Iter 0 best_value=0.00000 gp_loss=117.85727
+[19:18:42] INFO [PROFILE] Acquisition: 0.845s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[19:19:17] INFO [PROFILE] LLM eval candidate: 35.132s
+[19:19:17] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:36<02:25, 36.33s/it][19:19:17] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[19:19:17] INFO [PROFILE] GP fit: 0.343s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:19:17] INFO Iter 1 best_value=0.00000 gp_loss=117.85727
+[19:19:18] INFO [PROFILE] Acquisition: 0.674s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[19:19:35] INFO [PROFILE] LLM eval candidate: 16.936s
+[19:19:35] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:54<01:16, 25.53s/it][19:19:35] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[19:19:35] INFO [PROFILE] GP fit: 0.336s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:19:35] INFO Iter 2 best_value=0.00000 gp_loss=117.85727
+[19:19:36] INFO [PROFILE] Acquisition: 0.697s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[19:19:55] INFO [PROFILE] LLM eval candidate: 19.025s
+[19:19:55] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:14<00:46, 23.03s/it][19:19:55] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[19:19:55] INFO [PROFILE] GP fit: 0.323s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:19:55] INFO Iter 3 best_value=0.00000 gp_loss=117.85726
+[19:19:56] INFO [PROFILE] Acquisition: 0.710s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[19:20:11] INFO [PROFILE] LLM eval candidate: 14.888s
+[19:20:11] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [01:30<00:20, 20.23s/it][19:20:11] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+D:\Py\LLM test\run_instructzero.py:780: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1839.)
+  col_std = S.std(dim=0, keepdim=True).clamp_min(1e-3)
+[19:20:11] INFO [PROFILE] GP fit: 0.293s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[19:20:11] INFO Iter 4 best_value=0.00000 gp_loss=117.85726
+[19:20:12] INFO [PROFILE] Acquisition: 0.664s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\distributions\multivariate_normal.py:376: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-10.
+  warnings.warn(
+[19:20:28] INFO [PROFILE] LLM eval candidate: 15.585s
+[19:20:28] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [01:46<00:00, 18.90s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [01:46<00:00, 21.37s/it]
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.0185}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: Sentence 1: The [object Object] was [action verb]. Sentence 2: The [object Object] [action verb].\nOutput: The [object Object] [action verb].']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191917__f1__Input_Sentence_1_The__object_Object__was__5f9ebd3e.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.022}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: "The door was locked."\nOutput: "The door was locked."']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191935__f1__Input_The_door_was_locked._Output_The_do__3a4f9360.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.025500000000000002}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: The man climbed through the window.\nOutput: The power was out for days.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_191955__f1__Input_The_man_climbed_through_the_window__1db30b68.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.028999999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: The door was locked. Output: Unlock the door.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_192011__f1__Input_The_door_was_locked._Output_Unlock__146d8e59.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.032499999999999994}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: The door was locked.\nOutput: Unlock the door.']
+Using metric "f1" for task "cause_and_effect"...
+[PRED-DUMP] wrote 0 rows to logs/preds\cause_and_effect_20251016_192028__f1__Input_The_door_was_locked._Output_Unlock__146d8e59.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: The door was locked.\nOutput: Unlock the door.']
+The final instruction set is:
+{'Input: The man who was walking on the street opened his umbrella. Sentence 2: The man climbed in through the window. Output: The man who was walking on the street opened his umbrella. Input: The man who was walking on the street opened his umbrella. Output:': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Sentence 1: The [object Object] was [object Object]. Sentence 2: The [object Object] happened.\nOutput: The [object Object] happened.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The man climbed in through the window.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window. Output: The power was out for days.\n\n\nInput: The family went to the beach. Output: The air conditioner broke.\n\n\nInput: A watermelon exploded. Output: A man was covered in sticky red go': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The man climbed in through the window.\nInput: The family went to the beach.\nOutput: The family went to the beach.\nInput: The power was out for days.\nOutput: The power was out for days.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Sentence 1: The door was locked. Sentence 2: The man climbed in through the window.\nOutput: Unlock the door.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The sentence is incomplete and requires additional text to be mapped to Output. Please provide a complete sentence for me to generate the output.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The power was out for days.\n\nInput: The family went to the beach.\nOutput: The air conditioner broke.\nInput: George plugged the laptop charger in.\nOutput: The laptop ran out of battery.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The power was out for days.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man who was walking on the street opened his umbrella. Sentence 2: The woman who was walking on the street opened her umbrella.\nOutput: The man who was walking on the street opened his umbrella. Sentence 2: The woman who was walking on the': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The power was out for days.\n\nInput: The family went to the beach.\nOutput: The air conditioner broke.\nInput: The meat spoiled.\nOutput: The power was out for days.\nInput: The laptop': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The curtains were opened.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The door was locked.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The man was out for days.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window. Output: The door was locked.\n\nInput: The meat spoiled. Output: The power was out for days.\nInput: The family went to the beach. Output: The air conditioner broke.\nInput: The laptop ran out of battery.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The door was locked.\nOutput: The man climbed in through the window.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Sentence 1: The door was locked. Sentence 2: The man climbed in through the window.\nOutput: The door was locked.\n\nInput: Sentence 1: The meat spoiled. Sentence 2: The power was out for days.\nOutput: The': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed in through the window.\nOutput: The man climbed in through the window.\nInput: The meat spoiled. The power was out for days.\nOutput: The power was out for days.\nInput: The family went to the beach. The air conditioner broke.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The door was locked.\nOutput: The door was locked.\nInput: The man climbed in through the window.\nOutput: The man climbed in through the window.\nInput: The power was out for days.\nOutput: The power was out for days.\nInput: The family': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man entered the room. Sentence 2: The curtains were opened. Output: The man entered the room.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The door was locked. Sentence 2: The man climbed in through the window. Output: The door was locked.\nInput: The meat spoiled. Sentence 2: The power was out for days. Output: The power was out for days.\nInput: The family went to': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: Sentence 1: The [object Object] was [action verb]. Sentence 2: The [object Object] [action verb].\nOutput: The [object Object] [action verb].': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: "The door was locked."\nOutput: "The door was locked."': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The man climbed through the window.\nOutput: The power was out for days.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The door was locked. Output: Unlock the door.': (0.0, array([], shape=(1, 0), dtype=float64)), 'Input: The door was locked.\nOutput: Unlock the door.': (0.0, array([], shape=(1, 0), dtype=float64))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "f1" for task "cause_and_effect"...
+[PRED 0] gold=['The bread was dry.'] | pred='make french toast.' | score=0.0000
+[PRED 1] gold=['It started raining.'] | pred='turn on the wipers.' | score=0.0000
+[PRED 2] gold=['The basketball player was shoved.'] | pred='take the free throw.' | score=0.2222
+[PRED 3] gold=['Alice ate the last cookie.'] | pred='steal the cookie.' | score=0.5000
+[PRED 4] gold=['My clothes got dirty.'] | pred='wash the clothes.' | score=0.2857
+[PRED-DUMP] wrote 25 rows to logs/preds\cause_and_effect_20251016_192048__f1__Input_The_door_was_locked._Output_Unlock__146d8e59.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.2584877344877345

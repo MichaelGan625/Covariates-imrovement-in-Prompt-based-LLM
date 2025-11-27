@@ -1,0 +1,277 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:15<00:15, 15.95s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:24<00:00, 11.68s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:24<00:00, 12.32s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: The instruction was given by the output.\n\nOutput: The output was given by the instruction.\nInput: The instruction was received by the output.\nOutput: The output was received by the instruction.\nInput: The instruction was sent by the output.\nOutput: The output was sent by the']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The lawyer was recognized by the manager.'] | pred='the lawyer was recognized by the manager.' | score=1.0000
+[PRED 1] gold=['The bankers were advised by the actor.'] | pred='the bankers were advised by the actor.' | score=1.0000
+[PRED 2] gold=['The senators were advised by the doctors.'] | pred='the senators were advised by the doctors.' | score=1.0000
+[PRED 3] gold=['The doctor was stopped by the students.'] | pred='the doctor was stopped by the students.' | score=1.0000
+[PRED 4] gold=['The manager was admired by the tourists.'] | pred='the manager was admired by the tourists.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_130523__em__Input_The_instruction_was_given_by_the_o__95cb5374.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: Advised by the banker.']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The actor was encouraged by the president.'] | pred='encouraged by the president.' | score=0.0000
+[PRED 1] gold=['The actors were thanked by the president.'] | pred='thanked by the president.' | score=0.0000
+[PRED 2] gold=['The secretary was avoided by the actors.'] | pred='avoided by the actors.' | score=0.0000
+[PRED 3] gold=['The athletes were encouraged by the actor.'] | pred='encouraged by the actor.' | score=0.0000
+[PRED 4] gold=['The authors were encouraged by the secretaries.'] | pred='encouraged by the secretaries.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_130607__em__Input_The_banker_advised_the_author._Out__c2d19417.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker recommended the tourists.\nOutput: The tourists were recommended by the banker.']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The secretary was recognized by the athlete.'] | pred='the secretary was recognized by the athlete.' | score=1.0000
+[PRED 1] gold=['The athlete was thanked by the banker.'] | pred='the athlete was thanked by the banker.' | score=1.0000
+[PRED 2] gold=['The authors were encouraged by the secretary.'] | pred='the authors were encouraged by the secretary.' | score=1.0000
+[PRED 3] gold=['The artists were mentioned by the doctors.'] | pred='the artists were mentioned by the doctors.' | score=1.0000
+[PRED 4] gold=['The author was advised by the doctors.'] | pred='the author was advised by the doctors.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_130657__em__Input_The_banker_recommended_the_tourist__0436ce68.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists.']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The bankers were stopped by the secretaries.'] | pred='the bankers were stopped by the secretaries.' | score=1.0000
+[PRED 1] gold=['The scientist was stopped by the author.'] | pred='the scientist was stopped by the author.' | score=1.0000
+[PRED 2] gold=['The athletes were thanked by the scientists.'] | pred='the athletes were thanked by the scientists.' | score=1.0000
+[PRED 3] gold=['The actor was believed by the author.'] | pred='the actor was believed by the author.' | score=1.0000
+[PRED 4] gold=['The tourists were thanked by the professor.'] | pred='the tourists were thanked by the professor.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_130832__em__Input_The_banker_advised_the_author._Out__a2ab8c48.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists.']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The judge was recommended by the doctors.'] | pred='the judge was recommended by the doctors.' | score=1.0000
+[PRED 1] gold=['The lawyer was thanked by the scientists.'] | pred='the lawyer was thanked by the scientists.' | score=1.0000
+[PRED 2] gold=['The managers were helped by the professors.'] | pred='the managers were helped by the professors.' | score=1.0000
+[PRED 3] gold=['The scientists were contacted by the artists.'] | pred='the scientists were contacted by the artists.' | score=1.0000
+[PRED 4] gold=['The doctors were recognized by the manager.'] | pred='the doctors were recognized by the manager.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_131003__em__Input_The_banker_advised_the_author._Out__160ca74f.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: Advised by the banker.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\n\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The actor was believed by the managers.'] | pred='the actor was believed by the managers.' | score=1.0000
+[PRED 1] gold=['The judges were believed by the doctors.'] | pred='the judges were believed by the doctors.' | score=1.0000
+[PRED 2] gold=['The president was believed by the secretary.'] | pred='the president was believed by the secretary.' | score=1.0000
+[PRED 3] gold=['The artists were supported by the senators.'] | pred='the artists were supported by the senators.' | score=1.0000
+[PRED 4] gold=['The scientist was recognized by the professor.'] | pred='the scientist was recognized by the professor.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_131250__em__Input_The_banker_advised_the_author._Out__b60c62b4.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker recommended the tourists.\nOutput: The tourists were recommended by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The judge was mentioned by the scientist.'] | pred='the judge was mentioned by the scientist.' | score=1.0000
+[PRED 1] gold=['The tourist was avoided by the actor.'] | pred='the tourist was avoided by the actor.' | score=1.0000
+[PRED 2] gold=['The secretary was supported by the author.'] | pred='the secretary was supported by the author.' | score=1.0000
+[PRED 3] gold=['The professor was avoided by the lawyer.'] | pred='the professor was avoided by the lawyer.' | score=1.0000
+[PRED 4] gold=['The secretaries were supported by the athlete.'] | pred='the secretaries were supported by the athlete.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_131405__em__Input_The_banker_advised_the_author._Out__8bb1e654.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The instruction was only the sentence.\nOutput: The sentence was only the instruction.']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The senators were supported by the student.'] | pred='the senators supported the student.' | score=1.0000
+[PRED 1] gold=['The scientists were stopped by the doctors.'] | pred='the scientists stopped the doctors.' | score=1.0000
+[PRED 2] gold=['The doctor was stopped by the managers.'] | pred='the doctor stopped the managers.' | score=1.0000
+[PRED 3] gold=['The lawyers were admired by the senator.'] | pred='the lawyers admired the senator.' | score=1.0000
+[PRED 4] gold=['The secretary was believed by the author.'] | pred='the secretary believed the author.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_131444__em__Input_The_instruction_was_only_the_sente__5e50889d.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: Advised by the banker.']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The banker recommended the tourists.\nOutput: The tourists were recommended by']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The secretary was supported by the doctor.'] | pred='the secretary was supported by the doctor.' | score=1.0000
+[PRED 1] gold=['The actors were helped by the professor.'] | pred='the actors were helped by the professor.' | score=1.0000
+[PRED 2] gold=['The professors were believed by the president.'] | pred='the professors were believed by the president.' | score=1.0000
+[PRED 3] gold=['The president was helped by the tourist.'] | pred='the president was helped by the tourist.' | score=1.0000
+[PRED 4] gold=['The professors were encouraged by the lawyers.'] | pred='the professors were encouraged by the lawyers.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_131622__em__Input_The_banker_advised_the_author._Out__834b4f91.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\n\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\n\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\n\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+Best initial point: 1.000
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 3.0, 'alpha_cov': 0.015}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][13:24:14] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[13:24:14] INFO [PROFILE] GP fit: 0.388s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[13:24:14] INFO Iter 0 best_value=0.36181 gp_loss=-1561.09825
+[13:24:16] INFO [PROFILE] Acquisition: 1.271s
+[13:24:37] INFO [PROFILE] LLM eval candidate: 21.481s
+[13:24:37] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:23<01:32, 23.16s/it][13:24:37] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[13:24:37] INFO [PROFILE] GP fit: 0.334s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[13:24:37] INFO Iter 1 best_value=0.36181 gp_loss=-1386.45107
+[13:24:39] INFO [PROFILE] Acquisition: 1.129s
+[13:25:17] INFO [PROFILE] LLM eval candidate: 38.694s
+[13:25:17] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [01:03<01:39, 33.17s/it][13:25:17] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[13:25:18] INFO [PROFILE] GP fit: 0.419s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[13:25:18] INFO Iter 2 best_value=0.36181 gp_loss=-1247.47395
+[13:25:19] INFO [PROFILE] Acquisition: 1.181s
+[13:25:41] INFO [PROFILE] LLM eval candidate: 22.006s
+[13:25:41] INFO Best value so far: 1.00000
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:26<00:57, 28.81s/it][13:25:41] INFO [Iteration 3] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[13:25:42] INFO [PROFILE] GP fit: 1.175s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[13:25:42] INFO Iter 3 best_value=0.40047 gp_loss=-1798.67139
+[13:25:43] INFO [PROFILE] Acquisition: 0.696s
+[13:26:04] INFO [PROFILE] LLM eval candidate: 21.360s
+[13:26:04] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [01:50<00:26, 26.61s/it][13:26:04] INFO [Iteration 4] X_train torch.Size([26, 30]), y_train torch.Size([26, 1])
+D:\Py\LLM test\run_instructzero.py:165: InputDataWarning: The model inputs are of type torch.float32. It is strongly recommended to use double precision in BoTorch, as this improves both precision and stability and can help avoid numerical errors. See https://github.com/pytorch/botorch/discussions/1444
+  gp_model = _SingleTaskGP(X_train, y_train, covar_module=covar_module).to(device)
+[13:26:05] INFO [PROFILE] GP fit: 0.692s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[13:26:05] INFO Iter 4 best_value=0.40047 gp_loss=-1798.67139
+[13:26:06] INFO [PROFILE] Acquisition: 0.679s
+[13:26:26] INFO [PROFILE] LLM eval candidate: 20.561s
+[13:26:26] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:12<00:00, 24.93s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:12<00:00, 26.43s/it]
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 3.0, 'alpha_cov': 0.0185}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 3.0, 'alpha_cov': 0.022}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: The author advised the banker.\nOutput: The banker was advised by the author.']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The professor was mentioned by the president.'] | pred='the professor was mentioned by the president.' | score=1.0000
+[PRED 1] gold=['The presidents were avoided by the senators.'] | pred='the presidents were avoided by the senators.' | score=1.0000
+[PRED 2] gold=['The secretary was believed by the author.'] | pred='the secretary was believed by the author.' | score=1.0000
+[PRED 3] gold=['The professors were recognized by the student.'] | pred='the professors were recognized by the student.' | score=1.0000
+[PRED 4] gold=['The doctors were avoided by the author.'] | pred='the doctors were avoided by the author.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_132517__em__Input_The_author_advised_the_banker._Out__8a6aac40.tsv
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 3.0, 'alpha_cov': 0.025500000000000002}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['ONE.']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The manager was recommended by the doctors.'] | pred='one.' | score=0.0000
+[PRED 1] gold=['The students were avoided by the scientists.'] | pred='the scientists avoided the students.' | score=1.0000
+[PRED 2] gold=['The professor was introduced by the judge.'] | pred='one.' | score=0.0000
+[PRED 3] gold=['The doctor was thanked by the actors.'] | pred='the actors thanked the doctor.' | score=1.0000
+[PRED 4] gold=['The secretary was recommended by the athlete.'] | pred='one.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_132541__em__ONE.__c55b1cf3.tsv
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 3] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -1.2838e-07
+Instruction: ['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+Dev loss: 1.0. Dev perf: 1.0. Best dev perf: 1.0
+********* Done *********
+[kernel] covariate hooks failed (ignored): operands could not be broadcast together with shapes (25,12) (26,1) 
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+[WARNING][Iteration 4] custom kernel GP fit failed, falling back to baseline. Error: The size of tensor a (26) must match the size of tensor b (25) at non-singleton dimension 2
+[baseline] X_train shape: torch.Size([26, 30]), dtype: torch.float32, device: cuda:0
+[baseline] y_train shape: torch.Size([26, 1]), std: 1.0000e+00, mean: -1.2838e-07
+Instruction: ['ONE']
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The senator was advised by the lawyers.'] | pred='the senator was advised by the lawyers.' | score=1.0000
+[PRED 1] gold=['The secretary was supported by the author.'] | pred='the author supported the secretary.' | score=1.0000
+[PRED 2] gold=['The scientist was stopped by the actors.'] | pred='the scientist was stopped by the actors.' | score=1.0000
+[PRED 3] gold=['The scientist was introduced by the artist.'] | pred='the scientist was introduced by the artist.' | score=1.0000
+[PRED 4] gold=['The doctors were advised by the judges.'] | pred='the doctors were advised by the judges.' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\active_to_passive_20251017_132626__em__ONE__bc21e648.tsv
+Dev loss: 0.95. Dev perf: 0.95. Best dev perf: 1.0
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: The banker advised the author.\nOutput: The author was advised by the banker.']
+The final instruction set is:
+{'Input: The instruction was given by the output.\n\nOutput: The output was given by the instruction.\nInput: The instruction was received by the output.\nOutput: The output was received by the instruction.\nInput: The instruction was sent by the output.\nOutput: The output was sent by the': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The banker advised the author.\nOutput: Advised by the banker.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: The banker recommended the tourists.\nOutput: The tourists were recommended by the banker.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The banker advised the author.\nOutput: The author was advised by the banker.\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\n\nInput: The artists avoided the secretary.\nOutput: The secretary was avoided by the artists': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The banker advised the author.\nOutput: The author was advised by the banker.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The instruction was only the sentence.\nOutput: The sentence was only the instruction.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The banker advised the author.\nOutput: The author was advised by the banker.\n\nInput: The judge introduced the president.\nOutput: The president was introduced by the judge.\nInput: The banker recommended the tourists.\nOutput: The tourists were recommended by': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'Input: The author advised the banker.\nOutput: The banker was advised by the author.': (1.0, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.]])), 'ONE.': (0.55, array([[0., 1., 0., 1., 0., 0., 1., 1., 0., 1., 1., 1., 0., 1., 0., 0.,
+        0., 1., 1., 1.]])), 'ONE': (0.95, array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        0., 1., 1., 1.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "active_to_passive"...
+[PRED 0] gold=['The scientists were avoided by the manager.'] | pred='the scientists were avoided by the manager.' | score=1.0000
+[PRED 1] gold=['The manager was stopped by the authors.'] | pred='the manager was stopped by the authors.' | score=1.0000
+[PRED 2] gold=['The professor was recognized by the actor.'] | pred='the professor was recognized by the actor.' | score=1.0000
+[PRED 3] gold=['The managers were admired by the artist.'] | pred='the managers were admired by the artist.' | score=1.0000
+[PRED 4] gold=['The tourists were thanked by the professors.'] | pred='the tourists were thanked by the professors.' | score=1.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\active_to_passive_20251017_132747__em__Input_The_banker_advised_the_author._Out__8bb1e654.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 1.0

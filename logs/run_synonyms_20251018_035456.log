@@ -1,0 +1,299 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:11<00:11, 11.11s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.71s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.92s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['source'] | pred='instructional' | score=0.0000
+[PRED 1] gold=['fall'] | pred='speed' | score=0.0000
+[PRED 2] gold=['priority'] | pred='priority' | score=1.0000
+[PRED 3] gold=['opposite'] | pred='reverse' | score=0.0000
+[PRED 4] gold=['see'] | pred='observe' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_035628__exact_or_contains__Input_imperative_Output_instructional_In__992e9cac.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.15
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['technique'] | pred='skill' | score=0.0000
+[PRED 1] gold=['god'] | pred='god' | score=1.0000
+[PRED 2] gold=['irrigate'] | pred='liquid' | score=0.0000
+[PRED 3] gold=['low'] | pred='damaged' | score=0.0000
+[PRED 4] gold=['supposition'] | pred='presumption' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_035652__exact_or_contains__Input_propose_Output_offer__5c6d3340.tsv
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: healthy\nOutput: sound\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['assembly'] | pred='manufacture' | score=0.0000
+[PRED 1] gold=['little'] | pred='tinkering' | score=0.0000
+[PRED 2] gold=['sail'] | pred='clean' | score=0.0000
+[PRED 3] gold=['secret'] | pred='secret' | score=1.0000
+[PRED 4] gold=['swift'] | pred='armada' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_035753__exact_or_contains__Input_healthy_Output_sound_Input_probe_O__08042e8a.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crim']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['fault'] | pred='flaw' | score=0.0000
+[PRED 1] gold=['regard'] | pred='stare' | score=0.0000
+[PRED 2] gold=['life'] | pred='vitality' | score=0.0000
+[PRED 3] gold=['look'] | pred='anticipate' | score=0.0000
+[PRED 4] gold=['book'] | pred='writing' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_035853__exact_or_contains__Input_propose_Output_offer_Input_probe_O__370cc8a4.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: map\nOutput: territory\nInput: chart\nOutput: graph\nInput: diagram\nOutput: picture\nInput: schedule\nOutput: timetable\nInput: plan\nOutput: agenda\nInput: outline\nOutput: roadmap\nInput: milestone\nOutput: roundabout\nInput:']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['instead'] | pred='prefer' | score=0.0000
+[PRED 1] gold=['audience'] | pred='trial' | score=0.0000
+[PRED 2] gold=['range'] | pred='extent' | score=0.0000
+[PRED 3] gold=['ever'] | pred='constant' | score=0.0000
+[PRED 4] gold=['move'] | pred='inspire' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_035952__exact_or_contains__Input_map_Output_territory_Input_chart_O__80cd4123.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['crossing'] | pred='car' | score=0.0000
+[PRED 1] gold=['discharge'] | pred='offer\ninvestigation\nsound\nsight\nr\nhell\nordinance' | score=0.0000
+[PRED 2] gold=['draw'] | pred='- withdraw: retract' | score=0.0000
+[PRED 3] gold=['discourse'] | pred='offer\ninvestigation\nsound\nsight\nr\nhell\nordinance' | score=0.0000
+[PRED 4] gold=['loose'] | pred='offer\ninvestigation\nsound\nsight\nr\nhell\nordinance' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_040053__exact_or_contains__Input_propose_Output_offer_Input_probe_O__47d99322.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: instruction\nOutput: investigation']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['0'] | pred='investigation' | score=0.0000
+[PRED 1] gold=['repetition'] | pred='investigation' | score=0.0000
+[PRED 2] gold=['temperament'] | pred='disposal' | score=0.0000
+[PRED 3] gold=['draw'] | pred='retrieve' | score=0.0000
+[PRED 4] gold=['sound'] | pred='weighty' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_040115__exact_or_contains__Input_instruction_Output_investigation__bb9070d5.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: "Propose"\nOutput: "Offer"\nInput: "Probe"\nOutput: "Investigation"\nInput: "Healthy"\nOutput: "Sound"\nInput: "Spy"\nOutput: "Sight"\nInput: "Radius"\nOutput']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['enjoy'] | pred='offer\ninvestigation\nsound\nsight\nextent' | score=0.0000
+[PRED 1] gold=['organic'] | pred='elementary' | score=0.0000
+[PRED 2] gold=['game'] | pred='scope' | score=0.0000
+[PRED 3] gold=['deal'] | pred='range' | score=0.0000
+[PRED 4] gold=['bottom'] | pred='offer\ninvestigation\nsound\nsight' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_040217__exact_or_contains__Input_Propose_Output_Offer_Input_Probe_O__467d463e.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: instruction\nOutput: investigation\n\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crimson\nOutput: red\nInput:']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['have'] | pred='investigation' | score=0.0000
+[PRED 1] gold=['neural'] | pred='examination' | score=0.0000
+[PRED 2] gold=['machine'] | pred='vehicle' | score=0.0000
+[PRED 3] gold=['force'] | pred='investigation' | score=0.0000
+[PRED 4] gold=['joint'] | pred='investigation\nsound\neye\nr\nhell\nordinance\nred' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_040318__exact_or_contains__Input_instruction_Output_investigation_I__fa1b0949.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: probe\nOutput: investigation\n\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crimson\nOutput: red\nInput']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['side'] | pred='incline' | score=0.0000
+[PRED 1] gold=['drink'] | pred='gulp' | score=0.0000
+[PRED 2] gold=['growth'] | pred='appearance' | score=0.0000
+[PRED 3] gold=['discharge'] | pred='vacant' | score=0.0000
+[PRED 4] gold=['independent'] | pred='independent' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_040500__exact_or_contains__Input_probe_Output_investigation_Input_h__65d4b107.tsv
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer']
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crim']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['capable'] | pred='capable' | score=1.0000
+[PRED 1] gold=['develop'] | pred='car' | score=0.0000
+[PRED 2] gold=['frankly'] | pred='truthfully' | score=0.0000
+[PRED 3] gold=['glimpse'] | pred='glance' | score=0.0000
+[PRED 4] gold=['grey'] | pred='grey' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_040901__exact_or_contains__Input_ONE_Output_ONE_Input_ONE_Output_ON__001ed4c1.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crim']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\n\nInput: healthy\nOutput: sound\n\nInput: spy\nOutput: sight\n\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['press'] | pred='campaign' | score=0.0000
+[PRED 1] gold=['ab'] | pred='belly' | score=0.0000
+[PRED 2] gold=['scheme'] | pred='summary' | score=0.0000
+[PRED 3] gold=['9'] | pred='nine' | score=0.0000
+[PRED 4] gold=['western'] | pred='west' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_041045__exact_or_contains__Input_propose_Output_offer_Input_probe_O__46cfc210.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crim']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crim']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crim']
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:']
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Best initial point: 0.200
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][04:15:08] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:15:08] INFO [PROFILE] GP fit: 0.220s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:15:09] INFO Iter 0 best_value=1.86517 gp_loss=-442.64379
+[04:15:09] INFO [PROFILE] Acquisition: 0.836s
+[04:15:32] INFO [PROFILE] LLM eval candidate: 22.427s
+[04:15:32] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:23<01:33, 23.50s/it][04:15:32] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:15:32] INFO [PROFILE] GP fit: 0.469s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:15:32] INFO Iter 1 best_value=1.86517 gp_loss=-512.60568
+[04:15:33] INFO [PROFILE] Acquisition: 0.790s
+[04:15:56] INFO [PROFILE] LLM eval candidate: 22.596s
+[04:15:56] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:47<01:11, 23.71s/it][04:15:56] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:15:56] INFO [PROFILE] GP fit: 0.378s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:15:56] INFO Iter 2 best_value=1.86517 gp_loss=-225.34108
+[04:15:57] INFO [PROFILE] Acquisition: 0.720s
+[04:16:04] INFO [PROFILE] LLM eval candidate: 6.930s
+[04:16:04] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [00:55<00:33, 16.56s/it][04:16:04] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:16:04] INFO [PROFILE] GP fit: 0.244s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:16:04] INFO Iter 3 best_value=1.86517 gp_loss=-252.53257
+[04:16:05] INFO [PROFILE] Acquisition: 0.710s
+[04:17:05] INFO [PROFILE] LLM eval candidate: 59.892s
+[04:17:05] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [01:56<00:34, 34.05s/it][04:17:05] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[04:17:05] INFO [PROFILE] GP fit: 0.442s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[04:17:05] INFO Iter 4 best_value=1.86517 gp_loss=-279.11911
+[04:17:06] INFO [PROFILE] Acquisition: 0.722s
+[04:18:06] INFO [PROFILE] LLM eval candidate: 60.470s
+[04:18:06] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:57<00:00, 44.00s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:57<00:00, 35.58s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: command\nOutput: response']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['saving'] | pred='conservation' | score=0.0000
+[PRED 1] gold=['manly'] | pred='man' | score=0.0000
+[PRED 2] gold=['charge'] | pred='rip' | score=0.0000
+[PRED 3] gold=['stomach'] | pred='belly' | score=0.0000
+[PRED 4] gold=['round'] | pred='assault' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_041532__exact_or_contains__Input_command_Output_response__e99eec75.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.2
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.3199999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: probe']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['good'] | pred='skilled' | score=0.0000
+[PRED 1] gold=['false'] | pred='presumed' | score=0.0000
+[PRED 2] gold=['plane'] | pred='jet' | score=0.0000
+[PRED 3] gold=['favor'] | pred='advantage' | score=0.0000
+[PRED 4] gold=['provincial'] | pred='commoner' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_041556__exact_or_contains__Input_probe__720895a8.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.51}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: propose\nOutput: offer']
+Dev loss: 0.2. Dev perf: 0.2. Best dev perf: 0.2
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.58}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: a command\nOutput: a message\n\nInput: a request\nOutput: a response\n\nInput: a proposal\nOutput: a solution\n\nInput: a plan\nOutput: a strategy\n\nInput: a proposal\nOutput: a response\n\nInput: a request\nOutput: a message']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['western'] | pred='westward' | score=0.0000
+[PRED 1] gold=['dear'] | pred='expensive' | score=0.0000
+[PRED 2] gold=['older'] | pred='ancient' | score=0.0000
+[PRED 3] gold=['factor'] | pred='representative' | score=0.0000
+[PRED 4] gold=['complete'] | pred='completed' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_041705__exact_or_contains__Input_a_command_Output_a_message_Input_a__b0917cd4.tsv
+Dev loss: 0.15. Dev perf: 0.15. Best dev perf: 0.2
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.6499999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\n\nInput: healthy\nOutput: sound\n\nInput: spy\nOutput: sight\n\nInput: radius\nOutput: r\n\nInput: sin\nOutput: hell\n\nInput: regulation\nOutput:']
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['standard'] | pred='regulation - control\ncriterion - standard' | score=0.0000
+[PRED 1] gold=['understand'] | pred='rule\n\npity' | score=0.0000
+[PRED 2] gold=['whip'] | pred='offer\ninvestigation\nsound\nsight\nr\nhell' | score=0.0000
+[PRED 3] gold=['sum'] | pred='offer\ninvestigation\nwell\nview\nr\ndamn' | score=0.0000
+[PRED 4] gold=['getting'] | pred='control\n\ngain' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\synonyms_20251018_041806__exact_or_contains__Input_propose_Output_offer_Input_probe_O__d2456ed9.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.2
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: propose\nOutput: offer']
+The final instruction set is:
+{'Input: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative\nOutput: instructional\nInput: imperative': (0.15, array([[0., 0., 1., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 1.]])), 'Input: propose\nOutput: offer': (0.2, array([[0., 1., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 1., 1.]])), 'Input: healthy\nOutput: sound\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput': (0.05, array([[0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: propose\nOutput: offer\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crim': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 1.]])), 'Input: map\nOutput: territory\nInput: chart\nOutput: graph\nInput: diagram\nOutput: picture\nInput: schedule\nOutput: timetable\nInput: plan\nOutput: agenda\nInput: outline\nOutput: roadmap\nInput: milestone\nOutput: roundabout\nInput:': (0.15, array([[0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 1., 1.,
+        0., 0., 0., 0.]])), 'Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: instruction\nOutput: investigation': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Propose"\nOutput: "Offer"\nInput: "Probe"\nOutput: "Investigation"\nInput: "Healthy"\nOutput: "Sound"\nInput: "Spy"\nOutput: "Sight"\nInput: "Radius"\nOutput': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: instruction\nOutput: investigation\n\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crimson\nOutput: red\nInput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: probe\nOutput: investigation\n\nInput: healthy\nOutput: sound\nInput: spy\nOutput: sight\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance\nInput: crimson\nOutput: red\nInput': (0.2, array([[0., 0., 0., 0., 1., 1., 0., 0., 0., 0., 0., 0., 0., 1., 0., 1.,
+        0., 0., 0., 0.]])), 'Input: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE\n\nInput: ONE\nOutput: ONE': (0.15, array([[1., 0., 0., 0., 1., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\n\nInput: healthy\nOutput: sound\n\nInput: spy\nOutput: sight\n\nInput: radius\nOutput: r\nInput: sin\nOutput: hell\nInput: regulation\nOutput: ordinance': (0.15, array([[0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 1., 0., 0.,
+        0., 0., 1., 0.]])), 'Input: command\nOutput: response': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: probe': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: a command\nOutput: a message\n\nInput: a request\nOutput: a response\n\nInput: a proposal\nOutput: a solution\n\nInput: a plan\nOutput: a strategy\n\nInput: a proposal\nOutput: a response\n\nInput: a request\nOutput: a message': (0.15, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 1., 0.,
+        0., 0., 1., 0.]])), 'Input: propose\nOutput: offer\n\nInput: probe\nOutput: investigation\n\nInput: healthy\nOutput: sound\n\nInput: spy\nOutput: sight\n\nInput: radius\nOutput: r\n\nInput: sin\nOutput: hell\n\nInput: regulation\nOutput:': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "exact_or_contains" for task "synonyms"...
+[PRED 0] gold=['closing'] | pred='finish' | score=0.0000
+[PRED 1] gold=['slow'] | pred='after' | score=0.0000
+[PRED 2] gold=['cant'] | pred='financial' | score=0.0000
+[PRED 3] gold=['discomfited'] | pred='overcome' | score=0.0000
+[PRED 4] gold=['design'] | pred='plan' | score=0.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\synonyms_20251018_041925__exact_or_contains__Input_propose_Output_offer__5c6d3340.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.13

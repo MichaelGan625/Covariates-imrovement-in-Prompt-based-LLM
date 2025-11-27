@@ -1,0 +1,283 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:10<00:10, 10.99s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.78s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:19<00:00,  9.96s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator\nInput: recyrncu\nOutput']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['foreign'] | pred='foreign' | score=1.0000
+[PRED 1] gold=['changed'] | pred='changed' | score=1.0000
+[PRED 2] gold=['murray'] | pred='summary' | score=0.0000
+[PRED 3] gold=['producing'] | pred='producing' | score=1.0000
+[PRED 4] gold=['camp'] | pred='camp' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_065206__em__Input_rceoygr_Output_grocery_Input_lidm___1613c146.tsv
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['disciplines'] | pred='discipline' | score=0.0000
+[PRED 1] gold=['sequences'] | pred='sequence' | score=0.0000
+[PRED 2] gold=['shoulder'] | pred='shoulder' | score=1.0000
+[PRED 3] gold=['substance'] | pred='substance' | score=1.0000
+[PRED 4] gold=['strain'] | pred='strain' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_065229__em__Input_eccpat_Output_accept__cc2a3a00.tsv
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator\nInput: recyrncu\nOutput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: "Write a program that takes inputs and produces outputs."\nOutput: "A program that takes inputs and produces outputs."']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['tuner'] | pred='true' | score=0.0000
+[PRED 1] gold=['elliott'] | pred='lioltet' | score=0.0000
+[PRED 2] gold=['elimination'] | pred='i\'m sorry, i am not able to generate an output based on the input "tmiinaoieln". could you please provide more context or clarify your request?' | score=0.0000
+[PRED 3] gold=['departmental'] | pred='a program that reads input data and generates output.' | score=0.0000
+[PRED 4] gold=['specifically'] | pred='please provide a valid input.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_065348__em__Input_Write_a_program_that_takes_inputs___411e99b8.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['shopper'] | pred='shopped' | score=0.0000
+[PRED 1] gold=['millennium'] | pred='illumine' | score=0.0000
+[PRED 2] gold=['passion'] | pred='oasis' | score=0.0000
+[PRED 3] gold=['amplifier'] | pred='amplifier' | score=1.0000
+[PRED 4] gold=['lovely'] | pred='lovely' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_065457__em__Input_eccpat_Output_accept_Input_rceoygr__e6f90860.tsv
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: loc']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['prices'] | pred='prices' | score=1.0000
+[PRED 1] gold=['blend'] | pred='blend' | score=1.0000
+[PRED 2] gold=['finest'] | pred='infest' | score=0.0000
+[PRED 3] gold=['purple'] | pred='purple' | score=1.0000
+[PRED 4] gold=['kevin'] | pred='kevin' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_065555__em__Input_eccpat_Output_accept_Input_rceoygr__922818ef.tsv
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: loc']
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Write a concise instruction that maps Input to Output above."']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['immune'] | pred='write a concise instruction that maps input to output above.' | score=0.0000
+[PRED 1] gold=['signals'] | pred='rearrange the letters to spell "signal".' | score=0.0000
+[PRED 2] gold=['greenhouse'] | pred='rearrange the letters in the word "ueeshoengr" to form a new word.' | score=0.0000
+[PRED 3] gold=['moment'] | pred='write a concise instruction that maps input to output above.' | score=0.0000
+[PRED 4] gold=['gibson'] | pred='write a concise instruction that maps input to output above.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_065720__em__Input_Write_ONE_concise_instruction_that__e037bfb3.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Use an imperative sentence. Output only the instruction."']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['dining'] | pred='rearrange the letters in the input to form the word "ding."' | score=0.0000
+[PRED 1] gold=['plans'] | pred='rearrange the letters in the word to form a new word.' | score=0.0000
+[PRED 2] gold=['instruments'] | pred='unscramble the letters to form the word "instruments."' | score=0.0000
+[PRED 3] gold=['fruit'] | pred='rearrange the letters to form the word "fruit."' | score=0.0000
+[PRED 4] gold=['casinos'] | pred='rearrange the letters to form the word "casino".' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_065800__em__Input_Write_ONE_concise_instruction_that__75379e75.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: loc']
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: rceoygr\nOutput: grocery']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['herein'] | pred='heirne' | score=0.0000
+[PRED 1] gold=['trash'] | pred='trash' | score=1.0000
+[PRED 2] gold=['top'] | pred='top' | score=1.0000
+[PRED 3] gold=['italian'] | pred='italian' | score=1.0000
+[PRED 4] gold=['wagner'] | pred='wanger' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_065909__em__Input_rceoygr_Output_grocery__754831c9.tsv
+Dev loss: 0.35. Dev perf: 0.35. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: rceoygr\nOutput: grocery\n\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator\nInput: recyrncu']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['accepted'] | pred='accepted' | score=1.0000
+[PRED 1] gold=['graduate'] | pred='guaranteed' | score=0.0000
+[PRED 2] gold=['soap'] | pred='soap' | score=1.0000
+[PRED 3] gold=['examines'] | pred='examines' | score=1.0000
+[PRED 4] gold=['flashers'] | pred='flashers' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_070016__em__Input_rceoygr_Output_grocery_Input_lidm___8fd6b9e1.tsv
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: loc']
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: loc']
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept']
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\n\nInput: lidm\nOutput: mild\n\nInput: ttaes\nOutput: state\n\nInput: contsaire\nOutput: reactions\n\nInput: oatcrlo']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['josh'] | pred='josh' | score=1.0000
+[PRED 1] gold=['merchant'] | pred='merchant' | score=1.0000
+[PRED 2] gold=['spoke'] | pred='spoke' | score=1.0000
+[PRED 3] gold=['dutch'] | pred='ducth' | score=0.0000
+[PRED 4] gold=['miscellaneous'] | pred='miscellaneous' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_070305__em__Input_eccpat_Output_accept_Input_rceoygr__f21d4d73.tsv
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator']
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: loc']
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator']
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator']
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: "eccpat"\nOutput: "accept"\n\nInput: "rceoygr"\nOutput: "grocery"\nInput: "lidm"\nOutput: "mild"\nInput: "ttaes"\nOutput: "state"\nInput: "']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['carrying'] | pred='carrying' | score=1.0000
+[PRED 1] gold=['journalists'] | pred='jailhouse' | score=0.0000
+[PRED 2] gold=['platinum'] | pred='manipulate' | score=0.0000
+[PRED 3] gold=['oriented'] | pred='oriented' | score=1.0000
+[PRED 4] gold=['approximately'] | pred='exemplarity' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_070657__em__Input_eccpat_Output_accept_Input_rceoygr__b90742a2.tsv
+Dev loss: 0.3. Dev perf: 0.3. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: loc']
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+Best initial point: 0.750
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.8999999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][07:07:42] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[07:07:42] INFO [PROFILE] GP fit: 0.220s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:07:42] INFO Iter 0 best_value=1.10962 gp_loss=-346.95655
+[07:07:43] INFO [PROFILE] Acquisition: 0.835s
+[07:08:04] INFO [PROFILE] LLM eval candidate: 21.310s
+[07:08:04] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:22<01:29, 22.38s/it][07:08:04] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[07:08:05] INFO [PROFILE] GP fit: 0.449s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:08:05] INFO Iter 1 best_value=1.10962 gp_loss=-402.82781
+[07:08:06] INFO [PROFILE] Acquisition: 0.734s
+[07:08:50] INFO [PROFILE] LLM eval candidate: 44.227s
+[07:08:50] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [01:07<01:47, 35.93s/it][07:08:50] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[07:08:50] INFO [PROFILE] GP fit: 0.236s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:08:50] INFO Iter 2 best_value=1.10962 gp_loss=-456.73140
+[07:08:51] INFO [PROFILE] Acquisition: 0.704s
+[07:09:52] INFO [PROFILE] LLM eval candidate: 61.127s
+[07:09:52] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [02:09<01:35, 47.87s/it][07:09:52] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[07:09:52] INFO [PROFILE] GP fit: 0.468s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:09:52] INFO Iter 3 best_value=1.10962 gp_loss=-508.95387
+[07:09:53] INFO [PROFILE] Acquisition: 0.697s
+[07:10:03] INFO [PROFILE] LLM eval candidate: 10.343s
+[07:10:03] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [02:21<00:33, 33.52s/it][07:10:03] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[07:10:04] INFO [PROFILE] GP fit: 0.214s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[07:10:04] INFO Iter 4 best_value=1.10962 gp_loss=-215.56058
+[07:10:04] INFO [PROFILE] Acquisition: 0.685s
+[07:10:32] INFO [PROFILE] LLM eval candidate: 27.319s
+[07:10:32] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:49<00:00, 31.61s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:49<00:00, 33.93s/it]
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.1099999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: rceoygr']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['selling'] | pred='gorcery' | score=0.0000
+[PRED 1] gold=['where'] | pred='grocery' | score=0.0000
+[PRED 2] gold=['transformation'] | pred='angry\n\nexplanation: the input "rceoygr" can be rearranged to form the word "angry".' | score=0.0000
+[PRED 3] gold=['glance'] | pred='canyoreg' | score=0.0000
+[PRED 4] gold=['manitoba'] | pred='no output provided.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_070804__em__Input_rceoygr__494f2085.tsv
+Dev loss: 0.05. Dev perf: 0.05. Best dev perf: 0.75
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.3199999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\n\nInput: lidm\nOutput: mild\n\nInput: ttaes\nOutput: state\n\nInput: contsaire\nOutput: reactions\n\nInput: oatcrlo']
+Dev loss: 0.65. Dev perf: 0.65. Best dev perf: 0.75
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.53}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: "eccpat" Output: "accept"\nInput: "rceoygr" Output: "grocery"\nInput: "lidm" Output: "mild"\nInput: "ttes" Output: "state"\nInput: "contsaire" Output:']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['build'] | pred='build' | score=1.0000
+[PRED 1] gold=['dodge'] | pred='dogged' | score=0.0000
+[PRED 2] gold=['lamb'] | pred='lamb' | score=1.0000
+[PRED 3] gold=['decide'] | pred='decide' | score=1.0000
+[PRED 4] gold=['money'] | pred='money' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_070952__em__Input_eccpat_Output_accept_Input_rceoygr__0662b792.tsv
+Dev loss: 0.6. Dev perf: 0.6. Best dev perf: 0.75
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 1.7399999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: rceoygr\nOutput: grocery']
+Dev loss: 0.35. Dev perf: 0.35. Best dev perf: 0.75
+********* Done *********
+[kernel] cov_dominant {'alpha_lat': 0.05, 'alpha_instr': 0.05, 'alpha_cov': 0.6499999999999999}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: <user>\nOutput: <response>']
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['decent'] | pred='please provide a valid input.' | score=0.0000
+[PRED 1] gold=['everywhere'] | pred="i'm sorry, i do not understand the input. can you please provide more context or clarify your request?" | score=0.0000
+[PRED 2] gold=['punk'] | pred='i\'m sorry, i do not understand the input "nukp". can you please provide more context or clarification?' | score=0.0000
+[PRED 3] gold=['forwarding'] | pred="i'm sorry, i do not understand the input. can you please provide more context or clarify your message?" | score=0.0000
+[PRED 4] gold=['cialis'] | pred="i'm sorry, i'm not sure what you're referring to. can you please provide more context or clarify your query?" | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\word_unscrambling_20251018_071032__em__Input_user_Output_response__8bd74b1c.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator\nInput: recyrncu\nOutput']
+The final instruction set is:
+{'Input: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator\nInput: recyrncu\nOutput': (0.75, array([[1., 1., 0., 1., 1., 0., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1.,
+        1., 0., 0., 1.]])), 'Input: eccpat\nOutput: accept': (0.6, array([[0., 0., 1., 1., 1., 0., 1., 1., 1., 0., 1., 1., 0., 0., 1., 1.,
+        1., 1., 0., 0.]])), 'Input: "Write a program that takes inputs and produces outputs."\nOutput: "A program that takes inputs and produces outputs."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: eccpat\nOutput: accept\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator': (0.45, array([[0., 0., 0., 1., 1., 0., 0., 1., 1., 0., 1., 1., 0., 1., 1., 0.,
+        1., 0., 0., 0.]])), 'Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: loc': (0.65, array([[1., 1., 0., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0., 1., 0.,
+        1., 1., 0., 0.]])), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Write a concise instruction that maps Input to Output above."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: "Write ONE concise instruction that maps Input to Output above."\nOutput: "Use an imperative sentence. Output only the instruction."': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: rceoygr\nOutput: grocery': (0.35, array([[0., 1., 1., 1., 0., 0., 0., 0., 1., 0., 0., 1., 0., 0., 0., 0.,
+        0., 1., 1., 0.]])), 'Input: rceoygr\nOutput: grocery\n\nInput: lidm\nOutput: mild\nInput: ttaes\nOutput: state\nInput: contsaire\nOutput: reactions\nInput: oatcrlo\nOutput: locator\nInput: recyrncu': (0.45, array([[1., 0., 1., 1., 1., 0., 0., 1., 0., 0., 1., 1., 0., 0., 0., 0.,
+        1., 1., 0., 0.]])), 'Input: eccpat\nOutput: accept\n\nInput: rceoygr\nOutput: grocery\n\nInput: lidm\nOutput: mild\n\nInput: ttaes\nOutput: state\n\nInput: contsaire\nOutput: reactions\n\nInput: oatcrlo': (0.65, array([[1., 1., 1., 0., 1., 0., 0., 1., 0., 1., 0., 1., 1., 1., 1., 0.,
+        0., 1., 1., 1.]])), 'Input: "eccpat"\nOutput: "accept"\n\nInput: "rceoygr"\nOutput: "grocery"\nInput: "lidm"\nOutput: "mild"\nInput: "ttaes"\nOutput: "state"\nInput: "': (0.3, array([[1., 0., 0., 1., 0., 1., 0., 0., 0., 0., 0., 0., 0., 1., 1., 0.,
+        0., 0., 0., 1.]])), 'Input: rceoygr': (0.05, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        1., 0., 0., 0.]])), 'Input: "eccpat" Output: "accept"\nInput: "rceoygr" Output: "grocery"\nInput: "lidm" Output: "mild"\nInput: "ttes" Output: "state"\nInput: "contsaire" Output:': (0.6, array([[1., 0., 1., 1., 1., 0., 0., 1., 1., 1., 0., 0., 1., 1., 1., 1.,
+        0., 0., 1., 0.]])), 'Input: <user>\nOutput: <response>': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "word_unscrambling"...
+[PRED 0] gold=['psychology'] | pred='psychology' | score=1.0000
+[PRED 1] gold=['branches'] | pred='branches' | score=1.0000
+[PRED 2] gold=['reply'] | pred='reply' | score=1.0000
+[PRED 3] gold=['complement'] | pred='complement' | score=1.0000
+[PRED 4] gold=['former'] | pred='comfort' | score=0.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\word_unscrambling_20251018_071148__em__Input_rceoygr_Output_grocery_Input_lidm___1613c146.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.49

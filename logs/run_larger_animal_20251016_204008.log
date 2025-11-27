@@ -1,0 +1,237 @@
+D:\conda_envs\iz310\lib\site-packages\requests\__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+D:\conda_envs\iz310\lib\site-packages\transformers\utils\hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Using a total of 150 function evaluations
+Set all the seeds to 42 successfully!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|¨€¨€¨€¨€¨€     | 1/2 [00:09<00:09,  9.10s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:17<00:00,  8.53s/it]Loading checkpoint shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 2/2 [00:17<00:00,  8.62s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Shape of initial prompt embedding: torch.Size([1, 3, 4096])
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:']
+Instruction: ['Input: [any animal] Output: [corresponding animal]']
+Instruction: ['Input: wombat, hummingbird\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['wild boar'] | pred='pug' | score=0.0000
+[PRED 1] gold=['tortoise'] | pred='tortoise' | score=1.0000
+[PRED 2] gold=['elephant'] | pred='dachshund' | score=0.0000
+[PRED 3] gold=['bear'] | pred='bear' | score=1.0000
+[PRED 4] gold=['polar bear'] | pred='polar bear' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_204309__em__Input_wombat__hummingbird_Output_wombat___16f93ca3.tsv
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:']
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['capybara'] | pred='hummingbird' | score=0.0000
+[PRED 1] gold=['elk'] | pred='toy poodle' | score=0.0000
+[PRED 2] gold=['chimpanzee'] | pred='chimpanzee' | score=1.0000
+[PRED 3] gold=['bulldog'] | pred='bulldog' | score=1.0000
+[PRED 4] gold=['coyote'] | pred='ferret' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_204512__em__Input_hummingbird__wombat_Output_wombat___749124c0.tsv
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.55
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['human'] | pred='human' | score=1.0000
+[PRED 1] gold=['greyhound'] | pred='greyhound' | score=1.0000
+[PRED 2] gold=['giraffe'] | pred='hummingbird' | score=0.0000
+[PRED 3] gold=['sperm whale'] | pred='sperm whale' | score=1.0000
+[PRED 4] gold=['tuna'] | pred='tuna' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_204616__em__Input_hummingbird__wombat_Output_wombat___92518617.tsv
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 0.7
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['liger'] | pred='lobster' | score=0.0000
+[PRED 1] gold=['killer whale'] | pred='killer whale' | score=1.0000
+[PRED 2] gold=['goldendoodle'] | pred='goldendoodle' | score=1.0000
+[PRED 3] gold=['moose'] | pred='moose' | score=1.0000
+[PRED 4] gold=['beagle'] | pred='beagle' | score=1.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_204721__em__Input_hummingbird__wombat_Output_wombat___098a34ef.tsv
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: wombat, hummingbird\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['cougar'] | pred='poodle' | score=0.0000
+[PRED 1] gold=['bear'] | pred='bear' | score=1.0000
+[PRED 2] gold=['human'] | pred='human' | score=1.0000
+[PRED 3] gold=['chamois'] | pred='toy poodle' | score=0.0000
+[PRED 4] gold=['sea lion'] | pred='dachshund' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_204823__em__Input_wombat__hummingbird_Output_wombat___4a72f5a4.tsv
+Dev loss: 0.45. Dev perf: 0.45. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Instruction: ['ONE concise instruction that maps Input to Output above.\nUse an imperative sentence. Output only the instruction.']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['elk'] | pred='compare the sizes of elk and chihuahua.' | score=0.0000
+[PRED 1] gold=['moose'] | pred='combine the words "dog" and "moose" to create a new word.' | score=0.0000
+[PRED 2] gold=['pug'] | pred='train the pug to swallow.' | score=0.0000
+[PRED 3] gold=['alpaca'] | pred='crossbreed an alpaca and a sheltie.' | score=0.0000
+[PRED 4] gold=['goat'] | pred='combine the words "flea" and "goat" to create a new word.' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_205027__em__ONE_concise_instruction_that_maps_Input___24f86cc8.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['horse'] | pred='chinook' | score=0.0000
+[PRED 1] gold=['rat terrier'] | pred='flea' | score=0.0000
+[PRED 2] gold=['sturgeon'] | pred='chinook' | score=0.0000
+[PRED 3] gold=['lion'] | pred='lion' | score=1.0000
+[PRED 4] gold=['crocodile'] | pred='cat' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_205056__em__Input_hummingbird__wombat_Output_wombat__2acc4f68.tsv
+Dev loss: 0.5. Dev perf: 0.5. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: wombat, hummingbird\nOutput: tiger']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['moose'] | pred='bear' | score=0.0000
+[PRED 1] gold=['grizzly bear'] | pred='whale' | score=0.0000
+[PRED 2] gold=['polar bear'] | pred='lion' | score=0.0000
+[PRED 3] gold=['tortoise'] | pred='bear' | score=0.0000
+[PRED 4] gold=['human'] | pred='wolf' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_205209__em__Input_wombat__hummingbird_Output_tiger__99389ca4.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois']
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois']
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois']
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: wombat, hummingbird\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:']
+Dev loss: 0.55. Dev perf: 0.55. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois']
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois']
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 0.75
+********* Done *********
+Best initial point: 0.750
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 1.0, 'alpha_cov': 0.015}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Bayes iterations:   0%|          | 0/5 [00:00<?, ?it/s][21:00:06] INFO [Iteration 0] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[21:00:07] INFO [PROFILE] GP fit: 0.267s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[21:00:07] INFO Iter 0 best_value=0.91518 gp_loss=-745.09889
+[21:00:07] INFO [PROFILE] Acquisition: 0.802s
+[21:00:19] INFO [PROFILE] LLM eval candidate: 11.799s
+[21:00:19] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  20%|¨€¨€        | 1/5 [00:12<00:51, 12.88s/it][21:00:19] INFO [Iteration 1] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[21:00:19] INFO [PROFILE] GP fit: 0.250s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[21:00:19] INFO Iter 1 best_value=0.91518 gp_loss=-650.54968
+[21:00:20] INFO [PROFILE] Acquisition: 0.677s
+[21:00:32] INFO [PROFILE] LLM eval candidate: 11.737s
+[21:00:32] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  40%|¨€¨€¨€¨€      | 2/5 [00:25<00:38, 12.76s/it][21:00:32] INFO [Iteration 2] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[21:00:32] INFO [PROFILE] GP fit: 0.246s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[21:00:32] INFO Iter 2 best_value=0.91518 gp_loss=-577.94751
+[21:00:33] INFO [PROFILE] Acquisition: 0.679s
+[21:01:19] INFO [PROFILE] LLM eval candidate: 46.363s
+[21:01:19] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  60%|¨€¨€¨€¨€¨€¨€    | 3/5 [01:12<00:57, 28.53s/it][21:01:19] INFO [Iteration 3] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[21:01:19] INFO [PROFILE] GP fit: 0.252s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[21:01:19] INFO Iter 3 best_value=0.91518 gp_loss=-520.36451
+[21:01:20] INFO [PROFILE] Acquisition: 0.718s
+[21:01:50] INFO [PROFILE] LLM eval candidate: 30.304s
+[21:01:50] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations:  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 4/5 [01:44<00:29, 29.62s/it][21:01:50] INFO [Iteration 4] X_train torch.Size([25, 30]), y_train torch.Size([25, 1])
+[21:01:51] INFO [PROFILE] GP fit: 0.430s
+D:\conda_envs\iz310\lib\site-packages\gpytorch\models\exact_gp.py:296: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+[21:01:51] INFO Iter 4 best_value=0.91518 gp_loss=-473.52841
+[21:01:52] INFO [PROFILE] Acquisition: 0.748s
+[21:02:40] INFO [PROFILE] LLM eval candidate: 48.469s
+[21:02:40] INFO Invalid/fallback instruction; skip appending to training set.
+Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:33<00:00, 36.84s/it]Bayes iterations: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 5/5 [02:33<00:00, 30.76s/it]
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 1.0, 'alpha_cov': 0.0185}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat']
+Dev loss: 0.5. Dev perf: 0.5. Best dev perf: 0.75
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 1.0, 'alpha_cov': 0.022}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat']
+Dev loss: 0.5. Dev perf: 0.5. Best dev perf: 0.75
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 1.0, 'alpha_cov': 0.025500000000000002}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois']
+Dev loss: 0.7. Dev perf: 0.7. Best dev perf: 0.75
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 1.0, 'alpha_cov': 0.028999999999999998}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: hummingbird\nOutput: wombat']
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['golden retriever'] | pred='cat' | score=0.0000
+[PRED 1] gold=['donkey'] | pred='wallaby' | score=0.0000
+[PRED 2] gold=['boxer'] | pred='axolotl' | score=0.0000
+[PRED 3] gold=['horse'] | pred='dog, golden retriever' | score=0.0000
+[PRED 4] gold=['golden retriever'] | pred='labrador retriever' | score=0.0000
+[PRED-DUMP] wrote 20 rows to logs/preds\larger_animal_20251016_210150__em__Input_hummingbird_Output_wombat__79d29964.tsv
+Dev loss: 0.0. Dev perf: 0.0. Best dev perf: 0.75
+********* Done *********
+[kernel] original_dominant {'alpha_lat': 0.05, 'alpha_instr': 1.0, 'alpha_cov': 0.032499999999999994}
+Custom kernel sample K shape: torch.Size([3, 3]) has NaN: False
+Instruction: ['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput']
+Dev loss: 0.75. Dev perf: 0.75. Best dev perf: 0.75
+********* Done *********
+Evaluate on test data...
+Best instruction is:
+['Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput']
+The final instruction set is:
+{'Input: wombat, hummingbird\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput': (0.55, array([[0., 1., 0., 1., 1., 1., 1., 1., 0., 1., 1., 0., 0., 1., 0., 0.,
+        1., 0., 1., 0.]])), 'Input: hummingbird, wombat\nOutput: wombat\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput:': (0.55, array([[0., 0., 1., 1., 0., 1., 1., 0., 1., 0., 1., 0., 0., 1., 0., 1.,
+        1., 0., 1., 1.]])), 'Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois': (0.7, array([[1., 1., 0., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0., 1., 1.,
+        1., 1., 0., 0.]])), 'Input: hummingbird, wombat\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\nInput: wildebeest, snail\nOutput: wildebeest\nInput: spider, chamois\nOutput: chamois\nInput': (0.75, array([[0., 1., 1., 1., 1., 0., 1., 0., 0., 1., 1., 1., 1., 1., 0., 1.,
+        1., 1., 1., 1.]])), 'Input: wombat, hummingbird\nOutput: wombat\n\nInput: tiger, hummingbird\nOutput: tiger\n\nInput: wildebeest, snail\nOutput: wildebeest\n\nInput: spider, chamois\nOutput: chamois': (0.45, array([[0., 1., 1., 0., 0., 1., 0., 0., 1., 1., 0., 1., 0., 1., 0., 1.,
+        0., 1., 0., 0.]])), 'ONE concise instruction that maps Input to Output above.\nUse an imperative sentence. Output only the instruction.': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: hummingbird, wombat\nOutput: wombat': (0.5, array([[0., 0., 0., 1., 0., 1., 0., 1., 1., 1., 1., 0., 1., 0., 1., 0.,
+        0., 0., 1., 1.]])), 'Input: wombat, hummingbird\nOutput: tiger': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]])), 'Input: hummingbird\nOutput: wombat': (0.0, array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.]]))}
+Evaluating on test data...
+Evaluating prompts...
+Using metric "em" for task "larger_animal"...
+[PRED 0] gold=['baboons'] | pred='bobcat' | score=0.0000
+[PRED 1] gold=['border collie'] | pred='owl' | score=0.0000
+[PRED 2] gold=['shih tzu'] | pred='pomeranian' | score=0.0000
+[PRED 3] gold=['rottweiler'] | pred='rottweiler' | score=1.0000
+[PRED 4] gold=['owl'] | pred='hamster' | score=0.0000
+[PRED-DUMP] wrote 100 rows to logs/preds\larger_animal_20251016_210424__em__Input_hummingbird__wombat_Output_wombat___098a34ef.tsv
+Finished evaluating.
+Finished!!!
+Test score on ChatGPT: 0.55
