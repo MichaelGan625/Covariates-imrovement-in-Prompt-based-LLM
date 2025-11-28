@@ -24,7 +24,7 @@ def update_config(config, base_config='configs/default.yaml'):
 
     return update(default_config, config)
 
-
+# config.py
 def simple_config(eval_model, prompt_gen_model, prompt_gen_mode, num_prompts, eval_rounds, prompt_gen_batch_size, eval_batch_size):
     """Returns a config and splits the data into sensible chunks."""
     conf = update_config({}, 'configs/bandits.yaml')
