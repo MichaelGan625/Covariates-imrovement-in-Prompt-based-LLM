@@ -34,26 +34,25 @@ def get_test_conf(task, test_data):
             'num_prompts_per_subsample': 0,
             'model': {
                 'gpt_config': {
-                    # 'model': 'text-ada-001'
+                    'model': 'meta-llama/llama-3-70b-instruct',  # 修改这里
+                    'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
         },
         'evaluation': {
             'method': exec_accuracy_evaluator,
-            # option: accuracy (cannot use likelihood here due to the textual outputs from ChatGPT do not have log prob)
             'num_samples': min(100, len(test_data[0])),
             'task': task,
             'model': {
                 "name": "GPT_forward",
                 'gpt_config': {
-                    'model': 'GPT-3.5-turbo',
+                    'model': 'meta-llama/llama-3-70b-instruct',  # 修改这里
+                    'api_base': 'https://openrouter.ai/api/v1',   
                 }
             }
         }
     }
     return test_conf
-
-
 def get_conf(task, eval_data):
     conf = {
         'generation': {
@@ -61,8 +60,10 @@ def get_conf(task, eval_data):
             'num_demos': 10,
             'num_prompts_per_subsample': 20,
             'model': {
+                'name': 'GPT_forward',  # <--- 必须添加这一行
                 'gpt_config': {
-                    # 'model': 'text-ada-001'
+                    'model': 'meta-llama/llama-3-70b-instruct',
+                    'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
         },
@@ -71,14 +72,15 @@ def get_conf(task, eval_data):
             'task': task,
             'num_samples': min(20, len(eval_data[0])),
             'model': {
+                'name': 'GPT_forward',  # <--- 必须添加这一行
                 'gpt_config': {
-                    # 'model': 'text-ada-001'
+                    'model': 'meta-llama/llama-3-70b-instruct',
+                    'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
         }
     }
     return conf
-
 
 def set_all_seed(seed):
     random.seed(seed)
