@@ -455,7 +455,8 @@ class LMForwardAPI:
         if instruction[0] in self.prompts_set.keys():
             (dev_perf, instruction_score) = self.prompts_set[instruction[0]]
         else:
-            if self.api_model in ['chatgpt']:
+            if self.api_model in ['chatgpt', 'gpt-4', 'meta-llama/llama-3-70b-instruct']:
+                print(f"[DEBUG] 开始评估，指令: {instruction[0]}") 
                 dev_perf, instruction_score = evaluate.evaluate_prompts(
                     instruction, self.eval_template, self.eval_data,
                     self.demos_template, self.few_shot_data,
