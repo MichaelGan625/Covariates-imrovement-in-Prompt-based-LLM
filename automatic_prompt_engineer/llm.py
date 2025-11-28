@@ -19,11 +19,14 @@ except ImportError:
     import openai  # fallback old style
     HAS_NEW_OPENAI = False
 
+# 在 llm.py 中更新成本字典
 gpt_costs_per_thousand = {
     'davinci': 0.0200,
-    'curie': 0.0020,
+    'curie': 0.0020, 
     'babbage': 0.0005,
-    'ada': 0.0004
+    'ada': 0.0004,
+    'meta-llama/llama-3-70b-instruct': 0.00059,  # Llama 3 70B成本
+    'microsoft/wizardlm-2-8x22b': 0.00065,       # 另一个可用模型
 }
 def model_from_config(config, disable_tqdm=True):
     model_type = config["name"]
@@ -40,7 +43,7 @@ def model_from_config(config, disable_tqdm=True):
 
 
 def make_llm_client_from_config(gpt_cfg: dict):
-    base = gpt_cfg.get("api_base") or os.getenv("OPENROUTER_API_BASE") or os.getenv("OPENROUTER_BASE_URL")
+    base = gpt_cfg.get("api_base") or gpt_cfg.get("base_url") or os.getenv("OPENROUTER_API_BASE") or os.getenv("OPENROUTER_BASE_URL")
     key = gpt_cfg.get("api_key") or os.getenv("OPENROUTER_API_KEY")
     model_name = gpt_cfg.get("model") or "openai/gpt-3.5-turbo"
 
@@ -134,7 +137,7 @@ class Llama_Forward(LLM):
     def __init__(self, config, needs_confirmation=False, disable_tqdm=True):
         """Initializes the model."""
         SIZE=13
-        MODEL_DIR = r"D:\Py\LLM"
+        MODEL_DIR = "/home2/langj/Covariates-improvement-in-Prompt-based-LLM/models/vicuna-13b"
         TOKENIZER_DIR = r"D:\Py\LLM"
         self.config = config
         self.needs_confirmation = needs_confirmation
@@ -858,27 +861,23 @@ class GPT_Insert(LLM):
 
 
 def gpt_get_estimated_cost(config, prompt, max_tokens):
-    """Uses the current API costs/1000 tokens to estimate the cost of generating text from the model."""
-    # Get rid of [APE] token
+    """更新为OpenRouter的定价"""
     prompt = prompt.replace('[APE]', '')
-    # Get the number of tokens in the prompt
     n_prompt_tokens = len(prompt) // 4
-    # Get the number of tokens in the generated text
+    
+    # OpenRouter定价（每千token）
+    openrouter_costs = {
+        'meta-llama/llama-3-70b-instruct': 0.00059,
+        'microsoft/wizardlm-2-8x22b': 0.00065,
+        # 添加其他你使用的模型
+    }
+    
+    model_name = config['gpt_config']['model']
+    cost_per_thousand = openrouter_costs.get(model_name, 0.001)  # 默认值
+    
     total_tokens = n_prompt_tokens + max_tokens
-    engine = config['gpt_config']['model'].split('-')[1]
-    costs_per_thousand = gpt_costs_per_thousand
-    if engine not in costs_per_thousand:
-        # Try as if it is a fine-tuned model
-        engine = config['gpt_config']['model'].split(':')[0]
-        costs_per_thousand = {
-            'davinci': 0.1200,
-            'curie': 0.0120,
-            'babbage': 0.0024,
-            'ada': 0.0016
-        }
-    price = costs_per_thousand[engine] * total_tokens / 1000
+    price = cost_per_thousand * total_tokens / 1000
     return price
-
 
 class BatchSizeException(Exception):
     pass
