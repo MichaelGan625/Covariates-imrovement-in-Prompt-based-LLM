@@ -19,6 +19,7 @@ import numpy as _np
 import torch
 import torch.nn.functional as F
 import gpytorch
+from botorch.acquisition import UpperConfidenceBound
 from botorch.acquisition.monte_carlo import qNoisyExpectedImprovement
 from botorch.sampling.normal import SobolQMCNormalSampler
 from botorch.models.transforms.outcome import Standardize
@@ -39,7 +40,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from instructzero_optimized import BatchLLMCaller, TrainerLogger, profile_block, optimize_acquisition_function
 from misc import get_test_conf, get_conf, set_all_seed, TASKS, tkwargs, N_INIT, BATCH_SIZE, N_ITERATIONS
 from args import parse_args
-
+tkwargs = {
+    "device": torch.device("cuda" if torch.cuda.is_available() else "cpu"),
+    "dtype": torch.float64,  # 【关键修改】从 float32 改为 float64
+}
 # ==== [PATCH] 若你在 misc 里实现了 compute_four_covariates，这里优先使用；否则本文件有兜底 ====
 try:
     from misc import compute_four_covariates as _compute_four_covariates_ext
@@ -178,55 +182,52 @@ def build_and_fit_simple_gp(X_train, y_train, device):
 
 
 def construct_custom_gp(X_train, y_train, latent_train, instruction_train, device, instr_kernel_type='matern'):
-    # —— 统一 double，显著提升 GP 稳定性 —— #
+    # 1. 数据强制转 double
     Xd = X_train.double().to(device)
     yd = y_train.double().to(device)
-    latent_train = latent_train.double().to(device)
+    # 【注意】这里传入 kernel 的数据也必须先转 double
+    latent_train = latent_train.double().to(device) 
     instruction_train = instruction_train.double().to(device)
 
-    # latent 核
+    # 2. 基础核函数加 .double()
     base_latent = MaternKernel(
         nu=2.5,
         ard_num_dims=latent_train.shape[-1],
         lengthscale_prior=GammaPrior(3.0, 6.0),
-    ).to(device)
+    ).to(device).double() # <--- 必须加 .double()
 
-    # instruction 核（cosine 用 LinearKernel，其他用 Matern）
     if (instr_kernel_type or "").lower() == 'cosine':
-        instruction_base = LinearKernel(ard_num_dims=instruction_train.shape[-1]).to(device)
+        instruction_base = LinearKernel(ard_num_dims=instruction_train.shape[-1]).to(device).double()
     else:
         instruction_base = MaternKernel(
             nu=2.5,
             ard_num_dims=instruction_train.shape[-1],
             lengthscale_prior=GammaPrior(3.0, 6.0),
-        ).to(device)
+        ).to(device).double() # <--- 必须加 .double()
 
-    # 自定义组合核（你项目里的类）
+    # 3. 组合核加 .double()
+    # 这一步最关键，因为报错的 latent_L 就在这里面
     combined_kernel = EfficientCombinedStringKernel(
         base_latent_kernel=base_latent,
         instruction_kernel=instruction_base,
-        latent_train=latent_train,
+        latent_train=latent_train, # 确保传入的是上面转过 double 的变量
         instruction_train=instruction_train,
-        jitter=1e-3,
-    ).to(device)
+        jitter=1e-2, 
+    ).to(device).double() # <--- 必须加 .double()
 
-    # 用 ScaleKernel 包一层作为 covar_module（不再调用未定义的 build_combined_kernel）
-    covar_module = ScaleKernel(base_kernel=combined_kernel).to(device)
+    covar_module = ScaleKernel(base_kernel=combined_kernel).to(device).double()
 
-    # GP：double + 输出标准化
+    if yd.std() < 1e-6:
+        outcome_transform = None
+    else:
+        outcome_transform = Standardize(m=1)
+
+    # 4. GP 模型主体加 .double()
     gp_model = SingleTaskGP(
         Xd, yd,
         covar_module=covar_module,
-        outcome_transform=Standardize(m=1),
-    ).to(device)
-
-    # 给噪声一个下限，避免方差塌缩
-    try:
-        gp_model.likelihood.noise_covar.register_constraint(
-            "raw_noise", gpytorch.constraints.GreaterThan(1e-5)
-        )
-    except Exception:
-        pass
+        outcome_transform=outcome_transform,
+    ).to(device).double() # <--- 必须加 .double()
 
     gp_mll = gpytorch.mlls.ExactMarginalLogLikelihood(gp_model.likelihood, gp_model)
     return gp_model, gp_mll
@@ -382,7 +383,7 @@ class LMForwardAPI:
             pass
 
         self.eval_data = eval_data
-        self.eval_template = template.EvalTemplate("Instruction: [PROMPT]\n\nInput: [INPUT]\n Output: [OUTPUT]")
+        self.eval_template = template.EvalTemplate("Instruction: [PROMPT]\n\nInput: [INPUT]\nOutput (result only): [OUTPUT]")
         self.demos_template = template.DemosTemplate("Input: [INPUT]\nOutput: [OUTPUT]")
 
         self.api_model = args.api_model
@@ -851,53 +852,28 @@ def run(args):
                     torch.full((dim,), 1.0, device=device)
                 ])
 
-                use_qnei = (i < 10)
-                ei_ok = False
-                acq_val_num = None
-                X_candidate = None
-
-                if use_qnei:
-                    sampler = SobolQMCNormalSampler(sample_shape=torch.Size([64]))
-                    if qLogNoisyExpectedImprovement is not None:
-                        qNEI = qLogNoisyExpectedImprovement(model=gp_model, X_baseline=X_train, sampler=sampler)
-                    else:
-                        qNEI = qNoisyExpectedImprovement(model=gp_model, X_baseline=X_train, sampler=sampler)
-
-                    try:
-                        X_candidate, acq_value = optimize_acqf(
-                            acq_function=qNEI, bounds=bounds, q=1,
-                            num_restarts=16, raw_samples=512,  # 略增以提高找到正值的概率
-                            options={"batch_limit": 5, "maxiter": 200},
-                        )
-                        ei_ok = True
-                        acq_val_num = float(acq_value.item())
-                    except Exception as e_mc:
-                        logger.logger.warning(f"optimize_acqf/qLogNEI failed ({e_mc}); fallback to analytic EI")
-
-                if not use_qnei or not ei_ok:
-                    current_best_adj = max(current_best - 1e-6, -1e9)
-                    EI = LogExpectedImprovement(gp_model, best_f=current_best_adj)
-                    try:
-                        X_candidate, acq_value = optimize_acqf(
-                            acq_function=EI, bounds=bounds, q=1,
-                            num_restarts=10, raw_samples=256,
-                            options={"batch_limit": 5, "maxiter": 200},
-                        )
-                        ei_ok = True
-                        acq_val_num = float(acq_value.item())
-                    except Exception as e_ei:
-                        logger.logger.warning(f"optimize_acqf/Log-EI failed or degenerated ({e_ei}); fallback to UCB")
-                        kappa = 1.0
-                        UCB = UpperConfidenceBound(gp_model, beta=kappa ** 2)
-                        X_candidate, acq_value = optimize_acqf(
-                            acq_function=UCB, bounds=bounds, q=1,
-                            num_restarts=10, raw_samples=256,
-                            options={"batch_limit": 5, "maxiter": 200},
-                        )
-                        ei_ok = False
-                        acq_val_num = float(acq_value.item())
-
-                    logger.logger.info(f"[UCB fallback] selected candidate with UCB {float(acq_value):.5f}")
+                beta_value = 2.0 
+                UCB = UpperConfidenceBound(gp_model, beta=beta_value)
+                
+                try:
+                    X_candidate, acq_value = optimize_acqf(
+                        acq_function=UCB,
+                        bounds=bounds,
+                        q=1,
+                        num_restarts=10,
+                        raw_samples=512,
+                        options={"batch_limit": 5, "maxiter": 200},
+                    )
+                    # 【重要】确保类型匹配，必须转为 float64 (double)
+                    X_candidate = X_candidate.to(dtype=torch.float64)
+                    
+                    # 记录一下我们正在用 UCB
+                    # logger.logger.info(f"[Acq] Selected candidate with UCB(beta={beta_value}) = {acq_value.item():.4f}")
+                    
+                except Exception as e:
+                    logger.logger.warning(f"UCB optimization failed: {e}")
+                    # 极少数情况 fallback 到随机
+                    X_candidate = torch.rand(1, intrinsic_dim, device=device, dtype=torch.float64) * 2 - 1
 
             # 3. Evaluate candidate (parallel)
             with profile_block("LLM eval candidate", logger=logger.logger):
@@ -995,7 +971,7 @@ def run(args):
 
             # 用于历史记录
             f12_new = covariates_12d.cpu().numpy()
-
+            F_hist.append(f12_new)
             # 若成为新 best，则更新“当前最优指令文本/得分向量”
             try:
                 if new_dev_perf > float(torch.max(Y).item()):
