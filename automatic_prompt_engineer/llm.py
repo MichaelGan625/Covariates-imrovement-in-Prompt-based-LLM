@@ -138,7 +138,7 @@ class Llama_Forward(LLM):
         """Initializes the model."""
         SIZE=13
         MODEL_DIR = "/home2/langj/Covariates-improvement-in-Prompt-based-LLM/models/vicuna-13b"
-        TOKENIZER_DIR = r"D:\Py\LLM"
+        TOKENIZER_DIR = MODEL_DIR
         self.config = config
         self.needs_confirmation = needs_confirmation
         self.disable_tqdm = disable_tqdm
