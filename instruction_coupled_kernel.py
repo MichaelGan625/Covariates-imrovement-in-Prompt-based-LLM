@@ -6,7 +6,9 @@ import torch
 import numpy as np
 from tqdm.auto import tqdm
 from gpytorch.kernels.kernel import Kernel
-
+import gpytorch
+from gpytorch.kernels.kernel import Kernel
+from gpytorch.constraints import Positive
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 
@@ -35,10 +37,28 @@ class EfficientCombinedStringKernel(Kernel):
         self._dtype = self.latent_train.dtype
         self.n_tr = int(self.latent_train.shape[0])
 
-        self.alpha_lat = 0.3
-        self.alpha_instr = 1.0
-        self.alpha_cov = 0.3
-        self._mode = "original_dominant"
+        # === 【核心修改 1】将 alpha 注册为可学习参数 ===
+        # 初始值：raw=0.0 经过 softplus 变换后大约是 0.69，作为一个中性的初始值
+        self.register_parameter(
+            name="raw_alpha_lat", 
+            parameter=torch.nn.Parameter(torch.tensor(0.0, device=self._device, dtype=self._dtype))
+        )
+        self.register_parameter(
+            name="raw_alpha_instr", 
+            parameter=torch.nn.Parameter(torch.tensor(0.0, device=self._device, dtype=self._dtype))
+        )
+        # 协变量初始值给低一点 (raw=-2.0 => alpha ~ 0.1)，防止起步就跑偏
+        self.register_parameter(
+            name="raw_alpha_cov", 
+            parameter=torch.nn.Parameter(torch.tensor(-2.0, device=self._device, dtype=self._dtype))
+        )
+
+        # 注册约束：保证权重永远大于 0
+        self.register_constraint("raw_alpha_lat", Positive())
+        self.register_constraint("raw_alpha_instr", Positive())
+        self.register_constraint("raw_alpha_cov", Positive())
+
+        self._mode = "auto_grad" # 标记模式变为自动梯度
         self._anneal_steps = 10
         self._cov_kernel_type = "linear"
         self._F_hist = None
@@ -70,6 +90,37 @@ class EfficientCombinedStringKernel(Kernel):
             self.register_buffer("K_instr", K_instr)
             self.register_buffer("jitter_tensor", jitter_tensor)
             self.register_buffer("I_tr", torch.eye(self.n_tr, device=self._device, dtype=self._dtype))
+
+    # === 【核心修改 2】添加属性访问器，让外部依然可以用 .alpha_lat 访问 ===
+    @property
+    def alpha_lat(self):
+        return self.raw_alpha_lat_constraint.transform(self.raw_alpha_lat)
+
+    @alpha_lat.setter
+    def alpha_lat(self, value):
+        if not torch.is_tensor(value):
+            value = torch.as_tensor(value).to(self.raw_alpha_lat)
+        self.initialize(raw_alpha_lat=self.raw_alpha_lat_constraint.inverse_transform(value))
+
+    @property
+    def alpha_instr(self):
+        return self.raw_alpha_instr_constraint.transform(self.raw_alpha_instr)
+
+    @alpha_instr.setter
+    def alpha_instr(self, value):
+        if not torch.is_tensor(value):
+            value = torch.as_tensor(value).to(self.raw_alpha_instr)
+        self.initialize(raw_alpha_instr=self.raw_alpha_instr_constraint.inverse_transform(value))
+
+    @property
+    def alpha_cov(self):
+        return self.raw_alpha_cov_constraint.transform(self.raw_alpha_cov)
+
+    @alpha_cov.setter
+    def alpha_cov(self, value):
+        if not torch.is_tensor(value):
+            value = torch.as_tensor(value).to(self.raw_alpha_cov)
+        self.initialize(raw_alpha_cov=self.raw_alpha_cov_constraint.inverse_transform(value))
 
     def set_covariates(self, F_hist: np.ndarray, kind: str = "linear", lengthscale: float = 1.0):
         F_hist = np.asarray(F_hist, dtype=np.float64)
@@ -124,6 +175,9 @@ class EfficientCombinedStringKernel(Kernel):
         self._cov_kernel_type = kind
 
     def _build_train_K(self, a_lat: float, a_instr: float, a_cov: float):
+        # 这个函数现在只用于 optimize_mixture_weights 中的临时计算
+        # 但因为我们要废弃 optimize_mixture_weights，这个函数其实也可以不用了
+        # 为了兼容性保留
         K = torch.zeros_like(self.K_lat_train)
         if a_lat != 0.0:
             K = K + float(a_lat) * self.K_lat_train
@@ -158,6 +212,7 @@ class EfficientCombinedStringKernel(Kernel):
 
     @staticmethod
     def _gp_mll(K: torch.Tensor, y: np.ndarray) -> float:
+        # 静态方法，保持不变
         yv = torch.as_tensor(np.asarray(y, dtype=np.float64).reshape(-1, 1), dtype=torch.float64, device=K.device)
         Kd = K.to(dtype=torch.float64)
         try:
@@ -170,44 +225,21 @@ class EfficientCombinedStringKernel(Kernel):
         mll -= 0.5 * K.shape[0] * math.log(2.0 * math.pi)
         return mll
 
-    def optimize_mixture_weights(self, y: np.ndarray, step_idx: int, grid=(0.05, 0.1, 0.3, 1.0, 3.0, 10.0)):
-
-        if self.K_lat_train is None or self.K_instr is None:
-            return -np.inf, None
-
-        # 退火：逐步放开协变量权重
-        anneal = min(1.0, max(0.0, step_idx / max(1, self._anneal_steps)))
-        cov_scale = 0.3 + 0.7 * anneal  # 0.3 -> 1.0
-
-        best_mll, best_cfg = -np.inf, None
-        modes = ["original_dominant", "cov_dominant"]
-
-        y_np = np.asarray(y, dtype=np.float64).reshape(-1)
-
-        for mode in modes:
-            for a_lat in grid:
-                for a_instr in grid:
-                    for a_cov_raw in grid:
-                        a_cov = a_cov_raw * cov_scale
-                        if mode == "original_dominant" and a_cov > (a_lat + a_instr):
-                            continue
-                        if mode == "cov_dominant" and a_cov < max(a_lat, a_instr):
-                            continue
-                        K = self._build_train_K(a_lat, a_instr, a_cov)
-                        mll = self._gp_mll(K, y_np)
-                        if mll > best_mll:
-                            best_mll = mll
-                            best_cfg = (mode, float(a_lat), float(a_instr), float(a_cov))
-        if best_cfg is not None:
-            self._mode, self.alpha_lat, self.alpha_instr, self.alpha_cov = best_cfg
-        return best_mll, best_cfg
+    # === 【核心修改 3】废弃网格搜索，改为直接返回，让梯度下降接管 ===
+    def optimize_mixture_weights(self, y: np.ndarray, step_idx: int, grid=None):
+        # 既然参数已经可学习，这里就不需要手动搜了
+        # 甚至可以直接 return，什么都不做
+        return -np.inf, None
 
     def current_mode(self):
-        return self._mode, dict(alpha_lat=self.alpha_lat, alpha_instr=self.alpha_instr, alpha_cov=self.alpha_cov)
-
+        # 打印当前的权重（注意要用 .item() 取值）
+        return self._mode, dict(
+            alpha_lat=self.alpha_lat.item(), 
+            alpha_instr=self.alpha_instr.item(), 
+            alpha_cov=self.alpha_cov.item()
+        )
 
     def _solve(self, L, B):
-
         return torch.cholesky_solve(B, L)
 
     def forward(self, z1, z2, **params):
@@ -273,16 +305,17 @@ class EfficientCombinedStringKernel(Kernel):
         ).to(self._device, self._dtype).reshape(B, m, m_tr)
 
         # A^{-1} via cholesky_solve，A=K_lat(Ztr,Ztr)
-        L = self.latent_L  # (m_tr, m_tr)
+        # 注意要 cast to K1.dtype
+        L = self.latent_L.to(device=self._device, dtype=K1.dtype) 
         left = torch.cholesky_solve(K1.transpose(-1, -2), L).transpose(-1, -2)   # (B, n, m_tr)
         right = torch.cholesky_solve(K2.transpose(-1, -2), L).transpose(-1, -2)  # (B, m, m_tr)
 
-        M = self.K_instr  # (m_tr, m_tr)
+        M = self.K_instr.to(dtype=left.dtype)  # (m_tr, m_tr)
         leftM = torch.matmul(left, M)                         # (B, n, m_tr)
         K_eff = torch.matmul(leftM, right.transpose(-1, -2))  # (B, n, m)
 
-        # === (3) 混合：α_lat * K_lat_pair + α_instr * K_eff
-        K_total = float(self.alpha_lat) * K_lat_pair + float(self.alpha_instr) * K_eff
+        # === (3) 混合：【修改重点】直接使用 Parameter 相乘，保留梯度，不要加 float() ===
+        K_total = self.alpha_lat * K_lat_pair + self.alpha_instr * K_eff
 
         # === (4) 若是训练期 K(Xtr, Xtr)，再加 α_cov * K_cov
         add_cov = False
@@ -293,8 +326,11 @@ class EfficientCombinedStringKernel(Kernel):
                     add_cov = True
             except Exception:
                 add_cov = False
+        
         if add_cov:
-            K_total = K_total + float(self.alpha_cov) * self.K_cov.unsqueeze(0)  # (1,n,n)
+            K_cov_safe = self.K_cov.to(dtype=K_total.dtype)
+            # 【修改重点】同样不要加 float()
+            K_total = K_total + self.alpha_cov * K_cov_safe.unsqueeze(0)  # (1,n,n)
 
         # 还原 batch 维
         if B == 1 and len(batch_shape) == 0:
