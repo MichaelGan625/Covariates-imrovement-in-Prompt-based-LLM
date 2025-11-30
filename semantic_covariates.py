@@ -41,10 +41,11 @@ class SemanticCovariateSystem:
         # 更新历史记录
         self._update_history(instruction, performance, scores)
 
-        # 1. 性能相关维度 (3维) - 这些方法原本就返回 tensor，保持不变
-        covariates[0] = self._absolute_performance(performance)
-        covariates[1] = self._relative_improvement(performance)
-        covariates[2] = self._performance_consistency(scores)
+        covariates[0] = float(self._length_appropriateness(instruction))
+        # 1. 关键词密度 (Keyword Density)
+        covariates[1] = float(self._keyword_density(instruction, task_name))
+        # 2. 标点完整性
+        covariates[2] = float(self._punctuation_score(instruction))
 
         # 2. 指令质量维度 (3维) - 注意：task_alignment 返回的是 float/numpy，需要转换
         covariates[3] = self._instruction_clarity(instruction)
@@ -58,7 +59,7 @@ class SemanticCovariateSystem:
         covariates[8] = float(self._region_coverage())
 
         # 4. 风险预警维度 (3维) - 修改点：全部强制转为 float
-        covariates[9] = float(self._convergence_risk())
+        covariates[9] = float(self._instruction_novelty(instruction))
         covariates[10] = float(self._instruction_novelty(instruction))
         # 报错的行在这里，加上 float()
         covariates[11] = float(self._output_reliability(scores))
@@ -72,7 +73,18 @@ class SemanticCovariateSystem:
         self.score_history.append(scores)
 
     # === 性能相关维度 ===
+    def _length_appropriateness(self, text):
+        l = len(text.split())
+        # 假设理想长度在 5-30 词之间
+        if 5 <= l <= 30: return 1.0
+        return max(0.0, 1.0 - abs(l - 17)/20.0)
 
+    def _keyword_density(self, text, task_name):
+        # 简单的实现，复用原本的逻辑
+        return self._task_alignment(text, task_name) # 暂时复用
+
+    def _punctuation_score(self, text):
+        return 1.0 if text.strip().endswith(('.', '?', '!', '"')) else 0.0
     def _absolute_performance(self, performance: float) -> torch.Tensor:
         """绝对性能水平"""
         # 直接归一化到0-1范围，返回 tensor
