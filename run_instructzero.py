@@ -608,7 +608,7 @@ def run(args):
 
     # 初始化 BO 追踪
     trace_path = _init_trace(task)
-
+    
     # 初次评测
     X_return = batch_caller.eval_batch([x for x in X])
 
@@ -726,16 +726,16 @@ def run(args):
         )
 
         # 规则任务：不允许协变量主导
-        allow_mix_opt = task_name not in RULE_TASKS
+        allow_mix_opt = true
         _install_covariates_into_kernel(gp_model, F_hist, y_train, step_idx=0, allow_mix_opt=allow_mix_opt)
 
         # 规则任务把 alpha_cov 压到 0
-        if task_name in RULE_TASKS:
-            try:
-                kern = gp_model.covar_module.base_kernel
-                kern.alpha_cov = 0.0
-            except Exception:
-                pass
+        #if task_name in RULE_TASKS:
+         #   try:
+          #      kern = gp_model.covar_module.base_kernel
+           #     kern.alpha_cov = 0.0
+            #except Exception:
+             #   pass
 
         gp_model.train()
         with torch.no_grad():
@@ -774,7 +774,7 @@ def run(args):
             # 1. Fit GP
             with profile_block("GP fit", logger=logger.logger):
                 # 每轮更新后的 latent/instruction/y
-                latent_train = X_train.float().to(device)
+                latent_train = X_train.to(device)
 
                 # (C) 每轮都用最新 Y_scores 预处理 S，并沿用 instr_kernel_type
                 S = Y_scores.clone()
@@ -844,17 +844,21 @@ def run(args):
                     mll_value = float("nan")
             logger.log_iteration(i, best_value=current_best, gp_loss=mll_value)
 
-            # 2. Acquisition optimization（Log-EI→UCB兜底）
+# 2. Acquisition optimization（Log-EI→UCB兜底）
             with profile_block("Acquisition", logger=logger.logger):
                 dim = X_train.shape[-1]
+                # 确保 bounds 是 float64
                 bounds = torch.stack([
-                    torch.full((dim,), -1.0, device=device),
-                    torch.full((dim,), 1.0, device=device)
+                    torch.full((dim,), -1.0, device=device, dtype=torch.float64),
+                    torch.full((dim,), 1.0, device=device, dtype=torch.float64)
                 ])
 
                 beta_value = 2.0 
                 UCB = UpperConfidenceBound(gp_model, beta=beta_value)
                 
+                # 初始化 acq_value 避免未定义
+                acq_value = None
+
                 try:
                     X_candidate, acq_value = optimize_acqf(
                         acq_function=UCB,
@@ -864,19 +868,27 @@ def run(args):
                         raw_samples=512,
                         options={"batch_limit": 5, "maxiter": 200},
                     )
-                    # 【重要】确保类型匹配，必须转为 float64 (double)
+                    # 【重要】确保类型匹配
                     X_candidate = X_candidate.to(dtype=torch.float64)
-                    
-                    # 记录一下我们正在用 UCB
-                    # logger.logger.info(f"[Acq] Selected candidate with UCB(beta={beta_value}) = {acq_value.item():.4f}")
                     
                 except Exception as e:
                     logger.logger.warning(f"UCB optimization failed: {e}")
-                    # 极少数情况 fallback 到随机
+                    # fallback 到随机
                     X_candidate = torch.rand(1, intrinsic_dim, device=device, dtype=torch.float64) * 2 - 1
+                    acq_value = None
+
+            # 【修复点】在此处定义 acq_val_num，供后面日志使用
+            if acq_value is not None:
+                if torch.is_tensor(acq_value):
+                    acq_val_num = acq_value.item()
+                else:
+                    acq_val_num = float(acq_value)
+            else:
+                acq_val_num = 0.0
 
             # 3. Evaluate candidate (parallel)
             with profile_block("LLM eval candidate", logger=logger.logger):
+                # ... (后续代码保持不变)
                 candidate_tensor = X_candidate.detach().to(device)
                 # 记录候选点后验
                 with torch.no_grad():
