@@ -41,7 +41,7 @@ class EfficientCombinedStringKernel(Kernel):
         # 初始值：raw=0.0 经过 softplus 变换后大约是 0.69，作为一个中性的初始值
         self.register_parameter(
             name="raw_alpha_lat", 
-            parameter=torch.nn.Parameter(torch.tensor(0.0, device=self._device, dtype=self._dtype))
+            parameter=torch.nn.Parameter(torch.tensor(1.0, device=self._device, dtype=self._dtype)) # 原 0.0
         )
         self.register_parameter(
             name="raw_alpha_instr", 
@@ -50,7 +50,7 @@ class EfficientCombinedStringKernel(Kernel):
         # 协变量初始值给低一点 (raw=-2.0 => alpha ~ 0.1)，防止起步就跑偏
         self.register_parameter(
             name="raw_alpha_cov", 
-            parameter=torch.nn.Parameter(torch.tensor(-2.0, device=self._device, dtype=self._dtype))
+            parameter=torch.nn.Parameter(torch.tensor(-5.0, device=self._device, dtype=self._dtype)) # 原 -2.0
         )
 
         # 注册约束：保证权重永远大于 0
@@ -319,18 +319,21 @@ class EfficientCombinedStringKernel(Kernel):
 
         # === (4) 若是训练期 K(Xtr, Xtr)，再加 α_cov * K_cov
         add_cov = False
-        if (B == 1 and n == m == self.n_tr and self.K_cov is not None):
-            try:
-                if torch.allclose(z1_flat[0, :, :self.lp_dim], self.latent_train, atol=1e-6, rtol=1e-5) and \
-                   torch.allclose(z2_flat[0, :, :self.lp_dim], self.latent_train, atol=1e-6, rtol=1e-5):
-                    add_cov = True
-            except Exception:
-                add_cov = False
-        
+        if (B == 1 and self.K_cov is not None):
+             # 简单的判断：如果维度匹配且是方阵，且与训练集大小一致
+             # 注意：这在某些 corner case (batch prediction) 可能有问题，
+             # 最稳妥的是在外部显式控制，但为了不改动太多接口，我们用 shape 判断
+             if n == self.n_tr and m == self.n_tr:
+                 # 进一步检查是否是训练数据（通过对角线或第一个元素）
+                 # 这是一个这种 hack，但能工作
+                 if torch.allclose(z1_flat[0, 0], self.latent_train[0], atol=1e-4):
+                     add_cov = True
         if add_cov:
+            # 只有训练 Loss 会加上这一项。
+            # 这意味着 Covariates 被用来解释 "为什么某些点的 y 值偏离了 Latent 的预测"
+            # 从而“净化”了 Latent Kernel 的学习。
             K_cov_safe = self.K_cov.to(dtype=K_total.dtype)
-            # 【修改重点】同样不要加 float()
-            K_total = K_total + self.alpha_cov * K_cov_safe.unsqueeze(0)  # (1,n,n)
+            K_total = K_total + self.alpha_cov * K_cov_safe.unsqueeze(0)
 
         # 还原 batch 维
         if B == 1 and len(batch_shape) == 0:
