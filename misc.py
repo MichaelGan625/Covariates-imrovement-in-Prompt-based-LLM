@@ -5,29 +5,51 @@ from evaluation_instruction_induction.exec_accuracy import exec_accuracy_evaluat
 import os
 
 TASKS = [
-    # === 性能严重下降组 (优先修复) ===
-    'word_sorting',
-    'word_unscrambling',
-    'orthography_starts_with',
-    'auto_categorization',
-    'odd_one_out',
-
-    # === 低分/无提升组 (次要修复) ===
-    'auto_debugging',
-    'synonyms',
-    'second_word_letter'
+    'antonyms', 
+    'cause_and_effect', 
+    'common_concept', 
+    'diff', 
+    'first_word_letter', 
+    'informal_to_formal', 
+    'larger_animal', 
+    'letters_list', 
+    'taxonomy_animal', 
+    'negation', 
+    'num_to_verbal', 
+    'active_to_passive', 
+    'singular_to_plural', 
+    'rhymes', 
+    'second_word_letter', 
+    'sentence_similarity', 
+    'sentiment', 
+    'orthography_starts_with', 
+    'sum', 
+    'synonyms', 
+    'translation_en-de', 
+    'translation_en-es', 
+    'translation_en-fr', 
+    'word_in_context', 
+    'auto_categorization', 
+    'auto_debugging', 
+    'ascii', 
+    'cs_algorithms', 
+    'periodic_elements', 
+    'word_sorting', 
+    'word_unscrambling', 
+    'odd_one_out', 
+    'object_count'
 ]
 
 SMOKE_TEST = os.environ.get("SMOKE_TEST")
 ## bayesian opt
 tkwargs = {
     "device": torch.device("cuda" if torch.cuda.is_available() else "cpu"),
-    "dtype": torch.float32,  # 统一用 float32
+    "dtype": torch.float64,  # 🟢 [修改] 强烈建议改为 float64，以获得更高的数值精度
 }
 
-N_INIT = 25
-N_ITERATIONS = 5 if not SMOKE_TEST else 1
-BATCH_SIZE = 25 if not SMOKE_TEST else 1
+N_INIT = 35
+N_ITERATIONS = 40 if not SMOKE_TEST else 1
+BATCH_SIZE = 10 if not SMOKE_TEST else 1
 
 
 def get_test_conf(task, test_data):
@@ -38,7 +60,7 @@ def get_test_conf(task, test_data):
             'num_prompts_per_subsample': 0,
             'model': {
                 'gpt_config': {
-                    'model': 'meta-llama/llama-3-70b-instruct',  # 修改这里
+                    'model': 'meta-llama/llama-3-8b-instruct',  # 修改这里
                     'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
@@ -50,7 +72,7 @@ def get_test_conf(task, test_data):
             'model': {
                 "name": "GPT_forward",
                 'gpt_config': {
-                    'model': 'meta-llama/llama-3-70b-instruct',  # 修改这里
+                    'model': 'meta-llama/llama-3-8b-instruct',  # 修改这里
                     'api_base': 'https://openrouter.ai/api/v1',   
                 }
             }
@@ -66,7 +88,7 @@ def get_conf(task, eval_data):
             'model': {
                 'name': 'GPT_forward',  # <--- 必须添加这一行
                 'gpt_config': {
-                    'model': 'meta-llama/llama-3-70b-instruct',
+                    'model': 'meta-llama/llama-3-8b-instruct',
                     'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
@@ -74,11 +96,11 @@ def get_conf(task, eval_data):
         'evaluation': {
             'method': exec_accuracy_evaluator,
             'task': task,
-            'num_samples': min(20, len(eval_data[0])),
+            'num_samples': min(30, len(eval_data[0])),
             'model': {
                 'name': 'GPT_forward',  # <--- 必须添加这一行
                 'gpt_config': {
-                    'model': 'meta-llama/llama-3-70b-instruct',
+                    'model': 'meta-llama/llama-3-8b-instruct',
                     'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
