@@ -30,7 +30,9 @@ except Exception:
     qLogNoisyExpectedImprovement = None
 from tqdm.auto import tqdm
 from gpytorch.constraints import GreaterThan  # 噪声下限约束
-
+from botorch.exceptions import InputDataWarning
+import warnings
+warnings.filterwarnings("ignore", category=InputDataWarning)
 # LLM/APE 相关
 from automatic_prompt_engineer import ape, evaluate, config, template, data
 from data_instruction_induction.load_data import load_data
@@ -259,7 +261,7 @@ def _install_covariates_into_kernel(gp_model, F_hist_list, y_train_tensor, step_
         return
 
     try:
-        F = _np.vstack(F_hist_list)
+        F = _np.vstack(F_hist_list).astype(np.float64)
     except Exception:
         return
     try:
@@ -459,7 +461,7 @@ class LMForwardAPI:
                  is_lazy_pattern = True
         
         # 规则 B: 指令太短 (小于 5 个字符)
-        if len(instr_clean) < 5: 
+        if len(instr_clean) < 3: 
             is_lazy_pattern = True
 
         # === 4. 判决 ===
@@ -665,10 +667,11 @@ def run(args):
     device = tkwargs["device"] if "device" in tkwargs else torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # 同步回 tkwargs（防止后面代码再取）
     tkwargs["device"] = device
-
-    X = X.to(device)
-    Y = torch.tensor(_np.asarray(Y_list), dtype=torch.float32, device=device).unsqueeze(-1)  # [N,1]
-    Y_scores = torch.tensor(_np.stack(S_list, axis=0), dtype=torch.float32, device=device)  # [N,max_len]
+    beta_value = torch.tensor([2.0], dtype=tkwargs['dtype'], device=device)
+    # 修改后
+    X = X.to(dtype=tkwargs['dtype'], device=device) # 确保初始 X 也是 float64
+    Y = torch.tensor(_np.asarray(Y_list), dtype=tkwargs['dtype'], device=device).unsqueeze(-1)
+    Y_scores = torch.tensor(_np.stack(S_list, axis=0), dtype=tkwargs['dtype'], device=device)
 
     # 掩码
     mask = torch.isfinite(Y.squeeze(-1)) & torch.isfinite(Y_scores).all(dim=1)
@@ -996,9 +999,9 @@ def run(args):
                 pad_cols = ys.size - curr_w
                 Y_scores = F.pad(Y_scores, (0, pad_cols))
 
-            Y_scores_next_point = torch.tensor(ys, dtype=torch.float32, device=device).unsqueeze(0)
-            Y_next_point = torch.tensor([new_dev_perf], dtype=torch.float32, device=device).unsqueeze(-1)
-            X_next_point = candidate_tensor.to(device)
+            Y_next_point = torch.tensor([new_dev_perf], dtype=tkwargs['dtype'], device=device).unsqueeze(-1)
+            Y_scores_next_point = torch.tensor(ys, dtype=tkwargs['dtype'], device=device).unsqueeze(0)
+            X_next_point = candidate_tensor.to(dtype=tkwargs['dtype'], device=device)
 
             #扩展到12d
 
