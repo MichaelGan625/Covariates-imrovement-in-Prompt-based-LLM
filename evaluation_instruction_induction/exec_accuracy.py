@@ -103,6 +103,8 @@ def _get_score_fn(task, metric):
             'contains': utility.get_multi_answer_contains,
             'em': utility.get_multi_answer_em,
             # 你日志里出现的名字：
+            'diff_numeric_em': utility.diff_numeric_em,
+            'sum_numeric_em': utility.sum_numeric_em,
             'metric_exact_or_contains': None,  # 尝试由 registry 解析
         }
         if metric in alias and alias[metric] is not None:
