@@ -250,25 +250,22 @@ class SemanticCovariateSystem:
         return max(0.1, diversity)
 
     # === 风险预警维度 ===
-
     def _convergence_risk(self) -> float:
-        """收敛风险"""
+        """收敛/停滞风险"""
         if len(self.performance_history) < 5:
-            return 0.1  # 早期风险低
-
+            return 0.1
+        
         recent_perf = list(self.performance_history)[-5:]
-
-        # 性能停滞风险
-        improvements = [recent_perf[i] - recent_perf[i - 1] for i in range(1, len(recent_perf))]
-        stagnation = sum(1 for imp in improvements if abs(imp) < 0.01) / len(improvements)
-
-        # 方差下降风险
-        variance = np.var(recent_perf)
-        variance_risk = 1.0 - min(1.0, variance * 10.0)
-
-        # 组合风险
-        total_risk = (stagnation + variance_risk) / 2.0
-        return min(1.0, total_risk)
+        # 计算近期性能的标准差
+        std_dev = np.std(recent_perf)
+        
+        # 如果标准差极小，说明陷入局部最优或停滞，风险高
+        if std_dev < 1e-4:
+            return 0.9
+        
+        # 归一化风险：标准差越大，风险越低（还在探索）
+        risk = 1.0 - min(1.0, std_dev * 5.0)
+        return max(0.1, float(risk))
 
     def _instruction_novelty(self, instruction: str) -> float:
         """指令新颖性"""
