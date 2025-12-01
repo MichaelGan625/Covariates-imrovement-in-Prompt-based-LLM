@@ -30,11 +30,12 @@ class EfficientCombinedStringKernel(Kernel):
         self.base_latent_kernel = base_latent_kernel
         self.instruction_kernel = instruction_kernel
 
-        self.latent_train = latent_train
-        self.instruction_train = instruction_train
+        # 【修复】强制转换为 double (float64)
+        self.latent_train = latent_train.double()
+        self.instruction_train = instruction_train.double()
         self.lp_dim = latent_train.shape[-1]
         self._device = self.latent_train.device
-        self._dtype = self.latent_train.dtype
+        self._dtype = self.latent_train.dtype # 现在应该是 torch.float64
         self.n_tr = int(self.latent_train.shape[0])
 
         # === 【核心修改 1】将 alpha 注册为可学习参数 ===
@@ -50,9 +51,8 @@ class EfficientCombinedStringKernel(Kernel):
         # 协变量初始值给低一点 (raw=-2.0 => alpha ~ 0.1)，防止起步就跑偏
         self.register_parameter(
             name="raw_alpha_cov", 
-            parameter=torch.nn.Parameter(torch.tensor(-5.0, device=self._device, dtype=self._dtype)) # 原 -2.0
+            parameter=torch.nn.Parameter(torch.tensor(-1.0, device=self._device, dtype=self._dtype))
         )
-
         # 注册约束：保证权重永远大于 0
         self.register_constraint("raw_alpha_lat", Positive())
         self.register_constraint("raw_alpha_instr", Positive())
@@ -326,13 +326,13 @@ class EfficientCombinedStringKernel(Kernel):
              if n == self.n_tr and m == self.n_tr:
                  # 进一步检查是否是训练数据（通过对角线或第一个元素）
                  # 这是一个这种 hack，但能工作
-                 if torch.allclose(z1_flat[0, 0], self.latent_train[0], atol=1e-4):
-                     add_cov = True
+                    add_cov = True
         if add_cov:
             # 只有训练 Loss 会加上这一项。
             # 这意味着 Covariates 被用来解释 "为什么某些点的 y 值偏离了 Latent 的预测"
             # 从而“净化”了 Latent Kernel 的学习。
-            K_cov_safe = self.K_cov.to(dtype=K_total.dtype)
+            K_cov_safe = self.K_cov.to(dtype=K_total.dtype, device=K_total.device)
+            # 确保 K_cov 也是 batch 形式 (1, N, N)
             K_total = K_total + self.alpha_cov * K_cov_safe.unsqueeze(0)
 
         # 还原 batch 维
