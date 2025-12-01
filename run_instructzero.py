@@ -155,8 +155,9 @@ from botorch.models import SingleTaskGP as _SingleTaskGP
 from gpytorch.mlls import ExactMarginalLogLikelihood as _ExactMarginalLogLikelihood
 
 def build_and_fit_simple_gp(X_train, y_train, device):
-    X_train = X_train.float().to(device)
-    y_train = y_train.float().to(device)
+    target_dtype = tkwargs.get('dtype', torch.float64) 
+    X_train = X_train.to(device)  
+    y_train = y_train.to(device)
 
     # 诊断
     print(f"[baseline] X_train shape: {X_train.shape}, dtype: {X_train.dtype}, device: {X_train.device}")
@@ -185,18 +186,18 @@ def build_and_fit_simple_gp(X_train, y_train, device):
 
 def construct_custom_gp(X_train, y_train, latent_train, instruction_train, device, instr_kernel_type='matern'):
     # 1. 数据强制转 double
-    Xd = X_train.double().to(device)
-    yd = y_train.double().to(device)
-    # 【注意】这里传入 kernel 的数据也必须先转 double
-    latent_train = latent_train.double().to(device) 
-    instruction_train = instruction_train.double().to(device)
+    target_dtype = tkwargs.get('dtype', torch.float64)
+    Xd = X_train.to(device=device, dtype=target_dtype)
+    yd = y_train.to(device=device, dtype=target_dtype)
+    latent_train = latent_train.to(device=device, dtype=target_dtype)
+    instruction_train = instruction_train.to(device=device, dtype=target_dtype)
 
     # 2. 基础核函数加 .double()
     base_latent = MaternKernel(
         nu=2.5,
         ard_num_dims=latent_train.shape[-1],
         lengthscale_prior=GammaPrior(3.0, 6.0),
-    ).to(device).double() # <--- 必须加 .double()
+    ).to(device=device, dtype=target_dtype) # <--- 必须加 .double()
 
     if (instr_kernel_type or "").lower() == 'cosine':
         instruction_base = LinearKernel(ard_num_dims=instruction_train.shape[-1]).to(device).double()
@@ -490,8 +491,7 @@ class LMForwardAPI:
         if instruction[0] in self.prompts_set.keys():
             (dev_perf, instruction_score) = self.prompts_set[instruction[0]]
         else:
-            if self.api_model in ['chatgpt', 'gpt-4', 'meta-llama/llama-3-70b-instruct']:
-                print(f"[DEBUG] 开始评估，指令: {instruction[0]}") 
+            if self.api_model in [ 'meta-llama/llama-3-70b-instruct','meta-llama/llama-3-8b-instruct','meta-llama/llama-3-8b-instruct:free']:
                 dev_perf, instruction_score = evaluate.evaluate_prompts(
                     instruction, self.eval_template, self.eval_data,
                     self.demos_template, self.few_shot_data,
