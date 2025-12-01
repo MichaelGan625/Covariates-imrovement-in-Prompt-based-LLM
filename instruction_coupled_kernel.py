@@ -31,8 +31,9 @@ class EfficientCombinedStringKernel(Kernel):
         self.instruction_kernel = instruction_kernel
 
         # 【修复】强制转换为 double (float64)
-        self.latent_train = latent_train.double()
-        self.instruction_train = instruction_train.double()
+        self.latent_train = latent_train
+        self._dtype = latent_train.dtype
+        self.instruction_train = instruction_train
         self.lp_dim = latent_train.shape[-1]
         self._device = self.latent_train.device
         self._dtype = self.latent_train.dtype # 现在应该是 torch.float64
@@ -51,8 +52,9 @@ class EfficientCombinedStringKernel(Kernel):
         # 协变量初始值给低一点 (raw=-2.0 => alpha ~ 0.1)，防止起步就跑偏
         self.register_parameter(
             name="raw_alpha_cov", 
-            parameter=torch.nn.Parameter(torch.tensor(-1.0, device=self._device, dtype=self._dtype))
+            parameter=torch.nn.Parameter(torch.tensor(-5.0, device=self._device, dtype=self._dtype))
         )
+        self.raw_alpha_cov.requires_grad = True
         # 注册约束：保证权重永远大于 0
         self.register_constraint("raw_alpha_lat", Positive())
         self.register_constraint("raw_alpha_instr", Positive())
@@ -140,7 +142,7 @@ class EfficientCombinedStringKernel(Kernel):
         w = self._feature_weights.to(dtype=torch.double, device=self._device).clamp_min(0.0)
         w = w / (w.sum() + 1e-9)
         Fw = Fz * w.sqrt().unsqueeze(0)  # [N, d]
-
+        # === 修改开始 ===
         if kind == "linear":
             K_cov = Fw @ Fw.T
         elif kind == "rbf":
@@ -148,8 +150,16 @@ class EfficientCombinedStringKernel(Kernel):
             K_cov = torch.exp(-0.5 * D2 / max(1e-8, lengthscale ** 2))
         else:
             raise ValueError(f"Unknown cov kind: {kind}")
+        
+        # 🟢 [核心修改] 手动加一个比较大的 Jitter (1e-3)，而不只是依赖 self.jitter_tensor (通常只有 1e-4)
+        # 这能保证即使协变量矩阵质量很差（比如前期全是0），也不会导致 Cholesky 崩溃
+        N = K_cov.shape[0]
+        K_cov = K_cov + 1e-3 * torch.eye(N, dtype=K_cov.dtype, device=K_cov.device)
+
+        # 然后再做原本的归一化
         mdiag = K_cov.diag().mean().clamp_min(1e-12)
-        K_cov = (K_cov / mdiag) + self.jitter_tensor * torch.eye(N, dtype=K_cov.dtype, device=K_cov.device)
+        # 注意：这里不用再加 self.jitter_tensor 了，因为上面已经加了更强的 1e-3
+        K_cov = (K_cov / mdiag)
 
         self.K_cov = K_cov.to(self._dtype)
 
