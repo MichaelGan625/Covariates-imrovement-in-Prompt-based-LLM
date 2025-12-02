@@ -528,7 +528,7 @@ class LMForwardAPI:
         if instruction[0] in self.prompts_set.keys():
             (dev_perf, instruction_score) = self.prompts_set[instruction[0]]
         else:
-            if self.api_model in [ 'meta-llama/llama-3-70b-instruct','meta-llama/llama-3-8b-instruct','meta-llama/llama-3-8b-instruct:free']:
+            if self.api_model in [ 'meta-llama/llama-3-70b-instruct','meta-llama/llama-3-8b-instruct','meta-llama/llama-3.3-70b-instruct:free']:
                 dev_perf, instruction_score = evaluate.evaluate_prompts(
                     instruction, self.eval_template, self.eval_data,
                     self.demos_template, self.few_shot_data,
@@ -562,7 +562,7 @@ class LMForwardAPI:
             round(float(self.best_dev_perf), 4)))
         print('********* Done *********')
 
-        return dev_perf, instruction_score
+        return dev_perf, instruction_score, instruction[0]
 
     def return_best_prompt(self):
         return self.best_instruction
@@ -627,10 +627,18 @@ def run(args):
 
     # Get size of the induce data
     induce_data_size = len(induce_data[0])
-    prompt_gen_size = min(int(induce_data_size), 100)
-
-    # Induce data is split into prompt_gen_data and eval_data
+    if induce_data_size <= 20:
+        # 数据极少时，对半分
+        prompt_gen_size = int(induce_data_size * 0.5)
+    else:
+        # 数据充足时，最多取 50% 或 100条作为 Prompt池
+        prompt_gen_size = min(int(induce_data_size * 0.5), 100)
+    
+    # 兜底：如果切分后 eval_data 还是空的（极少见），强制复用
     prompt_gen_data, eval_data = data.create_split(induce_data, prompt_gen_size)
+    if len(eval_data[0]) == 0:
+        print("[WARNING] Eval data is empty! Using induce data for both.")
+        eval_data = induce_data
 
     # 可选：打印开发集样例（兼容额外 flag；没有就走 print_examples）
     if getattr(args, "print_eval_samples", getattr(args, "print_examples", False)):
@@ -640,18 +648,39 @@ def run(args):
     prompt_gen_data = prompt_gen_data[0], [random.sample(output, 1)[0] for output in prompt_gen_data[1]]
     demos_template = "Input: [INPUT]\nOutput: [OUTPUT]"
     eval_template = (
-    "Instruction: [PROMPT]\n\n"
-    "Input: [INPUT]\n\n"
-    "Answer the input directly. Do not output any explanation or extra text.\n"
-    "Output: [OUTPUT]"
+        "Instruction: [PROMPT]\n\n"
+        "Input: [INPUT]\n\n"
+        "Constraint: Answer with the output only. No explanation.\n"
+        "Output:"
     )
     init_prompt = ['\n']
-    prompt_gen_template = "Below are some input-output pairs.\n\n[full_DEMO]\n\nGenerate the instruction that describes this task.\nInstruction:"
+    prompt_gen_template = (
+        "I will provide some input-output pairs.\n\n"
+        "[full_DEMO]\n\n"
+        "The instruction that describes the relationship between the inputs and outputs is:\n"
+        "Instruction:"
+    )
     base_conf = '../configs/instruction_induction.yaml'
     conf = get_conf(task, eval_data)
 
+    # ================= [最小修改修复 Start] =================
+    # 获取池子里实际有多少条数据
+    n_available = len(prompt_gen_data[0])
+    # 获取配置文件想要多少个 demo (默认通常是 4 或 8)
+    n_wanted = conf['generation'].get('num_demos', 4)
+
+    # 【关键】取最小值，防止 ValueError: Sample larger than population
+    safe_num_demos = min(n_available, n_wanted)
+
+    # 简单的日志提示，让你知道发生了什么
+    if safe_num_demos < n_wanted:
+        print(f"[WARNING] Available data ({n_available}) < Config required ({n_wanted}). Using {safe_num_demos} demos.")
+
     # make the demo automatically
-    subsampled_data = data.subsample_data(prompt_gen_data, conf['generation']['num_demos'])
+    # 这里把 conf['generation']['num_demos'] 替换为 safe_num_demos
+    subsampled_data = data.subsample_data(prompt_gen_data, safe_num_demos)
+    # ================= [最小修改修复 End] =================
+
     prompt_gen_template = template.InitQATemplate(prompt_gen_template)
     d_template = template.DemosTemplate(demos_template)
     demos = d_template.fill(subsampled_data)
@@ -680,14 +709,41 @@ def run(args):
     # 初始化 BO 追踪
     trace_path = _init_trace(task)
     
+    # ================= [修改开始] =================
     # 初次评测
     X_return = batch_caller.eval_batch([x for x in X])
 
-    # === NaN/Inf 清洗 + 形状统一 ===
-    _pairs = [_unpack_eval_return(ret) for ret in X_return]
-    Y_list = [p[0] for p in _pairs]
-    S_list = [p[1] for p in _pairs]
+    # === 1. 解析返回值 (Y, S, Text) ===
+    # 我们这里手动解包，不再只依赖 _unpack_eval_return，因为它原来只丢回两个值
+    # 我们需要同时捕获：分数(y), 详细得分(s), 和 指令文本(text)
+    Y_list = []
+    S_list = []
+    Instr_list = [] # <--- 新增：存指令文本
 
+    for ret in X_return:
+        y, s, text = 0.0, [], "" # 默认值
+        
+        # 情况A: 是 tuple/list (我们期望的情况，前提是你改了 LMForwardAPI)
+        if isinstance(ret, (list, tuple)):
+            if len(ret) >= 3:
+                y, s, text = ret[0], ret[1], ret[2]
+            elif len(ret) == 2:
+                # 兼容旧接口，防止崩代码，但 text 依然会是空
+                y, s = ret
+            else:
+                if len(ret) > 0: y = ret[0]
+        
+        # 情况B: 是 dict (防御性编程)
+        elif isinstance(ret, dict):
+            y = ret.get("score", ret.get("dev_perf", 0.0))
+            s = ret.get("scores", [])
+            text = ret.get("instruction", "")
+            
+        Y_list.append(y)
+        S_list.append(s)
+        Instr_list.append(text)
+
+    # === 2. NaN/Inf 清洗 + 形状统一 ===
     # Y 统一成标量
     Y_list = [float(y) if (y is not None and math.isfinite(float(y))) else 0.0 for y in Y_list]
 
@@ -698,22 +754,30 @@ def run(args):
 
     # to tensors
     device = tkwargs["device"] if "device" in tkwargs else torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    # 同步回 tkwargs（防止后面代码再取）
     tkwargs["device"] = device
-    beta_value = torch.tensor([2.0], dtype=tkwargs['dtype'], device=device)
-    # 修改后
-    X = X.to(dtype=tkwargs['dtype'], device=device) # 确保初始 X 也是 float64
+    
+    # 确保 X 也是 float64 (double)
+    X = X.to(dtype=tkwargs['dtype'], device=device) 
     Y = torch.tensor(_np.asarray(Y_list), dtype=tkwargs['dtype'], device=device).unsqueeze(-1)
     Y_scores = torch.tensor(_np.stack(S_list, axis=0), dtype=tkwargs['dtype'], device=device)
 
-    # 掩码
+    # === 3. 掩码过滤 (Masking) - 关键步骤 ===
+    # 如果 Y 中有 NaN，我们必须把 Instr_list 对应的项也删掉，保持对齐
     mask = torch.isfinite(Y.squeeze(-1)) & torch.isfinite(Y_scores).all(dim=1)
+    
     if not mask.all():
         bad = (~mask).nonzero(as_tuple=False).squeeze(-1).tolist()
         print(f"[EVAL WARNING] dropped {len(bad)} NaN/inf samples: {bad[:10]}")
+        
+        # 过滤 Tensor
         X = X[mask]
         Y = Y[mask]
         Y_scores = Y_scores[mask]
+        
+        # 过滤 List (指令文本)
+        # 将 mask 转为 numpy bool 数组以便于列表过滤
+        mask_np = mask.cpu().numpy().astype(bool)
+        Instr_list = [inst for inst, m in zip(Instr_list, mask_np) if m]
 
     print(f"Best initial point: {Y.max().item():.3f}")
 
@@ -726,40 +790,44 @@ def run(args):
     else:
         y_train = (Y - Y_mean) / (Y_std + 1e-9)
 
-    # === [PATCH] 协变量历史（与训练集严格对齐的 F_hist） ===
+    # === 4. [PATCH] 协变量历史 (修复版) ===
+    # 现在我们有 Instr_list 了，可以正确计算协变量
     Y_raw_np = Y.squeeze(-1).detach().cpu().numpy()
     S_raw_np = Y_scores.detach().cpu().numpy()
-    y_mean0 = float(_np.mean(Y_raw_np)) if Y_raw_np.size > 0 else 0.0
-    F_hist = []
-    # === [PATCH] 协变量历史（与训练集严格对齐的 F_hist） ===
-    Y_raw_np = Y.squeeze(-1).detach().cpu().numpy()
-    S_raw_np = Y_scores.detach().cpu().numpy()
-    y_mean0 = float(_np.mean(Y_raw_np)) if Y_raw_np.shape[0] > 0 else 0.0
     F_hist = []
 
+    # 注意：Y_raw_np 已经被 mask 过滤过了，Instr_list 也被 mask 过滤过了
+    # 所以它们的长度是严格一致的，可以直接 zip 或者通过 index 访问
     for j in range(Y_raw_np.shape[0]):
-        # 使用新的12维协变量系统
-        covariates_12d = semantic_covariate_system.compute_12d_covariates(
-            instruction="",  # 初始样本没有指令文本
+        # 获取真实的指令文本！
+        # 如果前面没过滤好，这里就会 index out of range，所以上面的 mask 步骤很重要
+        curr_instr = Instr_list[j] if j < len(Instr_list) else ""
+
+        # 使用新的 8维 协变量系统
+        # 注意：这里调用的是 compute_8d_covariates
+        covariates_8d = semantic_covariate_system.compute_8d_covariates(
+            instruction=curr_instr, 
             performance=Y_raw_np[j],
             scores=S_raw_np[j],
-            step=0,  # 初始化阶段
+            step=0,
             total_steps=N_ITERATIONS,
-            task_name=task  # 使用 task 而不是 task_name
+            task_name=task
         )
 
-        # 将协变量移动到CPU并转换为numpy
-        f12_new = covariates_12d.cpu().numpy()
-        F_hist.append(f12_new)
-
-    # 也维护"当前最优指令文本/得分向量"，便于后续计算
+        f8_new = covariates_8d.cpu().numpy()
+        F_hist.append(f8_new)
+    # 维护"当前最优指令文本/得分向量"
     best_prompt_text = ""
     best_S_row = None
     try:
         argmax0 = int(_np.argmax(Y_raw_np))
         best_S_row = S_raw_np[argmax0].copy()
+        # 同时更新最优文本
+        if argmax0 < len(Instr_list):
+            best_prompt_text = Instr_list[argmax0]
     except Exception:
         pass
+    # ================= [修改结束] =================
     # 也维护“当前最优指令文本/得分向量”，便于后续计算 sim/delta
     best_prompt_text = ""
     best_S_row = None
@@ -925,8 +993,9 @@ def run(args):
                     torch.full((dim,), 1.0, device=device, dtype=torch.float64)
                 ])
 
-                beta = 2.0 * (0.9 ** i) 
-                UCB = UpperConfidenceBound(gp_model, beta=beta_value)
+                beta_scalar = 2.0 * (0.9 ** i)
+                beta_tensor = torch.tensor([beta_scalar], dtype=tkwargs['dtype'], device=device) 
+                UCB = UpperConfidenceBound(gp_model, beta=beta_tensor)
                 
                 # 初始化 acq_value 避免未定义
                 acq_value = None
@@ -1036,26 +1105,23 @@ def run(args):
             Y_scores_next_point = torch.tensor(ys, dtype=tkwargs['dtype'], device=device).unsqueeze(0)
             X_next_point = candidate_tensor.to(dtype=tkwargs['dtype'], device=device)
 
-            #扩展到12d
+      
 
             # 在BO循环中找到原来的协变量计算代码，替换为：
 
-            # 使用新的12维语义协变量系统
-            covariates_12d = semantic_covariate_system.compute_12d_covariates(
+            # 使用新的 8维 语义协变量系统
+            covariates_8d = semantic_covariate_system.compute_8d_covariates(
                 instruction=instr_text,
                 performance=new_dev_perf,
                 scores=ys,
                 step=i,
                 total_steps=N_ITERATIONS,
-                task_name=task  # 使用 task 而不是 task_name
+                task_name=task
             )
 
-            # 将协变量移动到正确的设备
-            covariates_12d = covariates_12d.to(device)
-
-            # 用于历史记录
-            f12_new = covariates_12d.cpu().numpy()
-            F_hist.append(f12_new)
+            covariates_8d = covariates_8d.to(device)
+            f8_new = covariates_8d.cpu().numpy()
+            F_hist.append(f8_new)
             # 若成为新 best，则更新“当前最优指令文本/得分向量”
             try:
                 if new_dev_perf > float(torch.max(Y).item()):
