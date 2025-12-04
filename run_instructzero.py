@@ -395,7 +395,15 @@ class LMForwardAPI:
             pass
 
         self.eval_data = eval_data
-        self.eval_template = template.EvalTemplate("Instruction: [PROMPT]\n\nInput: [INPUT]\nOutput (result only): [OUTPUT]")
+        # 在 LMForwardAPI.__init__ 中
+        self.eval_template = template.EvalTemplate(
+            "Role: You are a reliable execution engine.\n"
+            "Task: Follow the instruction to process the input.\n"
+            "### Instruction:\n[PROMPT]\n\n"
+            "### Input:\n[INPUT]\n\n"
+            "### Constraint: Output the result ONLY. Do NOT repeat the input. Do NOT say 'Here is the output'. Do NOT add labels like 'Sort:'.\n"
+            "### Response:"
+        )
         self.demos_template = template.DemosTemplate("Input: [INPUT]\nOutput: [OUTPUT]")
 
         self.api_model = args.api_model
@@ -447,7 +455,7 @@ class LMForwardAPI:
         _profile = TASK_PROFILES.get(self.task_name, DEFAULT_PROFILE)
         # === 1. 生成配置 (增加随机性，防止复读) ===
         # 这里把 temperature 稍微调高一点点，让它敢于生成不同的句子
-        gen_kwargs = dict(do_sample=True, temperature=0.6, top_p=0.9,repetition_penalty=1.1)
+        gen_kwargs = dict(do_sample=True, temperature=0.72, top_p=0.9,repetition_penalty=1.1)
 
         outputs = self.model.generate(inputs_embeds=input_embed, max_new_tokens=64, **gen_kwargs)
         instruction = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
@@ -482,8 +490,65 @@ class LMForwardAPI:
 
         # 打印清洗结果，方便调试
         print(f'Raw: {raw[:50]}... -> Clean: {instr_clean}')
+        # ==========================================
+        # === [在此处插入新的强力拦截逻辑] ===
+        # ==========================================
+        
+        # 1. 定义黑名单
+        bad_phrases = [
+            "transform the input to the output",
+            # "provide the output",  <-- 建议注释掉这个（见下文分析）
+            "figure out the instruction",
+            "provide a verb",
+            "write the instruction",
+            # "predict the output",  <-- 建议注释掉这个
+            "provide more context",
+            "what you need help with"
+        ]
+        
+        lower_instr = instr_clean.lower().strip()
+        is_bad = False
+        
+        # 2. 检查黑名单 (Contains 检查)
+        for phrase in bad_phrases:
+            if phrase in lower_instr:
+                is_bad = True
+                print(f"[FILTER] 拦截到通用/偷懒废话: '{phrase}'")
+                break
+        
+        # 3. 针对 "provide the output" 做更严格的检查 (防止误杀)
+        # 只有当指令 *仅仅* 是 "provide the output" (或极短) 时才拦截
+        # 这样 "Provide the output in German" (好的指令) 不会被杀掉
+        if "provide the output" in lower_instr and len(lower_instr) < 30:
+             is_bad = True
+             print(f"[FILTER] 拦截到过短的通用指令: 'provide the output'")
 
-# === 3. 强力过滤器 (通用版) ===
+        # 4. 检查是否复读了 Meta-Instruction (Input/Output 泄露)
+        # 如果指令直接以 "Input:" 开头，说明清洗失败或严重复读
+        if lower_instr.startswith("input:") or "can you figure" in lower_instr:
+            is_bad = True
+            print(f"[FILTER] 拦截到元指令泄露")
+
+        # 5. 检查长度 (过长通常是幻觉)
+        if len(instr_clean.split()) > 30: 
+             is_bad = True
+             print(f"[FILTER] 指令过长 ({len(instr_clean.split())} words)，疑似幻觉/解释")
+
+        # === 拦截执行 ===
+        if is_bad:
+            print(f"[FILTER] Drop bad instruction: '{instr_clean}' -> Score 0.0")
+            self.last_instruction_text = instr_clean 
+            
+            # 构造全 0 分数
+            dummy_scores = [0.0] * len(self.eval_data[0])
+            
+            # 返回 0 分
+            return 0.0, dummy_scores, instr_clean
+            
+        # ==========================================
+        # === [插入结束，后面接正常的评估逻辑] ===
+        # ==========================================
+    # === 3. 强力过滤器 (通用版) ===
         is_lazy_pattern = False
         lower_instr = instr_clean.lower()
         
@@ -528,7 +593,7 @@ class LMForwardAPI:
         if instruction[0] in self.prompts_set.keys():
             (dev_perf, instruction_score) = self.prompts_set[instruction[0]]
         else:
-            if self.api_model in [ 'meta-llama/llama-3-70b-instruct','meta-llama/llama-3-8b-instruct','meta-llama/llama-3.3-70b-instruct:free']:
+            if self.api_model in [ 'meta-llama/llama-3-70b-instruct','qwen/qwen-2.5-72b-instruct','meta-llama/llama-3.3-70b-instruct:free']:
                 dev_perf, instruction_score = evaluate.evaluate_prompts(
                     instruction, self.eval_template, self.eval_data,
                     self.demos_template, self.few_shot_data,
@@ -648,17 +713,20 @@ def run(args):
     prompt_gen_data = prompt_gen_data[0], [random.sample(output, 1)[0] for output in prompt_gen_data[1]]
     demos_template = "Input: [INPUT]\nOutput: [OUTPUT]"
     eval_template = (
-        "Instruction: [PROMPT]\n\n"
-        "Input: [INPUT]\n\n"
-        "Constraint: Answer with the output only. No explanation.\n"
-        "Output:"
+        "You are a precise solver. Follow the instruction below.\n"
+        "### Instruction:\n[PROMPT]\n\n"
+        "### Input:\n[INPUT]\n\n"
+        "### Response (Output ONLY the answer, no explanation):"
     )
     init_prompt = ['\n']
+    # [修改 1] 更严格的生成模版，明确禁止通用废话
     prompt_gen_template = (
-        "USER: I have some input-output pairs. Can you figure out the instruction that transforms the input to the output?\n\n"
+        "I need an instruction that transforms the INPUT to the OUTPUT.\n"
+        "Here are some examples:\n"
         "[full_DEMO]\n\n"
-        "Please write the instruction clearly and concisely. Start the instruction with a verb.\n"
-        "ASSISTANT: The instruction is to"  # <--- 关键！帮它起个头，它就会顺着写下去
+        "Analyze the examples above. What is the single operation being performed?\n"
+        "Write the instruction as a short, imperative command (e.g., 'Translate to Spanish', 'Sort the list', 'Find the antonym').\n"
+        "Instruction:"
     )
     base_conf = '../configs/instruction_induction.yaml'
     conf = get_conf(task, eval_data)
@@ -906,6 +974,7 @@ def run(args):
 
     # 收集已见过的指令（初次评测期间生成的）
     seen_instructions = set(model_forward_api.return_prompts_set().keys())
+    prev_model_state_dict = None
 
     try:
         for i in tqdm(range(N_ITERATIONS), desc="Bayes iterations"):
@@ -934,7 +1003,58 @@ def run(args):
                         X_train, y_train, latent_train, instruction_train, device,
                         instr_kernel_type=instr_kernel_type
                     )
+                    # ======= [补全 2] 参数接力：加载上一轮学到的参数 =======
+                    if prev_model_state_dict is not None:
+                        # 获取当前新模型的参数字典
+                        new_model_dict = gp_model.state_dict()
+                        
+                        # 筛选：只加载形状匹配的参数 (过滤掉 train_inputs 等因为数据增加而形状改变的 buffer)
+                        # 这一步至关重要，因为 X_train 变大了，直接 load 会报错
+                        pretrained_dict = {
+                            k: v for k, v in prev_model_state_dict.items() 
+                            if k in new_model_dict and v.shape == new_model_dict[k].shape
+                        }
+                        
+                        # 更新当前模型参数 (继承上一轮学到的 alpha, lengthscale 等)
+                        new_model_dict.update(pretrained_dict)
+                        gp_model.load_state_dict(new_model_dict)
+                    # ======= [NEW] Covariates 权重调度策略 =======
+                    # 获取内核对象
+                    try:
+                        # ScaleKernel -> EfficientCombinedStringKernel
+                        kern = gp_model.covar_module.base_kernel
+                        
+                        # 设定预热轮数，比如前 10 轮不让协变量捣乱
+                        WARMUP_STEPS = 10 
+                        
+                        if i < WARMUP_STEPS:
+                            # 【阶段一：预热期】
+                            # 强制将 alpha_cov 设为极小值 (接近 0)
+                            # 使用你 kernel 里定义的 setter
+                            kern.alpha_cov = 1e-6 
+                            # 冻结梯度，防止优化器修改它
+                            kern.raw_alpha_cov.requires_grad_(False)
+                            
+                            # 确保其他两个核在学习
+                            kern.raw_alpha_lat.requires_grad_(True)
+                            kern.raw_alpha_instr.requires_grad_(True)
+                            
+                        else:
+                            # 【阶段二：接入期】
+                            # 只有当它是刚解锁的第一轮时，才给它一个较大的初始推力
+                            # 避免它从 0 开始爬太慢
+                            if i == WARMUP_STEPS:
+                                # 赋予一个初始权重 (比如 0.1 ~ 0.3)
+                                kern.alpha_cov = 0.2 
+                            
+                            # 解锁梯度，让 MLL 自动优化
+                            kern.raw_alpha_cov.requires_grad_(True)
+                            kern.raw_alpha_lat.requires_grad_(True)
+                            kern.raw_alpha_instr.requires_grad_(True)
 
+                    except AttributeError:
+                        pass # 如果 fallback 到简单 GP，这里会报错，忽略即可
+                    # ===============================================
                     allow_mix_opt = task_name not in RULE_TASKS
                     _install_covariates_into_kernel(gp_model, F_hist, y_train, step_idx=i+1, allow_mix_opt=allow_mix_opt)
 
@@ -968,6 +1088,14 @@ def run(args):
                             print("Kernel diagnostic skipped:", e)
                     with gpytorch.settings.cholesky_jitter(1e-3):
                         fit_gpytorch_mll(gp_mll)
+                    prev_model_state_dict = gp_model.state_dict()
+                    
+                    # 打印一下看看有没有变化
+                    try:
+                        modes = gp_model.covar_module.base_kernel.current_mode()
+                        print(f"[TRAINED] Iter {i} Final Alphas: {modes[1]}")
+                    except:
+                        pass
                 except Exception as e:
                     print(f"[WARNING][Iteration {i}] custom kernel GP fit failed, falling back to baseline. Error: {e}")
                     gp_model, gp_mll = build_and_fit_simple_gp(X_train, y_train, device)
