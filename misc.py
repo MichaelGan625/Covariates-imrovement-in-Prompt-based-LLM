@@ -48,7 +48,7 @@ tkwargs = {
 }
 
 N_INIT = 40
-N_ITERATIONS = 40 if not SMOKE_TEST else 1
+N_ITERATIONS = 50 if not SMOKE_TEST else 1
 BATCH_SIZE = 10 if not SMOKE_TEST else 1
 
 
@@ -60,7 +60,7 @@ def get_test_conf(task, test_data):
             'num_prompts_per_subsample': 0,
             'model': {
                 'gpt_config': {
-                    'model': 'meta-llama/llama-3.3-70b-instruct',  # 修改这里
+                    'model': 'qwen/qwen-2.5-72b-instruct',  # 修改这里
                     'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
@@ -72,7 +72,7 @@ def get_test_conf(task, test_data):
             'model': {
                 "name": "GPT_forward",
                 'gpt_config': {
-                    'model': 'meta-llama/llama-3.3-70b-instruct',  # 修改这里
+                    'model': 'qwen/qwen-2.5-72b-instruct',  # 修改这里
                     'api_base': 'https://openrouter.ai/api/v1',   
                 }
             }
@@ -88,7 +88,7 @@ def get_conf(task, eval_data):
             'model': {
                 'name': 'GPT_forward',  # <--- 必须添加这一行
                 'gpt_config': {
-                    'model': 'meta-llama/llama-3.3-70b-instruct',
+                    'model': 'qwen/qwen-2.5-72b-instruct',
                     'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
@@ -100,7 +100,7 @@ def get_conf(task, eval_data):
             'model': {
                 'name': 'GPT_forward',  # <--- 必须添加这一行
                 'gpt_config': {
-                    'model': 'meta-llama/llama-3.3-70b-instruct',
+                    'model': 'qwen/qwen-2.5-72b-instruct',
                     'api_base': 'https://openrouter.ai/api/v1',
                 }
             }
